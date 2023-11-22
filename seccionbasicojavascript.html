@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    
+<div class="container">
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button> 
+
+    <div class="Estilo_blanco3" id="j1">
+
+        <h2>javaScript</h2>
+
+        <p>
+            <em><b>JavaScript hace que las páginas HTML sean más dinámicas e interactivas.</b></em>
+        </p>
+
+        <button type="button" onclick="document.getElementById('demo2').innerHTML = Date()">Click me to display Date and Time.</button>
+
+        <p id="demo2"></p>
+
+        <h3 title="The HTML &lt;script&gt; Tag">La etiqueta HTML &lt;script&gt;</h3>
+
+        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+        <div class="contenidoChatGpt">
+            <p>
+                La etiqueta HTML <span class="blue-text">&lt;script&gt;</span> se utiliza para incorporar código de secuencias de comandos. <br>
+                (generalmente <strong>javaScript</strong>) en una página web. Esta secuencia de comandos, conocida como <br>
+                "cliente", se ejecuta en el navegador web del usuario, permitiendo la interacción dinámica y <br>
+                el procesamiento de datos en la página. A través del elemento <span class="blue-text">&lt;script&gt;</span>, los desarroladores <br>
+                web pueden agregar funcionalidades personalizadas y mejoras a sus sitios web. lo que les <br>
+                permite crear experiencias más interacivas y dinámicas para los visitantes. 
+            </p>
+        </div>
+
+        <p>
+            La etiqueta HTML <span class="blue-text">&lt;javaScript&gt;</span> se utiliza para definir un script en el lado del cliente (javaScript). <br>
+            Este elemento contiene instruciones de script o apunta a un archivo de script externo a través del atributo <span class="red-text">src</span>. <br>
+            Los usos comunes de javaScript son la manipulación de imágenes, la validación de formulario y los cambios dinámicos de contenido. <br><br>
+        </p>
+
+        <h3>Una muestra de javaScript</h3>
+
+        <p>
+            Para seleccionar un elemento UTML, javaScript utiliza con mayor frecuencia el método <span class="red-text">document.getElementById</span>.
+        </p>
+
+        <article class="ejemplo">
+            <em>Ejemplos:</em> <br><br>
+            <p>
+                <strong>Este ejemplo de javaScript escribe "¡Hola javaScript!" en un elemento HTML con id="demo" :</strong>
+            </p>
+
+            <h3 class="advertencia">
+                <strong>javaScript puede cambiar el contenido de un Elemento </strong>
+            </h3>
+
+            <p id="demo">
+                <strong>Esto es una demostracion!.</strong>
+            </p>
+
+            <div class="botonContenedor">
+                <button type="button" onclick="myFunction3()">Click Me!</button>
+            </div>
+
+            <p class="codigo">   
+                document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>).innerHTML = <span class="verdeclaro">"¡Hola javaScript!"</span>;
+            </p>
+
+            <h3 class="advertencia">
+                <strong>javaScript puede cambiar estilos:</strong>
+            </h3>
+            
+            <p id="demo4">
+                <strong>javaScript puede cambiar el estilo de un elemento HTML.</strong>
+            </p>
+
+            <div class="botonContenedor">
+                <button type="button" onclick="myFunction4()">Click Me!</button>
+            </div>
+
+
+            <p class="codigo">
+                document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>)<span class="blue-text">.style</span><span class="red-text">.fontSize =</span> <span class="celeste">"25px"</span>;
+                document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>)<span class="blue-text">.style</span><span class="red-text">.color =</span> <span class="celeste">"red"</span>;
+                document.<span class="verde">getElementById</span>(<span class="verdeclaro">"demo"</span>)<span class="blue-text">.style</span><span class="red-text">.backgroundColor =</span> <span class="celeste">"yellow"</span>;
+            </p>
+
+            <h3 class="advertencia">
+                <strong>javaScript puede cambiar atributos:</strong>
+            </h3>
+
+            <p>
+                <strong>Aca un javaScript cambie el valor del atributo <span class="red-text">src</span> de la imagen.</strong> 
+            </p>
+
+            <div class="botonContenedor">
+                <img id="myImage" src="imagenes/pic_bulbon.gif" width="100" height="180">
+            </div>
+
+            <p>
+                <button type="button" onclick="light(1)">Light On</button>
+                <button type="button" onclick="light(0)">Light Off</button>
+            </p>
+
+            <p class="codigo">
+                document.<span class="verde">getElementById</span>(<span class="verdeclaro">"image"</span>)<span class="red-text">.src =</span> <span class="verdeclaro">"picture.gif"</span>;
+            </p>    
+
+            <h3 class="advertencia" title="The &lt;noscript&gt; Tag">La etiqueta &lt;noscript&gt;</h3>
+
+            <p>
+                <strong>Esta etiqueta define un contenido alternativo que se mostrará a los usuarios que tienen scripts desahabilitados <br>
+                    en su navegador o tienen un navegador que no admite scripts.</strong>
+            </p>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">script</span>&gt;
+                document.<span class="verde">getElementById</span><span class="verdeclaro">("demo")</span>.innerHTML <span class="red-text">=</span> <span class="verdeclaro">"¡Hola javaScript!"</span>;
+                &lt;/<span class="blue-text">script</span>&gt;
+                &lt;<span class="blue-text">noscript</span>&gt;<!--Un navegador sin soporte para javaScript mostrara el texto escrito dentro del elemento <noscript>  -->Perdon, tu navegador no soporta javaScript!&lt;/<span class="blue-text">noscript</span>&gt;
+<span class="gristrasparente">&lt;!--Un navegador sin soporte javaScript mostrara el texto escrito dentro de &lt;noscript&gt; &ndash;&ndash;&gt;</span>
+                </p>    
+            
+        </article>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

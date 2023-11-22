@@ -1,0 +1,1208 @@
+body {
+    background-image:  url("https://img.freepik.com/free-vector/software-engineering-background_1284-3394.jpg?w=740&t=st=1694025228~exp=1694025828~hmac=029a794e845fe7805a10d787c0ce68748ea0c90a7d0376f9191003a8f3fc8408");
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* aprendo hacer commits */
+
+.container {
+    max-width: 1200px;
+    border: 1px solid black;
+    width: 960px;
+    margin: 15px auto;
+    background-image: url("https://img.freepik.com/free-vector/gradient-black-background-with-wavy-lines_23-2149151737.jpg?w=900&t=st=1694286920~exp=1694287520~hmac=18cfff1903afa375c0b99c3f4f05fe6641206d9347cd557785ec8a689d6d19b5");
+}
+
+
+
+#primerimagen {
+    background-image: url("https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-72043.jpg?w=1060&t=st=1694028439~exp=1694029039~hmac=678dad221434153a728a56f18ff4aff220d4f0d3bc593d739222cedb79b8996f");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: 100% 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    height: auto;
+}
+
+.cabecera {
+    background-image: url("imagenes/Banner1.jpg");
+    background-size: 100% 100%;
+    background-attachment: local;
+    padding: 20px;
+    font-family: cursive;
+}
+
+.nav-bar {
+    background: #E38646;
+    padding: 20px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+.menu, .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    background: #555;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s;
+}
+
+.menu__link {
+    display: block;
+    padding: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-align: initial;
+}
+
+.menu__link:hover {
+    background: #444;
+}
+
+.submenu .menu__link:hover {
+    background: #222;
+}
+
+.submenu {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.submenu .menu__link {
+    background: #333;
+    padding-left: 40px;
+}
+
+.mostrar {
+    margin-left: 0;
+}
+
+@media(min-width:1024px) {
+    .nav-bar {
+        display: none;
+    }
+    .menu {
+        margin-left: 0;
+        display: flex;
+    }
+    .container-submenu {
+        position: relative;
+    }
+    .submenu {
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-submenu:hover .submenu {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.ulmenu li {
+    float: left;
+}
+
+.ulmenu li a { 
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.ulmenu li a:hover {
+    background-color: #111111;
+}
+
+.lista { 
+    padding-left: 200px;
+}
+
+
+.lista li {
+    margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.listacentrada { 
+    padding-left: 45%;
+}
+
+.listacentrada li {
+    margin: 5px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.lista2 { 
+    padding-left: 50px;
+}
+
+.lista2 li {
+    margin: 10px 0;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#liboton {
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+caption {
+    margin-bottom: 5px;
+}
+
+.contenidoChatGpt {
+    display: none;
+}
+
+.contenidoChatGpt p {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    background-color: #19C37D;
+    color: black;
+}
+
+
+
+/* tr:nth-child(even) {
+    background-color: #dddddd;
+} error */
+
+.flexContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+} 
+
+.imgaside {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.imgaside2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.seccion {
+    margin: 20px;
+    width: 60%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header, section, footer, aside, nav, article, hgroup {
+    display: block;
+}
+
+h1 {
+    background-color: transparent;
+    color: rgb(176, 28, 28);
+    font-weight: bolder;
+}
+
+h2 {
+    color: brown;
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+}
+
+p {
+    text-align: center;
+}
+
+article {
+    background-image: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=900&t=st=1694026401~exp=1694027001~hmac=4330f141060edf2dcd7f9fe33fd86465c319fe88152d7cfb83ca1d8d84d710a2");
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+article img {
+    display: block;
+    margin: 0 auto;
+}
+
+blockquote h2#c2 {
+    text-align: center; /* Esto centrará el texto horizontalmente */
+    margin: 0; /* Esto elimina cualquier margen predeterminado que podría causar que se desborde */
+    margin-left: -25px;
+}
+
+
+.ejemplo {
+    background: #6c7178;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: left;
+    border: #1b1d1e 10px solid;
+    margin: 15px;
+}
+
+.w3-code {
+    color: #1E1E1E;
+}
+
+
+.ejemplo > p:not(.codigo) p:not(.codigolargo) {
+    font-weight: bold; /* Hace que el texto sea más grueso */
+    color: #333;
+}
+
+
+.iframeindividual {
+    margin: 10px 100px 5px 100px;
+    float: left;
+    box-shadow: 0px 0px 25px 10px rgba(0,0,0,1);
+    -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,1);
+    transition: border 0.3s, cursor 0.3s; 
+}
+
+.iframeindividual:hover {
+    box-shadow: 0px 0px 25px 10px rgb(97, 76, 76);
+    -webkit-box-shadow: 0px 0px 25px 10px rgb(88, 50, 50);
+    -moz-box-shadow: 0px 0px 25px 10px rgb(85, 60, 60);
+    cursor: pointer;
+}
+  
+.flexContainerimg {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    height: 75vh; 
+}
+
+  
+.columna {
+    width: 30%;
+    margin: 20px 0px;
+}
+
+.columna blockquote {
+    border: 1px solid black;
+    padding: 40px;
+    background-image: url("https://img.freepik.com/free-photo/perspective-exterior-nobody-empty-box_1258-260.jpg?w=900&t=st=1694026401~exp=1694027001~hmac=4330f141060edf2dcd7f9fe33fd86465c319fe88152d7cfb83ca1d8d84d710a2");
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+.blue-text {
+    color: rgb(115, 115, 205);
+}
+
+.red-text {
+    color: red;
+}
+
+.celeste {
+    color: aquamarine;
+}
+
+.verde {
+    color: green;
+}
+
+.verdeclaro {
+    color: lightgreen;
+}
+
+.gristrasparente {
+    color: #646464;
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main {
+    text-align: left;
+}
+
+.note {
+    font-size: 120%;
+    color: yellow
+}
+
+.Tipos {
+    color: rgb(26, 25, 24);
+}
+
+.river {
+    color: #ffffff;
+    text-align: center;
+    -webkit-text-stroke: 1px black;
+}
+
+.advertencia {
+    background-color: #f1c40f;
+    color: black;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.codigo {
+    background-color: #1E1E1E; 
+    color: #FFFFFF; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    white-space: pre-wrap;
+    text-align: left; 
+}
+
+.codigolargo {
+    background-color: #1E1E1E; 
+    color: #FFFFFF; 
+    border: 1px solid #333; 
+    border-radius: 5px;
+    padding: 15px 0px 15px 0px;
+    margin: 40px 0px 20px 0px;
+    font-family: Consolas, monospace;
+    text-align: left; 
+}
+
+.seccionestilo {
+    background-image: url("https://img.freepik.com/free-vector/abstract-business-blue-circle_1182-693.jpg?w=740&t=st=1694028042~exp=1694028642~hmac=e734ef8da347069526a301c6a8e8b02933c3702c4411b4f95e9df9d2a63c2fb9");
+    padding: 1px;
+    border-radius: 5%;
+    background-size: cover;
+    margin-bottom: 50px;
+    }
+
+.seccionlinks {
+    background-image: url("https://img.freepik.com/free-vector/paper-style-wavy-background_23-2149116135.jpg?w=996&t=st=1694027679~exp=1694028279~hmac=150a13c362a18135a236a754f67c0937ebb1fb19a0dac2e822660212a3c1ff5c");
+    padding: 1px;
+    border-radius: 1%;
+    margin-bottom: 50px;
+}
+
+.Estilo_negro1 {
+    color: white;
+    background-image: url("https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.jpg?w=996&t=st=1694028840~exp=1694029440~hmac=b4a260cbbfbc0d02266fc6e9583ff493cdcfcf1062b54816853020734ca1e9d0");
+    padding: 1px;
+    border-radius: 5%;
+    background-size: contain;
+    margin-bottom: 50px;
+}
+
+.Estilo_negro1 p.Advertencia {
+    color: black;
+}
+
+.Estilo_blanco1 {
+    color: black;
+    background-image: url("imagenes/3d-background-with-white-cubes.jpg");
+    padding: 1px;
+    border-radius: 5%;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.Estilo_negro2 {
+    color: white;
+    background-image: url("https://img.freepik.com/free-photo/3d-geometric-abstract-background_1048-15986.jpg?w=1060&t=st=1694286828~exp=1694287428~hmac=47fb19b5c66006cb6afe84284a5dc399ea694a1cf54159cd5e8b7a8db6939a2b");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 2%;
+    margin-bottom: 50px;
+}
+
+.Estilo_blanco2 {
+    color: black;
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.Estilo_blanco3 {
+    color: black;
+    background-image: url("imagenes/gray-abstract-wireframe-technology-background.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.Estilo_negro3 {
+    color: white;
+    background-image: url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.Estilo_blanco4 {
+    color: black;
+    background-image: url("imagenes/white-cubes-3d-background.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.Estilo_blanco5 {
+    color: black;
+    background-image: url("imagenes/Fondo-blanco-heredado.jpg");
+    background-size: contain;
+    padding: 1px;
+    border-radius: 5%;
+    margin-bottom: 50px;
+}
+
+.css-button-retro--red {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 1px solid #000;
+    color: #000;
+    background: transparent;
+    z-index: 0;
+}
+.css-button-retro--red:hover:after {
+    top: 0;
+    left: 0;
+}
+.css-button-retro--red:after {
+    content: "";
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 5px;
+    left: 5px;
+    transition: 0.2s;
+    background-color: #ef233c;
+}
+
+.css-button-shadow-border-sliding--green {
+    min-width: 130px;
+    height: 40px;
+    color: #444;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    background: #19C37D;
+   z-index: 1;
+  }
+  .css-button-shadow-border-sliding--green:hover:after {
+    width: 100%;
+    left: 0;
+  }
+  .css-button-shadow-border-sliding--green:after {
+    border-radius: 5px;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+    background-color: #80ed99;
+    right: 0;
+  }
+  .css-button-shadow-border-sliding--green:active {
+    top: 2px;
+  }
+
+  .css-button-neumorphic {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #baf3f3;
+    box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+    color: #585858;
+  }
+  .css-button-neumorphic:active {
+    box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+  }
+
+
+#botonIrAbajo {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+    position: fixed;
+    bottom: 20px; /* Puedes ajustar la distancia desde abajo */
+    right: 20px; /* Puedes ajustar la distancia desde la derecha */
+}
+
+#botonIrAbajo:hover {
+    color: #fff;
+}
+
+#botonIrAbajo:hover::after {
+    width: 100%;
+}
+
+#botonIrAbajo::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+#botonVolverArriba {
+    min-width: 130px;
+    height: 40px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 2px solid #212529;
+    color: #212529;
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior según tus preferencias */
+    left: 20px; /* Ajusta la distancia desde el borde izquierdo según tus preferencias */
+}
+
+#botonVolverArriba:hover {
+    color: #fff;
+}
+
+#botonVolverArriba:hover::after {
+    width: 100%;
+}
+
+#botonVolverArriba::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #212529;
+}
+
+.botonContenedor {
+    text-align: center;
+}
+
+#hide {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    border-style: groove;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#hide:hover {
+    background-color: rgb(190, 61, 39);
+}
+
+#botonTop {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botonTop:hover {
+    background-color: #0056b3;
+}
+
+#h3codigo {
+    color: #007bff;
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.ultable {
+    list-style: disc; color: black;
+    background-color: white;
+    margin: 0px 350px 20px 350px;
+    
+}
+
+.litable {
+    padding:  5px 0px 5px 0px;
+    text-align: left;
+}
+
+.table1, .table1 th, .table1 td {
+    border: 1px solid white;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table1 {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+
+
+.table2, .table2 th, .table2 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table2 {
+    border-collapse: collapse;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table3, .table3 th, .table3 td {
+    text-align: left;
+    padding: 8px;
+    border: 2px solid #34495e;
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table3 td {
+    background-color: #96D4D4;
+}
+
+.table4, .table4 th, .table4 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table4 {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table5 th, .table5 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.table5 {
+    width: 30%;
+    margin: 0 auto;
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.table7, .table7 th, .table7 td {
+    border: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+    border-style: dotted;
+}
+
+.table8, .table8 th, .table8 td {
+    border: 2px solid #96D4D4;
+    text-align: left;
+    padding: 8px;
+    border-collapse: collapse;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table6, .table6 th, .table6 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table9, .table9 th, .table9 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.table10, .table10 th, .table10 td {
+    border: 1px solid black;
+    padding: 8px;
+    color: black;
+    margin-top: 10px;
+
+}
+
+#tableborders {
+    overflow: auto;
+    display: block;
+}
+
+#tableborders2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mqtable1 {
+    width: 22%;
+    float: left;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable1 th, .mqtable1 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.mqtable2 {
+    width: 20%;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable2 th, .mqtable2 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.mqtable3 {
+    width: 26%;
+    float: left;
+    margin-left: 3%;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable3 th, .mqtable3 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.mqtable4 {
+    width: 22%;
+    float: right;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+    font-size: 8px;
+}
+
+.mqtable4 th, .mqtable4 td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.divlistasparalelas {
+    display: flex;
+    justify-content: stretch;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.divtablasparalelas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablaparalela1 {
+    border: 1px solid #dddddd;
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.tablaparalela1 td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.tablaparalela2 {
+    border-collapse: separate; /* Asegura que se aplique border-spacing */
+    border-spacing: 30px;
+    border: 1px solid #dddddd;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.tablaparalela2 td {
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+.tablecebra {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tablecebra th, .tablecebra td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+.tablecebra2 {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tablecebra2 th, .tablecebra2 td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra2 td:nth-child(even),.tablecebra2 th:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1b1d1e;
+    
+}
+
+.tablecebra3 tr:nth-child(even), .tablecebra3 td:nth-child(even),.tablecebra3 th:nth-child(even) {
+    background-color: rgba(150, 212, 212, 0.4);
+}
+
+
+.tablecebra4 {
+    background-color: #000;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tablecebra4 th, .tablecebra4 td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra4 tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+.tablecebra4blanco {
+    background-color: #ffffff;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.tablecebra4blanco th, .tablecebra4blanco td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tablecebra4blanco tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+.tabletest {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tabletest tr, .tabletest td,.tabletest th {
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.tabletest2 {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tabletest2 tr, .tabletest2 td,.tabletest2 th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.tabletest2 tr:hover {
+    background-color: #D6EEEE;
+    color: black;
+}
+
+.tabletest2black {
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.tabletest2black tr, .tabletest2black td,.tabletest2black th {
+    border: 1px solid rgb(35, 146, 194);
+    padding: 8px;
+    width: 1fr;
+}
+
+.tabletest2black tr:hover {
+    background-color: #D6EEEE;
+    color: black;
+}
+
+/*wtf esto es cualquiera*/
+/* .list-container {
+    display: flex;
+    align-items: center;
+}
+
+.list-container img {
+    margin-left: 50px; 
+    margin-right: 0px;
+}
+
+.list-container li {
+    margin-right: 5px;
+    margin-left: 5px;
+} */
+
+.menu11 {
+    background-color: white;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+.mmenucentral {
+    background-color: red;
+    padding: 20px;
+    float: left;
+    width: 45%;
+}
+
+.right {
+    background-color: white;
+    padding: 20px;
+    float: left;
+    width: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    .menu11, .mmenucentral, .right {
+      width: 100%; /* El width es 100%, cuando el viewport es 800px o menos */
+    }
+}
+
+.menuejcomp {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.menuejcomp a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.mainejcomp {
+    float: left;
+    width: 45%;
+    padding: 0 20px;
+}
+
+.rightejcomp {
+    background-color: #e5e5e5;
+    float: right;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+    /* Pata telefonos celulares: */
+    .menuejcomp, .mainejcomp, .rightejcomp {
+      width: 100%;
+    }
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Proporción 16:9 (9 / 16 * 100%) */
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .iframe-container {
+        padding-top: 75%; /* Proporción diferente para pantallas más pequeñas */
+    }
+}
+
+/* Ocultar la lista desordenada por defecto */
+.desplegable {
+    display: none;
+}
+
+/* Estilizar el botón de desplegar */
+.button {
+    cursor: pointer;
+}
+
+/* Estilo para cuando la lista está desplegada */
+.desplegado {
+    display: block;
+}

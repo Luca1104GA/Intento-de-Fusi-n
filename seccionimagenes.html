@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_negro1" id="i1">
+
+            <h2 title="Images">Imagenes</h2>
+            <h3>Las imágenes pueden mejorar el diseño y la apariencia de una página web.</h3>
+
+            <p>
+                La etiqueta <span class="celeste">img</span> se utiliza para incrustar una imagen en una página web. <br>
+                Técnicamente, las imágenes no se insertan en una página web; Las imágenes están vinculadas a páginas web. <br>
+                La etiqueta <span class="celeste">img</span> crea un espacio de retención para la imagen a la que se hace referencia. <br>
+                La etiqueta está vacía, contiene solo atributos y no tiene una etiqueta de cierre. <br>
+                La etiqueta tiene dos atributos obligatorios:
+            </p>
+
+            <ul class="lista">
+                <li><span class="celeste">src:</span> especifica la ruta a la imagen.</li>
+                <li><span class="celeste">alt:</span> especifica un texto alternativo para la imagen.</li>
+            </ul>
+
+            <p class="advertencia">
+                <b>Nota:</b> Cuando se carga una pagina es el navegador el que obtiene la imagen <br>
+                de un servidor web y la inserta en la pagina. Por lo tanto asegurarse de que la imagen <br>
+                permanezca en el mismo lugar en relacion con la pagina web; de lo contrario se vera un icono <br>
+                de enlace roto y el texto del <span class="celeste">alt</span> se mostrara si el navegador no encuentra la imagen.
+            </p>
+
+            <h2 title="Width and Height" id="i2">Tamaño de imagen: ancho y alto</h2>
+
+            <p>
+                Usar siempre el <span class="celeste">style</span> junto con los atributos <b>width</b> y <b>height</b>. <br>
+                Los atributos <b>width</b> y <b>height</b> siempre definen el ancho y el alto de la imagen en píxeles.
+            </p>
+
+            <p class="advertencia">
+                <b>Nota:</b> Especifique siempre el ancho y el alto de una imagen. <br>
+                Si no se especifican el ancho y el alto, la página web puede parpadear mientras se carga la imagen.
+            </p>
+
+            <h2 title="Image Maps" id="i3">Mapas de Imagenes</h2>
+
+            <p>
+                <strong><em>Con los mapas de imágenes, puede crear áreas en las que se puede hacer clic en una imagen.</em></strong>
+            </p>
+
+            <p>
+                La etiqueta <span class="celeste">&lt;map&gt;</span> define un mapa de imágenes. Un mapa de imágenes es una imagen con áreas en las que se puede hacer clic.<br> 
+                Las áreas se definen con una o más etiquetas <span class="celeste">&lt;area&gt;</span>.
+            </p>
+
+            <div class="flexContainer imgaside">
+                <aside class="columna">
+                    <blockquote style="color: black;">
+                        La imagen se inserta mediante la etiqueta <span class="blue-text">img</span>. La única diferencia con otras imágenes es que debes agregar un atributo <span class="blue-text">usemap</span>:
+                    </blockquote>
+                </aside>
+
+                <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+                <map name="workmap">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://es.wikipedia.org/wiki/Computadora_port%C3%A1til" target="_blank">
+                    <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://es.wikipedia.org/wiki/Tel%C3%A9fono_m%C3%B3vil" target="_blank">
+                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://es.wikipedia.org/wiki/Taza" target="_blank">
+                </map>
+
+            <aside class="columna">
+                <blockquote style="color: black;">
+                    El valor <span class="blue-text">usemap</span> comienza con una etiqueta hash <span class="blue-text">#</span> seguida del nombre del mapa de imagen 
+                    y se utiliza para crear una relación entre la imagen y el mapa de imagen.
+                </blockquote>
+            </aside>
+
+            </div>
+
+            <h3>La Imagen:</h3>
+
+            <p class="codigo">
+                <span class="celeste">&lt;img</span> <span class="red-text">src</span>="workplace.jpg" <span class="red-text">alt</span>="Workplace" <span class="red-text">usemap</span>="#workmap"<span class="celeste">&gt;</span>
+            </p>
+
+            <h3>El mapeo de la imagen:</h3>
+
+            <p>
+                Luego agrega un elemento <span class="celeste">&lt;map&gt;</span> <br>
+                El elemento se utiliza para crear un mapa de imagen y está vinculado a la imagen mediante el atributo <span class="celeste">name</span>. <br>
+                El atributo <span class="celeste">name</span> debe tener el mismo valor que el atributo <span class="celeste">&lt;img&gt;</span> de <span class="red-text">usemap</span>.
+            </p>
+
+            <p class="codigo">
+                <span class="celeste">&lt;map</span> <span class="red-text">name</span>="workmap"></map><span class="celeste">&gt;</span>
+            </p>
+
+            <h3>Las Areas:</h3>
+
+            <p>
+                Luego agregue las áreas en las que se puede hacer clic.
+            </p>
+
+            <p>
+                El área en la que se puede hacer clic se define mediante un elemento <span class="celeste">&lt;area&gt;</span>. <br>
+                Debe definir la forma del área en la que se puede hacer clic <br>
+                y puede elegir uno de estos valores dentro del atributo <span class="celeste">shape=</span>
+            </p>
+
+            <ul class="lista">
+                <li><span class="celeste">"rect"</span>- una región rectangular.</li>
+                <li><span class="celeste">"circle"</span>- una región circular</li>
+                <li><span class="celeste">"poly"</span>- una región poligonal</li>
+                <li><span class="celeste">"default"</span>- define toda la región</li>
+            </ul>
+
+            <h3 class="codigo" id="h3codigo" title="Forma rectangular">Shape="rect"</h3>
+
+            <p>
+                Las coordenadas <span class="celeste">shape="rect"</span> vienen en pares . (eje x eje y) <br> <br>
+            </p>
+
+            <div class="flexContainer imgaside2">
+                <p>
+                    Entonces las coordenadas <span class="red-text">34,44</span> se ubica a 34 pixeles del margen ezquierdo y 44 de la parte superior: 
+                    <img src="imagenes\34-44.png" alt="3444" width="400" height="379">
+                </p>
+                
+                <p>
+                    y las coordenadas <span class="red-text">270,350</span> estan a 270px del margen izquierdo y a 350 de la parte superior:
+                    <img src="imagenes/270-350.png" alt="270350" width="400" height="379">
+                </p>  
+            </div>
+
+            <p>
+                Ahora tenemos suficientes datos para crear un área rectangular en la que se puede hacer clic. <br>
+                Esta es el área en la que se puede hacer clic y enviará al usuario al link:
+            </p>
+
+            <p class="codigo">
+                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="rect"</span> <span class="red-text">coords</span><span class="celeste">="34,44,270,350"</span> <span class="red-text">href</span><span class="celeste">="computer.htm"</span><span class="blue-text">&gt;</span>
+            </p>
+
+            <img src="imagenes/resultado.png" alt="resultado" width="400" height="379">
+
+            <h3 class="codigo" id="h3codigo" title="Forma circular">Shape="circle"</h3>
+
+            <div class="flexContainer imgaside2">
+                <p>
+                    Para agregar un area circular Primero localizar las coordenadas del centro del circulo,en este caso <span class="red-text">337,300</span> <br>
+                    <img src="imagenes\circulo-337-300.png" alt="337,300" width="400" height="379">
+                </p>
+
+                <p>
+                    Despues especifique el radio del circulo en pixeles <span class="red-text">44</span>
+                    <img src="imagenes\circulo-44px.png" alt="44" width="400" height="379">
+                </p>
+            </div>
+
+            <p class="codigo">
+                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="circle"</span> <span class="red-text">coords</span><span class="celeste">="337,300,44"</span> <span class="red-text">href</span><span class="celeste">="coffee.htm"</span><span class="blue-text">&gt;</span>
+            </p>
+
+            <p>
+                Esta es el área en la que se puede hacer clic y enviará al usuario al link:
+            </p>
+
+            <img src="imagenes\circulo-resultado.png" alt="circle result" width="400" height="379">
+
+            <h3 class="codigo" id="h3codigo" title="Forma poligonal">Shape="poly"</h3>
+
+            <div class="flexContainer imgaside2">
+                <p>
+                    <span class="red-text">shape="poly"</span> Contiene varios puntos de coordenadas, lo que crea una Zona formada con líneas rectas (un polígono).
+                    <img src="imagenes\factura.png" alt="Medialuna" width="400" height="379">
+                </p>
+
+                <p>
+                    Tenemos que encontrar las coordenadas clave para todos los bordes de la Medialuna:
+                    <img src="imagenes\factura-1.png" alt="Claves en la media luna" width="400" height="379"> 
+                </p>
+            </div>
+
+            <p class="codigo">
+                <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="poly"</span> <span class="red-text">coords</span><span class="celeste">="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"</span> <span class="red-text">href</span><span class="celeste">="medialuna.htm"</span><span class="blue-text">&gt;</span>
+            </p>
+
+            <p>
+                Esta es el área en la que se puede hacer clic y enviará al usuario a la página:
+            </p>
+
+            <img src="imagenes\factura-final.png" alt="Medialuna" width="400" height="379">
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Para identificar las coordenadas correctamente, debemos usar un software de edicion de imagenes <br>
+                Photoshop GIMP etc.  Estos programas te permiten seleccionar áreas en la imagen y proporcionar las coordenadas exactas de esos puntos.
+            </p>
+
+            <h2 title="Image Map and JavaScript" id="i4">Mapa de imágenes y JavaScript</h2>
+
+            <p>
+                Un área en la que se puede hacer clic también puede activar una función de JavaScript. <br>
+                Agregue un evento <span class="red-text">click</span> al elemento <span class="red-text">&lt;area&gt;</span> para ejecutar una función de JavaScript:
+            </p>
+
+            <div class="flexContainer imgaside2">
+                    <article class="ejemplo">
+                        Ejemplo: <br> <br>
+                        <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379">
+
+                        <map name="workmap2">
+                            <area shape="circle" coords="337,300,44" href="https://es.wikipedia.org/wiki/Taza" onclick="myFunction2()" target="_blank">
+                        </map>
+
+                        <br>
+
+                        Aquí, usamos el atributo onclick para ejecutar una función de JavaScript cuando se hace clic en la Taza:
+
+                        <p class="codigo">
+                            <span class="blue-text">&lt;map</span> <span class="red-text">name</span><span class="celeste">="workmap"&gt;</span>
+                               <span class="blue-text">&lt;area</span> <span class="red-text">shape</span><span class="celeste">="circle"</span> <span class="red-text">coords</span><span class="celeste">="337,300,44"</span> <span class="red-text">href</span><span class="celeste">="coffee.htm"</span> 
+                               <span class="red-text">onclick</span><span class="celeste">="myFunction()"&gt;</span>
+                            <span class="blue-text">&lt;/map&gt;</span>
+                              
+                            <span class="blue-text">&lt;script&gt;</span>
+                               <span class="celeste">function</span> myFunction() {
+                                 alert(<span class="red-text">"You clicked the coffee cup!"</span>);
+                               }
+                            <span class="blue-text">&lt;/script&gt;</span>
+                        </p>
+                    </article>
+
+            </div>
+
+            <h2 title="Background Images" id="i5">Imágenes de fondo</h2>
+
+            <p>
+                Se puede especificar una imagen de fondo para casi cualquier elemento. <br>
+                Para agregar una imagen de fondo en un elemento, use el atributo <span class="red-text">style</span>  y la propiedad CSS <span class="red-text">background-image</span>.
+            </p>
+
+            <hr>
+
+            <h3 title="Background Image on a Page">Imagen de fondo en una página</h3>
+
+            <p>
+                Si desea que toda la página tenga una imagen de fondo, debe especificar la imagen de fondo en el elemento <span class="red-text">&lt;body&gt;</span> <br><br>
+                Si la imagen de fondo es más pequeña que el elemento, la imagen se repetirá, horizontal y verticalmente,<br> hasta llegar al final del elemento. <br>
+                Para evitar que la imagen de fondo se repita, establezca la propiedad <span class="red-text">background-repeat</span> en <span class="red-text">no-repeat</span>
+            </p>
+
+            <h3 title="Background Cover">Portada de fondo</h3>
+
+            <p>
+                Si desea que la imagen de fondo cubra todo el elemento, puede establecer la propiedad <span class="red-text">background-size</span> en <span class="red-text">cover</span>. <br><br>
+                Además, para asegurarse de que todo el elemento esté siempre cubierto, establezca la propiedad <span class="red-text">background-attachment</span> en <span class="red-text">fixed</span> <br>
+                De esta forma, la imagen de fondo cubrirá todo el elemento, sin estirarse (la imagen mantendrá sus proporciones originales)
+            </p>
+
+            <h3 title="Background Stretch">Estiramiento de fondo</h3>
+
+            <p>
+                Si desea que la imagen de fondo se estire para ajustarse a todo el elemento, puede establecer la propiedad <br> <span class="red-text">background-size</span> en <span class="red-text">100% 100%</span> la imagen se estirará, pero siempre cubrirá todo el elemento.
+            </p>
+
+            <h2 title="&lt;picture&gt; Element" id="i6">El elemento &lt;picture&gt;</h2>
+
+            <p><em>Te permite mostrar diferentes imágenes para diferentes dispositivos o tamaños de pantalla.</em> <br><br>
+            
+                El elemento <span class="red-text">&lt;picture&gt;</span> contiene uno o más elementos <span class="red-text">&lt;source&gt;</span>,<br>
+                cada uno de los cuales hace referencia a diferentes imágenes a través del atributo <span class="red-text">srcset</span>.<br> 
+                De esta manera el navegador puede elegir la imagen que mejor se ajuste a la vista y/o dispositivo actual.
+            </p>
+
+            <div class="flexContainer imgaside2">
+                <article class="ejemplo">
+
+                    Ejemplo: <br> <br>
+                    Muestra diferentes imágenes para diferentes tamaños de pantalla:
+                    
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+                        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+                        <img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+                    </picture>
+
+                    <p class="codigo">
+                        <span class="blue-text">&lt;picture&gt;</span>
+                            <span class="blue-text">&lt;source</span> <span class="red-text">media</span><span class="celeste">="(min-width: 650px)"</span> <span class="red-text">srcset</span><span class="celeste">="img_food.jpg"</span><span class="blue-text">&gt;</span>
+                            <span class="blue-text">&lt;source</span> <span class="red-text">media</span><span class="celeste">="(min-width: 465px)"</span> <span class="red-text">srcset</span><span class="celeste">="img_car.jpg"</span><span class="blue-text">&gt;</span>
+                            <span class="blue-text">&lt;img</span> <span class="red-text">src</span><span class="celeste">="img_girl.jpg"</span><span class="blue-text">&gt;</span>
+                        <span class="blue-text">&lt;/picture&gt;</span>
+                    </p>
+                </article>
+            </div>
+
+            <p class="advertencia">
+                <em><b>Nota:</b></em> Especifique siempre un elemento <span class="blue-text">&lt;img&gt;</span> como el último elemento secundario del elemento <span class="blue-text">&lt;picture&gt;</span>.<br>
+                El elemento <span class="blue-text">&lt;img&gt;</span> lo utilizan navegadores que no permiten el <span class="blue-text">&lt;picture&gt;</span> <br>
+                o si ninguna de las etiquetas <span class="blue-text">&lt;source</span> coincide.
+            </p>
+
+            <h3>Cuando utilizar el elemento picture</h3>
+
+            <p>
+                <em>Hay dos propósitos principales para el elemento <span class="blue-text">&lt;picture&gt;</span>:</em> <br><br>
+
+                <em><b>1. Ancho de banda</b></em> <br><br>
+                Si tienes una pantalla o dispositivo pequeño, no es necesario cargar un archivo de imagen grande. <br>
+                El navegador utilizará el primer elemento <span class="blue-text">&lt;source&gt;</span> con valores de atributos coincidentes <br>
+                e ignorará cualquiera de los siguientes elementos. <br><br>
+                <em><b>2. Soporte de formato</b></em> <br><br>
+                Es posible que algunos navegadores o dispositivos no admitan todos los formatos de imagen. <br>
+                Al usar el elemento <span class="blue-text">&lt;picture&gt;</span>, puede agregar imágenes de todos los formatos <br>
+                y el navegador usará el primer formato que reconozca e ignorará cualquiera de los siguientes elementos.
+            </p>
+
+            <p class="advertencia">
+                <b><em>Nota:</em></b> El navegador utilizará el primer elemento <span class="blue-text">&lt;source&gt;</span> con valores de atributos coincidentes <br>
+                e ignorará los siguientes elementos <span class="blue-text">&lt;source&gt;</span>.
+            </p>
+
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

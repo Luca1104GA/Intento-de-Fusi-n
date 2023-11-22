@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button> 
+
+    <div class="Estilo_negro2" id="t1">
+
+        <h2 title="Tables">Tablas</h2>
+
+        <p>
+            Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.
+        </p>
+
+        <article class="ejemplo">
+            <b><em>Ejemplo:</em></b>
+
+            <table class="table10">
+                <tr>
+                    <th>Compania</th>
+                    <th>Contacto</th>
+                    <th>Nacionalidad</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futtekisten</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                  </tr>
+                  <tr>
+                    <td>Ernst Handel</td>
+                    <td>Roland Mendel</td>
+                    <td>Austria</td>
+                  </tr>
+                  <tr>
+                    <td>Island Trading</td>
+                    <td>Helen Bennett</td>
+                    <td>UK</td>
+                  </tr>
+                  <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                    <td>Yoshi Tannamuri</td>
+                    <td>Canada</td>
+                  </tr>
+                  <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                    <td>Giovanni Rovelli</td>
+                    <td>Italy</td>
+                  </tr>
+            </table>
+        </article>
+
+        <h3 title="Define an HTML Table">Definir una tabla</h3>
+
+        <p>
+            Una tabla en HTML consta de celdas de tabla dentro de filas y columnas.
+        </p>
+
+        <article class="ejemplo">
+            <b><em>Ejemplo:</em></b>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Company&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Contact&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Country&lt;<span class="blue-text">/th</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Alfreds Futterkiste&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Maria Anders&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Germany&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Centro comercial Moctezuma&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Francisco Chang&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Mexico&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+        </article>
+
+        <h3 title="Table Headers">Encabezados de tabla</h3>
+
+        <p>
+            Para crear las celdas que seran el encabezado se utiliza la etiqueta &lt;<span class="blue-text">th</span>&gt; <br>
+            De forma predeterminada, el texto de &lt;<span class="blue-text">th</span>&gt; está en negrita y centrado, pero puedes cambiarlo con CSS.
+        </p>
+        
+        <p class="advertencia">
+            <span class="blue-text">th</span> significa <em><b>table header</b></em>
+        </p>
+
+        <h3 title="Table Rows">Filas de tabla</h3>
+
+        <p>
+            Cada fila de la tabla comienza con una etiqueta &lt;<span class="blue-text">tr</span>&gt; y termina con &lt;<span class="blue-text">/tr</span>&gt; <br>
+            Puedes tener tantas filas como quieras en una tabla; solo asegúrese de que el número de celdas sea el mismo en cada fila.
+        </p>
+
+        <p class="advertencia">
+            <span class="blue-text">tr</span> significa <b><em>table row</em></b>. <br>
+            <b><em>Nota:</em></b> Hay ocasiones en las que una fila puede tener menos o más celdas que otra.
+        </p>
+
+        <h3 title="Table Cells">Celdas de tabla</h3>
+
+        <p>
+            Cada celda de la tabla está definida por una etiqueta &lt;<span class="blue-text">td</span>&gt; y una &lt;<span class="blue-text">/td</span>&gt;. <br>
+            Todo lo que está entre ellos es el contenido de la celda de la tabla.
+        </p>
+
+        <p class="advertencia">
+            <span class="blue-text">td</span> significa <b><em>table data</em></b>. <br>
+            <b><em>Nota:</em></b> una celda de una tabla puede contener todo tipo de elementos HTML: <br>
+            texto, imágenes, listas, enlaces, otras tablas, etc.
+        </p>
+
+        <article class="ejemplo">
+            <table class="table10">
+                <caption title="Table Tags"><b><em>Etiquetas de tabla</em></b></caption>
+                <tr>
+                    <th title="tag">Etiqueta</th>
+                    <th title="Description">Descripción</th>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Define una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>Define una celda como encabezado de una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>Define una fila en una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>Define una celda en la tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;caption&gt;</td>
+                    <td> Proporciona una etiqueta o título para la tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;colgroup&gt;</td>
+                    <td>Agrupa columnas en una tabla y permite aplicar estilos a grupos de columnas</td>
+                </tr>
+                <tr>
+                    <td>&lt;col&gt;</td>
+                    <td>Define las propiedades de formato para una o más columnas en una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;colspan &gt;</td>
+                    <td>especifica cuántas columnas debe ocupar una celda</td>
+                </tr>
+                <tr>
+                    <td>&lt;rowspan&gt;</td>
+                    <td>especifica cuántas filas debe ocupar una celda</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Define la sección de encabezado de una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Define la sección de cuerpo de una tabla</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Define la sección de pie de una tabla, generalmente para resúmenes o totales</td>
+                </tr>
+            </table>
+        </article>
+        
+        <h2 title="Table Borders" id="sublink1">Bordes de tabla</h2>
+
+        <p>
+            <em>Las tablas pueden tener bordes de diferentes estilos y formas.</em> <br> <br>
+            Para agregar un borde, use la propiedad CSS <span class="red-text">border</span> en los elementos <span class="red-text">table</span>, <span class="red-text">th</span> y <span class="red-text">td</span>
+        </p>
+
+        <table class="table1">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 title="Collapsed Table Borders">Bordes de tabla colapsados</h3>
+
+        <p>
+            Para evitar tener bordes dobles, establezca la propiedad CSS <span class="red-text">border-collapse</span> en <span class="red-text">collapse</span>
+        </p>
+
+        <table class="table2">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 title="Style Table Borders">Estilo de bordes de tabla</h3>
+
+        <p>
+            Si establece un color de fondo para cada celda y le da al borde un color blanco (o el mismo que el fondo del documento), <br>
+            obtendrá la impresión de un borde invisible:
+        </p>
+
+        <table class="table3">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 title="Round Table Borders">Bordes de tabla redondedeados </h3>
+
+        <p>
+            Con la propiedad <span class="red-text">border-radius</span>, los bordes adquieren esquinas redondeadas:
+        </p>
+
+        <table class="table4">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            Evita el borde alrededor dejando fuera el <span class="red-text">table</span> del selector CSS:
+        </p>
+
+        <table class="table5">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 title="Dotted Table Borders">Bordes de tabla punteados</h3>
+
+        <p>
+            Con la propiedad <span class="red-text">border-style</span>, puedes establecer la apariencia del borde:
+        </p>
+
+        <table class="table7">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            <em>Se permiten los siguientes valores</em> 
+        </p>
+
+        <ul class="ultable">
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">dotted</span></span> <span style="border:2px solid black;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>        
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">dashed</span></span> <span style="border:2px solid black;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">solid</span></span> <span style="border:2px solid black;border-style:solid">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">double</span></span> <span style="border:2px solid black;border-style:double">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">groove</span></span> <span style="border:2px solid black;border-style:groove">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">ridge</span></span> <span style="border:2px solid black;border-style:ridge">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">inset</span></span> <span style="border:2px solid black;border-style:inset">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">outset</span></span> <span style="border:2px solid black;border-style:outset">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">none</span></span> <span style="border:2px solid black;border-style:none">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+            <li class="litable"><span style="display:inline-block;width:70px;"><span class="red-text">hidden</span></span> <span style="border:2px solid black;border-style:hidden">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+        </ul>
+
+        <h3 title="Border Color">Color del borde</h3>
+
+        <p>
+            Con la propiedad <span class="red-text">border-color</span>, puedes establecer el color del borde.
+        </p>
+
+        <table class="table8">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 title="Table Sizes" id="t3">Tamaños de tablas</h2>
+
+        <p>
+            <em>Las tablas pueden tener diferentes tamaños para cada columna, fila o la tabla completa.</em>
+        </p>
+
+        <div id="tableborders2">
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td style="width:80%">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <td style="width:40%">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td style="width:40%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <td style="width:70%">&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr style="height:50px;">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p>
+            Utilice el atributo <span class="red-text">style</span> con las propiedades <span class="celeste">width</span> o <span class="celeste">height</span> para especificar el tamaño de una tabla, fila o columna.
+        </p>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> Usar un porcentaje como unidad de tamaño para un ancho significa qué ancho será este elemento <br>
+            en comparación con su elemento principal, que en este caso es el elemento <span class="blue-text">&lt;body&gt;</span>.
+        </p>
+
+        <h3 title="Table Column Width">Ancho de columna de tabla</h3>
+
+        <p>
+            Para establecer el tamaño de una columna específica, agregue el atributo <span class="red-text">style</span><span class="celeste">="width: ;"</span> en un elemento <span class="red-text">th</span> o <span class="red-text">td</span>:
+        </p>
+
+        <table class="table6">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 title="Table Row Height">Altura de fila de tabla</h3>
+
+        <p>
+            Para establecer la altura de una fila específica, agregue el atributo <span class="red-text">style</span><span class="celeste">="height: ;"</span> en un elemento de fila de la tabla:
+        </p>
+
+        <table class="table9">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 title="Table Headers" id="t4">Encabezados de tabla</h2>
+
+        <p>
+            <em>Las tablas pueden tener encabezados para cada columna o fila, o para muchas columnas/filas.</em>
+        </p>
+
+        <div id="tableborders">
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <th>Luca</th>
+                        <th>Tomas</th>
+                        <th>Laura</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable2">
+                <tbody>
+                    <tr>
+                        <th>8:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>9:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>10:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>11:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>12:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>13:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable3">
+                <tbody>
+                    <tr>
+                        <th></th>
+                        <th>LUN</th>
+                        <th>MAR</th>
+                        <th>MIER</th>
+                        <th>JUE</th>
+                        <th>VIE</th>
+                    </tr>
+                    <tr>
+                        <th>8:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>9:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>10:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>11:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>12:00</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable4">
+                <tbody>
+                    <tr>
+                        <th colspan="3">DICIEMBRE</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+
+        </div>
+
+        <p>
+            Los encabezados de las tablas se definen con elementos <span class="red-text">th</span>. Cada elemento <span class="red-text">th</span> representa una celda de la tabla.
+        </p>
+
+        <h3 title="Vertical Table Headers">Encabezados Verticales</h3>
+
+        <p>
+            Para utilizar la primera columna como encabezados de tabla, defina la primera celda de cada fila como elemento <span class="red-text">&lt;th&gt;</span>:
+        </p>
+
+        <article class="ejemplo">
+
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Firstname&lt<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jill&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Eve&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Lastname&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Smith&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jackson&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Age&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;94&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;50&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+
+            <table class="table2">
+                <tr>
+                  <th>Firstname</th>
+                  <td>Jill</td>
+                  <td>Eve</td>
+                </tr>
+                <tr>
+                  <th>Lastname</th>
+                  <td>Smith</td>
+                  <td>Jackson</td>
+                </tr>
+                <tr>
+                  <th>Age</th>  
+                  <td>50</td>
+                  <td>94</td>
+                </tr>
+            </table>
+
+        </article>
+
+        <h3 title="Align Table Headers">Alinear encabezados de tabla</h3>
+
+        <p>
+            De forma predeterminada, los encabezados de las tablas están en negrita y centrados:
+        </p>
+
+        <table class="table6">
+            <tbody>
+                <tr>
+                    <th>Nombre de pila</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Herrero</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>jackson</td>
+                    <td>94</td>
+                </tr>
+          </tbody>
+        </table>
+
+        <p>
+            Para alinear a la izquierda los encabezados de la tabla, use la propiedad CSS <span class="blue-text">text-align</span>:
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">th</span> {
+                  <span class="red-text">text-align:</span> <span class="celeste">left;</span>
+                }
+            </p>
+        </article>
+
+        <h3 title="Header for Multiple Columns">Encabezado para varias columnas</h3>
+
+        <p>
+            Puede tener un encabezado que abarque dos o más columnas. <br>
+            Para hacer esto, use el atributo <span class="red-text">colspan</span> en el elemento <span class="blue-text">&lt;th&gt;</span>:
+        </p>
+
+        <table class="table6">
+            <tbody>
+                <tr>
+                    <th colspan="2">Nombre</th>
+                    <th>Edad</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Herrero</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eva</td>
+                    <td>jackson</td>
+                    <td>94</td>
+                </tr>
+          </tbody>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span> <span class="red-text">colspan</span><span class="celeste">="2"</span>&gt;Nombre&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Edad&lt;<span class="blue-text">/th</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jill&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Herrero&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;50&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Eva&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jackson&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;94&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+
+        </article>
+
+        <h3 title="Table Caption">Titulo de tabla</h3>
+
+        <p>
+            Puede agregar un titulo que sirva como emcabezado para toda la tabla.
+        </p>
+
+        <table class="table6">
+            <caption>Ahorro mensual</caption>
+            <tbody>
+                <tr>
+                    <th>>Mes</th>
+                    <th>>Ahorros</th>
+                </tr>
+                <tr>
+                    <td>>Enero</td>
+                    <td>>$100</td>
+                </tr>
+                <tr>
+                    <td>>Febrero</td>
+                    <td>>$50</td>
+                </tr>
+          </tbody>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">caption</span>&gt;Ahorro Mensual&lt;<span class="blue-text">/caption</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Mes&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Ahorros&lt;<span class="blue-text">/th</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Enero&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;$100&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Febrero&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;$50&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+
+        </article>
+
+        <h2 title="Table Padding & Spacing" id="t5">Relleno y espaciado de tablas</h2>
+
+        <p>
+            Las tablas pueden ajustar el relleno (padding) dentro de las celdas y también el espacio (Spacing) entre las celdas.
+        </p>
+
+        <div class="divtablasparalelas">
+
+            <table class="tablaparalela1">
+                <caption>Con Padding</caption>
+                <tbody>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tablaparalela2">
+                <caption>Con Spacing</caption>
+                <tbody>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <h3 title="Table - Cell Padding">Relleno de Celdas</h3>
+
+        <p>
+            El relleno de celda es el espacio entre los bordes de la celda y el contenido de la celda. <br>
+            De forma predeterminada, el relleno se establece en 0. <br>
+            Para agregar relleno en las celdas de la tabla, use la propiedad CSS <span class="red-text">padding</span>.
+        </p>
+
+        <h3 title="Cell Spacing">Espaciado de Celdas</h3>
+
+        <p>
+            El espacio entre celdas es el espacio entre cada celda. <br> 
+            De forma predeterminada, el espacio está establecido en 2 píxeles. <br> 
+            Para cambiar el espacio entre las celdas de la tabla, use la propiedad CSS <span class="red-text">border-spacing</span> en el elemento <span class="blue-text">table</span>.
+        </p>
+
+        <h2 id="t6">Colspan y Rowspan</h2>
+
+        <p>
+            <em>Las tablas pueden tener celdas que abarcan varias filas y/o columnas.</em>
+        </p>
+
+        <div id="tableborders2">
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <th colspan="2">NOMBRE</th>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <th rowspan="3">ABRIL</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="mqtable1">
+                <tbody>
+                    <tr>
+                        <th colspan="3">2022</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th colspan="2" rowspan="2">FIESTA</th>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h3>Colspan</h3>
+
+        <p>
+            Para hacer que una celda abarque varias columnas, utilice el atributo <span class="red-text">colspan</span>
+        </p>
+
+        <table class="table6">
+            <tr>
+              <th colspan="2">Name</th>
+              <th>Age</th>
+            </tr>
+            <tr>
+              <td>Jill</td>
+              <td>Smith</td>
+              <td>43</td>
+            </tr>
+            <tr>
+              <td>Eve</td>
+              <td>Jackson</td>
+              <td>57</td>
+            </tr>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span> <span class="red-text">colspan</span><span class="celeste">="2"</span>&gt;Name&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Age&lt;<span class="blue-text">/th</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jill&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Smith&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;43&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Eve&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jackson&lt;<span class="blue-text">/td</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;57&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+
+        </article>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> El valor del atributo <span class="red-text">colspan</span> representa el número de columnas que se abarcarán.
+        </p>
+
+        <h3 title="extension de filas">Rowspan</h3>
+
+        <p>
+            Para hacer que una celda abarque varias filas, utilice el atributo <span class="red-text">rowspan</span>.
+        </p>
+
+        <table class="table6">
+            <tr>
+              <th>Name</th>
+              <td>Jill</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Phone</th>
+              <td>555-1234</td>
+            </tr>
+            <tr>
+              <td>555-8745</td>
+          </tr>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;Name&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;Jill&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span> <span class="red-text">rowspan</span><span class="celeste">="2"</span>&gt;Phone&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;555-1234&lt;<span class="blue-text">/td</span>&gt;
+                    &lt;<span class="blue-text">/tr</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">td</span>&gt;555-8745&lt;<span class="blue-text">/td</span>&gt;
+                  &lt;<span class="blue-text">/tr</span>&gt;
+                &lt;<span class="blue-text">/table</span>&gt;
+            </p>
+
+        </article>
+
+        <h2 title="Table Styling" id="t7">Estilo de tabla</h2>
+
+        <p>
+            <em>Utilice CSS para que sus tablas se vean mejor!</em>
+        </p>
+
+        <h3 title="Zebra Stripes">Rayas de cebra</h3>
+
+        <p>
+            Si agrega un color de fondo en cada fila de la tabla, obtendrá un bonito efecto de rayas de cebra. <br>
+            Para aplicar estilo a todos los demás elementos de fila de la tabla, use el selector <span class="blue-text">:nth-child(even)</span> de esta manera:
+        </p>
+
+        <table class="tablecebra">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">tr:nth-child(even)</span> {
+                    <span class="red-text">background-color</span><span class="celeste">: #D6EEEE</span>;
+                }
+            </p>
+        </article>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> Si usa <span class="red-text">(odd)</span> en lugar de <span class="red-text">(even)</span>, el estilo se producira en las filas 1,3,5 etc. <br>
+            en lugar de 2,4,6 etc.
+        </p>
+
+        <h3 title="Vertical Zebra Stripes">rayas verticales de cebra</h3>
+
+        <p>
+            Para hacer rayas de cebra verticales, de estilo a cada columna, en lugar de cada otra fila. <br>
+            Configure los elementos <span>:nth-child(even)</span> de esta manera:
+        </p>
+
+        <table class="tablecebra2">
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">td:nth-child(even)</span>, <span class="blue-text">th:nth-child(even)</span> {
+                    <span class="red-text">background-color</span><span class="celeste">: #D6EEEE;</span>
+                }
+            </p>
+        </article>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> Coloque el selector <span class="blue-text">:nth-child()</span> en los elementos <span class="blue-text">th</span> y <span class="blue-text">td</span> si desea tener el estilo <br>
+            tanto en los encabezados como en las celdas normales de la tabla.
+        </p>
+
+        <h3 title="Combine Vertical and Horizontal Zebra Stripes">Combina rayas de cebra verticales y horizontales</h3>
+
+        <p>
+            Puede combinar el estilo de los dos ejemplos anteriores y tendrá rayas en filas y columnas alternas. <br>
+            Si utilizas un color transparente conseguirás un efecto de superposición.
+        </p>
+
+        <table class="tablecebra tablecebra2 tablecebra3">
+            <tbody>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">tr:nth-child(even)</span> {
+                    <span class="red-text">background-color</span><span class="celeste">: rgba(150, 212, 212, 0.4);</span>
+                  }
+                  
+                <span class="blue-text">th:nth-child(even)</span>,<span class="blue-text">td:nth-child(even)</span> {
+                    <span class="red-text">background-color</span><span class="celeste">: rgba(150, 212, 212, 0.4);</span>
+                }
+            </p>
+
+        </article>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> Utilice un color <span class="blue-text">rgba()</span> para especificar la transparencia del color.
+        </p>
+
+        <h3 title="Horizontal Dividers">Divisores Horizontales</h3>
+
+        <p>
+            Si especifica bordes solo en la parte inferior de cada fila de la tabla, tendrá una tabla con divisores horizontales. <br>
+            Agregue la propiedad <span class="red-text">border-bottom</span> a todos los elementos <span class="blue-text">tr</span> para obtener divisores horizontales:
+        </p>
+
+        <table class="tabletest">
+            <thead>
+                <tr>
+                    <th>Nombre de pila</th>
+                    <th>Apellido</th>
+                    <th>Ahorros</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pedro</td>
+                    <td>Grifo</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>Grifo</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">tr</span> {
+                    <span class="red-text">border-bottom</span><span class="celeste">: 1px solid #ddd;</span>
+                }
+            </p>
+        </article>
+
+        <h3 title="Hoverable Table">Tabla flotante</h3>
+
+        <p>
+            Utilice el selector <span class="blue-text">:hover</span> en <span class="blue-text">tr</span> para resaltar las filas de la tabla al pasar el mouse sobre el
+        </p>
+
+        <table class="tabletest2">
+            <tbody>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Savings</th>
+                </tr>
+                <tr>
+                    <td>Peter</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Lois</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <article class="ejemplo">
+            Ejemplo:
+            <p class="codigo">
+                <span class="blue-text">tr:hover</span> {
+                    <span class="red-text">background-color</span><span class="celeste">: #D6EEEE;</span>
+                }
+            </p>
+        </article>
+
+        <h2 title="Table Colgroup" id="t8">Grupo de columnas</h2>
+
+        <p>
+            <b><em>El elemento <span class="blue-text">&lt;colgroup&gt;</span> se utiliza para diseñar columnas específicas de una tabla.</em></b> <br>
+            Si desea aplicar estilo a las dos primeras columnas de una tabla, utilice los elementos <span class="blue-text">&lt;colgroup&gt;</span> y <span class="blue-text">&lt;col&gt;</span> .
+        </p>
+
+        <table class="table2">
+            <colgroup>
+                <col span="5" style="background-color:rgba(150, 212, 212,0.4)">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                    <th>SUN</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>
+            El elemento <span class="blue-text">&lt;colgroup&gt;</span> debe usarse como contenedor para las especificaciones de la columna. <br>
+            Cada grupo se especifica con un elemento <span class="blue-text">&lt;col&gt;</span>. <br> <br>
+            El atributo <span class="red-text">span</span> especifica cuántas columnas obtienen el estilo. <br>
+            El atributo <span class="red-text">style</span> especifica el estilo que se dará a las columnas.
+        </p>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b> Existe una selección muy limitada de <a href="#z1" style="color: rgb(154, 58, 58); text-decoration: underline;">propiedades CSS legales para colgroups</a> .
+        </p>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">colgroup</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="5"</span> <span class="red-text">style</span><span class="celeste">="background-color: #D6EEEE"</span>&gt;
+                    &lt;<span class="blue-text">/colgroup</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;MON&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;TUE&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;WED&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;THU&lt;<span class="blue-text">/th</span>&gt;
+                ...
+            </p>
+
+        </article>
+
+        <p class="advertencia">
+            <b><em>Nota:</em></b>La etiqueta <span class="blue-text">&lt;colgroup&gt;</span> debe ser hija de un elemento <span class="blue-text">table</span> <br>
+            y debe colocarse antes de cualquier otro elemento de la tabla, como <span class="blue-text">&lt;thead&gt;</span>, etc., <br>
+            pero después del elemento <span class="blue-text">&lt;tr&gt;</span> <span class="blue-text">&lt;td&gt;</span> <span class="blue-text">&lt;caption&gt;</span>, si está presente.
+        </p>
+
+        <h3 title="Legal CSS Properties" id="z1">Propiedades CSS legales</h3>
+
+        <p>
+            Sólo hay una selección muy limitada de propiedades CSS que pueden usarse en el colgroup:
+        </p>
+
+        <ul class="lista">
+            <li>width</li>
+            <li>visibility</li>
+            <li>background</li>
+            <li>border</li>
+        </ul>
+
+        <p>
+            Todas las demás propiedades CSS no tendrán ningún efecto en sus tablas.
+        </p>
+
+        <h3 title="Multiple Col Elements">Múltiples elementos de columna</h3>
+
+        <p>
+            Si desea diseñar más columnas con diferentes estilos, use más elementos <span class="blue-text">&lt;col&gt;</span> dentro de <span>&lt;colgroup&gt;</span>:
+        </p>
+
+        <table class="table2">
+            <colgroup>
+                <col span="2" style="background-color: rgba(150, 212, 212,0.4)">
+                <col span="3" style="background-color: pink">
+            </colgroup>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">colgroup</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="2"</span> <span class="red-text">style</span><span class="celeste">="background-color: #D6EEEE"</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="3"</span> <span class="red-text">style</span><span class="celeste">="background-color: pink"</span>&gt;
+                    &lt;<span class="blue-text">/colgroup</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;MON&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;TUE&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;WED&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;THU&lt;<span class="blue-text">/th</span>&gt;
+                ...
+            </p>
+
+        </article>
+
+        <h3>Grupos de columnas vacíos</h3>
+
+        <p>
+            Si desea aplicar estilo a las columnas en medio de una tabla, inserte un elemento <span class="blue-text">&lt;col&gt;</span> "vacío" (sin estilos) para las columnas anteriores:
+        </p>
+
+        <table class="table2">
+            <colgroup>
+                <col span="3">
+                <col span="2" style="background-color: pink">
+            </colgroup>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">colgroup</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="3"</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="2"</span> <span class="red-text">style</span><span class="celeste">="background-color: pink"</span>&gt;
+                    &lt;<span class="blue-text">/colgroup</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;MON&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;TUE&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;WED&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;THU&lt;<span class="blue-text">/th</span>&gt;
+                ...
+            </p>
+
+        </article>
+
+        <h3 title="Hide Columns">Ocultar columnas</h3>
+
+        <p>
+            Puedes ocultar columnas con la propiedad <span class="celeste">visibility: collapse</span>
+        </p>
+
+        <table class="table2">
+            <colgroup>
+                <col span="2">
+                <col span="3" style="visibility: collapse">
+            </colgroup>
+            <tr>
+                <th>MON</th>
+                <th>TUE</th>
+                <th>WED</th>
+                <th>THU</th>
+                <th>FRI</th>
+                <th>SAT</th>
+                <th>SUN</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+            </tr>
+        </table>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+            <p class="codigo">
+                &lt;<span class="blue-text">table</span>&gt;
+                    &lt;<span class="blue-text">colgroup</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="2"</span>&gt;
+                      &lt;<span class="blue-text">col</span> <span class="red-text">span</span><span class="celeste">="3"</span> <span class="red-text">style</span><span class="celeste">="visibility: collapse"</span>&gt;
+                    &lt;<span class="blue-text">/colgroup</span>&gt;
+                    &lt;<span class="blue-text">tr</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;MON&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;TUE&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;WED&lt;<span class="blue-text">/th</span>&gt;
+                      &lt;<span class="blue-text">th</span>&gt;THU&lt;<span class="blue-text">/th</span>&gt;
+                ...
+            </p>
+
+        </article>
+
+    </div>
+    
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

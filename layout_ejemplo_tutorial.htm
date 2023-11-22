@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Plantilla CSS</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Estilo del header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  /* crea dos columnas/cajas que flotan una junto a la otra */
+  nav {
+    float: left;
+    width: 30%;
+    height: 300px; /* Solo para demostracion, debe ser removido */
+    background: #ccc;
+    padding: 20px;
+  }
+
+  /* Estilo de la lista dentro del menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px; /* Solo para demostracion, debe ser removido */
+  }
+
+  /* limpiar flotadores despues de las columnas */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* estilo del footer */
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Responsive layout- El diseño responsivo hace que las dos columnas/bloques se apilen uno encima del otro en lugar de uno al lado del otro , en pantallas pequeñas */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+</style>
+</head>
+<body>
+  
+  <h2 title="CSS Layout Float" style="text-align: center;">Diseño CSS flotante</h2>
+
+  <p>
+    En este ejemplo, hemos creado un encabezado <em><b>header</b></em>, dos columnas/bloques y un pie <em><b>footer</b></em>. <br>
+    En pantallas pequeñas, las columnas se apilaran una encima de la otra.
+  </p>
+  <p>
+    Cambie el tamaño del navegador para ver el efecto responsivo. (aprenderemos mas sobre esto mas adelante)
+  </p>
+
+  <header>
+    <h2>Ciudades</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">Londres</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>Londres</h1>
+      <p>
+        Londres es la capital de Inglaterra. Es la ciudad mas popular en el Reinu Unido, <br>
+        con un area metropolitana que supera los 13 millones de habitantes.
+      </p>
+      <p>
+        Al pie del rio Tamesis, Londres a sido un asentamiento importante por dos milenios, <br>
+        su historia se remonta a su fundacion por los Romanos, quienes lo nombraron Londinium.
+      </p>
+    </article>
+  </section>
+
+  <footer>
+    <p>
+      Footer
+    </p>
+  </footer>
+
+</body>
+</html>

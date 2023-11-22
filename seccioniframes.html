@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button> 
+
+    <div class="Estilo_negro2" id="h1">
+
+        <h2 title="marco en línea">Iframes</h2>
+
+        <p>
+            El término "iframe" se traduce al español como "marco en línea" o "marco flotante". <br>
+            Un iframe es un elemento HTML que permite incrustar otro documento HTML dentro de una página web. <br>
+            Se utiliza para mostrar contenido de otras fuentes, como sitios web externos, documentos o elementos multimedia, <br>
+            en una ventana o marco dentro de una página web. <br><br>
+
+            La idea es que el contenido del iframe se muestre dentro de un espacio delimitado en la página principal.
+        </p>
+
+        <h3 title="Iframe Syntax">Sintaxis de marco en línea</h3>
+
+        <p>
+            La etiqueta <span class="blue-text">&lt;iframe&gt;</span> especifica un marco en línea. <br>
+            Un marco en línea se utiliza para incrustar otro documento dentro del documento actual. 
+        </p>
+
+        <article class="ejemplo">
+
+            <strong>Sintaxis</strong>
+
+            <p class="codigo">
+
+                &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="url"</span> <span class="red-text">title</span><span class="celeste">="descripcion"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+
+            </p>
+
+            <p class="advertencia">
+                <b><em>Consejo:</em></b> Es una buena práctica incluir siempre un atributo <span class="red-text">title</span> para el archivo <span class="blue-text">&lt;iframe&gt;</span>. <br>
+                Los lectores de pantalla lo utlizan para leer cuál es el contenido del iframe.
+            </p>
+
+        </article>
+
+        <h3 title="Iframe - Set Height and Width">Iframe - Establecer ancho y altura</h3>
+
+        <p>
+            Utilice los atributos <span class="red-text">height width</span> para especificar el tamaño del iframe. <br>
+            La altura y el ancho se especifican en píxeles de forma predeterminada.
+        </p>
+
+        <article class="ejemplo">
+
+            Ejemplo:
+
+            <p class="codigo">
+&lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span> <span class="red-text">height</span><span class="celeste">="200"</span> <span class="red-text">width</span><span class="celeste">="300"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+            </p>
+
+            <div class="botonContenedor">
+                <iframe src="demo_iframe.htm" style="height:200px;width:300px" title="Iframe Example"></iframe>
+            </div>
+
+            <p>
+                <strong>O puedes agregar el atributo <span class="red-text">style</span> y usar propiedades CSS <span class="celeste">height width</span></strong>
+            </p>
+
+            <p class="codigo">
+&lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="height:200px;width:300px;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+            </p>
+
+            <h3 title="Remove the Border">Eliminar el borde del iframe</h3>
+            
+            <p>
+                <strong><em>De forma predeterminada, un iframe tiene un borde alrededor.</em> <br>
+                    Para eliminar el borde, agregue el atributo <span class="red-text">style</span> y use la proiedad CSS <span class="red-text">border</span>:</strong>
+            </p>
+
+            <p class="codigo">
+    &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="border:none;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+            </p>
+
+            <div class="botonContenedor">
+                <iframe src="demo_iframe.htm" style="border:none; height:200px;width:300px;" title="Iframe Example"></iframe>
+            </div>
+
+            <p>
+                <strong>Con CSS, también puedes cambiar el tamaño, estilo y color del borde del iframe:</strong> 
+            </p>
+
+            <p class="codigo">
+&lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_iframe.htm"</span><span class="red-text">style</span><span class="celeste">="border:2px solid red;"</span> <span class="red-text">title</span><span class="celeste">="iframe Example"</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+            </p>
+
+            <div class="botonContenedor">
+                <iframe src="demo_iframe.htm" style="border:2px solid red; height:200px;width:300px;" title="Iframe Example"></iframe>
+            </div>
+
+        </article>
+
+        <h3 title="Iframe - Target for a Link" id="c2">Destino de un enlace iframe</h3>
+
+        <p>
+            Se puede utilizar un iframe como marco de destino para un enlace. <br>
+            El atributo del enlace <span class="red-text">target</span> debe hacer referencia al atributo <span class="red-text">name</span> del iframe:
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo:
+
+            <p>
+                <a href="https://www.youtube.com/embed/c0ra77RmKKo?si=YR002qB8kyRf_6DV&autoplay=1"  target="iframe_a" style="color: yellow;"><q><strong>El Rey a Hablado</strong></q></a>
+            </p>
+
+            <div class="botonContenedor">
+                <iframe src="demo_iframe.htm" name="iframe_a" width="560" height="315" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+
+            <p class="codigo">
+        &lt;<span class="blue-text">iframe</span> <span class="red-text">src</span><span class="celeste">="demo_inframe.htm"</span> <span class="red-text">name</span><span class="celeste">="iframe_a"</span> <span class="red-text">title</span><span class="celeste">="Iframe Example</span>&gt;&lt;/<span class="blue-text">iframe</span>&gt;
+        &lt;<span class="blue-text">p</span>&gt;
+          &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="https://www.youtube.com"</span> <span class="red-text">target</span><span class="celeste">="iframe_a"</span>&gt;El Rey a Hablado&lt;/<span class="blue-text">a</span>&gt;
+        &lt;/<span class="blue-text">p</span>&gt;
+            </p>
+
+        </article>
+
+        <h3 title="Chapter Summary">Resumen del capítulo</h3>
+
+        <ul class="lista">
+            <li>La etiqueta HTML <span class="blue-text">&lt;iframe&gt;</span> especifica un marco en línea.</li>
+            <li>El atributo <span class="red-text">src</span> define la URL de la página a incrustar.</li> 
+            <li>Incluya siempre un atributo <span class="red-text">title</span> (para lectores de pantalla)</li>
+            <li>Los atributos <span class="red-text">height</span> y <span class="red-text">width</span> especifica el tamaño del iframe.</li>
+            <li>Utilice <span class="red-text">border:none;</span> para eliminar el borde alrededor del iframe.</li> 
+        </ul>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
