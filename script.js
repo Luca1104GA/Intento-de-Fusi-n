@@ -1,3 +1,127 @@
+
+// const menu = document.querySelector("#menu");
+// menu.innerHTML = "";
+
+// const data = [
+//     {
+//         titulo: "Basico",
+//         subtitulos: [
+//             {subtitulo: "Separadores", link: "#c1"},
+//             {subtitulo: "Comentarios", link: "#c2"},
+//             {subtitulo: "Estilos", link: "#c3"},
+//             {subtitulo: "Formato", link: "#c4"},
+//             {subtitulo: "Citaciónes", link: "#c5"},
+//             {subtitulo: "Estilos CSS", link: "#c6"},
+//             {subtitulo: "Favicon", link: "#c7"},
+//             {subtitulo: "Iframe", link: "#c8"},
+//             {subtitulo: "JavaScript", link: "#c9"}
+//         ]
+//     },
+//     {
+//         titulo: "Links",
+//         subtitulos: [
+//             {subtitulo: "Inicio", link: "#l1"},
+//             {subtitulo: "Atributos de Destino", link: "#l2"},
+//             {subtitulo: "Imagen como Link", link: "#l3"},
+//             {subtitulo: "Botón como Link", link: "#l4"},
+//             {subtitulo: "Crear Marcadores", link: "#l5"},
+//         ]
+//     },
+//     {
+//         titulo: "Imagenes",
+//         subtitulos: [
+//             {subtitulo: "Inicio", link: "seccionimagenes.html"},
+//             {subtitulo: "Tamaños", link: "seccionimagenes.html#i2"},
+//             {subtitulo: "Mapas de Imagenes", link: "seccionimagenes.html#i3"},
+//             {subtitulo: "Mapa de imágenes y JavaScript", link: "seccionimagenes.html#i4"},
+//             {subtitulo: "Imágenes de fondo", link: "seccionimagenes.html#i5"},
+//             {subtitulo: "picture", link: "seccionimagenes.html#i6"},
+//         ]
+//     },
+// ]
+
+// data.forEach((item) => {
+//     let itemParaAgregar = `
+//         <li class="menu__item container-submenu">
+//             <a href="#" class="menu__link submenu-btn">${item.titulo} <i class="fa-solid fa-down-long"></i></a>
+//             <ul class="submenu">`;
+//             item.subtitulos.forEach((itemSubmenu) => {
+//                 itemParaAgregar += `<li class="menu__item"><a href="${itemSubmenu.link}" class="menu__link">${itemSubmenu.subtitulo}</a></li>`
+//             })
+//     itemParaAgregar += `
+//             </ul>
+//         </li>
+//     `;
+//     menu.innerHTML += itemParaAgregar;
+// })
+
+
+
+
+
+
+
+
+
+
+console.log(menu);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
 if(btnMenu !== null && menu !== null){
