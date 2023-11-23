@@ -6,7 +6,7 @@ const palanca = document.querySelector(".switch");
 const circulo = document.querySelector(".circulo");
 const menuf = document.querySelector(".menuf");
 const main = document.querySelector("main");
-
+ /* hola que ahce */
 menuf.addEventListener("click",()=>{
     barraLateral.classList.toggle("max-barra-lateral");
     if(barraLateral.classList.contains("max-barra-lateral")){
