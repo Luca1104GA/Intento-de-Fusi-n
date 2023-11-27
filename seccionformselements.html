@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button>
+    
+<div class="container">
+    <div class="Estilo_blanco3" id="aa1">
+    
+        <h1>Elementos de <code>form</code></h1>
+        <p>
+            <em>Este capítulo describe todos los diferentes elementos del <code class="blue-text">&lt;form&gt;</code></em> <br><br>
+            El elemento <code class="blue-text">&lt;form&gt;</code> puede contener uno o más de los siguientes elementos de formulario:
+        </p>
+
+        <ul class="listacentrada">
+            <li><code class="red-text">&lt;input&gt;</code></li>
+            <li><code class="red-text">&lt;label&gt;</code></li>
+            <li><code class="red-text">&lt;select&gt;</code></li>
+            <li><code class="red-text">&lt;textarea&gt;</code></li>
+            <li><code class="red-text">&lt;button&gt;</code></li>
+            <li><code class="red-text">&lt;fieldset&gt;</code></li>
+            <li><code class="red-text">&lt;legend&gt;</code></li>
+            <li><code class="red-text">&lt;datalist&gt;</code></li>
+            <li><code class="red-text">&lt;output&gt;</code></li>
+            <li><code class="red-text">&lt;option&gt;</code></li>
+            <li><code class="red-text">&lt;optgroup&gt;</code></li>
+        </ul>
+
+        <h2>&lt;input&gt;</h2>
+        <p>
+            Uno delos elementos de formulario más utilizados en el <code class="red-text">&lt;input&gt;</code>. <br>
+            El <code class="red-text">&lt;input&gt;</code> se puede mostrar de varias formas, según el atributo <code class="red-text">type</code>.
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                        class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                            style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                        type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                            class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+        
+        <p>
+            <i>Todos los diferentes valores del atributo <code class="red-text">type</code> se muestran en el sigueinte capítulo
+                <a href="#ab1" style="color: cadetblue; text-decoration: underline;">Elementos de entrada
+                    (&lt;input&gt;)</a></i>
+        </p>
+
+        <h2>&lt;label&gt;</h2>
+        <p>
+            El elemento <code class="red-text">&lt;label&gt;</code> define una etiqueta para varios elementos del formulario.<br><br>
+            El elemento <code class="red-text">&lt;label&gt;</code> es útil para los usuarios de lectores de pantalla, porque el lector
+            de pantalla leerá<br> la etiqueta en voz alta cuando el usuario se concentre en el elemento de entrada (input).<br><br>
+            El elemento <code class="red-text">&lt;label&gt;</code> también ayuda a los usuarios que tienen dificultades para hacer
+            click en regiones<br> muy pequeñas (como botones de opción/casilla de verificación), porque cuando el usuario hace click
+            en <br>el texto dentro del elemento <code class="red-text">&lt;label&gt;</code>, alterna el botón de opción/casilla de
+            verificación. <br><br> El atributo <code class="red-text">for</code> de la etiqueta <code class="red-text">&lt;label&gt;</code>
+            debe ser igual al atributo <code class="red-text">id</code> del elemento <code class="red-text">&lt;input&gt;</code> para unirlos.
+        </p>
+
+        <h2>&lt;select&gt;</h2>
+        <p>El elemento <code class="blue-text">&lt;select&gt;</code></p> define una lista desplegable:
+
+        <article class="ejemplo">
+            Ejemplo <br><br>
+            <label for="cars">Elije un auto:</label>
+            <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                        class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                            style="color:mediumblue">="cars"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Elije un auto:<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red">
+                        id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="cars"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red">
+                        value<span class="attributevaluecolor" style="color:mediumblue">="volvo"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red">
+                        value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h2>&lt;option&gt;</h2>
+        <p>
+            El elemento <code class="blue-text">&lt;option&gt;</code> define una opción que se puede seleccionar.<br>
+            De forma predeterminada, se selecciona el primer elemento de la lista desplegable.<br>
+            Para definir una opción preseleccionada, agregue el atributo <code class="red-text">selected</code> a la opción.  
+        </p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="fiat"</span> selected</span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3 title="Visible Values">Valores visibles</h3>
+        <p>Utilice el atributo <code class="red-text">size</code> para especificar el número de valores visibles.</p>
+
+        <article class="ejemplo">
+            <label for="cars">Elije un auto:</label>
+            <select id="cars" name="cars" size="3">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                        class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                            style="color:mediumblue">="cars"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Elije un auto:<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red">
+                        id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="cars"</span> size<span
+                            class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red">
+                        value<span class="attributevaluecolor" style="color:mediumblue">="volvo"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red">
+                        value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3>Permitir selecciones múltiples</h3>
+        <p>Utilice el atributo <code class="red-text">multiple</code> para permitir al usuario seleccionar más de un valor.</p>
+
+        <article class="ejemplo">
+            <label for="cars">Elije un auto:</label>
+            <select id="cars" name="cars" size="4" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                        class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                            style="color:mediumblue">="cars"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Elije un auto:<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red">
+                        id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="cars"</span> size<span
+                            class="attributevaluecolor" style="color:mediumblue">="4"</span><strong> </strong>multiple</span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span
+                        class="attributecolor" style="color:red"> value<span class="attributevaluecolor"
+                            style="color:mediumblue">="volvo"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red">
+                        value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            <p class="advertencia">
+                <em>Mantenga precionado la tecla Ctrl (Windows)/ Command (Mac) para seleccionar multiples opciones.</em>
+            </p>
+        </article>
+
+        <h2>&lt;textarea&gt;</h2>
+        <p>El elemento <code class="blue-text">&lt;textarea&gt;</code> define un campo de entrada de varias líneas (un <em>area de texto</em> )</p>
+
+        
+        <article class="ejemplo">
+            
+            <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                <textarea name="message" rows="10" cols="30">El gato estaba jugando en el jardín.</textarea>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="message"</span> rows<span
+                            class="attributevaluecolor" style="color:mediumblue">="10"</span> cols<span class="attributevaluecolor"
+                            style="color:mediumblue">="30"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>El gato estaba jugando en el jardín.<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <ul class="lista">
+                <li><code class="red-text">rows</code> especifica el número visible de líneas en un área de texto.</li>
+                <li><code class="red-text">cols</code> especifica el ancho visible de un área de texto.</li>
+            </ul>
+
+            <p>También puedes definir el tamaño del área de texto usando CSS:</p>
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span
+                        class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+                            style="color:mediumblue">="message"</span>
+                        style<span class="attributevaluecolor" style="color:mediumblue">="width:200px; height:600px;"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>El gato estaba jugando en el jardín.<br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        </article>
+
+        <h2>&lt;button&gt;</h2>
+        <p>El elemento <code class="blue-text">&lt;button&gt;</code> define un botón en el que se puede hacer click</p>
+
+        <article class="ejemplo">
+            <div style="text-align: center;">
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> type<span
+                            class="attributevaluecolor" style="color:mediumblue">="button"</span>
+                        onclick<span class="attributevaluecolor" style="color:mediumblue">="alert('Hello
+                            World!')"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click Me!<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            <p class="advertencia">
+                <b>nota:</b> Especifique siempre el atributo <code class="red-text">type</code> para el elemento del botón. <br>
+                Diferentes navegadores pueden usar diferentes tipos predeterminados para el elemento del botón.
+            </p>
+        </article>
+
+        <h2>&lt;fieldset&gt; &lt;legend&gt;</h2>
+        <p>
+            El elemento <code class="blue-text">&lt;fieldset&gt;</code> se utiliza para agrupar datos relacionados en un formulario (form). <br><br>
+            El elemento <code class="blue-text">legend</code> define un título para el <code class="blue-text">&lt;fieldset&gt;</code>.
+        </p>
+
+        <article class="ejemplo">
+
+            <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                <form action="/action_page.php" target="_blank">
+                    <fieldset>
+                      <legend>Personalia:</legend>
+                      <label for="fname">First name:</label><br>
+                      <input type="text" id="fname" name="fname" value="John"><br>
+                      <label for="lname">Last name:</label><br>
+                      <input type="text" id="lname" name="lname" value="Salchichon"><br><br>
+                      <input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                            style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>fieldset<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>legend<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Personalia:<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/legend<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                        style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>First
+                name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor"
+                        style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                            class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="fname"</span>
+                        value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                        style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                        class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                            style="color:mediumblue">="text"</span> id<span class="attributevaluecolor"
+                            style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor"
+                            style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor"
+                            style="color:mediumblue">="Salchichon"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                        class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                            style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                            style="color:mediumblue">="Enviar"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/fieldset<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h2>&lt;datalist&gt;</h2>
+        <p>
+            El elemento <code class="blue-text">&lt;datalist&gt;</code> especifica una lista de opciones predefinidas para un 
+            elemento <code class="blue-text">&lt;input&gt;</code>.<br> Los usuarios verán una lista desplegable de las opciones
+            predefinidas a medida que ingresan datos. <br>El atributo <code class="red-text">list</code> del elemento 
+            <code class="blue-text">&lt;input&gt;</code>, debe hacer referencia al atributo <code class="red-text">id</code>
+            del elemento <code class="blue-text">&lt;datalist&gt;</code>    
+        </p>
+
+        <article class="ejemplo">
+            <div style="text-align: center;">
+                <form action="/action_page.php">
+                    <input list="browsers">
+                    <datalist id="browsers">
+                      <option value="Edge">
+                      <option value="Firefox">
+                      <option value="Chrome">
+                      <option value="Opera">
+                      <option value="Safari">
+                    </datalist>
+                </form>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                            style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                        list<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span
+                            class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="Edge"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                            class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h2>&lt;output&gt;</h2>
+        <p>El elemento <code class="blue-text">&lt;output&gt;</code> representa el resultado de un cálculo (como uno realizado por un script).</p>
+
+        <article class="ejemplo">
+            <div style="text-align: center;">
+                <form action="/action_page.php" target="_blank" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    0
+                    <input type="range" id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                            style="color:mediumblue">="/action_page.php"</span><br>&nbsp; oninput<span class="attributevaluecolor"
+                            style="color:mediumblue">="x.value=parseInt(a.value)+parseInt(b.value)"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 0<br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                        class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                            style="color:mediumblue">="range"</span>&nbsp; id<span class="attributevaluecolor"
+                            style="color:mediumblue">="a"</span> name<span class="attributevaluecolor"
+                            style="color:mediumblue">="a"</span> value<span class="attributevaluecolor"
+                            style="color:mediumblue">="50"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; 100 +<br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                        class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                            style="color:mediumblue">="number"</span> id<span class="attributevaluecolor"
+                            style="color:mediumblue">="b"</span> name<span class="attributevaluecolor"
+                            style="color:mediumblue">="b"</span> value<span class="attributevaluecolor"
+                            style="color:mediumblue">="50"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; =<br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>output<span class="attributecolor" style="color:red"> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="x"</span> for<span class="attributevaluecolor"
+                            style="color:mediumblue">="a b"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/output<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                        type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <table class="tablecebra4blanco">
+            <tr>
+                <th>Tag</th>
+                <th>Descripcion</th>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;</td>
+                <td>Define un formulario HTML para la entrada del usuario.</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>Define un control de entrada</td>
+            </tr>
+            <tr>
+                <td>&lt;textarea&gt;</td>
+                <td>Define un control de entrada multilineal (área de texto)</td>
+            </tr>
+            <tr>
+                <td>&lt;label&gt;</td>
+                <td>Define una etiqueta para un elemento <code class="blue-text">&lt;input&gt;</code></td>
+            </tr>
+            <tr>
+                <td>&lt;fieldset&gt;</td>
+                <td>Agrupa elementos relacionados en un formulario</td>
+            </tr>
+            <tr>
+                <td>&lt;legend&gt;</td>
+                <td>Define una leyenda para un elemento <code class="blue-text">&lt;fieldset&gt;</code></td>
+            </tr>
+            <tr>
+                <td>&lt;select&gt;</td>
+                <td>Define una lista desplegable</td>
+            </tr>
+            <tr>
+                <td>&lt;optgroup&gt;</td>
+                <td>Define un grupo de opciones relacionadas en una lista desplegable</td>
+            </tr>
+            <tr>
+                <td>&lt;option&gt;</td>
+                <td>Define una opción en una lista desplegable</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>Define un botón clickable</td>
+            </tr>
+            <tr>
+                <td>&lt;datalist&gt;</td>
+                <td>Especifica una lista de opciones predefinidas para controles de entrada</td>
+            </tr>
+            <tr>
+                <td>&lt;output&gt;</td>
+                <td>Define el resultado de un cálculo</td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

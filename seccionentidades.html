@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button>
+    
+<div class="container">
+    <div class="Estilo_blanco5" id="r1">
+    
+        <h1 title="Entities">Entidades HTML</h1>
+
+        <p><em>Los caracteres reservados en HTML deben ser remplazados por entidades</em></p>
+
+        <ul class="lista2" style="background-color: aquamarine; padding: 10px 0px 10px 300px; margin: 0px 100px;">
+            <li>&lt;(Menor que) = <strong>&amp;lt;</strong></li>
+            <li>&lt;(Mayor que) = <strong>&amp;gt;</strong></li>
+        </ul>
+
+        <h3 title="Caracter Entities">Entidades de caracteres HTML</h3>
+        <p>
+            <i>Algunso caracteres están revervados en HTML.</i><br><br>
+            Si utiliza los signos menor que (&lt;) o mayor que (&gt;) en su texto HMTL, el navegador puede mezclarlos con
+            etiquetas.<br>
+            Se pueden utilizar nombres de entidades o números de entidades para mostrar caracteres HTML reservados.<br><br>
+        </p>
+
+        <article class="ejemplo">
+            <p>Los nombres de las entidades se ven así:</p>
+            <div class="w3-code htmlHigh">
+                &amp;<i>entity_name</i>;
+            </div>
+            <p>Los números de entidad se ven así:</p>
+            <div class="w3-code htmlHigh">
+                &amp;#<i>entity_number</i>;
+            </div>
+            <p>Para mostrar un signo menor que (&lt;) debemos escribir: <b>&amp;lt;</b> o <b>&amp;#60;</b></p>
+            <p class="advertencia">Los <b>Nombres de entidad</b> son mas fáciles de recordar que los números de entidad.</p>
+        </article>
+
+        <h3 title="Non-breaking Space">Espacio no rompible</h3>
+        <p>
+            Una entidad HTML comúnmente utilizada es el <b>espacio no rompible</b>(<b>&amp;nbsp;</b>).<br>
+            Un <b>espacio no rompible</b> es un espacio que no se dividirá en una nueva línea.<br><br>
+            Dos palabras separadas por un <b>espácio no rompible</b> se mantendrán juntas (no se dividirán en una<br>
+            nueva línea). Esto es útil cuando dividir las palabras podría resultar disruptivo.<br><br>
+            Ejemplos: 
+        </p>
+
+        <ul class="lista2" style="padding: 0px 0px 0px 350px; margin: 0px 100px;">
+            <li>$ 10</li>
+            <li>10 km/h</li>
+            <li>10 PM</li>
+        </ul>
+
+        <p>
+            Otro uso común de los <b>espacios no rompibles</b> es evitar que los navegadores trunquen espacios en las páginas
+            HTML.<br><br>Si escribe 10 espacios en su texto, el navegador eliminará 9 de ellos. Para agregar espacios reales a
+            su texto<br> puedes usar la entidad caracter <b>&amp;nbsp</b>.
+        </p>
+
+        <p class="advertencia">
+            El <b>espacio no rompible</b> "guión" (&amp;#8209;) es usado para definir un caracter de guión (&#8209;) y no se
+            rompe en una nueva línea.
+        </p>
+
+        <h2 title="Some Useful HTML Character Entities">Algunas entidades de caracteres HTML útiles</h2>
+
+        <article class="ejemplo">
+
+            <table class="w3-table w3-bordered w3-striped cebranegra">
+                <tr class="w3-red">
+                    <th>Resultado</th>
+                    <th>Descripción</th>
+                    <th>Nombre</th>
+                    <th>Numero</th>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&nbsp;</td>
+                    <td style="vertical-align: middle;">espacio no rompible</td>
+                    <td style="vertical-align: middle; color: black;">&amp;nbsp;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#160;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&lt;</td>
+                    <td style="vertical-align: middle;">menor que</td>
+                    <td style="vertical-align: middle;">&amp;lt;</td>
+                    <td style="vertical-align: middle;">&amp;#60;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&gt;</td>
+                    <td style="vertical-align: middle; color: black;">mayor que</td>
+                    <td style="vertical-align: middle; color: black;">&amp;gt;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#62</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&amp;</td>
+                    <td style="vertical-align: middle;">ampersand</td>
+                    <td style="vertical-align: middle;">&amp;amp;</td>
+                    <td style="vertical-align: middle;">&amp;#38;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&quot;</td>
+                    <td style="vertical-align: middle; color: black;">Comillas dobles</td>
+                    <td style="vertical-align: middle; color: black;">&amp;quot;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#34;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&apos;</td>
+                    <td style="vertical-align: middle;">Comillas simples</td>
+                    <td style="vertical-align: middle;">&amp;apos;</td>
+                    <td style="vertical-align: middle;">&amp;#39;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&cent;</td>
+                    <td style="vertical-align: middle; color: black;">Centavo</td>
+                    <td style="vertical-align: middle; color: black;">&amp;cent;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#162;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&pound;</td>
+                    <td style="vertical-align: middle;">Libra</td>
+                    <td style="vertical-align: middle;">&amp;pound;</td>
+                    <td style="vertical-align: middle;">&amp;#163;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&yen;</td>
+                    <td style="vertical-align: middle; color: black;">Yen</td>
+                    <td style="vertical-align: middle; color: black;">&amp;yen;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#165;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&euro;</td>
+                    <td style="vertical-align: middle;">Euro</td>
+                    <td style="vertical-align: middle;">&amp;euro;</td>
+                    <td style="vertical-align: middle;">&amp;#8364;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&copy;</td>
+                    <td style="vertical-align: middle; color: black;">Copyright</td>
+                    <td style="vertical-align: middle; color: black;">&amp;copy;</td>
+                    <td style="vertical-align: middle; color: black;">&amp;#169;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge">&reg;</td>
+                    <td style="vertical-align: middle;">Marca Registrada</td>
+                    <td style="vertical-align: middle;">&amp;reg;</td>
+                    <td style="vertical-align: middle;">&amp;#174;</td>
+                </tr>
+            </table>
+            <p class="advertencia"><i>Los nombres de las entidades, distinguen entre mayúsculas y minúsculas.</i></p>
+        </article>
+
+        <h3 title="Combining Diacritical Marks">Combinando marcas diacríticas</h3>
+        <p>
+            Una marca diacritica es un "glifo" añadido a una letra.<br>
+            Algunas marcas diacriticas, como las graves ( ̀) y las agudas ( ́), se llaman acentos.<br><br>
+            Las marcas diacriticas se pueden utilizar en combinación con caracteres alfanuméricos para producir un<br>
+            carácter que no está presente en el conjunto de caracteres (codificación) utilizado en la página.<br><br>
+            Aquí hay unos ejemplos:
+        </p>
+
+        <article class="ejemplo">
+
+            <table class="w3-table w3-bordered w3-striped">
+                <tr class="w3-red">
+                    <th>Marca</th>
+                    <th>Caracter</th>
+                    <th>Construcción</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge" style="color: black;"> ̀</td>
+                    <td style="vertical-align: middle; color: black;">a</td>
+                    <td style="vertical-align: middle; color: black;">a&amp;#768;</td>
+                    <td style="vertical-align: middle; color: black;">a&#768;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge"> ́</td>
+                    <td style="vertical-align: middle;">a</td>
+                    <td style="vertical-align: middle;">a&amp;#769;</td>
+                    <td style="vertical-align: middle;">a&#769;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge" style="color: black;">̂</td>
+                    <td style="vertical-align: middle; color: black;">a</td>
+                    <td style="vertical-align: middle; color: black;">a&amp;#770;</td>
+                    <td style="vertical-align: middle; color: black;">a&#770;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge"> ̃</td>
+                    <td style="vertical-align: middle;">a</td>
+                    <td style="vertical-align: middle;">a&amp;#770;</td>
+                    <td style="vertical-align: middle;">a&#770;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge" style="color: black;"> ̀</td>
+                    <td style="vertical-align: middle; color: black;">O</td>
+                    <td style="vertical-align: middle; color: black;">O&amp;#768;</td>
+                    <td style="vertical-align: middle; color: black;">O&#768;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge"> ̀</td>
+                    <td style="vertical-align: middle;">O</td>
+                    <td style="vertical-align: middle;">O&amp;#769;</td>
+                    <td style="vertical-align: middle;">O&#769;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge" style="color: black;">̂</td>
+                    <td style="vertical-align: middle; color: black;">O</td>
+                    <td style="vertical-align: middle; color: black;">O&amp;#770;</td>
+                    <td style="vertical-align: middle; color: black;">O&#770;</td>
+                </tr>
+                <tr>
+                    <td class="w3-xxlarge"> ̃</td>
+                    <td style="vertical-align: middle;">O</td>
+                    <td style="vertical-align: middle;">O&amp;#771;</td>
+                    <td style="vertical-align: middle;">O&#771;</td>
+                </tr>
+            </table>
+       
+        </article>
+
+        <p class="advertencia">Hay mas ejemplos en el próximo capítulo.</p>
+
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button>
+    
+<div class="container">
+    <div class="Estilo_blanco3" id="q1">
+    
+        <h1 title="Style Guide">Guía de estilo</h1>
+
+        <p>
+            Un código HTML coherente, limpio y ordenado facilita que otros lean y comprendadn su código. <br>
+            A continuación se ofrecen algunas pautas y consejos para crear un buen código HTML.
+        </p>
+
+        <h3 title="Always Declare Document Type">Declarar siempre el tipo de documento</h3>
+
+        <p>
+            Declare siempre el tipo de documento como la primera línea de su documento. <br>
+            El tipo de documento correcto para HTML es :
+        </p>
+
+        <div class="w3-example ejemplo" style="text-align: left;">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+        </div>
+
+        <h3 title="Use Lowercase Element Names">Utilice nombres de elementos en minúsculas.</h3>
+
+        <p>
+            HTML permite mezclar letras mayúsculas y minúsculas en los nombres de elos elementos. <br>
+            Sin embargo, recomendamos utilizar nombres de elementos en minúsculas porque: 
+        </p>
+
+        <ul class="lista">
+            <li><strong><em>Mezclar nombres en mayúsculas y minúsculas queda mal</em></strong></li>
+            <li><b><em>Los desarroladores normalmente usa nombres en minúsculas</em></b></li>
+            <li><em><b>Las minúsculas se ven más limpias</b></em></li>
+            <li><em><b>Las minúsculas son más fáciles de escribir</b></em></li>
+        </ul>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>P<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/P<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3 title="Use Lowercase Attribute Names">Utilice nombres de atributos en minúsculas</h3>
+
+        <p>
+            HTML permite mezclar letras mayúsculas y minúsculas en los nombres de los atributos. <br>
+            Sin embargo, recomendamos utilizar nombres de atributos en minúsculas porque:
+        </p>
+
+        <ul class="lista">
+            <li><strong><em>Mezclar nombres en mayúsculas y minúsculas queda mal</em></strong></li>
+            <li><b><em>Los desarroladores normalmente usa nombres en minúsculas</em></b></li>
+            <li><em><b>Las minúsculas se ven más limpias</b></em></li>
+            <li><em><b>Las minúsculas son más fáciles de escribir</b></em></li>
+        </ul>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visita nuestro tutorial HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> HREF<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visita nuestro tutorial HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3 title="Close All HTML Elements">Cerrar todos los elementos HTML</h3>
+
+        <p>
+            En HTML, no es necesario cerrar todos los elementos (por ejemplo, el elemento <code><span class="blue-text">&lt;p&gt;</span></code>). <br>
+            Sin embargo, recomendamos <b><em>encaredidamente</em></b> cerrar todos los elementos HTML. 
+        </p>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo.<br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3 title="Always Quote Attribute Values">Citar siempre valores de atributos</h3>
+
+        <p>
+            HTML permite valores de atributos sin comillas. <br>
+            Sin embargo, recomendamos citar los valores de los atributos porque:
+        </p>
+
+        <ul class="lista">
+            <li><b><em>Los desarroladores normalmente citan valores de atributos</em></b></li>
+            <li><b><em>Los valores citados son más fáciles de leer</em></b></li>
+            <li><b><em>DEBES usar comillas si el valor contiene espacios</em></b></li>
+        </ul>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> 
+                class<span class="attributevaluecolor" style="color:mediumblue">="striped"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">=striped</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Muy mal
+
+            <p style="text-align: left;">Esto no funcionará porque el valor contiene espacios</p>
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">=table </span>striped</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3 title="Always Specify alt, width, and height for Images">Especifique siempre <em>alt width height</em> para las imágenes</h3>
+
+        <p>
+            Especifique siempre el  atributo <code><span class="red-text">alt</span></code> de las imágenes. Este atributo es importante si la imagen <br>
+            por algún motivo no se puede mostrar. 
+        </p>
+
+        <p>
+            Además defina siempre el <code><span class="red-text">width</span></code> y <code><span class="red-text">height</span></code> de las imágenes. Esto reduce el parpadeo, porque <br>
+            el navegador puede reservar espacio para la imagen antes de cargarla. 
+        </p>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> 
+                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="HTML5"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> 
+                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3 title="Spaces and Equal Signs">Espacios y signos iguales</h3>
+
+        <p>
+            HTML permite espacios alrededor de los signos iguales. Pero sin espacio es más fácil de leer y <br>
+            agrupa mejor las entidades.
+        </p>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> 
+                rel <span class="attributevaluecolor" style="color:mediumblue">= "stylesheet"</span> href <span class="attributevaluecolor" style="color:mediumblue">= "styles.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+            
+        </article>
+
+        <h3 title="Avoid Long Code Lines">Evite líneas de código largas</h3>
+
+        <p>
+            Cuando se utiliza un editor HTML, <b>NO</b> es conveniente desplazarse hacia la derecha y hacia <br>
+            la izquierda para leer el código HTML. <q><i>Intente evitar líneas de código demasiado largas.</i></q>
+        </p>
+
+        <h3 title="Blank Lines and Indentation">Líneas en blanco y sangría</h3>
+
+        <p>
+            No agregue líneas en blanco, espacios o sangrías sin un motivo.<br>
+            Para facilitar la lectura, agruegue líneas en blanco para separar bloques de código grandes o lógicos.<br>
+            Para facilitar la lectura, agregue dos espacios de sangría<b>*</b>. No utilice la tecla de tabulación<b>*</b>.
+        </p>
+
+        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+        <div class="contenidoChatGpt">
+            <p>
+                <strong>Agregue dos espacios de sangría:</strong> Esto significa que, en lugar de usar la tecla de tabulación (la que generalmente <br>
+                produce una sangría más grande), se deben usar dos espacios en blanco para indentar el código. <br>
+                Esto se hace para mantener una sangría más uniforme y consistente en todo el código. <br>
+                <strong>No utilice la tecla de tabulación:</strong> La razón detrás de esta recomendación es que las sangrías creadas <br>
+                con la tecla de tabulación pueden variar en anchura dependiendo de la configuración de la fuente o el editor, <br>
+                lo que puede causar inconsistencias en el formato del código cuando se comparte con otros desarrolladores o se visualiza <br>
+                en diferentes entornos. Usar dos espacios en blanco como sangría asegura una mayor consistencia. 
+            </p>
+        </div>
+
+        <article class="ejemplo">
+            Bien
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Ciudades Famosas<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo es la capital de Japon, el centro del área metropolitana de tokyo, y el área metropolitana más poblada del mundo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Londres<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Londres es la capital de Inglaterra. Es la ciudad mas poblada del Reino Unido.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>París es la capital de Francia. La zona de París es uno de los centros de población más grande de Europa.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Mal
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Ciudades Famosas<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo es la capital de Japon, el centro del área metropolitana de tokyo, y el área metropolitana más poblada del mundo.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Londres<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Londres es la capital de Inglaterra. Es la ciudad mas poblada del Reino Unido.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>París es la capital de Francia. La zona de París es uno de los centros de población más grande de Europa.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Buen ejemplo de table
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Nombre<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Descripción<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   &nbsp;
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>A<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Descripción de A<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   &nbsp;
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>B<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+               &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Descripción de B<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+            Buen ejemplo de lista
+
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                   &nbsp; 
+                   <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+            </div>
+
+        </article>
+
+        <h3>Nunca te saltes el elemento &lt;title&gt;</h3>
+        <p>
+            <em>Este elemento es obligatorio en HTML.</em> <br><br>
+            ¡El contenido del título de una página es muy importante para la optimizacíon de motores de búsqueda (SEO)! <br>
+            Los algoritmos de los motores de búsqueda utilizan el título de la página para decidir el orden al <br>
+            enumerar las páginas en los resultados de búsqueda. 
+        </p>
+        <br>
+        <caption><b><em>El elemento <code><span class="blue-text">&lt;title&gt;</span></code></em></b>:</caption>
+        <ul class="lista">
+            <li>Define un título en la barra de herramientas del navegador</li>
+            <li>Proporciona un título para la página cuando se agrega a favoritos</li>
+            <li>Muestra un título para la página en los resultados del motor de búsqueda</li>
+        </ul>
+        <br>
+        <p><i>Por lo tanto intenta que el título sea lo más preciso y significativo posible</i></p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML
+                Guia de estilo y convenciones de codificación <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3>¿Omitiendo &lt;html&gt; y &lt;body&gt;?</h3>
+        <p>Una página HTML se validará sin estas etiquetas!</p>
+
+        <article class="ejemplo">
+            Ejemplo
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Title de la página<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un encabezado<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Esto es un párrafo.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <p>
+            Sin embargo, recomendamos <strong><em>encaredidamente</em></strong> agregar siempre las etiquetas
+            <code><span class="blue-text">&lt;html&gt;</span></code> y <code><span class="blue-text">&lt;body&gt;</span></code>.<br>
+            Omitirlos puede producir errores en navegadores más antiguos. <br>
+            Omitirlos también puede bloquear el software DOM y XML.
+        </p>
+
+        <h3>¿Omitiendo &lt;head&gt;?</h3>
+
+        <p>
+            La etiqueta HTML <code><span class="blue-text">head</span></code> también se puede omitir.<br>
+            Los navegadores agregáran todos los elmentos anteriores al <code><span class="blue-text">body</span></code>,
+            a un elemento <code><span class="blue-text">head</span></code> por defecto.
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                        html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Title de al página<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Esto es un encabezado.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Esto es un párrafo.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <p><i>Sin embargo, recomendamos utilizar la etiqueta <code><span class="blue-text">&lt;head&gt;</span></code></i></p>
+
+        <h3>¿Cerrar elementos HTML vacíos?</h3>
+        <p>En HTML, es opcional cerrar elementos vacíos.</p>
+
+        <article class="ejemplo">
+            Permitido:
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+                        class="attributecolor" style="color:red">
+                        charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+            También permitido:
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+                        class="attributecolor" style="color:red"> charset<span class="attributevaluecolor"
+                            style="color:mediumblue">="utf-8"</span> /</span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            <p class="advertencia">
+                Si espera que el software XML/XHTML acceda a su página, mantenga la barra diagonal de cierre (/),<br>
+                porque es obligatorio en XML y XHTML.
+            </p>
+        </article>
+
+        <h3 title="Add the lang Attribute">Agregue el atributo de idioma (lang)</h3>
+        <p>
+            Siempre debes incluir el atributo <code><span class="red-text">lang</span></code> dentro de la etiqueta
+            <code><span class="blue-text">&lt;html&gt;</span></code>, para declarar el idioma de la página Web.<br>
+            Esto está destinado a ayudar a los motores de búsqueda y navegadores.
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor"
+                        style="color:red"> lang<span class="attributevaluecolor"
+                            style="color:mediumblue">="es"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Title de la página<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Esto es un
+                encabezado<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Esto es un párrafo.<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3>Meta Data</h3>
+        <p>
+            Para garantizar una interpretación adecuada y una indexación correcta en los motores de búsqueda, tanto<br>
+            el idioma como la codificación de caracteres deben definirse lo antes posible en un documento HTML: <br>
+            <code><span class="red-text">&lt;meta charset="charset"&gt;</span></code>
+        </p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor"
+                        style="color:red">
+                        lang<span class="attributevaluecolor" style="color:mediumblue">="en-us"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                        charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                &nbsp;
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3 title="Setting The Viewport">Configuración de la ventana gráfica (Viewport)</h3>
+        <p>
+            El Viewport es el área visible para el usuario de una página web. Varía según el dispositivo,<br>
+            sera más pequeño en un teléfono móvil que en la pantalla de una computadora.
+        </p>
+        <p><i>Debes incluir el siguiente elemento</i> <code><span class="blue-text">&lt;meta&gt;</span></code> <i>en todas tus páginas web:</i></p>
+
+        <div class="w3-code w3-border notranslate htmlHigh">
+            <div>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
+                            class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span
+                            class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                            initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+
+        <p>
+            Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página. <br><br>
+            La parte <code><span class="red-text">width=device-width</span></code> establece el ancho de la página para seguir 
+            el ancho de la pantalla<br> del dispositivo (que variará según el dispositivo).<br><br>
+            La parte <code><span class="red-text">initial-scale=1.0</span></code> establece el nivel de zoom inicial cuando
+            el navegador carga la página por primera vez.<br><br> A continuación se muestra un ejemplo de una página web  
+            <em>sin</em> el viewport y la misma página <em>con</em> viewport.
+        </p>
+
+        <div class="flexContainerimg">
+            <div>
+                <a target="_blank" href="sinviewport.htm"><img class="iframeindividual" src="imagenes/img_viewport1.png" alt="sinviewport"><br><br>Sin viewport</a>
+                <br>
+                <br>
+            </div>
+            <div>
+                <a target="_blank" href="conviewport.htm"><img class="iframeindividual" src="imagenes/img_viewport2.png" alt="conviewport"><br><br>Con viewport</a>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <h3 title="Comments">Comentarios</h3>
+        <p><em>Los comentarios breves deben escribirse en una línea así:</em></p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh" style="text-align: center;">
+                <span class="commentcolor" style="color:green">&lt;!-- Esto es un comentario --&gt;</span>
+            </div>
+            Los comentarios que abarquen más de una línea deben escribirse así:
+            <div class="w3-code notranslate htmlHigh">
+                <span class="commentcolor" style="color:green">&lt;!-- <br>&nbsp; Esto es un ejemplo de comentario largo. Esto es
+                    un ejemplo de comentario largo.<br>&nbsp; Esto es
+                    un ejemplo de comentario largo. Esto es un ejemplo de comentario largo.<br>--&gt;</span>
+            </div>
+            Los comentarios largos son más fáciles de observar si tienen una sangría de dos espacios.
+        </article>
+
+        <h3 title="Style Sheets">Usar hojas de estilo</h3>
+        <p>Utilice una sintaxis simple para vincular a hojas de estilo (El atributo <code class="red-text">type</code> no es necesario):</p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span
+                        class="attributecolor" style="color:red"> rel<span class="attributevaluecolor"
+                            style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor"
+                            style="color:mediumblue">="styles.css"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+            Las reglas CSS cortas se pueden escribir comprimidas, así:
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    p.intro <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                class="cssdelimitercolor" style="color:black">:</span>Verdana<span class="cssdelimitercolor"
+                                style="color:black">;</span></span>font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>16em<span
+                                class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                        style="color:black">}</span> </span>
+            </div>
+            Las reglas CSS largas deben escribirse en varias líneas:
+            <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+                    body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                        style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-family<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span> "Arial
+                            Black", Helvetica, sans-serif<span class="cssdelimitercolor"
+                                style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor"
+                            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 16em<span
+                                class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span
+                            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                style="color:black">:</span>
+                            black<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                        class="cssdelimitercolor" style="color:black">}</span> </span>
+            </div>
+        </article>
+
+        <ul class="lista">
+            <li>Coloque el corchete de apertura en la misma línea que el selector.</li>
+            <li>Utiliza un espacio antes del corchete de apertura.</li>
+            <li>Usa dos espacios de sangría.</li>
+            <li>Utiliza un punto y coma después de cada par propiedad-valor, incluido el último.</li>
+            <li>Solo utiliza comillas alrededor de los valores si el valor contiene espacios.</li>
+            <li>Coloca el corchete de cierre en una nueva línea, sin espacios iniciales.</li>
+        </ul>
+
+        <h3 title="Loading JavaScript in HTML">Cargando javaScript en HTML</h3>
+        <p>Utilice una sintaxis simple para cargar scripts externos (el atributo <code class="red-text">type</code> no es necesario)</p>
+
+        <article class="ejemplo">
+            <div class="w3-code notranslate htmlHigh">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span
+                            class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>
+            </div>
+        </article>
+
+        <h3 title="Accessing HTML Elements with JavaScript">Accediendo a elementos HTML con javaScript</h3>
+        <p>
+            El uso de código HTML "desordenado" puede provocar errores de javaScript.<br><br>
+            Estas dos declaraciones de javaScript producirán resultados diferentes:
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo
+            <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                        style="color:red">
+                    </span> getElementById(<span class="jsstringcolor" style="color:brown">"Demo"</span>).<span
+                        class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                        style="color:brown">"Hello"</span>;<br><br>getElementById(<span class="jsstringcolor"
+                        style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span>
+                    <span class="jsnumbercolor" style="color:red">
+                    </span> = <span class="jsstringcolor" style="color:brown">"Hello"</span>;<span class="jsnumbercolor"
+                        style="color:red">
+                    </span> </span>
+            </div>
+        </article>
+
+        <h3 title="Use Lower Case File Names">Utilice nombres de archivos en minúsculas</h3>
+        <p>
+            Algunos servidores web (Apache, Unix) distiguen entre mayúsculas y minúsculas en los nombres de archivos:<br>
+            "londres.jpg" no se puede acceder como "Londres.jpg".<br><br>
+            Otros servidores web (Microsoft, IIS) no distiguen entre mayúsculas y minúsculas:<br>
+            "londres.jpg" se puede acceder como "Londres.jpg".<br><br>
+            Si utiliza una combinación de mayúsculas y minúsculas debe tener esto en cuenta.<br>
+            Si pasa de un servidor que no distingue entre mayúsculas y minúsculas a otro que si lo hace,<br>
+            incluso los errores más pequeños dañarán su web!<br><br>
+            <em>Para evitar estos problemas, utilice siempre nombres de archivos en minúsculas</em>.
+        </p>
+
+        <h3 title="File Extensions">Extensiones de archivo</h3>
+        <ul class="lista">
+            <li>Los archivos HTML deben tener una extensión <strong>.html</strong> (se permite <strong>.htm</strong>)</li>
+            <li>Los archivos CSS deben tener una extensión <strong>.css</strong></li>
+            <li>Los archivos javaScript deben tener una extensión <strong>.js</strong></li>
+        </ul>
+
+        <h3 title="Differences Between .htm and .html?">¿Diferencias entre .htm y .html?</h3>
+        <p>
+            ¡No hay diferencia entre las extenciones de archivo .htm y .html!<br>
+            Ambos seran tratados como HTML por cualquier navegador y servidor web.
+        </p>
+
+        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+        <div class="contenidoChatGpt">
+            <p>
+                La principal diferencia entre .htm y .html radica simplemente en la longitud de la extensión del archivo.<br>
+                Históricamente, algunas versiones más antiguas de sistemas operativos o servidores tenían restricciones en<br>
+                la longitud de las extensiones de archivo, por lo que se utilizaba ".htm " en lugar de ".html" para ahorrar caracteres.<br>
+                Sin embargo, con el tiempo y la evolución de los sistemas, esta limitación se volvió menos relevante, y ".html" se<br>
+                convirtió en la extensión más comúnmente utilizada. <br><br>
+                Hoy en día, ambas extensiones, htm y .html, son ampliamente reconocidas y aceptadas por<br>
+                los navegadores web y los servidores web. Puedes usar cualquiera de las dos extensiones<br>
+                para tus archivos HTML sin preocuparte por problemas de compatibilidad. Sin embargo,<br>
+                ".html" se ha vuelto más común y se recomienda como una práctica estándar en la mayoria de los casos.<br><br>
+                En resumen, no hay una diferencia funcional real entre .htm y .html; ambos son tratados<br>
+                como archivos HTML y funcionarán de manera similar en los navegadores web y servidores web modernos. 
+            </p>
+        </div>
+
+        <h3 title="Default Filenames">Nombres de archivos predeterminados</h3>
+        <p>
+            Cuando una URL no especifica un nombre de archivo al final (como "https://www.w3schools.com/"), el servidor simplemente<br>
+            agrega un nombre de archivo predeterminado, como "index.html","index.htm","default.html" o "default.htm". <br><br>
+            Si su servidor está configurado sólo con "index.html" como nombre de archivo predeterminado,<br>
+            su archivo debe llamarse "index.html" y no "default.html".<br><br>
+            Sin embargo, los servidores se pueden configurar con más de un nombre de archivo predeterminado;<br>
+            normalmente puedes configurar tantos nombres de archivos predeterminados como quieras. 
+        </p>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

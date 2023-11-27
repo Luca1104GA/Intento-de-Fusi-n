@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button>
+    
+<div class="container">
+    <div class="Estilo_blanco4" id="ñ1">
+    
+        <h2 title="Responsive Web Design">Diseño web adaptable</h2>
+
+        <p>
+            El diseño web responsivo consiste en crear páginas web que se vean bien en todos los dispositivos. <br>
+            Un diseño web responsivo se ajustará automaticamente a diferentes tamaños de pantalla y ventanas gráficas.
+        </p>
+
+        <img src="imagenes/img_responsive_example.jpg" alt="Ejemplo responsivo">
+
+        <h3 title="What is Responsive Web Design?">¿Qué es el diseño web responsivo?</h3>
+
+        <p>
+            El diseño web responsivo consiste en utilizar HTML y CSS para cambiar el tamaño, ocultar, reducir o <br>
+            ampliar automáticamente un sitio web, para que se vea bien en todos los dispositivos. <br>
+            (Computadoras de escritorio, tablets y celulares)
+        </p>
+
+        <h3 title="Setting The Viewport" id="ñ2">Configuración de la ventana gráfica (Viewport)</h3>
+
+        <p>
+            Para crear un sitio web responsivo, agregue la etiqueta <span class="blue-text">&lt;meta&gt;</span> a todas sus páginas web:
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo
+
+            <p class="codigo">
+                <code>&lt;<span class="blue-text">meta</span> <span class="red-text">name</span><span class="celeste">="viewport"</span> <span class="red-text">content</span><span class="celeste">="width=device-width, initial-scale=1.0"</span>&gt;</code>
+            </p>
+
+        </article>
+
+        <p>
+            Esto configurará la ventana gráfica de su página, que le dará al navegador instruciones sobre cómo <br>
+            controlar las dimensiones y la escala de la página.
+        </p>
+
+        <p>
+            A continuación se muestra un ejemplo de una página web <b><em>sin</em></b> la metaetiqueta de ventana gráfica y la <br>
+            misma página <b><em>con</em></b> la metaetiqueta de ventana gráfica:
+        </p>
+
+        <div class="flexContainerimg">
+            <div>
+                <a target="_blank" href="sinviewport.htm"><img src="imagenes/img_viewport1.png" class="iframeindividual"><br><br><b>Sin viewport</b></a>
+                <br>
+                <br>
+            </div>
+            <div>
+                <a target="_blank" href="conviewport.htm"><img src="imagenes/img_viewport2.png" class="iframeindividual"><br><br><b>Con viewport</b></a>
+                <br>
+                <br>
+            </div>
+            
+        </div>
+
+        <h3 title="Responsive Images" id="ñ3">Imágenes responsivas</h3>
+
+        <p>
+            Las imágenes responsivas son imágenes que se escalan bien para adaptarse a cualquier tamaño de navegador.
+        </p>
+
+        <h4>Usando la propiedad de ancho</h4>
+
+        <p>
+            Si la proiedad <span class="red-text">width</span> se establece en 100%, la imagen responderá y se ampliara hacia arriba y abajo :
+        </p>
+
+        <article class="ejemplo">
+
+            Ejemplo
+
+            <p class="codigo">
+                <code>&lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="img_girl.jpg"</span> <span class="red-text">style</span><span class="celeste">="width:100%;"</span>&gt;</code>   
+            </p>    
+            
+            <img src="imagenes/img_girl.jpg" width="100%" alt="chica">
+
+        </article>
+
+        <p>
+            Observe que en el ejemplo anterior, la imagen se puede ampliar para que sea mayor que su tamaño original. <br>
+            Una mejor solución, en muchos casos será utilizar la proiedad <span class="red-text">max-width</span> en su lugar.
+        </p>
+
+        <h4>Usando la propiedad ancho máximo (max-width) </h4>
+
+        <p>
+            Si la propiedad <span class="red-text">max-width</span> se establece en 100%, la imagen se reducirá si es necesario, <br>
+            pero nunca se ampliará para que sea mayor que su tamaño original:
+        </p>
+
+        <article class="ejemplo">
+
+            Ejemplo   
+            
+            <p class="codigo">
+                <code>&lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="img_girl.jpg</span> <span class="red-text">style</span><span class="celeste">="max-width:100%;height:auto;"</span>&gt;</code>
+            </p>
+
+            <img src="imagenes/img_girl.jpg" style="max-width:100%;height:auto;">
+
+        </article>
+
+        <h4>Mostrar diferentes imágenes según el ancho del navegador</h4>
+
+        <p>
+            El elemento <code class="red-text">&lt;picture&gt;</code> le permite definir diferentes imágenes para diferentes tamaños del navegador.
+        </p>
+
+        <p>
+            Cambie el tamaño de la ventana del navegador para ver cómo la imagen a continuación cambia según el ancho:
+        </p>
+
+        <article class="ejemplo">
+
+            <picture>
+                <source srcset="imagenes\img_smallflower.jpg" media="(max-width: 600px)">
+                <source srcset="imagenes\img_flowers.jpg" media="(max-width: 1500px)"> 
+                <source srcset="imagenes\picture.jpg">
+                <img src="imagenes/img_smallflower.jpg" alt="Flowers">
+            </picture>
+
+            <p class="codigo">
+                <code>&lt;<span class="blue-text">picture</span>&gt;
+                        &lt;<span class="blue-text">source</span> <span class="red-text">srcset</span><span class="celeste">="img_smallflower.jpg"</span> <span class="red-text">media</span><span class="celeste">="(max-width: 600px)</span>&gt;
+                        &lt;<span class="blue-text">source</span> <span class="red-text">srcset</span><span class="celeste">="img_flowers.jpg"</span> <span class="red-text">media</span><span class="celeste">="(max-width: 1500px)</span>&gt;
+                        &lt;<span class="blue-text">source</span> <span class="red-text">srcset</span><span class="celeste">="flowers.jpg"</span>&gt;
+                        &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="img_smallflower.jpg</span> <span class="red-text">alt</span><span class="celeste">="Flowers"</span>&gt;
+                     &lt;/<span class="blue-text">picture</span>&gt;</code>
+            </p>
+
+        </article>
+
+        <h4 title="Responsive Text Size" id="ñ4">Tamaño de texto adaptable</h4>
+
+        <p>
+            El tamaño del texto se puede configurar con una unidad "vw", que significa "viewport width" (ancho de ventana gráfica) <br>
+            De esa forma, el tamaño del texto seguirá el tamaño de la ventana del navegador:
+        </p>
+
+        <article class="ejemplo">
+
+            <p class="codigo">
+                         <code>&lt;<span class="blue-text">h1</span> <span class="red-text">style</span><span class="celeste">="font-size:10vw"</span>&gt;Hola Mundo!&lt;/<span class="blue-text">h1</span>&gt;</code>
+            </p>
+
+            <h1 style="font-size: 8vw; text-align: center;">Hola Mundo!</h1>
+
+            <p style="font-size: 2vw;">
+                Cambie el tamaño de la ventana del navegador para ver cómo cambia el tamaño del texto. 
+            </p>
+
+            
+
+        </article>
+
+        <p>
+            <strong>Viewport</strong> se refiere al tamaño de la ventana del navegador. <b>1vw</b> representa el <b>1%</b> del ancho del viewport. <br>
+            Si el viewport tiene un ancho de <b>50 cm</b>, entonces <b>1vw</b> equivaldria a <b>0,5 cm</b>. En otras palabras, <br>
+            <b>vw</b> es una unidad de medida relativa que se adapta al tamaño de la ventana del navegador, <br>
+            lo que permite crear diseños web responsivos.
+             
+        </p>
+
+        <h3 id="ñ5">Media Queries</h3>
+
+        <p>
+            Además de cambiar el tamaño del texto y las imágenes, también es común utilizar <em>media queries</em> en páginas web responsivas. <br>
+            con media queries puedes definir estilos completamente diferentes para diferentes tamaños de navegador. <br> <br> 
+        </p>
+
+        <article class="ejemplo">
+
+            <p style="text-align: left;">
+                Ejemplo:
+            </p>
+                
+            <div class="menu11">
+                <p>Menú izquierdo</p>
+            </div>
+            <div class="mmenucentral">
+                <p>Contenido principal</p>
+            </div>
+            <div class="right">
+                <p>Contenido Derecho</p>
+            </div>
+
+            <p style="margin-top: 120px;">
+                Cambie el tamaños de la ventana del navegador para ver los tres elementos <strong>div</strong> debajo que se muestran <br>
+                horizontalmente en pantallas grandes y se estaquean verticalmente en pantallas mas pequeñas.
+            </p>
+
+            <p class="codigo">
+                <code>
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="blue-text">.left, .right</span> { 
+                        <span class="red-text">float</span><span class="celeste">: left;</span>
+                        <span class="red-text">width</span><span class="celeste">: 20%;</span> <span class="gristrasparente">/* El width es 20% por defecto */</span>
+                    }
+
+                    <span class="blue-text">.main</span> {
+                        <span class="red-text">float</span><span class="celeste">: left;</span>
+                        <span class="red-text">width</span><span class="celeste">: 60%;</span> <span class="gristrasparente">/* El width es 60% por defecto */</span>
+                    }  
+                
+                    <span class="gristrasparente">/* Use media query para agregar un punto de quiebre a los 800px: */</span>
+                    <span class="red-text">@media</span> <span class="celeste">screen and</span> <span class="verde">(max-width: 800px)</span> {
+                    <span class="blue-text">left, .main, .right</span> {
+                        <span class="red-text">width</span><span class="celeste">: 100%;</span> <span class="gristrasparente">/* El width es 100%, cuando el viewport es 800px o menos */</span>
+                        }
+                    } 
+                    &lt;/<span class="blue-text">style</span>&gt;
+                </code> 
+            </p>
+
+        </article>
+
+        <h3 title="Responsive Web Page - Full Example">Página web adaptable - Ejemplo completo</h3>
+
+        <p>
+            Una página web <b><em>Responsive</em></b> deberia verse bien en pantallas de escritorio grandes y <br>
+            en teléfonos móviles pequeños.
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo:
+
+            <div class="botonContenedor">
+
+                <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+                <h1>Hello World</h1>
+                </div>
+                
+                <div style="overflow:auto">
+                <div class="menuejcomp">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                    <a href="#">Link 4</a>
+                </div>
+                
+                <div class="mainejcomp">
+                    <h2>Lorum Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+                
+                <div class="rightejcomp">
+                    <h2>About</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                </div>
+                </div>
+
+            </div>
+
+            <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright LukitaRiver.com</div>
+
+        </article>
+
+        <h3 id="ñ6">Diseños web responsivos - Frameworks</h3> <!-- No logre hacer estos ejemplos responsivos -->
+
+        <p>
+            Tolos los frameworks populares ofrecen diseños responsivos. <br>
+            Ellos son gratis y facil de usar!
+        </p>
+
+        <h4>W3.CSS</h4> <!-- No es un iframe y lo consegui medio parcial al responsive -->
+
+        <p>
+            W3.CSS es un framework moderno con soporte de diseño para escritorio, tablet y celulares de forma predeterminada. <br>
+            Es más pequeño y más rapido que frameworks similares. <br>
+            Está diseñado para trabajar independiente de jQuery o cualquier otra libreria javaScript. 
+        </p>
+
+        <article class="ejemplo">
+
+            <div class="w3-container w3-green">
+                <h1>W3Schools Demo</h1> 
+                <p>Resize this responsive page!</p> 
+            </div>
+
+            <div class="w3-row-padding w3-light-grey">
+                <div class="w3-third">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>It is the most populous city in the United Kingdom,
+                with a metropolitan area of over 13 million inhabitants.</p>
+                </div>
+                <div class="w3-third">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p> 
+                <p>The Paris area is one of the largest population centers in Europe,
+                with more than 12 million inhabitants.</p>
+                </div>
+                <div class="w3-third">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <p>It is the center of the Greater Tokyo Area,
+                and the most populous metropolitan area in the world.</p>
+                </div>
+            </div>
+            
+            <p class="codigo">
+                <code>&lt;<span class="blue-text">link</span> <span class="red-text">rel</span><span class="celeste">="stylesheet"</span> <span class="red-text">href</span><span class="celeste">="https://www.w3schools.com/w3css/4/w3.css"</span>&gt;</code>
+            </p>
+
+        </article>
+
+        <h4>Bootstrap</h4> <!-- Este si es un iframe y es 0 responsivo -->
+
+        <p>
+            Otro framework popular es Bootstrap
+        </p>
+
+        <article class="ejemplo">
+
+            <div class="iframe-container">
+                <iframe src="Bootstrapdemo.html" frameborder="0"></iframe>
+            </div>
+
+            <p class="codigolargo">
+                <code>&lt;<span class="blue-text">link</span> <span class="red-text">href</span><span class="celeste">= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"</span> <span class="red-text">rel</span><span class="celeste">="stylesheet"</span>&gt;</code>
+                <code>&lt;<span class="blue-text">script</span> <span class="red-text">src</span><span class="celeste">="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"</span>&gt;&lt;/<span class="blue-text">script</span>&gt;</code>
+            </p>
+        </article>
+    
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

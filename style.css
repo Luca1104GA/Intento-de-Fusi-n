@@ -312,6 +312,14 @@ main.min-main{
 }
 
 
+/* -------------------------------> Estilo de tabla cebra letra oscura */
+.cebranegra tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+
+
 
 /* ------------------> Responsive */
 @media (max-height: 660px){
