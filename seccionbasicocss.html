@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button> 
+    
+    <div class="seccionestilo" id="c6">
+                
+        <h2>Estilos CSS</h2>
+        <h3>¿Qué es CSS?</h3>
+    
+        <p>
+            <mark>CSS</mark> significa hojas de estilo en cascada. <br>
+            <mark>CSS</mark> ahorra mucho trabajo. Puede controlar el diseño de varias páginas web a la vez. <br>
+            Con <mark>CSS</mark>, puede controlar el color, la fuente, el tamaño del texto, <br> el espaciado entre elementos, 
+            cómo se colocan y distribuyen los elementos, <br> qué imágenes de fondo o colores de fondo se utilizarán etc.
+        </p>
+            
+        <p class="advertencia">
+            <b>Sugerencia:</b> La palabra <b><strong><em>en cascada</em></strong></b> significa que un estilo aplicado a un elemento principal también se aplicará a <br>
+            todos los elementos secundarios dentro del elemento principal.Por lo tanto, si establece el color del cuerpo del <br>
+            texto en "azul", todos los encabezados, párrafos y otros elementos de texto dentro del cuerpo también obtendrán <br>
+            el mismo color (a menos que especifique algo más).
+        </p>
+        
+        <h3>Usando CSS</h3>
+    
+        <p>
+            <mark>CSS</mark> se puede agregar a documentos HTML de 3 maneras: <br><br>
+            <b>En línea</b>: mediante el uso del atributo <span class="blue-text">&ltstyle&gt</span> dentro de los elementos HTML. <br>
+            <b>Interno</b>: mediante el uso de un elemento <span class="blue-text">&ltstyle&gt</span> en la sección <span class="blue-text">&lthead&gt</span> <br>
+            <b>Externo</b>: mediante el uso de un elemento <span class="blue-text">&ltlink&gt</span> para vincular a un archivo <mark>CSS</mark> externo
+        </p>
+    
+        <h3 class="Tipos"><q>CSS en linea</q></h3>
+    
+        <p>
+            Se utiliza un CSS en línea para aplicar un estilo único a un único elemento HTML. <br>
+            Un CSS en línea usa el atributo <span class="blue-text">&ltstyle&gt</span> de un elemento HTML.
+        </p>
+    
+        <h3 class="Tipos"><q>CSS interno</q></h3>
+    
+        <p>
+            Se utiliza un CSS interno para definir un estilo para una sola página HTML. <br>
+            Un CSS interno se define en la sección <span class="blue-text">&lthead&gt</span> de una página HTML, dentro de un elemento <span class="blue-text">&ltstyle&gt</span>.
+        </p>
+    
+        <h3 class="Tipos"><q>CSS externo</q></h3>
+    
+        <p>
+            Se utiliza una hoja de estilo externa para definir el estilo de muchas páginas HTML. <br>
+            Para usar una hoja de estilo externa, agregue un link en la sección <span class="blue-text">&lthead&gt</span> de cada página HTML
+        </p>
+    
+        <p class="advertencia">
+            La hoja de estilo externa se puede escribir en cualquier editor de texto. <br> El archivo no debe contener ningún código
+            HTML <br> y debe guardarse con una extensión .css
+        </p>
+    
+        <h3 class="river">CSS Borde</h3>
+    
+        <p>
+            La propiedad CSS <span class="blue-text">border</span> define un borde alrededor de un elemento HTML <br>
+                puede definir un borde para casi todos los elementos
+        </p>
+            
+        <h3 class="river">CSS Padding</h3>
+    
+        <p>
+            La propiedad CSS <span class="blue-text">padding</span> define un relleno (espacio) entre el texto y el borde.
+        </p>
+    
+        <h3 class="river">CSS Margin</h3>
+    
+        <p>
+            La propiedad CSS <span class="blue-text">margin</span> define un margen (espacio) fuera del borde.
+        </p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

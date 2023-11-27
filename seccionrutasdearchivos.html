@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <button id="botonIrAbajo">Ir al Final</button>
+    <button id="botonVolverArriba">Volver al inicio</button>
+
+<div class="container">
+    <div class="Estilo_negro3" id="k1">
+    
+        <h2 title="File Paths">Rutas de archivos</h2>
+
+        <p>
+            Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.
+        </p>
+
+        <article class="ejemplo">
+
+            <table class="table10">
+                <caption><strong>Ejemplos de ruta de archivo</strong></caption>
+                <tr>
+                    <th>Ruta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>&lt;img src="picture.jpg"&gt;</td>
+                    <td>El archivo "picture.jpg" se encuentra en la misma carpeta que la página actual.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="images/picture.jpg&gt;</td>
+                    <td>El archivo "picture.jpg" se encuentra en la carpeta de imágenes de la carpeta actual.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="/images/picture.jpg&gt;</td>
+                    <td>El archivo "picture.jpg" se encuentra en la carpeta de imagenes en la raiz de la web actual.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img src="../picture.jpg"&gt;</td>
+                    <td>El archivo "picture.jpg" esta ubicado en la carpeta superior de la carpeta actual</td>
+                </tr>
+            </table>
+
+        </article>
+        
+        <p>
+            <strong>Las rutas de archivos se utilizan al vincular archivos externos tales como</strong> :
+        </p>
+
+        <ul class="lista">
+            <li class="litable">Páginas web</li>
+            <li class="litable">Imágenes</li>
+            <li class="litable">Hojas de estilo</li>
+            <li class="litable">javaScripts</li>
+        </ul>
+        
+        <h3 title="Absolute File Paths">Rutas absolutas</h3>
+
+        <p>
+            Una ruta de archivo absoluta es la URL completa de un archivo.
+        </p>
+        
+        <article class="ejemplo">
+            Ejemplo:
+
+            <div class="botonContenedor">
+                <img src="https://www.w3schools.com/images/picture.jpg" alt="Montaña">
+            </div>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="https://www.w3schools.com/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+            </p>
+
+        </article>
+
+        <h3 title="Relative File Paths">Rutas relativas</h3>
+
+        <p>
+            Una ruta de archivo relativa apunta a un archivo relativo a la página actual. <br><br>
+        </p>
+
+        <article class="ejemplo">
+            Ejemplo:
+
+            <p>
+                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                en la raiz de la web actual:</strong>
+            </p>
+
+            <div class="botonContenedor">
+                <img src="imagenes/picture.jpg" alt="Montaña">
+            </div>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+            </p>
+
+            <p>
+                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                en la carpeta actual:</strong>
+            </p>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+            </p>
+
+            <p>
+                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpera de imágenes ubicada <br>
+                en la carpeta un nivel superior de la carpeta actual:</strong>
+            </p>
+
+            <p class="codigo">
+                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="../images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+            </p>
+
+        </article>
+
+        <h3 title="Best Practice">Mejores prácticas</h3>
+
+        <p>
+            Es una buena práctica utilizar rutas de archivo relativas (si es posible). <br>
+            Al utilizar rutas de archivos relativas, sus páginas web no estarán vinculadas a su URL base actual. <br>
+            Todos los enlaces funcionarán en su propia computadora (localhost), así como en su dominio público actual y <br>
+            sus dominios públicos futuros.
+        </p>
+
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
