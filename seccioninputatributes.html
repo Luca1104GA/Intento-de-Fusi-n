@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs Atributes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="book-outline"></ion-icon>
+                <span>inputs!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputtypes.html" target="_blank">
+                        <ion-icon name="rocket-outline"></ion-icon>
+                        <span>Types!</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- ---------------------------------------------------  Inicio  -------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-stackoverflow"></ion-icon>
+                        <span>Atributes!</span>
+                </li>
+                <li>
+                    <a href="#ac2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Value</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>readonly</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>disabled</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>size</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>maxlength</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>min & max</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>multiple</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac9">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>pattern</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac10">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>placeholder</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac11">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>required</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac12">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>step</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac13">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>autofocus</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac14">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>height width</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac15">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>datalist</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ac16">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>autocomplete</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="ac1">
+    
+            <h1>HTML Input Attributes</h1>
+            <p><i>Este capítulo describe los diferentes atributos del elemento HTML <code class="blue-text">&lt;input&gt;</code> </i></p>
+
+            <h2 id="ac2"><code>value</code></h2>
+            <p>
+                El atributo <code class="red-text">value</code> especifíca un valor inicial para un campo de entrada.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Campos de entrada (inputs) con valores iniciales (predeterminados):</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span>
+                            id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac3"><code>readonly</code></h2>
+            <p>
+                <code class="red-text">readonly</code> especifica que un campo de entrada es de solo lesctura. <br><br>
+                Un campo de entrada de solo lectura no se puede modificar (sin embargo, un usuario puede acceder a él,<br>
+                resaltarlo y copiar el texto). <br><br>
+                ¡El valor de un campo de entrada de solo lectura se enviará al enviar el formulario!
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada de solo lectura:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John" readonly><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span>
+                            id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="John"</span> readonly</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac4"><code>disabled</code></h2>
+            <p>
+                <code class="red-text">disabled</code> especifica que un campo de entrada debe estar deshabilitado. <br><br>
+                Un campo de entrada deshabilitado no se puede utilizar y no se puede hacer click en él. <br><br>
+                ¡El valor de un campo de entrada deshabilitado no se enviará al enviar el formulario!
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada deshabilitado:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John" disabled><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span>
+                            id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="John"</span> disabled</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac5"><code>size</code></h2>
+            <p>
+                <code class="red-text">size</code> especifica el ancho visible, en caracteres, de un campo de entrada. <br><br>
+                El valor de <code class="red-text">size</code> predeterminado es 20. <br><br>
+                <b>Nota:</b> El atributo <code class="red-text">size</code> funciona con los siguientes tipos de entrada: <br>
+                <i>text, search, tel, url, email y password.</i>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Establezca un ancho para un campo de entrada:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label for="pin">PIN:</label><br>
+                        <input type="text" id="pin" name="pin" size="4">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> size<span
+                                class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="pin"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>PIN:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="pin"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="pin"</span>
+                            size<span class="attributevaluecolor" style="color:mediumblue">="4"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac6"><code>maxlength</code></h2>
+            <p>
+                <code class="red-text">maxlength</code> especifica el número máximo de caracteres permitidos en un campo de entrada. <br><br>
+                <b>Nota:</b> Cuando se establece a <code class="red-text">maxlength</code>, el campo de entrada no aceptará más que el
+                número de caracteres especificado.<br> Sin embargo, este atributo no proporciona ninguna información. <br>
+                Entonces, si desea alertar al usuario, debe escribir código JavaScript.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Establezca una longitud máxima para un campo de entrada:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" size="50"><br>
+                        <label for="pin">PIN</label><br>
+                        <input type="text" id="pin" name="pin" maxlength="4" size="4">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> size<span
+                                class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="pin"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>PIN:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="pin"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="pin"</span>
+                            maxlength<span class="attributevaluecolor" style="color:mediumblue">="4"</span> size<span
+                                class="attributevaluecolor" style="color:mediumblue">="4"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac7"><code>min</code> & <code>max</code></h2>
+            <p>
+                <code class="red-text">min max</code> Especifican los valores mínimo y máximo para un campo de entrada. <br><br>
+                Estos atributos funcionan con los siguientes tipos de entrada: <br>
+                <i>number, range, date, datetime-local, month, time y week.</i> <br><br>
+                <b>Consejo:</b> utilice los atributos máximo y mínimo juntos para crear un rango de valores legales.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Establezca una fecha máxima, una fecha mínima y un rango de valores legales:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="datemax">Enter a date before 1980-01-01:</label><br>
+                        <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+
+                        <label for="datemin">Enter a date after 2000-01-01:</label><br>
+                        <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+
+                        <label for="quantity">Quantity (between 1 and 5):</label><br>
+                        <input type="number" id="quantity" name="quantity" min="1" max="5">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="datemax"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter a date before
+                    1980-01-01:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="datemax"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="datemax"</span>
+                            max<span class="attributevaluecolor" style="color:mediumblue">="1979-12-31"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="datemin"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter a date
+                    after 2000-01-01:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="datemin"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="datemin"</span>
+                            min<span class="attributevaluecolor" style="color:mediumblue">="2000-01-02"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="quantity"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Quantity
+                    (between 1 and 5):<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="quantity"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> min<span
+                                class="attributevaluecolor" style="color:mediumblue">="1"</span> max<span class="attributevaluecolor"
+                                style="color:mediumblue">="5"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac8"><code>multiple</code></h2>
+            <p>
+                <code class="red-text">multiple</code> especifica que el usuario puede ingresar más de un valor en un campo de entrada. <br><br>
+                Este atributo funciona con los siguientes tipos de entrada: <br>
+                <i>email y file.</i>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de carga de archivos (file) que acepta múltiples valores:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="files">Select files:</label><br>
+                        <input type="file" id="files" name="files" multiple>
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="files"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Select files:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="files"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="files"</span> multiple</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac9"><code>pattern</code></h2>
+            <p>
+                <code class="red-text">pattern</code> especifica una expresión regular con la que se compara el valor del campo 
+                de entrada cuando se envía el formulario. <br><br>
+                Este atributo funciona con los siguientes tipos de entrada: <br>
+                <i>text, date, search, url, tel, email, y password.</i> <br><br>
+                <b>Consejo:</b> Utilice el atributo global <code>title</code> para describir el patrón y ayudar al usuario. <br>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada que puede contener sólo tres letras (sin números ni caracteres especiales)</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="country_code">Country code:</label><br>
+                        <input type="text" id="contry_code" name="country_code" pattern="[A-Za-z]-{3}" title="Three letter country code">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="country_code"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Country code:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="text"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="country_code"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="country_code"</span><br>&nbsp;
+                            pattern<span class="attributevaluecolor" style="color:mediumblue">="[A-Za-z]{3}"</span> title<span
+                                class="attributevaluecolor" style="color:mediumblue">="Three letter country code"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac10"><code>placeholder</code></h2>
+            <p>
+                <code class="red-text">placeholder</code> especifica una breve sugerencia que describe el valor esperado de un <br>
+                campo de entrada (un valor de muestra o una breve descripción del formato esperado). <br><br>
+                La breve sugerencia se muestra en el campo de entrada antes de que el usuario ingrese el valor. <br><br>
+                Este atributo funciona con los siguientes tipos de entrada: <br>
+                <i>text, search, url, tel, email, y password.</i>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada con un atributo <code class="red-text">placeholder</code>:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="phone">Enter a phone number:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="phone"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Enter a phone number:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="tel"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="phone"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="phone"</span><br>&nbsp;
+                            placeholder<span class="attributevaluecolor" style="color:mediumblue">="123-45-678"</span><br>&nbsp;
+                            pattern<span class="attributevaluecolor"
+                                style="color:mediumblue">="[0-9]{3}-[0-9]{2}-[0-9]{3}"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac11"><code>required</code></h2>
+            <p>
+                <code class="red-text">required</code> Especifica que se debe completar un campo de entrada antes de enviar el formulario. <br><br>
+                Este atributo funciona con los siguientes tipos de entrada: <br>
+                <i>text, search, url, tel, email, password, date pickers, number, checkbox, radio, y file.</i>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada obligatorio:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required>
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="username"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Username:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="username"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="username"</span> required</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac12"><code>step</code></h2>
+            <p>
+                <code class="red-text">step</code> Especifica los intervalos numéricos para un campo de entrada. <br><br>
+                Ejemplo: si <code>step="3"</code>, los números legales podrían ser -3, 9, 3, 6, etc. <br><br>
+                <b>Consejo:</b> Este atributo se puede utilizar junto con los atributos <code>max</code> y <code>min</code> para 
+                crear un rango de valores legales. <br><br>
+                Este atributo funciona con los siguientes tipos de entrada: <br>
+                <i>number, range, date, datetime-local, month, time y week.</i>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada con intervalos de números legales especificados:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="points">Points:</label><br>
+                        <input type="number" id="points" name="points" step="3">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="points"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Points:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="points"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="points"</span> step<span
+                                class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Nota:</b> las restricciones de entrada no son infalibles y JavaScript proporciona muchas formas de agregar <br>
+                    entradas ilegales. Para restringir de forma segura la entrada, ¡el receptor (el servidor) también debe verificarla!
+                </p>
+            </article>
+
+            <h2 id="ac13"><code>autofocus</code></h2>
+            <p>
+                <code class="red-text">autofocus</code> Especifica que un campo de entrada debe recibir atención automáticamente 
+                cuando se carga la página.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Deje que el campo de entrada se enfoque automáticamente cuando se cargue la página:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br> <!-- autofocus cancelado para no joder la pagina -->
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> autofocus</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac14"><code>height width</code></h2>
+            <p>
+                <code class="red-text">height widht</code> Especifican la altura y ancho de un elemento 
+                <code class="blue-text">&lt;input type="image"&gt;</code>
+            </p>
+
+            <p class="advertencia">
+                <b>Consejo:</b> Especifique siempre los atributos de alto y ancho de las imágenes. Si se configuran el alto y el<br>
+                ancho, el espacio requerido para la imagen se reserva cuando se carga la página. Sin estos atributos, el <br>
+                navegador no conoce el tamaño de la imagen y no puede reservarle el espacio adecuado. El efecto será <br>
+                que el diseño de la página cambiará durante la carga (mientras se cargan las imágenes).
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Defina una imagen como botón de envio, con atributos de alto y ancho:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lmane">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="image" src="imagenes/img_submit.gif" alt="Submit" width="48" height="48">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor"
+                            style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="image"</span> src<span class="attributevaluecolor"
+                                style="color:mediumblue">="img_submit.gif"</span> alt<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="48"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="48"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac15"><code>datalist</code></h2>
+            <p>
+                El atributo <code class="red-text">list</code> de un input, hace referencia a un elemento <code class="red-text">datalist</code>
+                que contiene <br> opciones predefinidas para un elemento <code class="blue-text">&lt;input&gt;</code>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un elemento <code class="blue-text">&lt;input&gt;</code> con valores predefinidos en una <code class="blue-text">&lt;datalist&gt;</code></p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form>
+                        <input list="browsers">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> list<span class="attributevaluecolor"
+                                style="color:mediumblue">="browsers"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Edge"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ac16"><code>autocomplete</code></h2>
+            <p>
+                <code class="red-text">autocomplete</code> Especifica si un formulario o un campo de entrada debe tener <br>
+                activado o desactivado el autocompletado. <br><br>
+                Autocompletar permute al navegador predecir el valor. Cuando un usuario comienza a escribir en un <br>
+                campo, el navegador debería mostrar opciones para completar el campo, según los valores escritos anteriormente. <br><br>
+                Este atributo funciona con los siguientes tipos de <code class="blue-text">&lt;form&gt;</code> e <code class="blue-text">input</code>: <br>
+                <i>text, search, url, tel, email, password, datepickers, range, y color.</i>
+            </p>
+
+            <article class="ejemplo">
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" autocomplete="on">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor"
+                                style="color:mediumblue">="on"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Email:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> name<span class="attributevaluecolor"
+                                style="color:mediumblue">="email"</span> autocomplete<span class="attributevaluecolor"
+                                style="color:mediumblue">="off"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Consejo:</b> En algunos navegadores es posible que necesites activar una función de autocompletado para <br>
+                    que esto funciones (busca en "Preferencias" en el menú del navegador).
+                </p>
+            </article>
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

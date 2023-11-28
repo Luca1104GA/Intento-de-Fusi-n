@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Ingrese Title</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -11,238 +11,325 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_blanco3" id="z1">
-    
-        <h1 title="Form Attributes">Atributos de <code>form</code></h1>
-        <p><em>Este capítulo describe los diferente atributos del elemento <code class="blue-text">&lt;form&gt;</code></em></p>
-
-        <h2>El atributo <code>action</code></h2>
-        <p>
-            El tributo <code class="red-text">action</code> define la acción que se realizará cuando se envíe el formulario.<br><br>
-            Por lo general, los datos del formulario se envian a un archivo en el<br> servidor cuando el usuario hace click
-            en el botón enviar.<br><br> En el siguiente ejemplo, los datos del formulario se envían a un archivo llamado 
-            "action_page.php".<br> Este archivo contiene un script del lado del servidor que maneja los datos del formulario.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p>Al presionar, se envian los datos del formulario a "action_page.php" </p>
-
-            <form action="/action_page.php" target="_blank">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
-            </form>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
-                 name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
-                 value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
-                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="book-outline"></ion-icon>
+                <span>Inserte Titulo!</span>
             </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
-            <p class="advertencia"><b>Consejo:</b> se se omite el atributo <code>action</code>, la acción se establece en la 
-            página actual.</p>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-        </article>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                        <span>Inserte Titulo!</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
 
-        <h2>El atributo <code>target</code></h2>
-        <p>
-            El atributo <code class="red-text">target</code> especifica dónde mostrar la respuesta que se recibe después de enviar
-            el formulario.<br><br> El atributo <code class="red-text">target</code> puede tener uno de los siguientes valores:
-        </p>
+        <div>
+            <div class="linea"></div>
 
-        <table class="tablecebra4blanco">
-            <tr>
-                <th>Valor</th>
-                <th>Descripcion</th>
-            </tr>
-            <tr>
-                <td>_blank</td>
-                <td>La respuesta se muestra en una nueva ventana o pestaña</td>
-            </tr>
-            <tr>
-                <td>_self</td>
-                <td>La respuesta se muestra en la ventana actual</td>
-            </tr>
-            <tr>
-                <td>_parent</td>
-                <td>La respuesta se muestra en el marco principal (frame) padre</td>
-            </tr>
-            <tr>
-                <td>_top</td>
-                <td>La respuesta se muestra en todo el cuerpo de la ventana</td>
-            </tr>
-            <tr>
-                <td>framename</td>
-                <td>La respuesta se muestra en un iframe nombrado</td>
-            </tr>
-        </table>
-
-        <p class="advertencia">El valor predeterminado es <code class="red-text">_self</code> lo que significa que la respuesta
-        se abrirá en la ventana actual.</p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p>Aquí el resultado enviado se abrirá en una nueva pestaña del navegador:</p>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
-                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
-                            style="color:mediumblue">="/action_page.php"</span> target<span class="attributevaluecolor"
-                            style="color:mediumblue">="_blank"</span></span><span class="tagcolor"
-                        style="color:mediumblue">&gt;</span></span>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
             </div>
-        </article>            
-
-        <h2>El atributo <code>method</code></h2>
-        <p>
-            El atributo <code class="red-text">method</code> especifica el método HTTP que se utilizará al enviar los datos del formulario.<br>
-            <br>Los datos del formulario se pueden enviar como variables de URL (con <code class="red-text">method="get"</code>) o <br>
-            como transacción posterior HTTP (con <code class="red-text">method="post"</code>). <br><br>
-            El método HTTP predeterminado al enviar datos de formulario es GET.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p>Este ejemplo utiliza el método GET al enviar los datos del formulario:</p>
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
-                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
-                            style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
-                            style="color:mediumblue">="get"</span></span><span class="tagcolor"
-                        style="color:mediumblue">&gt;</span></span>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
             </div>
+        </div>
 
-            Ejemplo
-            <p>Este ejemplo utiliza el método POST al enviar los datos del formulario:</p>
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
-                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
-                            style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
-                            style="color:mediumblue">="post"</span></span><span class="tagcolor"
-                        style="color:mediumblue">&gt;</span></span>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </div>
-        </article>
-
-        <caption><b><em>Notas sobre GET:</em></b></caption>
-        <ul class="lista2">              
-            <li>Agrega los datos del formulario a la URL, en pares de nombre/valor</li>
-            <li>¡NUNCA utilice GET para enviar datos confidenciales! (¡Los datos del formulario enviado son visibles en la URL!)</li>
-            <li>La longitud de una URL es limitada (2048 caracteres)</li>
-            <li>Útil para envíos de formularios donde un usuario desea marcar el resultado como favorito</li>
-            <li>GET es buerno para datos no seguros, como cadenas de consulta en Google</li>
-        </ul>
-
-        <caption><b><em>Notas sobre POST</em></b></caption>
-        <ul class="lista2">
-            <li>Agrega los datos del formulario dentro del cuerpo de la solicitud HTTP (los datos del formulario enviado no se muestran en la URL)</li>
-            <li>POST no tiene limitaciones de tamaño y puede usarse para enviar grandes cantidades de datos</li>
-            <li>Los envíos de formularios con POST no se pueden marcar como favoritos</li>
-        </ul>
-
-        <p class="advertencia"><b>consejo:</b> ¡Utilice siempre POST si los datos del formulario contienen información personal o confidencial!<p>
-
-        <h2>El atributo <code>autocomplete</code></h2>
-        <p>
-            El atributo <code class="red-text">autocomplete</code> especifica si un formulario debe tener activado o desactivado el autocompletado.<br><br>
-            Cuando la función de autocompletar está activada, el navegador completa automáticamente los valores<br>
-            en función de los valores que el usuario ha ingresado anteriormente.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p>Un formulario con autocompletar:</p>
-
-            <form action="/action_page.php" autocomplete="on" target="_blank" style="text-align: center;">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email"><br><br>
-            </form>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
-                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
-                            style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor"
-                            style="color:mediumblue">="on"</span></span><span class="tagcolor"
-                        style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h2>El atributo <code>novalidate</code></h2>
-        <p>
-            El atributo <code class="red-text">novalidate</code> es un atributo booleano. <br><br>
-            Cuando esta presente, especifica que los datos del formulario (input) no deben validarse cuando se envían.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p>Un formulario con un atributo novalidate:</p>
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
-                        class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
-                            style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor"
-                        style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h3>Lista de todos los atributos <code class="blue-text">&lt;form&gt;</code></h3>
-
-        <table class="tablecebra4blanco">
-            <tr>
-                <th>Atributo</th>
-                <th>Descripción</th>
-            </tr>
-            <tr>
-                <td>accept-charset</td>
-                <td>Especifica las codificaciones de caracteres utilizadas para el envio de formularios.</td>
-            </tr>
-
-            <tr>
-                <td>action</td>
-                <td>Especifica dónde enviar los datos del formulario cuando se envía un formulario.</td>
-            </tr>
-            <tr>
-                <td>autocomplete</td>
-                <td>Especifica si un formulario debe tener activado o desactivado el autocompletado.</td>
-            </tr>
-            <tr>
-                <td>enctype</td>
-                <td>Especifica cómo se deben codificar los datos del formulario al enviarlos al servidor (solo para <i>method="post"</i>)</td>
-            </tr>
-            <tr>
-                <td>method</td>
-                <td>Especifica el método HTTP que se utilizara al enviar datos del formulario.</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Especifica el nombre del formulario.</td>
-            </tr>
-            <tr>
-                <td>novalidate</td>
-                <td>Especifica que el formulario no debe validarse cuando se envía.</td>
-            </tr>
-            <tr>
-                <td>rel</td>
-                <td>Especifica la relación entre un recurso vinculado y el documento actual.</td>
-            </tr>
-            <tr>
-                <td>target</td>
-                <td>Especifica dónde mostrar la respuesta que se recibe después de enviar el formulario.</td>
-            </tr>
-        </table>
-
+        </div>
+        </div>
 
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="z1">
+    
+            <h1 title="Form Attributes">Atributos de <code>form</code></h1>
+            <p><em>Este capítulo describe los diferente atributos del elemento <code class="blue-text">&lt;form&gt;</code></em></p>
+    
+            <h2>El atributo <code>action</code></h2>
+            <p>
+                El tributo <code class="red-text">action</code> define la acción que se realizará cuando se envíe el formulario.<br><br>
+                Por lo general, los datos del formulario se envian a un archivo en el<br> servidor cuando el usuario hace click
+                en el botón enviar.<br><br> En el siguiente ejemplo, los datos del formulario se envían a un archivo llamado 
+                "action_page.php".<br> Este archivo contiene un script del lado del servidor que maneja los datos del formulario.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+                <p>Al presionar, se envian los datos del formulario a "action_page.php" </p>
+    
+                <form action="/action_page.php" target="_blank">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+                     name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+                     value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+    
+                <p class="advertencia"><b>Consejo:</b> se se omite el atributo <code>action</code>, la acción se establece en la 
+                página actual.</p>
+    
+            </article>
+    
+            <h2>El atributo <code>target</code></h2>
+            <p>
+                El atributo <code class="red-text">target</code> especifica dónde mostrar la respuesta que se recibe después de enviar
+                el formulario.<br><br> El atributo <code class="red-text">target</code> puede tener uno de los siguientes valores:
+            </p>
+    
+            <table class="tablecebra4blanco">
+                <tr>
+                    <th>Valor</th>
+                    <th>Descripcion</th>
+                </tr>
+                <tr>
+                    <td>_blank</td>
+                    <td>La respuesta se muestra en una nueva ventana o pestaña</td>
+                </tr>
+                <tr>
+                    <td>_self</td>
+                    <td>La respuesta se muestra en la ventana actual</td>
+                </tr>
+                <tr>
+                    <td>_parent</td>
+                    <td>La respuesta se muestra en el marco principal (frame) padre</td>
+                </tr>
+                <tr>
+                    <td>_top</td>
+                    <td>La respuesta se muestra en todo el cuerpo de la ventana</td>
+                </tr>
+                <tr>
+                    <td>framename</td>
+                    <td>La respuesta se muestra en un iframe nombrado</td>
+                </tr>
+            </table>
+    
+            <p class="advertencia">El valor predeterminado es <code class="red-text">_self</code> lo que significa que la respuesta
+            se abrirá en la ventana actual.</p>
+    
+            <article class="ejemplo">
+                Ejemplo
+                <p>Aquí el resultado enviado se abrirá en una nueva pestaña del navegador:</p>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> target<span class="attributevaluecolor"
+                                style="color:mediumblue">="_blank"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>            
+    
+            <h2>El atributo <code>method</code></h2>
+            <p>
+                El atributo <code class="red-text">method</code> especifica el método HTTP que se utilizará al enviar los datos del formulario.<br>
+                <br>Los datos del formulario se pueden enviar como variables de URL (con <code class="red-text">method="get"</code>) o <br>
+                como transacción posterior HTTP (con <code class="red-text">method="post"</code>). <br><br>
+                El método HTTP predeterminado al enviar datos de formulario es GET.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+                <p>Este ejemplo utiliza el método GET al enviar los datos del formulario:</p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="get"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+    
+                Ejemplo
+                <p>Este ejemplo utiliza el método POST al enviar los datos del formulario:</p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="post"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+    
+            <caption><b><em>Notas sobre GET:</em></b></caption>
+            <ul class="lista2">              
+                <li>Agrega los datos del formulario a la URL, en pares de nombre/valor</li>
+                <li>¡NUNCA utilice GET para enviar datos confidenciales! (¡Los datos del formulario enviado son visibles en la URL!)</li>
+                <li>La longitud de una URL es limitada (2048 caracteres)</li>
+                <li>Útil para envíos de formularios donde un usuario desea marcar el resultado como favorito</li>
+                <li>GET es buerno para datos no seguros, como cadenas de consulta en Google</li>
+            </ul>
+    
+            <caption><b><em>Notas sobre POST</em></b></caption>
+            <ul class="lista2">
+                <li>Agrega los datos del formulario dentro del cuerpo de la solicitud HTTP (los datos del formulario enviado no se muestran en la URL)</li>
+                <li>POST no tiene limitaciones de tamaño y puede usarse para enviar grandes cantidades de datos</li>
+                <li>Los envíos de formularios con POST no se pueden marcar como favoritos</li>
+            </ul>
+    
+            <p class="advertencia"><b>consejo:</b> ¡Utilice siempre POST si los datos del formulario contienen información personal o confidencial!<p>
+    
+            <h2>El atributo <code>autocomplete</code></h2>
+            <p>
+                El atributo <code class="red-text">autocomplete</code> especifica si un formulario debe tener activado o desactivado el autocompletado.<br><br>
+                Cuando la función de autocompletar está activada, el navegador completa automáticamente los valores<br>
+                en función de los valores que el usuario ha ingresado anteriormente.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con autocompletar:</p>
+    
+                <form action="/action_page.php" autocomplete="on" target="_blank" style="text-align: center;">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                </form>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor"
+                                style="color:mediumblue">="on"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+    
+            <h2>El atributo <code>novalidate</code></h2>
+            <p>
+                El atributo <code class="red-text">novalidate</code> es un atributo booleano. <br><br>
+                Cuando esta presente, especifica que los datos del formulario (input) no deben validarse cuando se envían.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con un atributo novalidate:</p>
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+    
+            <h3>Lista de todos los atributos <code class="blue-text">&lt;form&gt;</code></h3>
+    
+            <table class="tablecebra4blanco">
+                <tr>
+                    <th>Atributo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>accept-charset</td>
+                    <td>Especifica las codificaciones de caracteres utilizadas para el envio de formularios.</td>
+                </tr>
+    
+                <tr>
+                    <td>action</td>
+                    <td>Especifica dónde enviar los datos del formulario cuando se envía un formulario.</td>
+                </tr>
+                <tr>
+                    <td>autocomplete</td>
+                    <td>Especifica si un formulario debe tener activado o desactivado el autocompletado.</td>
+                </tr>
+                <tr>
+                    <td>enctype</td>
+                    <td>Especifica cómo se deben codificar los datos del formulario al enviarlos al servidor (solo para <i>method="post"</i>)</td>
+                </tr>
+                <tr>
+                    <td>method</td>
+                    <td>Especifica el método HTTP que se utilizara al enviar datos del formulario.</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>Especifica el nombre del formulario.</td>
+                </tr>
+                <tr>
+                    <td>novalidate</td>
+                    <td>Especifica que el formulario no debe validarse cuando se envía.</td>
+                </tr>
+                <tr>
+                    <td>rel</td>
+                    <td>Especifica la relación entre un recurso vinculado y el documento actual.</td>
+                </tr>
+                <tr>
+                    <td>target</td>
+                    <td>Especifica dónde mostrar la respuesta que se recibe después de enviar el formulario.</td>
+                </tr>
+            </table>
+    
+    
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

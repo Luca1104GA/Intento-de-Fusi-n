@@ -280,6 +280,7 @@ body{
 
 /* -----------------------> Titulos de links */
 .titulo{
+    padding-right: 200px;
     width: 100%;
     height: 45px;
     display: flex;
@@ -290,8 +291,9 @@ body{
     color: var(--color-menu-hover-texto);
 }
 .barra-lateral .navegacion .titulo ion-icon{
-    font-size: 20px;
-    height: 41px;
+    font-size: 25px;
+    padding: 9px;
+    margin-left: -10px;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -299,6 +301,32 @@ body{
     background-color: var(--color-menu-hover);
     color: var(--color-menu-hover-texto);
 }
+
+/* ------------------------> Back to Home button */
+.barra-lateral .navegacion .home{
+    width: 100%;
+    height: 45px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+.barra-lateral .navegacion .home ion-icon{
+    font-size: 25px;
+    padding: 9px;
+    margin-left: -10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--color-menu-hover);
+    color: var(--color-menu-hover-texto);
+}
+
+
 /* ---------------------> main */
 
 
