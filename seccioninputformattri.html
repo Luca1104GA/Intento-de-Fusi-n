@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input form* Attributes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="document-text-outline"></ion-icon>
+                <span>Input Form Att</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <br>
+                <li class="home">
+                    <a href="seccionforms.html" target="_blank">
+                        <ion-icon name="logo-buffer"></ion-icon>
+                        <span>Forms</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionformsatributes.html" target="_blank">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        <span>Form Attributes</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionformselements.html" target="_blank">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                        <span>Form Elements</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputtypes.html" target="_blank">
+                        <ion-icon name="rocket-outline"></ion-icon>
+                        <span>Inputs Types</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputatributes.html" target="_blank">
+                        <ion-icon name="logo-stackoverflow"></ion-icon>
+                        <span>Input Attributes</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Input Form* Attri</span>
+                </li>
+                <li>
+                    <a href="#ad2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>form</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>formaction</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>formenctype</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>formmethod</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>formtarget</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>formnovalidate</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ad8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>novalidate</code></span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="ad1">
+    
+            <h1>HTML Input form* Attributes</h1>
+            <p>
+                <i>Este capítulo describe los diferentes atributos</i> <code class="red-text">form*</code> <i>del elemento 
+                HTML</i><code class="blue-text">&lt;input&gt;</code>
+            </p>
+
+            <h2 id="ad2"><code>form</code></h2>
+            <p>
+                El atributo de entrada <code class="blue-text">form</code> especifica la forma a la que pertenece el elemento 
+                <code class="blue-text">&lt;input&gt;</code>. <br><br> El valor de este atributo debe ser igual al atributo 
+                <code class="red-text">id</code> del elemento <code class="blue-text">&lt;form&gt;</code> al que pertenece.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un campo de entrada ubicado fuera del formulario HTML (pero que aún forma parte del formulario)</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="action_page.php" id="form1">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" form="form1">
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="form1"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> form<span
+                                class="attributevaluecolor" style="color:mediumblue">="form1"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                </div>
+            </article>  
+
+            <h2 id="ad3"><code>formaction</code></h2>
+            <p>
+                <code class="red-text">formaction</code> Especifica la URL del archivo que procesará la entrada cuando se <br>
+                envíe el formulario. <br><br> <b>Nota:</b> Este atributo anula el atribito <code class="red-text">action</code>
+                del elemento <code class="blue-text">&lt;form&gt;</code>. <br><br>
+                El atributo <code class="red-text">formaction</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío, con diferentes acciones:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formaction="" value="Submit as Admin">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formaction<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page2.php"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit as Admin"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ad4"><code>formenctype</code></h2>
+            <p>
+               <code class="red-text">formenctype</code> Especifica cómo se deben codificar los datos del formulario cuando se envían
+               <br> (solo para formularios con <code class="red-text">method="post"</code>. ) <br><br>
+               <b>Nota:</b> Este atributo anula el atributo <code class="red-text">enctype</code> del elemento <code class="blue-text">&lt;form&gt;</code>. 
+               <br><br>El atributo <code class="red-text">formentype</code> funciona con los giuientes tipos de entrada: <br>
+               <i>submit</i> e <i>image</i>. 
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>
+                    Un formulario con dos botones de envío. El primero envía los datos del formulario con codificación <br>
+                    predeterminada, el segundo envía los datos del formulario codificados como "multipart/form-data":
+                </p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" method="post">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page_binary.asp"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="post"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            formenctype<span class="attributevaluecolor"
+                                style="color:mediumblue">="multipart/form-data"</span><br>&nbsp; value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit as
+                                Multipart/form-data"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ad5"><code>formmethod</code></h2>
+            <p>
+                <code class="red-text">formmethod</code> Define el método HTTP para enviar datos del formulario a la URL de acción.
+                <br><br> <b>Nota:</b> Este atributo anula el atributo <code class="red-text">method</code> del elemento <code class="blue-text">&lt;form&gt;</code>
+                <br><br>El atributo <code class="red-text">formmethod</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>. <br><br>
+                Los datos del formulario se pueden enviar como vartiables de URL (method="get") o como una <br>
+                transacción posterior HTTP (method="post").
+            </p>
+
+            <caption><b>Notas sobre el metodo "get":</b></caption>
+            <ul class="lista2">
+                <li>Este método agrega los datos del formulario a la URL en pares de nombre/valor.</li>
+                <li>Este método es útil para envíos de formularios en los que un usuario desea marcar el resultado como favorito.</li>
+                <li>Existe un límite en la cantidad de datos que puede colocar en una URL (varía según el navegador), <br>
+                por lo tanto, no puede estar seguro de que todos los datos del formulario se transferirán correctamente.</li>
+                <li>¡Nunca utilice el método "get" para pasar información confidencial! (La contraseña u otra <br>
+                información confidencial será visible en la barra de direcciones del navegador)</li>
+            </ul>
+
+            <caption><b>Notas sobre el método "post":</b></caption>
+            <ul class="lista2">
+                <li>Este método envía los datos del formulario como una transacción posterior HTTP.</li>
+                <li>Los envíos de formularios con el método "post" no se pueden marcar como favoritos.</li>
+                <li>El método "post" es más robusto y seguro que "get" y "post" no tiene limitaciones de tamaño.</li>
+            </ul>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>
+                    Un formulario con dos botones de envío. El primero envía los datos del formulario com method="get". <br>
+                    El segundo envía los datos del formulario con method="post":
+                </p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="" method="get">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit using GET">
+                        <input type="submit" formmethod="post" value="Submit using POST">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor"
+                                style="color:mediumblue">="get"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit using
+                                GET"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formmethod<span class="attributevaluecolor"
+                                style="color:mediumblue">="post"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit using
+                                POST"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ad6"><code>formtarget</code></h2>
+            <p>
+                <code class="red-text">formtarget</code> Especifica un nombre o un palabra clave que indica dónde mostrar la <br>
+                respuesta que se recibe después de enviar el formulario. <br><br>
+                <b>Nota:</b> Este atributo anula el atributo de destino del elemento <code class="blue-text">&lt;form&gt;</code>
+                <br><br>Este atributyo funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i> e <i>image</i>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío, con diferentes ventanas de destino:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>First
+                    name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span
+                            class="attributecolor" style="color:red"> for<span class="attributevaluecolor"
+                                style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="lname"</span>
+                            name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span
+                                class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> formtarget<span class="attributevaluecolor"
+                                style="color:mediumblue">="_blank"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit to a new window/tab"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ad7"><code>formnovalidate</code></h2>
+            <p>
+                <code class="red-text">formnovalidate</code> Especifica que un elemento <code class="blue-text">&lt;input&gt;</code>
+                no debe validarse cuando se envía. <br><br>
+                <b>Nota:</b> Este atributo anula el atrubuto <i>novalidate</i> del elemento <code class="blue-text">&lt;form&gt;</code> 
+                <br><br> El atributo <code class="red-text">formnovalidate</code> funciona con los siguientes tipos de entrada: <br>
+                <i>submit</i>.
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Un formulario con dos botones de envío (con y sin validación)</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="email">Enter you email:</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Submit">
+                        <input type="submit" formnovalidate="formnovalidate" value="Submit whithout validation">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter your
+                    email:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span
+                            class="attributecolor" style="color:red"> type<span class="attributevaluecolor"
+                                style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor"
+                                style="color:mediumblue">="Submit"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            formnovalidate<span class="attributevaluecolor" style="color:mediumblue">="formnovalidate"</span><br>&nbsp;
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Submit without
+                                validation"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h2 id="ad8"><code>novalidate</code></h2>
+            <p>
+                <code class="red-text">novalidate</code> Es un atributo <code class="blue-text">&lt;form&gt;</code> <br><br>
+                Cuando está presente, especifica que todos los datos del formulario no deben validarse cuando se envían. 
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+                <p>Especifique que no se deben validar datos del formulario al enviar:</p>
+
+                <div style="text-align: center; background-color: #a4b0be; padding: 5px 0px 10px 0px;">
+                    <form action="">
+                        <label for="email">Enter your email:</label><br>
+                        <input type="email" id="email" name="email"><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span
+                            class="attributecolor" style="color:red"> action<span class="attributevaluecolor"
+                                style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red">
+                            for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Enter your email:<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="email"</span>
+                            id<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span
+                                class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red">
+                            type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span>
+                            value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

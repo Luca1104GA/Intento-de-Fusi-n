@@ -3,435 +3,546 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listas</title>
+    <title>List!</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-<div class="container">
-
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button> 
-
-    <div class="Estilo_blanco2" id="e1">
-
-        <h2 title="list">Listas</h2>
-
-        <p>
-            Las listas permiten a los desarrolladores web agrupar un conjunto de elementos relacionados en listas.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-            
-            <div class="divlistasparalelas">
-                        <ul class="lista">
-                             <span class="red-text">Desordenada</span>
-                            <li>Artículo</li>
-                            <li>Artículo</li>
-                            <li>Artículo</li>
-                            <li>Artículo</li>    
-                        </ul>
-                
-                        <ol class="lista">
-                            <span class="red-text">Ordenada</span>
-                            <li>Primer elemento</li>
-                            <li>Segundo artículo</li>
-                            <li>Tercer elemento</li>
-                            <li>Cuarto elemento</li>  
-                        </ol>
-            </div>
-
-        </article>
-
-        <h3 title="Unordered List">Lista desordenada</h3>
-
-        <p>
-            Una lista desordenada comienza con la etiqueta <span class="blue-text">&lt;ul&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span>. <br>
-            Los elementos de la lista estarán marcados con viñetas (pequeños círculos negros) de forma predeterminada:
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-
-            <p class="codigo">
-                &lt;<span class="blue-text">ul</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ul</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Ordered List">Lista ordenada</h3>
-
-        <p>
-            Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
-            Los elementos de la lista estarán marcados con números de forma predeterminada.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-
-            <p class="codigo">
-                &lt;<span class="blue-text">ol</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ol</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Description Lists" id="e6">Listas de descripción</h3>
-
-        <p>
-            HTML también admite listas de descripciones. <br>
-            Una lista de descripción es una lista de términos, con una descripción de cada término. <br> <br>
-            La etiquea <span class="blue-text">&lt;dl&gt;</span> define la lista de descripción, la etiqueta <span class="blue-text">&lt;dt&gt;</span> define el término (nombre) <br>
-            y la etiqueta <span class="blue-text">&lt;dd&gt;</span> describe cata término.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo: 
-
-            <dl>
-                <dt>Cafe</dt>
-                <dd>- Bebida negra caliente</dd>
-                <dt>Leche</dt>
-                <dd>- Bebida blanca fria</dd>
-              </dl>
-
-              <p class="codigo">
-                &lt;<span class="blue-text">dl</span>&gt;
-                    &lt;<span class="blue-text">dt</span>&gt;Cafe&lt;<span class="blue-text">/dt</span>&gt;
-                    &lt;<span class="blue-text">dd</span>&gt;- Bebida negra caliente&lt;<span class="blue-text">/dd</span>&gt;
-                    &lt;<span class="blue-text">dt</span>&gt;Leche&lt;<span class="blue-text">/dt</span>&gt;
-                    &lt;<span class="blue-text">dd</span>&gt;- Bebida blanca fria&lt;<span class="blue-text">/dd</span>&gt;
-                &lt;<span class="blue-text">/dl</span>&gt;
-              </p>
-
-        </article>       <!-- Esto me despliega el table de abajo y el table de abajo no tiene despliegue propio -->
-
-        <table class="tabletest2black">
-            <tbody>
-                <tr>
-                    <th>Tag</th>
-                    <th>descripcion</th>
-                </tr>
-                <tr>
-                    <td>&lt;ul&gt;</td>
-                    <td>Lista desordenada</td>
-                </tr>
-                <tr>
-                    <td>&lt;ol&gt;</td>
-                    <td>Lista ordenada</td>
-                </tr>
-                <tr>
-                    <td>&lt;li&gt;</td>
-                    <td>define un item de la lista</td>
-                </tr>
-                <tr>
-                    <td>&lt;dl&gt;</td>
-                    <td>define una descripcion de la lista</td>
-                </tr>
-                <tr>
-                    <td>&lt;dt&gt;</td>
-                    <td>define un termino en una lista de descripcion</td>
-                </tr>
-                <tr>
-                    <td>&lt;dd&gt;</td>
-                    <td>describe el termino en una lista de descripcion</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 title="Unordered Lists" id="e2">Listas desordenadas</h2>
-
-        <p>
-            <b><em>La etiqueta <span class="blue-text">&lt;ul&gt;</span> define una lista desordenada (con viñetas).</em></b> <br><br>
-            Una lista desordenada comienza con la etiqueta <span class="blue-text">&lt;ul&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span>. <br>
-            Los elementos de la lista estaran marcados con viñetas (pequeños circulos negros) de forma predeterminada:
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-            <p class="codigo">
-                &lt;<span class="blue-text">ul</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ul</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Unordered List - Choose List Item Marker">Lista desordenada: elija el marcador de elemento de lista</h3>
-
-        <p>
-            La propiedad CSS <span class="red-text">list-style-type</span> se utiliza para definir el estilo del marcador de elementos de la lista. <br>
-            Puede tener uno de los siguientes valores:
-        </p>
-
-        <table class="tabletest2black">
-            <tbody>
-                <tr>
-                    <th>Valor</th>
-                    <th>descripción</th>
-                </tr>
-                <tr>
-                    <td>disc</td>
-                    <td>Estable el marcador del elemento de la lista en una viñeta (predeterminado)</td>
-                </tr>
-                <tr>
-                    <td>circle</td>
-                    <td>Estable el marcador del elemento de la lista en un circulo</td>
-                </tr>
-                <tr>
-                    <td>square</td>
-                    <td>Estable el marcador del elemento de la lista en un cuadrado</td>
-                </tr>
-                <tr>
-                    <td>none</td>
-                    <td>Los elementos de la lista no se marcaran</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3 title="Nested Lists" id="e5">Listas anidadas</h3>
-
-        <p>
-            Las listas se pueden anidar (lista dentro de lista).
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-
-            <ul>
-                <li>Cafe</li>
-                <li>Te
-                  <ul>
-                    <li>Te negro</li>
-                    <li>Te verde</li>
-                  </ul>
-                </li>
-                <li>Leche</li>
-              </ul>
-            
-            <p class="codigo">
-
-                &lt;<span class="blue-text">ul</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea
-                      &lt;<span class="blue-text">ul</span>&gt;
-                        &lt;<span class="blue-text">li</span>&gt;Black tea&lt;<span class="blue-text">/li</span>&gt;
-                        &lt;<span class="blue-text">li</span>&gt;Green tea&lt;<span class="blue-text">/li</span>&gt;
-                      &lt;<span class="blue-text">/ul</span>&gt;
-                    &lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ul</span>&gt;
-
-            </p>     
-        </article>
-
-        <p class="advertencia">
-            Nota: Un elemento de lista (<span class="blue-text">&lt;li&gt;</span>) puede contener una nueva lista y otros elementos HTML como imágenes, enlaces, etc.
-        </p>
-
-        <h3 title="Horizontal List with CSS" id="e4">Lista horizontal con CSS</h3>
-
-        <p>
-            <b><em>Las listas HTML se pueden diseñar de muchas maneras diferentes con CSS.</em></b> <br><br>
-            Una forma popular es diseñar una lista horizontalmente para crear un menú de navegación:
-        </p>
-
-        <article class="ejemplo">
-
-            <ul class="ulmenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-
-            <p class="codigo">
-
-                &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
-                &lt;<span class="blue-text">html</span>&gt;
-                &lt;<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">style</span>&gt;
-
-                  <span class="blue-text">ul</span> {
-
-                    <span class="red-text">list-style-type</span><span class="celeste">: none;</span>
-                    <span class="red-text">margin</span><span class="celeste">: 0;</span>
-                    <span class="red-text">padding</span><span class="celeste">: 0;</span>
-                    <span class="red-text">overflow</span><span class="celeste">: hidden;</span>
-                    <span class="red-text">background-color</span><span class="celeste">: #333333;</span>
-                  }
-
-                  <span class="blue-text">li</span> {
-
-                    <span class="red-text">float</span><span class="celeste">: left;</span>
-                  }
-
-                  <span class="blue-text">li</span> <span class="red-text">a</span> {
-
-                    <span class="red-text">display</span><span class="celeste">: block;</span>
-                    <span class="red-text">color</span><span class="celeste">: white;</span>
-                    <span class="red-text">text-align</span><span class="celeste">: center;</span>
-                    <span class="red-text">padding</span><span class="celeste">: 16px;</span>
-                    <span class="red-text">text-decoration</span><span class="celeste">: none;</span>
-                  }
-
-                  <span class="blue-text">li</span> <span class="red-text">a</span><span style="color: green;">:hover</span> {
-
-                    <span class="red-text">background-color</span><span class="celeste">: #111111;</span>
-                  }
-
-                &lt;<span class="blue-text">/style</span>&gt;
-
-                &lt;<span class="blue-text">/head</span>&gt;
-                &lt;<span class="blue-text">body</span>&gt;
-
-                    &lt;<span class="blue-text">ul</span>&gt;
-                      &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#home"</span>&gt;Home&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
-                      &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#news"</span>&gt;News&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
-                      &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#contact"</span>&gt;Contact&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
-                      &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#about"</span>&gt;About&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">/ul</span>&gt;
-
-                &lt;<span class="blue-text">/body</span>&gt;
-                &lt;<span class="blue-text">/html</span>&gt;
-
-            </p>
-
-        </article>
-
-        <ul class="lista">
-            <li>Utilice el elemento HTML <span class="blue-text">&lt;ul&gt;</span> para definir una lista desordenada</li>
-            <li>Utilice la propiedad CSS <span class="red-text">list-style-type</span> para definir el marcador del elemento de la lista</li>
-            <li>Utilice el elemento HTML <span class="blue-text">&lt;li&gt;</span> para definir un elemento de lista</li>
-            <li>Las listas se pueden anidar</li>
-            <li>Los items de la lista pueden contener otros elementos HTML</li>
-            <li>Utilice la propiedad CSS <span class="red-text">float:left</span> para mostrar la lista horizontalmente</li> 
-        </ul>
-
-        <h2 title="Ordered Lists" id="e3">Listas ordenadas</h2>
-
-        <p>
-            <b><em>La etiqueta HTML <span class="blue-text">&lt;ol&gt;</span> define una lista ordenada. <br>
-            Una lista ordenada puede ser numérica o alfabética.</em></b>
-        </p>
-        
-        <p>
-            Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
-            Los elementos de la lista estarán marcados con números de forma predeterminada.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-
-            <p class="codigo">
-                &lt;<span class="blue-text">ol</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ol</span>&gt;
-            </p>
-
-        </article>
-
-        <h3>El atributo <b><em>Type</em></b></h3>
-
-        <p>
-            El atributo <span class="red-text">type</span> de la etiqueta <span class="blue-text">&lt;ol&gt;</span> define el tipo de marcador de elemento de la lista:
-        </p>
-
-        <table class="tabletest2black">
-            <tbody>
-                <tr>
-                    <th>Type</th>
-                    <th>descripcion</th>
-                </tr>
-                <tr>
-                    <td>type="1"</td>
-                    <td>Números (predeterminado)</td>
-                </tr>
-                <tr>
-                    <td>type="A"</td>
-                    <td>Letras Mayúsculas</td>
-                </tr>
-                <tr>
-                    <td>type:"a"</td>
-                    <td>Letras Minúsculas</td>
-                </tr>
-                <tr>
-                    <td>type="I"</td>
-                    <td>Números Romanos en Mayúscula</td>
-                </tr>
-                <tr>
-                    <td>type="i"</td>
-                    <td>Números Romanos en <br>Minúscula</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h3 title="Control List Counting">Conteo de lista de control</h3>
-
-        <p>
-            De forma predeterminada, una lista ordenada comenzará a contar desde 1. <br>
-            Si desea comenzar a contar desde un número específico, puede usar el atributo <span class="red-text">start</span>=
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-
-            <div class="divlistasparalelas">
-                
-                <ol start="50" class="lista">
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                </ol>
-                  
-                <ol type="I" start="50" class="lista">
-                    <li>Coffee</li>
-                    <li>Tea</li>
-                    <li>Milk</li>
-                </ol>
-
-            </div>
-
-            <p class="codigo">
-
-                &lt;<span class="blue-text">ol</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                  &lt;<span class="blue-text">/ol</span>&gt;
-                  
-                  &lt;<span class="blue-text">ol</span> <span class="red-text">type</span><span class="celeste">="I"</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
-                    &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
-                &lt;<span class="blue-text">/ol</span>&gt;
-
-            </p>
-
-        </article>
-
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
     </div>
 
-</div>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="clipboard-outline"></ion-icon>
+                <span>Listas!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="clipboard-outline"></ion-icon>
+                        <span>Listas!</span>
+                </li>
+                <li>
+                    <a href="#e2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Desordenadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Ordenadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Horizontal con CSS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Listas Anidadas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Lista de Descripción</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco2" id="e1">
+
+            <h2 title="list">Listas</h2>
+    
+            <p>
+                Las listas permiten a los desarrolladores web agrupar un conjunto de elementos relacionados en listas.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo:
+                
+                <div class="divlistasparalelas" style="color: black;">
+                            <ul class="lista">
+                                 <span class="red-text">Desordenada</span>
+                                <li>Artículo</li>
+                                <li>Artículo</li>
+                                <li>Artículo</li>
+                                <li>Artículo</li>    
+                            </ul>
+                    
+                            <ol class="lista">
+                                <span class="red-text">Ordenada</span>
+                                <li>Primer elemento</li>
+                                <li>Segundo artículo</li>
+                                <li>Tercer elemento</li>
+                                <li>Cuarto elemento</li>  
+                            </ol>
+                </div>
+    
+            </article>
+    
+            <h3 title="Unordered List">Lista desordenada</h3>
+    
+            <p>
+                Una lista desordenada comienza con la etiqueta <span class="blue-text">&lt;ul&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span>. <br>
+                Los elementos de la lista estarán marcados con viñetas (pequeños círculos negros) de forma predeterminada:
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">ul</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ul</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3 title="Ordered List">Lista ordenada</h3>
+    
+            <p>
+                Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
+                Los elementos de la lista estarán marcados con números de forma predeterminada.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">ol</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3 title="Description Lists" id="e6">Listas de descripción</h3>
+    
+            <p>
+                HTML también admite listas de descripciones. <br>
+                Una lista de descripción es una lista de términos, con una descripción de cada término. <br> <br>
+                La etiquea <span class="blue-text">&lt;dl&gt;</span> define la lista de descripción, la etiqueta <span class="blue-text">&lt;dt&gt;</span> define el término (nombre) <br>
+                y la etiqueta <span class="blue-text">&lt;dd&gt;</span> describe cata término.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo: 
+    
+                <dl>
+                    <dt>Cafe</dt>
+                    <dd>- Bebida negra caliente</dd>
+                    <dt>Leche</dt>
+                    <dd>- Bebida blanca fria</dd>
+                  </dl>
+    
+                  <p class="codigo">
+                    &lt;<span class="blue-text">dl</span>&gt;
+                        &lt;<span class="blue-text">dt</span>&gt;Cafe&lt;<span class="blue-text">/dt</span>&gt;
+                        &lt;<span class="blue-text">dd</span>&gt;- Bebida negra caliente&lt;<span class="blue-text">/dd</span>&gt;
+                        &lt;<span class="blue-text">dt</span>&gt;Leche&lt;<span class="blue-text">/dt</span>&gt;
+                        &lt;<span class="blue-text">dd</span>&gt;- Bebida blanca fria&lt;<span class="blue-text">/dd</span>&gt;
+                    &lt;<span class="blue-text">/dl</span>&gt;
+                  </p>
+    
+            </article>       <!-- Esto me despliega el table de abajo y el table de abajo no tiene despliegue propio -->
+    
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Tag</th>
+                        <th>descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Lista desordenada</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Lista ordenada</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>define un item de la lista</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dl&gt;</td>
+                        <td>define una descripcion de la lista</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dt&gt;</td>
+                        <td>define un termino en una lista de descripcion</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;dd&gt;</td>
+                        <td>describe el termino en una lista de descripcion</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h2 title="Unordered Lists" id="e2">Listas desordenadas</h2>
+    
+            <p>
+                <b><em>La etiqueta <span class="blue-text">&lt;ul&gt;</span> define una lista desordenada (con viñetas).</em></b> <br><br>
+                Una lista desordenada comienza con la etiqueta <span class="blue-text">&lt;ul&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span>. <br>
+                Los elementos de la lista estaran marcados con viñetas (pequeños circulos negros) de forma predeterminada:
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+                <p class="codigo">
+                    &lt;<span class="blue-text">ul</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ul</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3 title="Unordered List - Choose List Item Marker">Lista desordenada: elija el marcador de elemento de lista</h3>
+    
+            <p>
+                La propiedad CSS <span class="red-text">list-style-type</span> se utiliza para definir el estilo del marcador de elementos de la lista. <br>
+                Puede tener uno de los siguientes valores:
+            </p>
+    
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Valor</th>
+                        <th>descripción</th>
+                    </tr>
+                    <tr>
+                        <td>disc</td>
+                        <td>Estable el marcador del elemento de la lista en una viñeta (predeterminado)</td>
+                    </tr>
+                    <tr>
+                        <td>circle</td>
+                        <td>Estable el marcador del elemento de la lista en un circulo</td>
+                    </tr>
+                    <tr>
+                        <td>square</td>
+                        <td>Estable el marcador del elemento de la lista en un cuadrado</td>
+                    </tr>
+                    <tr>
+                        <td>none</td>
+                        <td>Los elementos de la lista no se marcaran</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3 title="Nested Lists" id="e5">Listas anidadas</h3>
+    
+            <p>
+                Las listas se pueden anidar (lista dentro de lista).
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo:
+    
+                <ul>
+                    <li>Cafe</li>
+                    <li>Te
+                      <ul>
+                        <li>Te negro</li>
+                        <li>Te verde</li>
+                      </ul>
+                    </li>
+                    <li>Leche</li>
+                  </ul>
+                
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">ul</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea
+                          &lt;<span class="blue-text">ul</span>&gt;
+                            &lt;<span class="blue-text">li</span>&gt;Black tea&lt;<span class="blue-text">/li</span>&gt;
+                            &lt;<span class="blue-text">li</span>&gt;Green tea&lt;<span class="blue-text">/li</span>&gt;
+                          &lt;<span class="blue-text">/ul</span>&gt;
+                        &lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ul</span>&gt;
+    
+                </p>     
+            </article>
+    
+            <p class="advertencia">
+                Nota: Un elemento de lista (<span class="blue-text">&lt;li&gt;</span>) puede contener una nueva lista y otros elementos HTML como imágenes, enlaces, etc.
+            </p>
+    
+            <h3 title="Horizontal List with CSS" id="e4">Lista horizontal con CSS</h3>
+    
+            <p>
+                <b><em>Las listas HTML se pueden diseñar de muchas maneras diferentes con CSS.</em></b> <br><br>
+                Una forma popular es diseñar una lista horizontalmente para crear un menú de navegación:
+            </p>
+    
+            <article class="ejemplo">
+    
+                <ul class="ulmenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+    
+                      <span class="blue-text">ul</span> {
+    
+                        <span class="red-text">list-style-type</span><span class="celeste">: none;</span>
+                        <span class="red-text">margin</span><span class="celeste">: 0;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 0;</span>
+                        <span class="red-text">overflow</span><span class="celeste">: hidden;</span>
+                        <span class="red-text">background-color</span><span class="celeste">: #333333;</span>
+                      }
+    
+                      <span class="blue-text">li</span> {
+    
+                        <span class="red-text">float</span><span class="celeste">: left;</span>
+                      }
+    
+                      <span class="blue-text">li</span> <span class="red-text">a</span> {
+    
+                        <span class="red-text">display</span><span class="celeste">: block;</span>
+                        <span class="red-text">color</span><span class="celeste">: white;</span>
+                        <span class="red-text">text-align</span><span class="celeste">: center;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 16px;</span>
+                        <span class="red-text">text-decoration</span><span class="celeste">: none;</span>
+                      }
+    
+                      <span class="blue-text">li</span> <span class="red-text">a</span><span style="color: green;">:hover</span> {
+    
+                        <span class="red-text">background-color</span><span class="celeste">: #111111;</span>
+                      }
+    
+                    &lt;<span class="blue-text">/style</span>&gt;
+    
+                    &lt;<span class="blue-text">/head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+    
+                        &lt;<span class="blue-text">ul</span>&gt;
+                          &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#home"</span>&gt;Home&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
+                          &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#news"</span>&gt;News&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
+                          &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#contact"</span>&gt;Contact&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
+                          &lt;<span class="blue-text">li</span>&gt;&lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#about"</span>&gt;About&lt;<span class="blue-text">/a</span>&gt;&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">/ul</span>&gt;
+    
+                    &lt;<span class="blue-text">/body</span>&gt;
+                    &lt;<span class="blue-text">/html</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+            <ul class="lista">
+                <li>Utilice el elemento HTML <span class="blue-text">&lt;ul&gt;</span> para definir una lista desordenada</li>
+                <li>Utilice la propiedad CSS <span class="red-text">list-style-type</span> para definir el marcador del elemento de la lista</li>
+                <li>Utilice el elemento HTML <span class="blue-text">&lt;li&gt;</span> para definir un elemento de lista</li>
+                <li>Las listas se pueden anidar</li>
+                <li>Los items de la lista pueden contener otros elementos HTML</li>
+                <li>Utilice la propiedad CSS <span class="red-text">float:left</span> para mostrar la lista horizontalmente</li> 
+            </ul>
+    
+            <h2 title="Ordered Lists" id="e3">Listas ordenadas</h2>
+    
+            <p>
+                <b><em>La etiqueta HTML <span class="blue-text">&lt;ol&gt;</span> define una lista ordenada. <br>
+                Una lista ordenada puede ser numérica o alfabética.</em></b>
+            </p>
+            
+            <p>
+                Una lista ordenada comienza con la etiqueta <span class="blue-text">&lt;ol&gt;</span>. Cada elemento de la lista comienza con la etiqueta <span class="blue-text">&lt;li&gt;</span> <br>
+                Los elementos de la lista estarán marcados con números de forma predeterminada.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">ol</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3>El atributo <b><em>Type</em></b></h3>
+    
+            <p>
+                El atributo <span class="red-text">type</span> de la etiqueta <span class="blue-text">&lt;ol&gt;</span> define el tipo de marcador de elemento de la lista:
+            </p>
+    
+            <table class="tabletest2black">
+                <tbody>
+                    <tr>
+                        <th>Type</th>
+                        <th>descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>type="1"</td>
+                        <td>Números (predeterminado)</td>
+                    </tr>
+                    <tr>
+                        <td>type="A"</td>
+                        <td>Letras Mayúsculas</td>
+                    </tr>
+                    <tr>
+                        <td>type:"a"</td>
+                        <td>Letras Minúsculas</td>
+                    </tr>
+                    <tr>
+                        <td>type="I"</td>
+                        <td>Números Romanos en Mayúscula</td>
+                    </tr>
+                    <tr>
+                        <td>type="i"</td>
+                        <td>Números Romanos en <br>Minúscula</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h3 title="Control List Counting">Conteo de lista de control</h3>
+    
+            <p>
+                De forma predeterminada, una lista ordenada comenzará a contar desde 1. <br>
+                Si desea comenzar a contar desde un número específico, puede usar el atributo <span class="red-text">start</span>=
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo:
+    
+                <div class="divlistasparalelas" style="color: black;">
+                    
+                    <ol start="50" class="lista">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                      
+                    <ol type="I" start="50" class="lista">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+    
+                </div>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">ol</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                      &lt;<span class="blue-text">/ol</span>&gt;
+                      
+                      &lt;<span class="blue-text">ol</span> <span class="red-text">type</span><span class="celeste">="I"</span> <span class="red-text">start</span><span class="celeste">="50"</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Coffee&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Tea&lt;<span class="blue-text">/li</span>&gt;
+                        &lt;<span class="blue-text">li</span>&gt;Milk&lt;<span class="blue-text">/li</span>&gt;
+                    &lt;<span class="blue-text">/ol</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

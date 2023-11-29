@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingrese Title</title>
+    <title>Forms attributes</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -19,8 +19,8 @@
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon name="book-outline"></ion-icon>
-                <span>Inserte Titulo!</span>
+                <ion-icon name="bookmark-outline"></ion-icon>
+                <span>Form Attribute</span>
             </div>
             <button class="boton">
                 <ion-icon id="cloud" name="add-outline"></ion-icon>
@@ -37,17 +37,78 @@
                         <span>Home</span>
                     </a>
                 </li>
+                <br>
+                <li class="home">
+                    <a href="seccionforms.html" target="_blank">
+                        <ion-icon name="logo-buffer"></ion-icon>
+                        <span>Forms</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionformselements.html" target="_blank">
+                        <ion-icon name="bookmarks-outline"></ion-icon>
+                        <span>Form Elements</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputtypes.html" target="_blank">
+                        <ion-icon name="rocket-outline"></ion-icon>
+                        <span>Inputs Types</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputatributes.html" target="_blank">
+                        <ion-icon name="logo-stackoverflow"></ion-icon>
+                        <span>Input Attributes</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioninputformattri.html" target="_blank">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Input form* Attri</span>
+                    </a>
+                </li>
                 <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
-                    <ion-icon name="logo-reddit"></ion-icon>
-                        <span>Inserte Titulo!</span>
+                    <ion-icon name="bookmark-outline"></ion-icon>
+                        <span>Atributos de form</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#z2">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span><code>action</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#z3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>target</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#z4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>method</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#z5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>autocomplete</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#z6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>novalidate</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#z7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Todos los atributos</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -104,7 +165,7 @@
             <h1 title="Form Attributes">Atributos de <code>form</code></h1>
             <p><em>Este capítulo describe los diferente atributos del elemento <code class="blue-text">&lt;form&gt;</code></em></p>
     
-            <h2>El atributo <code>action</code></h2>
+            <h2 id="z2">El atributo <code>action</code></h2>
             <p>
                 El tributo <code class="red-text">action</code> define la acción que se realizará cuando se envíe el formulario.<br><br>
                 Por lo general, los datos del formulario se envian a un archivo en el<br> servidor cuando el usuario hace click
@@ -137,7 +198,7 @@
     
             </article>
     
-            <h2>El atributo <code>target</code></h2>
+            <h2 id="z3">El atributo <code>target</code></h2>
             <p>
                 El atributo <code class="red-text">target</code> especifica dónde mostrar la respuesta que se recibe después de enviar
                 el formulario.<br><br> El atributo <code class="red-text">target</code> puede tener uno de los siguientes valores:
@@ -186,7 +247,7 @@
                 </div>
             </article>            
     
-            <h2>El atributo <code>method</code></h2>
+            <h2 id="z4">El atributo <code>method</code></h2>
             <p>
                 El atributo <code class="red-text">method</code> especifica el método HTTP que se utilizará al enviar los datos del formulario.<br>
                 <br>Los datos del formulario se pueden enviar como variables de URL (con <code class="red-text">method="get"</code>) o <br>
@@ -234,7 +295,7 @@
     
             <p class="advertencia"><b>consejo:</b> ¡Utilice siempre POST si los datos del formulario contienen información personal o confidencial!<p>
     
-            <h2>El atributo <code>autocomplete</code></h2>
+            <h2 id="z5">El atributo <code>autocomplete</code></h2>
             <p>
                 El atributo <code class="red-text">autocomplete</code> especifica si un formulario debe tener activado o desactivado el autocompletado.<br><br>
                 Cuando la función de autocompletar está activada, el navegador completa automáticamente los valores<br>
@@ -259,7 +320,7 @@
                 </div>
             </article>
     
-            <h2>El atributo <code>novalidate</code></h2>
+            <h2 id="z6">El atributo <code>novalidate</code></h2>
             <p>
                 El atributo <code class="red-text">novalidate</code> es un atributo booleano. <br><br>
                 Cuando esta presente, especifica que los datos del formulario (input) no deben validarse cuando se envían.
@@ -276,7 +337,7 @@
                 </div>
             </article>
     
-            <h3>Lista de todos los atributos <code class="blue-text">&lt;form&gt;</code></h3>
+            <h3 id="z7">Lista de todos los atributos <code class="blue-text">&lt;form&gt;</code></h3>
     
             <table class="tablecebra4blanco">
                 <tr>

@@ -3,198 +3,305 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Links!</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>  
-
-<div class="container">
-    <div class="seccionlinks" id="l1">
-        
-        <h2>Links CSS</h2>
-
-        <P>
-            Los links HTML son hipervínculos. <br>
-            Los links se encuentran en casi todas las páginas web. <br>
-            Los links permiten a los usuarios hacer clic para pasar de una página a otra. <br>
-            Cuando mueves el mouse sobre un link, la flecha del mouse se convertirá en una manita. <br>
-            La etiqueta HTML <span class="blue-text">&lta&gt</span> define un hipervínculo.
-        </P>
-
-        <p class="advertencia">
-            <b>Nota:</b> Un link no tiene que ser texto. ¡Un link puede ser una imagen o cualquier otro elemento HTML!
-        </p>
-
-        <p>
-            El atributo más importante del elemento <span class="blue-text">&lta&gt</span> es el atributo <span class="blue-text">href</span>, que indica el destino del link. <br>
-            El texto del link es la parte que será visible para el lector. <br>
-            Al hacer clic en el texto del link, se enviará al lector a la dirección URL especificada. <br> <br>
-            De forma predeterminada, los Links aparecerán de la siguiente manera en todos los navegadores:
-        </p>
-
-        <p>
-            Un link no visitado está subrayado y en azul. <br>
-            Un link visitado está subrayado y en color violeta. <br>
-            Un link activo está subrayado y en rojo. <br>
-        </p>
-
-        <p class="advertencia">
-            <b>Consejo:</b> Por supuesto, los links se pueden diseñar con CSS para darle otro aspecto.
-        </p>
-
-        <h2 title="The target Attribute" id="l2">Atributos de Destino</h2>
-
-        <p>
-            De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. <br>
-            Para cambiar esto, debe especificar otro destino para el enlace. <br>
-            El atributo <span class="blue-text">target</span> especifica dónde abrir el documento vinculado. <br>
-            puede tener uno de los siguientes valores:
-        </p>
-
-        <ul class="lista">
-            <li><span class="blue-text">_self</span>- Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic.</li>
-            <li><span class="blue-text">_blank</span>- Abre el documento en una nueva ventana o pestaña.</li>
-            <li><span class="blue-text">_parent</span>- Abre el documento en el marco principal.</li>
-            <li><span class="blue-text">_top</span>- Abre el documento en el cuerpo completo de la ventana.</li>
-        </ul>
-
-        <p>
-            Use <span class="blue-text">mailto:</span> dentro del atributo <span class="blue-text">href</span> <br>
-            para crear un link que abra el programa de correo electrónico del usuario <br>
-            (para permitirle enviar un nuevo correo electrónico)
-        </p>
-
-        <p class="advertencia">
-            <span class="blue-text">&lta href="mailto:someone@example.com"&gt</span>Send email<span class="blue-text">&lt/a&gt</span>
-        </p>
-
-        <h2 id="l3">Imagen como Link</h2>
-
-        <p>
-            Para usar una imagen como link, simplemente coloque la etiqueta <span class="blue-text">&ltimg&gt</span> dentro de la etiqueta <span class="blue-text">&lta&gt</span>
-        </p>
-
-        <p class="codigo">
-            <span class="celeste">&lt;a href=</span>"https://www.ejemplo.com"&gt;
-                <span class="celeste">&lt;img src=</span>"imagen.jpg" <span class="celeste">alt=</span>"Descripción de la imagen"&gt;
-        </p>
-
-        <h3>Imagen flotante</h3>
-
-        <p>
-            Utilice la propiedad CSS <span class="blue-text">float</span> para permitir que la imagen flote hacia la derecha o hacia la izquierda de un texto:
-        </p>
-    
-        <h2 id="l4">Botón como Link</h2>
-
-        <p>
-            Para utilizar un botón HTML como link, debe agregar algún código JavaScript. <br>
-            JavaScript le permite especificar qué sucede en ciertos eventos, como hacer clic en un botón:
-        </p>
-
-        <p>
-            El siguiente boton lo creamos de esta manera <br>
-            Primero dentro del <span class="blue-text">body</span> creamos una division con el id"botoncontenedor" <br>
-            a este le damos una funcion de boton con el id "botontop" para despues personalizarlos en CSS. <br>
-            Luego hay que darle codigo JavaScript y eso lo hacemos utilizando el elemento <span class="blue-text">&ltscript&gt</span> dentro del body. <br>
-        </p>
-
-        <p class="codigo">
-            <span class="blue-text">&lt;script&gt;</span> <br>
-                <span class="celeste">const botonTop</span> = document.getElementById("botonTop"); <br>
-                <span class="celeste">botonTop</span>.addEventListener("click", () => { <br>
-                    <span class="celeste">window</span>.scrollTo({ top: 0, behavior: "smooth" }); <br>
-                });
-            <span class="blue-text">&lt;/script&gt;</span>
-        </p>
-
-        <p style="text-align: left;">
-            1. <b><em>const botonTop = document.getElementById("botonTop");</em></b> :Esto busca el elemento del botón con el ID "botonTop" en el documento HTML y lo almacena en la variable <br>
-            2. <b><em>botonTop.</em></b> Esto te permite interactuar con el botón utilizando JavaScript. <br>
-            3. <b><em>botonTop.addEventListener("click", () => { ... });</em></b> :Esto agrega un escuchador de eventos al botón. En este caso, estamos escuchando el evento "click", lo que significa que cuando el botón se hace clic, se ejecutará el código que se encuentra dentro de la función de flecha <b><em>() => { ... }</em></b> <br>
-            4. <b>window.scrollTo({ top: 0, behavior: "smooth" });<em></em></b> :Dentro de la función de flecha, estamos utilizando el método <b><em>scrollTo</em></b> en el objeto <b><em>window</em></b>  para desplazar la ventana hacia la parte superior de la página. <br>
-            <b><em>{ top: 0, behavior: "smooth" }</em></b> son opciones que se pasan al método. <b><em>top: 0</em></b> significa que queremos desplazarnos hasta la posición vertical 0, es decir, la parte superior de la página. <br>
-            <b><em>behavior: "smooth</em></b> agrega un efecto de desplazamiento suave en lugar de un salto abrupto.
-        </p>
-
-        <p>
-            Un Link también puede tener el estilo de un botón mediante CSS:
-        </p>
-
-        <p class="codigo">
-            <span class="blue-text">&lt;style&gt;</span>
-                a:link, a:visited {
-                  <span class="celeste">background-color</span>: #f44336;
-                  <span class="celeste">color</span>: white;
-                  <span class="celeste">padding</span>: 15px 25px;
-                  <span class="celeste">text-align</span>: center;
-                  <span class="celeste">text-decoration</span>: none;
-                  <span class="celeste">display</span>: inline-block;
-                }
-                
-                a:hover, a:active {
-                  <span class="celeste">background-color</span>: red;
-                }
-            <span class="blue-text"> &lt;/style&gt;</span>
-        </p>
-
-        <ul class="lista" id="liboton">
-            <li>a:link a:visited : Estilos para enlaces antes y despues de ser visitados, Cambia el color y subrayado del texto para resaltar los enlaces.</li>
-            <li><span class="red-text">background-color</span>: Color de fondo</li>
-            <li><span class="red-text">padding</span>: Espacio interno alrededor del contenido. Ajusta la distancia entre el contenido y el borde.</li>
-            <li><span class="red-text">text-align</span>: Controla la alineacion horizontal del texto.</li>
-            <li><span class="red-text">text-decoration</span>: Modifica la apariencia de la decoración del texto, como subrayar, tachar, resaltar o quitar la decoración </li>
-            <li><span class="red-text">display</span>: Controla como se muestra un elemento. (en linea bloque o de otra manera )</li>
-            <li>a:hover: Cambia el estilo cuando el cursor del mouse se coloca sobre él. Proporciona retroalimentación visual al usuario antes de hacer clic en un enlace. </li>
-            <li>a:active:  Estilo que se aplica cuando un enlace está siendo activamente presionado (haciendo clic) por el usuario. Puede ser útil para mostrar el momento en que se hace clic.</li>
-        </ul>
-        
-        <div class="botonContenedor">
-            <button id="botonTop">Ir al inicio</button>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="analytics"></ion-icon>
+                <span>Links!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
         </div>
 
-        <h2 title="Link Titles">Títulos de enlaces</h2>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-        <p>
-            El atributo <span class="blue-text">title</span> especifica información adicional sobre un elemento. <br>
-            La información suele mostrarse como texto de información sobre herramientas <br> cuando el ratón se mueve sobre el elemento.
-        </p>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="analytics"></ion-icon>
+                        <span>Links!</span>
+                </li>
+            </li>
+            <li>
+                <a href="#l2">
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                    <span>Atributos de Destino</span>
+                </a>
+            </li>
+            <li>
+                <a href="#l3" >
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                    <span>Imagen como Link</span>
+                </a>
+            </li>
+            <li>
+                <a href="#l4">
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                    <span>Boton como Link</span>
+                </a>
+            </li>
+            <li>
+                <a href="#l5">
+                    <ion-icon name="chevron-forward-circle"></ion-icon>
+                    <span>Crear Marcadores</span>
+                </a>
+            </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
 
-        <h2 title="Bookmarks" id="l5">Crear Marcadores</h2>
+        <div>
+            <div class="linea"></div>
 
-        <p>
-            Los links se pueden utilizar para crear marcadores,<br> de modo que los lectores puedan saltar a partes específicas de una página web. <br>
-            Los marcadores pueden resultar útiles si una página web es muy larga. <br>
-            Para crear un marcador, primero cree el marcador y luego agréguele un enlace. <br>
-            Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba hasta la ubicación con el marcador.
-        </p>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <p>
-            Primero use el atributo <span class="celeste">id</span> para crear un marcador.
-        </p>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
-        <p class="codigo">
-            <span class="celeste">&lt;h2 id="C4"&gt;</span>Capítulo 4<span class="celeste">&lt;/h2&gt;</span>
-        </p>
-
-        <p>
-            Luego, agregue un link al marcador ("Saltar al Capítulo 4"), desde la misma página:
-        </p>
-
-        <p class="codigo">
-            <span class="celeste">&lt;a href="#C4"&gt;</span>Saltar al Capítulo 4<span class="celeste">&lt;/a&gt;</span>
-        </p>
-    
-    
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="seccionlinks" id="l1">
+        
+            <h2>Links CSS</h2>
+    
+            <P>
+                Los links HTML son hipervínculos. <br>
+                Los links se encuentran en casi todas las páginas web. <br>
+                Los links permiten a los usuarios hacer clic para pasar de una página a otra. <br>
+                Cuando mueves el mouse sobre un link, la flecha del mouse se convertirá en una manita. <br>
+                La etiqueta HTML <span class="blue-text">&lta&gt</span> define un hipervínculo.
+            </P>
+    
+            <p class="advertencia">
+                <b>Nota:</b> Un link no tiene que ser texto. ¡Un link puede ser una imagen o cualquier otro elemento HTML!
+            </p>
+    
+            <p>
+                El atributo más importante del elemento <span class="blue-text">&lta&gt</span> es el atributo <span class="blue-text">href</span>, que indica el destino del link. <br>
+                El texto del link es la parte que será visible para el lector. <br>
+                Al hacer clic en el texto del link, se enviará al lector a la dirección URL especificada. <br> <br>
+                De forma predeterminada, los Links aparecerán de la siguiente manera en todos los navegadores:
+            </p>
+    
+            <p>
+                Un link no visitado está subrayado y en azul. <br>
+                Un link visitado está subrayado y en color violeta. <br>
+                Un link activo está subrayado y en rojo. <br>
+            </p>
+    
+            <p class="advertencia">
+                <b>Consejo:</b> Por supuesto, los links se pueden diseñar con CSS para darle otro aspecto.
+            </p>
+    
+            <h2 title="The target Attribute" id="l2">Atributos de Destino</h2>
+    
+            <p>
+                De forma predeterminada, la página vinculada se mostrará en la ventana actual del navegador. <br>
+                Para cambiar esto, debe especificar otro destino para el enlace. <br>
+                El atributo <span class="blue-text">target</span> especifica dónde abrir el documento vinculado. <br>
+                puede tener uno de los siguientes valores:
+            </p>
+    
+            <ul class="lista">
+                <li><span class="blue-text">_self</span>- Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic.</li>
+                <li><span class="blue-text">_blank</span>- Abre el documento en una nueva ventana o pestaña.</li>
+                <li><span class="blue-text">_parent</span>- Abre el documento en el marco principal.</li>
+                <li><span class="blue-text">_top</span>- Abre el documento en el cuerpo completo de la ventana.</li>
+            </ul>
+    
+            <p>
+                Use <span class="blue-text">mailto:</span> dentro del atributo <span class="blue-text">href</span> <br>
+                para crear un link que abra el programa de correo electrónico del usuario <br>
+                (para permitirle enviar un nuevo correo electrónico)
+            </p>
+    
+            <p class="advertencia">
+                <span class="blue-text">&lta href="mailto:someone@example.com"&gt</span>Send email<span class="blue-text">&lt/a&gt</span>
+            </p>
+    
+            <h2 id="l3">Imagen como Link</h2>
+    
+            <p>
+                Para usar una imagen como link, simplemente coloque la etiqueta <span class="blue-text">&ltimg&gt</span> dentro de la etiqueta <span class="blue-text">&lta&gt</span>
+            </p>
+    
+            <p class="codigo">
+                <span class="celeste">&lt;a href=</span>"https://www.ejemplo.com"&gt;
+                    <span class="celeste">&lt;img src=</span>"imagen.jpg" <span class="celeste">alt=</span>"Descripción de la imagen"&gt;
+            </p>
+    
+            <h3>Imagen flotante</h3>
+    
+            <p>
+                Utilice la propiedad CSS <span class="blue-text">float</span> para permitir que la imagen flote hacia la derecha o hacia la izquierda de un texto:
+            </p>
+        
+            <h2 id="l4">Botón como Link</h2>
+    
+            <p>
+                Para utilizar un botón HTML como link, debe agregar algún código JavaScript. <br>
+                JavaScript le permite especificar qué sucede en ciertos eventos, como hacer clic en un botón:
+            </p>
+    
+            <p>
+                El siguiente boton lo creamos de esta manera <br>
+                Primero dentro del <span class="blue-text">body</span> creamos una division con el id"botoncontenedor" <br>
+                a este le damos una funcion de boton con el id "botontop" para despues personalizarlos en CSS. <br>
+                Luego hay que darle codigo JavaScript y eso lo hacemos utilizando el elemento <span class="blue-text">&ltscript&gt</span> dentro del body. <br>
+            </p>
+    
+            <p class="codigo">
+                <span class="blue-text">&lt;script&gt;</span> <br>
+                    <span class="celeste">const botonTop</span> = document.getElementById("botonTop"); <br>
+                    <span class="celeste">botonTop</span>.addEventListener("click", () => { <br>
+                        <span class="celeste">window</span>.scrollTo({ top: 0, behavior: "smooth" }); <br>
+                    });
+                <span class="blue-text">&lt;/script&gt;</span>
+            </p>
+    
+            <p style="text-align: left;">
+                1. <b><em>const botonTop = document.getElementById("botonTop");</em></b> :Esto busca el elemento del botón con el ID "botonTop" en el documento HTML y lo almacena en la variable <br>
+                2. <b><em>botonTop.</em></b> Esto te permite interactuar con el botón utilizando JavaScript. <br>
+                3. <b><em>botonTop.addEventListener("click", () => { ... });</em></b> :Esto agrega un escuchador de eventos al botón. En este caso, estamos escuchando el evento "click", lo que significa que cuando el botón se hace clic, se ejecutará el código que se encuentra dentro de la función de flecha <b><em>() => { ... }</em></b> <br>
+                4. <b>window.scrollTo({ top: 0, behavior: "smooth" });<em></em></b> :Dentro de la función de flecha, estamos utilizando el método <b><em>scrollTo</em></b> en el objeto <b><em>window</em></b>  para desplazar la ventana hacia la parte superior de la página. <br>
+                <b><em>{ top: 0, behavior: "smooth" }</em></b> son opciones que se pasan al método. <b><em>top: 0</em></b> significa que queremos desplazarnos hasta la posición vertical 0, es decir, la parte superior de la página. <br>
+                <b><em>behavior: "smooth</em></b> agrega un efecto de desplazamiento suave en lugar de un salto abrupto.
+            </p>
+    
+            <p>
+                Un Link también puede tener el estilo de un botón mediante CSS:
+            </p>
+    
+            <p class="codigo">
+                <span class="blue-text">&lt;style&gt;</span>
+                    a:link, a:visited {
+                      <span class="celeste">background-color</span>: #f44336;
+                      <span class="celeste">color</span>: white;
+                      <span class="celeste">padding</span>: 15px 25px;
+                      <span class="celeste">text-align</span>: center;
+                      <span class="celeste">text-decoration</span>: none;
+                      <span class="celeste">display</span>: inline-block;
+                    }
+                    
+                    a:hover, a:active {
+                      <span class="celeste">background-color</span>: red;
+                    }
+                <span class="blue-text"> &lt;/style&gt;</span>
+            </p>
+    
+            <ul class="lista" id="liboton">
+                <li>a:link a:visited : Estilos para enlaces antes y despues de ser visitados, Cambia el color y subrayado del texto para resaltar los enlaces.</li>
+                <li><span class="red-text">background-color</span>: Color de fondo</li>
+                <li><span class="red-text">padding</span>: Espacio interno alrededor del contenido. Ajusta la distancia entre el contenido y el borde.</li>
+                <li><span class="red-text">text-align</span>: Controla la alineacion horizontal del texto.</li>
+                <li><span class="red-text">text-decoration</span>: Modifica la apariencia de la decoración del texto, como subrayar, tachar, resaltar o quitar la decoración </li>
+                <li><span class="red-text">display</span>: Controla como se muestra un elemento. (en linea bloque o de otra manera )</li>
+                <li>a:hover: Cambia el estilo cuando el cursor del mouse se coloca sobre él. Proporciona retroalimentación visual al usuario antes de hacer clic en un enlace. </li>
+                <li>a:active:  Estilo que se aplica cuando un enlace está siendo activamente presionado (haciendo clic) por el usuario. Puede ser útil para mostrar el momento en que se hace clic.</li>
+            </ul>
+            
+            <div class="botonContenedor">
+                <button id="botonTop">Ir al inicio</button>
+            </div>
+    
+            <h2 title="Link Titles">Títulos de enlaces</h2>
+    
+            <p>
+                El atributo <span class="blue-text">title</span> especifica información adicional sobre un elemento. <br>
+                La información suele mostrarse como texto de información sobre herramientas <br> cuando el ratón se mueve sobre el elemento.
+            </p>
+    
+            <h2 title="Bookmarks" id="l5">Crear Marcadores</h2>
+    
+            <p>
+                Los links se pueden utilizar para crear marcadores,<br> de modo que los lectores puedan saltar a partes específicas de una página web. <br>
+                Los marcadores pueden resultar útiles si una página web es muy larga. <br>
+                Para crear un marcador, primero cree el marcador y luego agréguele un enlace. <br>
+                Cuando se hace clic en el enlace, la página se desplazará hacia abajo o hacia arriba hasta la ubicación con el marcador.
+            </p>
+    
+            <p>
+                Primero use el atributo <span class="celeste">id</span> para crear un marcador.
+            </p>
+    
+            <p class="codigo">
+                <span class="celeste">&lt;h2 id="C4"&gt;</span>Capítulo 4<span class="celeste">&lt;/h2&gt;</span>
+            </p>
+    
+            <p>
+                Luego, agregue un link al marcador ("Saltar al Capítulo 4"), desde la misma página:
+            </p>
+    
+            <p class="codigo">
+                <span class="celeste">&lt;a href="#C4"&gt;</span>Saltar al Capítulo 4<span class="celeste">&lt;/a&gt;</span>
+            </p>
+        
+        
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

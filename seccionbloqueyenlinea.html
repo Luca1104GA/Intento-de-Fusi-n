@@ -3,228 +3,334 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bloque y en Linea</title>
+    <title>Block and Inline</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-<div class="container">
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-
-    <div class="Estilo_blanco3" id="f1">
-   
-        <h2 title="Block and Inline Elements">Bloque HTML y Elementos en línea</h2>
-
-        <p>
-            Cada elemento HTML tiene un valor de visualización predeterminado, según el tipo de elemento que sea. <br>
-            Hay dos valores de visualización: <b><em>bloque y en línea</em></b>.
-        </p>
-
-        <h3 title="Block-level Elements">Elementos a nivel de bloque</h3>
-
-        <p>
-            Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores agregan <br>
-            automáticamente algo de espacio (un margen) antes y después del elemento.
-        </p>
-
-        <p class="advertencia">
-            Un elemento a nivel de bloque siempre ocupa todo el ancho disponible <br>
-            (<em>se extiende hacia la izquierda y hacia la derecha tanto como puede</em>).
-        </p>
-
-        <p>
-            Dos elementos de bloque comúnmente utilizados son: <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span>. <br><br>
-            El elemento <span class="blue-text">&lt;p&gt;</span> define un párrafo en un documento HTML. <br>
-            El elemento <span class="blue-text">&lt;div&gt;</span> define una división o una sección en un documento HTML.
-        </p>
-
-        <p style="border-width:1px; border-style:solid; padding:5px; border-color: forestgreen;">
-            El elemento <span class="blue-text">&lt;p&gt;</span> es un elemento a nivel de bloque.
-        </p>
-
-        <div style="border-width:1px; border-style:solid; padding:5px; border-color: green;">
-            El elemento <span class="blue-text">&lt;div&gt;</span> es un elemento a nivel de bloque.
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="grid-outline"></ion-icon>
+                <span>Block &amp; Inline</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
         </div>
 
-        <p class="advertencia">
-            Los elementos <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span> son elementos de bloque, siempre comenzarán en una nueva línea y ocuparán todo el ancho disponible <br>
-            (se extienden hacia la izquierda y hacia la derecha tanto como sea posible).
-        </p>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-        <table class="table3" id="f2">
-            <caption><b>Estos son los elementos a nivel de bloque en HTML:</b></caption>
-            <tr>
-                <td>address</td>
-                <td>article</td>
-                <td>aside</td>
-                <td>blockquote</td>
-                <td>canvas</td>
-                <td>dd</td>
-            </tr>
-            <tr>
-                <td>div</td>
-                <td>dl</td>
-                <td>dt</td>
-                <td>fieldset</td>
-                <td>figcaption</td>
-                <td>figure</td>
-            </tr>
-            <tr>
-                <td>footer</td>
-                <td>form</td>
-                <td>h1-h6</td>
-                <td>header</td>
-                <td>hr</td>
-                <td>li</td>
-            </tr>
-            <tr>
-                <td>main</td>
-                <td>nav</td>
-                <td>noscript</td>
-                <td>ol</td>
-                <td>p</td>
-                <td>pre</td>
-            </tr>
-            <tr>
-                <td>section</td>
-                <td>table</td>
-                <td>tfoot</td>
-                <td>ul</td>
-                <td>video</td>
-                <td></td>
-            </tr>
-        </table>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="grid-outline"></ion-icon>
+                        <span>Bloque y en Línea!</span>
+                </li>
+                <li>
+                    <a href="#f2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Nivel de Bloque</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#f3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Elementos en Linea</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#f4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>El elemento &lt;div&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#f5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>El elemento &lt;span&gt;</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
 
-        <h3 title="Inline Elements" id="f3">Elementos en línea</h3>
+        <div>
+            <div class="linea"></div>
 
-        <p>
-            Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario. <br><br>
-            Este es <span style="border-width:1px; border-style:solid; padding:5px; border-color: green;">un elemento <span class="blue-text">&lt;span&gt;</span> dentro de</span> un párrafo.
-        </p>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <table class="table3">
-            <caption><b>Aquí están los elementos en línea en HTML:</b></caption>
-            <tr>
-                <td>a</td>
-                <td>abbr</td>
-                <td>acronym</td>
-                <td>b</td>
-                <td>bdo</td>
-                <td>big</td>
-            </tr>
-            <tr>
-                <td>br</td>
-                <td>button</td>
-                <td>cite</td>
-                <td>code</td>
-                <td>dfn</td>
-                <td>en</td>
-            </tr>
-            <tr>
-                <td>i</td>
-                <td>img</td>
-                <td>input</td>
-                <td>kbd</td>
-                <td>label</td>
-                <td>map</td>
-            </tr>
-            <tr>
-                <td>object</td>
-                <td>output</td>
-                <td>q</td>
-                <td>samp</td>
-                <td>script</td>
-                <td>select</td>
-            </tr>
-            <tr>
-                <td>small</td>
-                <td>span</td>
-                <td>strong</td>
-                <td>sub</td>
-                <td>sup</td>
-                <td>textarea</td>
-            </tr>
-            <tr>
-                <td>time</td>
-                <td>tt</td>
-                <td>var</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-
-        <p class="advertencia">
-            <b><em>Nota:</em></b> Un elemento en línea no puede contener un elemento a nivel de bloque!
-        </p>
-
-        <h3 title="The &lt;div&gt; Element" id="f4">El elemento &lt;div&gt;</h3>
-
-        <p>
-            El elemento <span class="blue-text">&lt;div&gt;</span> se utiliza a menudo como contenedor para otros elementos HTML. <br>
-            no tiene atributos obligatorios, pero <span class="red-text">style class id</span> son comunes. <br><br>
-            Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;div&gt;</span> se puede usar para diseñar bloques de contenido:
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-
-            <div style="background-color:black;color:white;padding:20px;">
-                <h2>London</h2>
-                <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-            </div> 
-
-            <p class="codigo">
-
-    &lt;<span class="blue-text">div</span> <span class="red-text">style</span><span class="celeste">="background-color:black;color:white;padding:20px;"</span>&gt;
-        &lt;<span class="blue-text">h2</span>&gt;London&lt;<span class="blue-text">/h2</span>&gt;
-        &lt;<span class="blue-text">p</span>&gt;London is the capital city of England. It is the most populous city
-        in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
-        &lt;<span class="blue-text">/p</span>&gt;
-    &lt;<span class="blue-text">/div</span>&gt;
-
-            </p>
-
-        </article>
-
-        <h3 title="The &lt;span&gt; Element" id="f5">El elemento &lt;span&gt;</h3>
-
-        <p>
-            El elemento <span class="blue-text">&lt;span&gt;</span> es un contenedor en línea que se utiliza para marcar una parte de un texto <br>
-            o una parte de un documento. No tiene atributos obligatorios pero al igual que con el <span class="blue-text">&lt;div&gt;</span> <span class="red-text"><q>style class id</q></span> son comunes. <br><br>
-            Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;span&gt;</span> se puede usar para diseñar partes del texto:
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-
-            <p>
-                Mi madre tiene ojos <span style="color:blue;font-weight:bold;">azules</span> y mi padre los tiene <span style="color:darkolivegreen;font-weight:bold;">Verdes</span>.
-            </p>
-
-            <p class="codigo">
-
-    &lt;<span class="blue-text">p</span>&gt;
-        Mi madre tiene ojos &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: blue;font-weight:bold;"</span>azules&lt;/<span class="blue-text">span</span>&gt;
-        y mi padre los tiene &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: green;font-weight:bold;"</span>verdes&lt;/<span class="blue-text">span</span>&gt;
-    &lt;/<span class="blue-text">p</span>&gt;
-
-        </article>
-
-        <p>
-            En resumen: <br><br>
-            Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible <br>
-            Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario!
-        </p>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="f1">
+   
+            <h2 title="Block and Inline Elements">Bloque HTML y Elementos en línea</h2>
+    
+            <p>
+                Cada elemento HTML tiene un valor de visualización predeterminado, según el tipo de elemento que sea. <br>
+                Hay dos valores de visualización: <b><em>bloque y en línea</em></b>.
+            </p>
+    
+            <h3 title="Block-level Elements">Elementos a nivel de bloque</h3>
+    
+            <p>
+                Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores agregan <br>
+                automáticamente algo de espacio (un margen) antes y después del elemento.
+            </p>
+    
+            <p class="advertencia">
+                Un elemento a nivel de bloque siempre ocupa todo el ancho disponible <br>
+                (<em>se extiende hacia la izquierda y hacia la derecha tanto como puede</em>).
+            </p>
+    
+            <p>
+                Dos elementos de bloque comúnmente utilizados son: <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span>. <br><br>
+                El elemento <span class="blue-text">&lt;p&gt;</span> define un párrafo en un documento HTML. <br>
+                El elemento <span class="blue-text">&lt;div&gt;</span> define una división o una sección en un documento HTML.
+            </p>
+    
+            <p style="border-width:1px; border-style:solid; padding:5px; border-color: forestgreen;">
+                El elemento <span class="blue-text">&lt;p&gt;</span> es un elemento a nivel de bloque.
+            </p>
+    
+            <div style="border-width:1px; border-style:solid; padding:5px; border-color: green;">
+                El elemento <span class="blue-text">&lt;div&gt;</span> es un elemento a nivel de bloque.
+            </div>
+    
+            <p class="advertencia">
+                Los elementos <span class="blue-text">&lt;p&gt;</span> y <span class="blue-text">&lt;div&gt;</span> son elementos de bloque, siempre comenzarán en una nueva línea y ocuparán todo el ancho disponible <br>
+                (se extienden hacia la izquierda y hacia la derecha tanto como sea posible).
+            </p>
+    
+            <table class="table3" id="f2">
+                <caption><b>Estos son los elementos a nivel de bloque en HTML:</b></caption>
+                <tr>
+                    <td>address</td>
+                    <td>article</td>
+                    <td>aside</td>
+                    <td>blockquote</td>
+                    <td>canvas</td>
+                    <td>dd</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>dl</td>
+                    <td>dt</td>
+                    <td>fieldset</td>
+                    <td>figcaption</td>
+                    <td>figure</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td>form</td>
+                    <td>h1-h6</td>
+                    <td>header</td>
+                    <td>hr</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>main</td>
+                    <td>nav</td>
+                    <td>noscript</td>
+                    <td>ol</td>
+                    <td>p</td>
+                    <td>pre</td>
+                </tr>
+                <tr>
+                    <td>section</td>
+                    <td>table</td>
+                    <td>tfoot</td>
+                    <td>ul</td>
+                    <td>video</td>
+                    <td></td>
+                </tr>
+            </table>
+    
+            <h3 title="Inline Elements" id="f3">Elementos en línea</h3>
+    
+            <p>
+                Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario. <br><br>
+                Este es <span style="border-width:1px; border-style:solid; padding:5px; border-color: green;">un elemento <span class="blue-text">&lt;span&gt;</span> dentro de</span> un párrafo.
+            </p>
+    
+            <table class="table3">
+                <caption><b>Aquí están los elementos en línea en HTML:</b></caption>
+                <tr>
+                    <td>a</td>
+                    <td>abbr</td>
+                    <td>acronym</td>
+                    <td>b</td>
+                    <td>bdo</td>
+                    <td>big</td>
+                </tr>
+                <tr>
+                    <td>br</td>
+                    <td>button</td>
+                    <td>cite</td>
+                    <td>code</td>
+                    <td>dfn</td>
+                    <td>en</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>img</td>
+                    <td>input</td>
+                    <td>kbd</td>
+                    <td>label</td>
+                    <td>map</td>
+                </tr>
+                <tr>
+                    <td>object</td>
+                    <td>output</td>
+                    <td>q</td>
+                    <td>samp</td>
+                    <td>script</td>
+                    <td>select</td>
+                </tr>
+                <tr>
+                    <td>small</td>
+                    <td>span</td>
+                    <td>strong</td>
+                    <td>sub</td>
+                    <td>sup</td>
+                    <td>textarea</td>
+                </tr>
+                <tr>
+                    <td>time</td>
+                    <td>tt</td>
+                    <td>var</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+    
+            <p class="advertencia">
+                <b><em>Nota:</em></b> Un elemento en línea no puede contener un elemento a nivel de bloque!
+            </p>
+    
+            <h3 title="The &lt;div&gt; Element" id="f4">El elemento &lt;div&gt;</h3>
+    
+            <p>
+                El elemento <span class="blue-text">&lt;div&gt;</span> se utiliza a menudo como contenedor para otros elementos HTML. <br>
+                no tiene atributos obligatorios, pero <span class="red-text">style class id</span> son comunes. <br><br>
+                Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;div&gt;</span> se puede usar para diseñar bloques de contenido:
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo:
+    
+                <div style="background-color:black;color:white;padding:20px;">
+                    <h2>London</h2>
+                    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+                </div> 
+    
+                <p class="codigo">
+    
+        &lt;<span class="blue-text">div</span> <span class="red-text">style</span><span class="celeste">="background-color:black;color:white;padding:20px;"</span>&gt;
+            &lt;<span class="blue-text">h2</span>&gt;London&lt;<span class="blue-text">/h2</span>&gt;
+            &lt;<span class="blue-text">p</span>&gt;London is the capital city of England. It is the most populous city
+            in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+            &lt;<span class="blue-text">/p</span>&gt;
+        &lt;<span class="blue-text">/div</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+            <h3 title="The &lt;span&gt; Element" id="f5">El elemento &lt;span&gt;</h3>
+    
+            <p>
+                El elemento <span class="blue-text">&lt;span&gt;</span> es un contenedor en línea que se utiliza para marcar una parte de un texto <br>
+                o una parte de un documento. No tiene atributos obligatorios pero al igual que con el <span class="blue-text">&lt;div&gt;</span> <span class="red-text"><q>style class id</q></span> son comunes. <br><br>
+                Cuando se usa junto con CSS, el elemento <span class="blue-text">&lt;span&gt;</span> se puede usar para diseñar partes del texto:
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo:
+    
+                <p>
+                    Mi madre tiene ojos <span style="color:blue;font-weight:bold;">azules</span> y mi padre los tiene <span style="color:darkolivegreen;font-weight:bold;">Verdes</span>.
+                </p>
+    
+                <p class="codigo">
+    
+        &lt;<span class="blue-text">p</span>&gt;
+            Mi madre tiene ojos &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: blue;font-weight:bold;"</span>azules&lt;/<span class="blue-text">span</span>&gt;
+            y mi padre los tiene &lt;<span class="blue-text">span</span> <span class="red-text">style</span><span class="celeste">="color: green;font-weight:bold;"</span>verdes&lt;/<span class="blue-text">span</span>&gt;
+        &lt;/<span class="blue-text">p</span>&gt;
+    
+            </article>
+    
+            <p>
+                En resumen: <br><br>
+                Un elemento a nivel de bloque siempre comienza en una nueva línea y ocupa todo el ancho disponible <br>
+                Un elemento en línea no comienza en una nueva línea y solo ocupa el ancho necesario!
+            </p>
+    
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

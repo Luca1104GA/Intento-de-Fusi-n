@@ -3,595 +3,719 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Semantics</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_negro2" id="p1">
-    
-        <h1 title="Semantic Elements">Elementos semánticos</h1>
-
-        <p>
-            <em>Elementos semánticos = Elementos con significado.</em>
-        </p>
-
-        <h3>¿Qué son los elementos semánticos?</h3>
-
-        <p>Un elemento semántico describe claramente su significado tanto para el navegador como para el desarrolador.</p>
-
-        <ul class="lista">
-            <li>Ejemplos de elementos <strong>no semánticos</strong>: <code><span class="blue-text">&lt;div&gt;</span></code> y <code><span class="blue-text">&lt;span&gt;</span></code> - No dicen nada sobre su contenido.</li>
-            <li>Ejemplos de elementos <strong>semánticos</strong>: <code><span class="blue-text">&lt;form&gt;</span></code>, <code><span class="blue-text">&lt;table&gt;</span></code>, y <code><span class="blue-text">&lt;article&gt;</span></code> - Definen claramente su contenido.</li>
-        </ul>
-
-        <h3>Elementos semánticos en HTML</h3>
-
-        <p>
-            Muchos sitios web contienen código HTML como : <code>&lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;</code><br>
-            para indicar navegación, encabezado y pie de página.
-        </p>
-
-        <p>
-            En HTML existen algunos elementos semánticos que se pueden utilizar para definir diferentes partes de una página web:
-        </p>
-
-        <table class="table6">
-            <tbody>
-                <tr>
-                    <td>
-                        <ul class="lista2" style="color: white;">
-                            <li><code>&lt;article&gt;</code></li>
-                            <li><code>&lt;aside&gt;</code></li>
-                            <li><code>&lt;details&gt;</code></li>
-                            <li><code>&lt;figcaption&gt;</code></li>
-                            <li><code>&lt;figure&gt;</code></li>
-                            <li><code>&lt;footer&gt;</code></li>
-                            <li><code>&lt;header&gt;</code></li>
-                            <li><code>&lt;main&gt;</code></li>
-                            <li><code>&lt;mark&gt;</code></li>
-                            <li><code>&lt;nav&gt;</code></li>
-                            <li><code>&lt;section&gt;</code></li>
-                            <li><code>&lt;summary&gt;</code></li>
-                            <li><code>&lt;time&gt;</code></li>
-                        </ul>
-                    </td>
-                    <td>
-                        <img alt="HTML5 Semantic Elements" src="imagenes/img_sem_elements.gif">
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2 id="p2">&lt;section&gt;</h2>
-
-        <p>
-            El elemento <code><span class="blue">&lt;section&gt;</span></code> define una sección en un documento. <br><br>
-            <em>"Una seccion es una agrupacioón temática de contenido, normalmente con un encabezado"</em> <br>
-            Ejemplos dónde el elemento <code><span class="blue">&lt;section&gt;</span></code> se puede utilizar:
-        </p>
-
-        
-        <ul class="lista">
-            <li>Capítulos</li>
-            <li>Introducciónes</li>
-            <li>Noticias</li>
-            <li>Información de contacto</li>
-        </ul>
-
-        <p>
-            Normalmente, una página web se puede dividir en secciones para introducción, contenido e información de contacto.
-        </p>
-
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <p>Dos secciones en un documento:</p>
-
-            <div style="background-color: white; color: black;">
-                <section>
-                    <h1 style="text-align: center;">WWF</h1>
-                    <p>
-                        El Fondo Mundial para la Naturaleza (WWF) es una organización internacional que trabaja en temas relacionados<br>
-                        con la conservación, investigación y restauración del medio ambiente, anteriormente llamado<br>
-                        Fondo Mundial para la Naturaleza. WWF fue fundada en 1961.
-                    </p>
-                </section>
-                  
-                <section>
-                    <h1 style="text-align: center;">WWF's Símbolo Panda</h1>
-                    <p>
-                        El Panda se ha convertido en el símbolo de WWF. El conocido logotipo del panda de WWF se originó<br>
-                        a partir de un panda llamado Chi Chi que fue transferido del Zoológico de Beijing al Zoológico de Londres<br>
-                        el mismo año de la creación de WWF.
-                    </p>
-                </section>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="newspaper-outline"></ion-icon>
+                <span>Semantics!</span>
             </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                        <span>Semantics</span>
+                </li>
+                <li>
+                    <a href="#p2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;section&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;article&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;header&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;footer&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;nav&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;aside&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#p8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;figure&gt;&lt;figcaption&gt;</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_negro2" id="p1">
+    
+            <h1 title="Semantic Elements">Elementos semánticos</h1>
+    
+            <p>
+                <em>Elementos semánticos = Elementos con significado.</em>
+            </p>
+    
+            <h3>¿Qué son los elementos semánticos?</h3>
+    
+            <p>Un elemento semántico describe claramente su significado tanto para el navegador como para el desarrolador.</p>
+    
+            <ul class="lista">
+                <li>Ejemplos de elementos <strong>no semánticos</strong>: <code><span class="blue-text">&lt;div&gt;</span></code> y <code><span class="blue-text">&lt;span&gt;</span></code> - No dicen nada sobre su contenido.</li>
+                <li>Ejemplos de elementos <strong>semánticos</strong>: <code><span class="blue-text">&lt;form&gt;</span></code>, <code><span class="blue-text">&lt;table&gt;</span></code>, y <code><span class="blue-text">&lt;article&gt;</span></code> - Definen claramente su contenido.</li>
+            </ul>
+    
+            <h3>Elementos semánticos en HTML</h3>
+    
+            <p>
+                Muchos sitios web contienen código HTML como : <code>&lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;</code><br>
+                para indicar navegación, encabezado y pie de página.
+            </p>
+    
+            <p>
+                En HTML existen algunos elementos semánticos que se pueden utilizar para definir diferentes partes de una página web:
+            </p>
+    
+            <table class="table6">
+                <tbody>
+                    <tr>
+                        <td>
+                            <ul class="lista2" style="color: white;">
+                                <li><code>&lt;article&gt;</code></li>
+                                <li><code>&lt;aside&gt;</code></li>
+                                <li><code>&lt;details&gt;</code></li>
+                                <li><code>&lt;figcaption&gt;</code></li>
+                                <li><code>&lt;figure&gt;</code></li>
+                                <li><code>&lt;footer&gt;</code></li>
+                                <li><code>&lt;header&gt;</code></li>
+                                <li><code>&lt;main&gt;</code></li>
+                                <li><code>&lt;mark&gt;</code></li>
+                                <li><code>&lt;nav&gt;</code></li>
+                                <li><code>&lt;section&gt;</code></li>
+                                <li><code>&lt;summary&gt;</code></li>
+                                <li><code>&lt;time&gt;</code></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <img alt="HTML5 Semantic Elements" src="imagenes/img_sem_elements.gif">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h2 id="p2">&lt;section&gt;</h2>
+    
+            <p>
+                El elemento <code><span class="blue">&lt;section&gt;</span></code> define una sección en un documento. <br><br>
+                <em>"Una seccion es una agrupacioón temática de contenido, normalmente con un encabezado"</em> <br>
+                Ejemplos dónde el elemento <code><span class="blue">&lt;section&gt;</span></code> se puede utilizar:
+            </p>
+    
             
-            <pre class="codigo">
-                <code>
-                    &lt;<span class="blue-text">section</span>&gt;
-                        &lt;<span class="blue-text">h1</span>&gt;WWF&lt;/<span class="blue-text">h1</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            El Fondo Mundial para la Naturaleza (WWF) es una organización
-                            internacional que trabaja en temas relacionados con la conservación,
-                            investigación y restauración del medio ambiente, anteriormente llamado
+            <ul class="lista">
+                <li>Capítulos</li>
+                <li>Introducciónes</li>
+                <li>Noticias</li>
+                <li>Información de contacto</li>
+            </ul>
+    
+            <p>
+                Normalmente, una página web se puede dividir en secciones para introducción, contenido e información de contacto.
+            </p>
+    
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <p>Dos secciones en un documento:</p>
+    
+                <div style="background-color: white; color: black;">
+                    <section>
+                        <h1 style="text-align: center;">WWF</h1>
+                        <p>
+                            El Fondo Mundial para la Naturaleza (WWF) es una organización internacional que trabaja en temas relacionados<br>
+                            con la conservación, investigación y restauración del medio ambiente, anteriormente llamado<br>
                             Fondo Mundial para la Naturaleza. WWF fue fundada en 1961.
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">section</span>&gt;
-                    
-                    &lt;<span class="blue-text">section</span>&gt;
-                        &lt;<span class="blue-text">h1</span>&gt;WWF's Símbolo Panda&lt;/<span class="blue-text">h1</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            El Panda se ha convertido en el símbolo de WWF. El conocido logotipo
-                            del panda de WWF se originó a partir de un panda llamado Chi Chi que
-                            fue transferido del Zoológico de Beijing al Zoológico de Londres
+                        </p>
+                    </section>
+                      
+                    <section>
+                        <h1 style="text-align: center;">WWF's Símbolo Panda</h1>
+                        <p>
+                            El Panda se ha convertido en el símbolo de WWF. El conocido logotipo del panda de WWF se originó<br>
+                            a partir de un panda llamado Chi Chi que fue transferido del Zoológico de Beijing al Zoológico de Londres<br>
                             el mismo año de la creación de WWF.
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">section</span>&gt;
-                </code>
-            </pre>
-
-        </article>
-
-        <h2 id="p3">&lt;article&gt;</h2>
-
-        <p><em>El elemento <span class="blue-text">&lt;article&gt;</span> especifica contenido independiente y autónomo.</em></p>
-
-        <p>
-            Un article deberia tener sentido por si solo, y deberia ser posible distribuirlo independiente del resto del sitio web.
-        </p>
-
-        <p>Ejemplos dónde el elemento <span class="blue-text">&lt;article&gt;</span> se puede utilizar:</p>
-
-        <ul class="lista">
-            <li>Publicaciones del foro</li>
-            <li>Publicaciones de blog</li>
-            <li>Comentarios del usuario</li>
-            <li>Tarjetas de producto</li>
-            <li>Artículos del periódico</li>
-        </ul>
-
-        <article class="ejemplo">
-            
-            Ejemplo
-
-            <p>Tres artículos con contenido independiente y autónomo</p>
-
-            <article style="color: black; background-image: none; background-color: rgb(255, 255, 255);">
-                <h2>Google Chrome</h2>
-                <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                        </p>
+                    </section>
+                </div>
+    
+                
+                <pre class="codigo">
+                    <code>
+                        &lt;<span class="blue-text">section</span>&gt;
+                            &lt;<span class="blue-text">h1</span>&gt;WWF&lt;/<span class="blue-text">h1</span>&gt;
+                            &lt;<span class="blue-text">p</span>&gt;
+                                El Fondo Mundial para la Naturaleza (WWF) es una organización
+                                internacional que trabaja en temas relacionados con la conservación,
+                                investigación y restauración del medio ambiente, anteriormente llamado
+                                Fondo Mundial para la Naturaleza. WWF fue fundada en 1961.
+                            &lt;/<span class="blue-text">p</span>&gt;
+                        &lt;/<span class="blue-text">section</span>&gt;
+                        
+                        &lt;<span class="blue-text">section</span>&gt;
+                            &lt;<span class="blue-text">h1</span>&gt;WWF's Símbolo Panda&lt;/<span class="blue-text">h1</span>&gt;
+                            &lt;<span class="blue-text">p</span>&gt;
+                                El Panda se ha convertido en el símbolo de WWF. El conocido logotipo
+                                del panda de WWF se originó a partir de un panda llamado Chi Chi que
+                                fue transferido del Zoológico de Beijing al Zoológico de Londres
+                                el mismo año de la creación de WWF.
+                            &lt;/<span class="blue-text">p</span>&gt;
+                        &lt;/<span class="blue-text">section</span>&gt;
+                    </code>
+                </pre>
+    
             </article>
-              
-            <article style="color: rgb(255, 255, 255); background-image: none; background-color: rgb(255, 0, 0);">
-                <h2 style="color: #000000;">Mozilla Firefox</h2>
-                <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-            </article>
-              
-            <article style="color: black; background-image: none; background-color: rgb(255, 255, 255);">
-                <h2>Microsoft Edge</h2>
-                <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-            </article>
-            
-            <pre class="codigo">
-                <code>
-                    &lt;<span class="blue-text">article</span>&gt;
-                        &lt;<span class="blue-text">h2</span>&gt;Google Chrome&lt;/<span class="blue-text">h2</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            Google Chrome is a web browser developed by Google, released in 2008.
-                            Chrome is the world's most popular web browser today!
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">article</span>&gt;
-                      
-                    &lt;<span class="blue-text">article</span>&gt;
-                        &lt;<span class="blue-text">h2</span>&gt;Mozilla Firefox&lt;/<span class="blue-text">h2</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            Mozilla Firefox is an open-source web browser developed by Mozilla.
-                            Firefox has been the second most popular web browser
-                            since January, 2018.
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">article</span>&gt;
-                      
-                    &lt;<span class="blue-text">article</span>&gt;
-                        &lt;<span class="blue-text">h2</span>&gt;Microsoft Edge&lt;/<span class="blue-text">h2</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            Microsoft Edge is a web browser developed by Microsoft, released in
-                            2015. Microsoft Edge replaced Internet Explorer.
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">article</span>&gt;
-                </code>
-            </pre>
-            
-            Ejemplo 2: 
-
-            <p>Utilice CSS para diseñar el elemento &lt;article&gt;</p>
-
-            <div class="botonContenedor">
-                <iframe src="ejemplo2.html" frameborder="0" height="320" width="770"></iframe>
-            </div>
-
-            <pre class="codigo">
-                <code>
-                    &lt;!<span class="blue-text">DOCTYPE</span> <span class="red-text">html</span>&gt;
-                    &lt;<span class="blue-text">html</span>&gt;
-                    &lt;<span class="blue-text">head</span>&gt;
-                    &lt;<span class="blue-text">style</span>&gt;
-
-                    <span class="red-text">.all-browsers</span> {
-                        <span class="celeste">margin</span>: 0;
-                        <span class="celeste">padding</span>: 5<span class="blue-text">px</span>;
-                        <span class="celeste">background-color</span>: <span class="celeste">lightgray</span>;
-                    }
-
-                    <span class="red-text">.all-browsers</span> <span class="blue-text">&gt; h1</span>, <span class="red-text">.browser</span> {
-                        <span class="celeste">margin</span>: 10<span class="blue-text">px</span>;
-                        <span class="celeste">padding</span>: 5<span class="blue-text">px</span>;
-                    }
-
-                    <span class="red-text">.browser</span> {
-                        <span class="celeste">background</span>: <span class="celeste">white</span>;
-                    }
-
-                    <span class="red-text">.browser</span> <span class="blue-text">&gt; h2</span>, <span class="blue-text">p</span> {
-                        <span class="celeste">margin</span>: 4<span class="blue-text">px</span>;
-                        <span class="celeste">font-size</span>: 90<span class="blue-text">%</span>;
-                    }
-
-                    &lt;/<span class="blue-text">style</span>&gt;
-                    &lt;/<span class="blue-text">head</span>&gt;
-                    &lt;<span class="blue-text">body</span>&gt;
-
-                    &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="all-browsers"</span>&gt;
-                        &lt;h1&gt;Most Popular Browsers&lt;/h1&gt;
-                        &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+    
+            <h2 id="p3">&lt;article&gt;</h2>
+    
+            <p><em>El elemento <span class="blue-text">&lt;article&gt;</span> especifica contenido independiente y autónomo.</em></p>
+    
+            <p>
+                Un article deberia tener sentido por si solo, y deberia ser posible distribuirlo independiente del resto del sitio web.
+            </p>
+    
+            <p>Ejemplos dónde el elemento <span class="blue-text">&lt;article&gt;</span> se puede utilizar:</p>
+    
+            <ul class="lista">
+                <li>Publicaciones del foro</li>
+                <li>Publicaciones de blog</li>
+                <li>Comentarios del usuario</li>
+                <li>Tarjetas de producto</li>
+                <li>Artículos del periódico</li>
+            </ul>
+    
+            <article class="ejemplo">
+                
+                Ejemplo
+    
+                <p>Tres artículos con contenido independiente y autónomo</p>
+    
+                <article style="color: black; background-image: none; background-color: rgb(255, 255, 255);">
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                </article>
+                  
+                <article style="color: rgb(255, 255, 255); background-image: none; background-color: rgb(255, 0, 0);">
+                    <h2 style="color: #000000;">Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                </article>
+                  
+                <article style="color: black; background-image: none; background-color: rgb(255, 255, 255);">
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                </article>
+                
+                <pre class="codigo">
+                    <code>
+                        &lt;<span class="blue-text">article</span>&gt;
                             &lt;<span class="blue-text">h2</span>&gt;Google Chrome&lt;/<span class="blue-text">h2</span>&gt;
                             &lt;<span class="blue-text">p</span>&gt;
-                                Google Chrome is a web browser developed by Google, released in
-                                2008.Chrome is the world's most popular web browser today!
+                                Google Chrome is a web browser developed by Google, released in 2008.
+                                Chrome is the world's most popular web browser today!
                             &lt;/<span class="blue-text">p</span>&gt;
                         &lt;/<span class="blue-text">article</span>&gt;
-
-                        &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+                          
+                        &lt;<span class="blue-text">article</span>&gt;
                             &lt;<span class="blue-text">h2</span>&gt;Mozilla Firefox&lt;/<span class="blue-text">h2</span>&gt;
                             &lt;<span class="blue-text">p</span>&gt;
-                                Mozilla Firefox is an open-source web browser developed by
-                                Mozilla. Firefox has been the second most popular web browser 
+                                Mozilla Firefox is an open-source web browser developed by Mozilla.
+                                Firefox has been the second most popular web browser
                                 since January, 2018.
                             &lt;/<span class="blue-text">p</span>&gt;
                         &lt;/<span class="blue-text">article</span>&gt;
-
-                        &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+                          
+                        &lt;<span class="blue-text">article</span>&gt;
                             &lt;<span class="blue-text">h2</span>&gt;Microsoft Edge&lt;/<span class="blue-text">h2</span>&gt;
                             &lt;<span class="blue-text">p</span>&gt;
-                                Microsoft Edge is a web browser developed by Microsoft, released
-                                in 2015. Microsoft Edge replaced Internet Explorer.
+                                Microsoft Edge is a web browser developed by Microsoft, released in
+                                2015. Microsoft Edge replaced Internet Explorer.
                             &lt;/<span class="blue-text">p</span>&gt;
                         &lt;/<span class="blue-text">article</span>&gt;
-                    &lt;/<span class="blue-text">article</span>&gt;
-
-                    &lt;/<span class="blue-text">body</span>&gt;
-                    &lt;/<span class="blue-text">html</span>&gt;
-                </code>
-            </pre>
-
-        </article>
-
-        <h3 title="Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?">¿Anidar &lt;article&gt; en &lt;section&gt; o viceversa?</h3>
-
-        <p>
-            El elemento <span class="blue-text">&lt;article&gt;</span> especifica contenido independiente y autónomo. <br>
-            El elemento <span class="blue-text">&lt;section&gt;</span> define la sección de un documento. <br> <br>
-            ¿Podemos usar las definiciones para decidir cómo anidar esos elementos?... ¡No podemos! <br> <br>
-            Entocnes encontrará páginas HTML com elementos <span class="blue-text">&lt;section&gt;</span> que contienen elementos <span class="blue-text">&lt;article&gt;</span> y <br>
-            elementos <span class="blue-text">&lt;article&gt;</span> que contienen elementos <span class="blue-text">&lt;section&gt;</span>. 
-        </p>
-
-        <h2 id="p4">&lt;header&gt;</h2>
-
-        <p>
-            El elemento <span class="blue-text">&lt;header&gt;</span> representa un contenedor para contenido introductorio <br>
-            o un conjunto de enlaces de navegación.
-        </p>
-
-        <ul class="lista2">
-            <caption><code><span class="blue-text">&lt;header&gt;</span></code> normalmente contiene:</caption>
-            <li>Uno o más elementos de encabezado (&lt;h1&gt;-&lt;h6&gt;)</li>
-            <li>Icono o Logotipo</li>
-            <li>informacion de autoria</li>
-        </ul>
-
-        <p class="advertencia">
-            <em><b><strong>Nota:</strong></b></em> Puede tener varios elementos <code><span class="blue-text">&lt;header&gt;</span></code> en un documento HTML. Sin embargo, <code><span class="blue-text">&lt;header&gt;</span></code> <br>
-            no se puede colocar dentro de un <code><span class="blue-text">&lt;footer&gt;</span></code>, <code><span class="blue-text">&lt;address&gt;</span></code> u otro elemento <code><span class="blue-text">&lt;header&gt;</span></code>.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <p style="text-align: left;">
-                Un encabezado para un &lt;article&gt; :
-            </p>
-
-            <article style="background: white; color: black;">
-                <header>
-                  <h1 style="text-align: center;">What Does WWF Do?</h1>
-                  <p>WWF's mission:</p>
-                </header>
-                <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
-            </article>
-            
-            <pre class="codigo">
-                <code>
-                    &lt;<span class="blue-text">article</span>&gt;
-                        &lt;<span class="blue-text">header</span>&gt;
-                          &lt;<span class="blue-text">h1</span>&gt;What Does WWF Do?&lt;/<span class="blue-text">h1</span>&gt;
-                          &lt;<span class="blue-text">p</span>&gt;
-                            WWF's mission:
-                          &lt;/<span class="blue-text">p</span>&gt;
-                        &lt;/<span class="blue-text">header</span>&gt;
-                        &lt;<span class="blue-text">p</span>&gt;
-                            WWF's mission is to stop the degradation of our planet's natural
-                            environment, and build a future in which humans live in
-                            harmony with nature.
-                        &lt;/<span class="blue-text">p</span>&gt;
-                    &lt;/<span class="blue-text">article</span>&gt;
-                </code>
-            </pre>
-
-        </article>
-
-        <h2 id="p5">&lt;footer&gt;</h2>
-
-        <p>
-            El elemento <span class="blue-text">&lt;footer&gt;</span> define un pie de página para un docuemnto o sección. <br>
-        </p>
-
-        <caption>Un <span class="blue-text">&lt;footer&gt;</span> tipicamente contiene:</caption>
-        <ul class="lista">
-            <li>Información del autor</li>
-            <li>Informacion del copyright</li>
-            <li>Informacion de contacto</li>
-            <li>Mapa del sitio</li>
-            <li>Enlaces para volver a la parte superior</li>
-            <li>Documentos relacionados</li>
-        </ul>
-
-        <p>
-            <em>Puedes tener varios elementos <span class="blue-text">&lt;footer&gt;</span> en un solo documento.</em>
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <p>Una sección de pie de página en un documento:</p>
-
-            <footer style="background: white; color: black;">
-                <p>Autor: Lukita Pe</p>
-                <p><a href="mailto:hege@example.com" style="color: red;">lukitape@example.com</a></p>
-            </footer>
-
-            <div class="w3-code notranslate htmlHigh">
-  
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Autor: Lukita Pe<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="mailto:lukitape@example.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>lukitape@example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            
-            </div>
-
-        </article>
-
-        <h2 id="p6">&lt;nav&gt;</h2>
-
-        <p>
-            El elemento <code><span class="blue-text">&lt;nav&gt;</span></code> define un conjunto de enlaces de navegación.
-        </p>
-
-        <p>
-            Tenga en cuenta que <strong>NO</strong> todos los enlaces de un documento deben estar dentro de un elemento <code><span class="blue-text">&lt;nav&gt;</span></code>. <br>
-            Este elemento está destinado únicamente a bloques importantes de enlaces de navegación. <br><br>
-            Los navegadores, como los lectores de pantalla para usuarios discapacitados, pueden utilizar este elemento <br>
-            para determinar se se omite la representación inicial de este contenido.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <p>Un conjunto de enlances de navegación:</p>
-
-            <nav style="text-align: center; background-color: white;">
-                <a href="/html/" style="color: blue;">HTML</a> |
-                <a href="/css/" style="color: blue;">CSS</a> |
-                <a href="/js/" style="color: blue;">JavaScript</a> |
-                <a href="/jquery/" style="color: blue;">jQuery</a>
-            </nav>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                &nbsp;
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-        </article>
-
-        <h2 id="p7">&lt;aside&gt;</h2>
-
-        <p>
-            El elemento <code><span class="blue-text">&lt;aside&gt;</span></code> define contenido aparte del contenido en el que se encuentre (como una barra lateral).<br>
-            Este contenido debe estar indirectamente relacionado con el contendido circundante. 
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <p>El <em>aside</em> muestra algún contenido además del contenido en el que se encuentra:</p>
-
-            <div style="background: white; color: black;">
-                <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
-
-                <aside>
-                    <h4>Epcot Center</h4>
-                    <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-                </aside>
-            </div>
-        
-            Ejemplo 2
-
-            <p>Utilice CSS para darle estilo al elemento &lt;aside&gt;</p>
-
-            <iframe src="asideejemplo.html" frameborder="0" height="200" width="870"></iframe>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>aside <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-                padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
-                font-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> italic<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgray<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot 
-                center this summer. The weather was nice, and Epcot was amazing! I had a great 
-                summer together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot center is a 
-                theme park at Walt Disney World Resort featuring exciting attractions, 
-                international pavilions, award-winning fireworks and seasonal special 
-                events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
-                this summer. The weather was nice, and Epcot was amazing! I had a great summer 
-                together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
-                this summer. The weather was nice, and Epcot was amazing! I had a great summer 
-                together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-        </article>
-
-        <h2 id="p8">&lt;figure&gt; y &lt;figcaption&gt;</h2>
-
-        <p>
-            La etiqueta <code><span class="blue-text">&lt;figure&gt;</span></code> específica concetenido autónomo, como ilustraciones, diagramas, fotografías, listados de códigos, etc.
-        </p>
-        
-        <p>
-            La etiqueta <code><span class="blue-text">&lt;figcaption&gt;</span></code> define un título para un elemento <code><span class="blue-text">&lt;figure&gt;</span></code>. <br>
-            El elemento <code><span class="blue-text">&lt;figcaption&gt;</span></code> se puede colocar como el primero o el último hijo de un <code><span class="blue-text">&lt;figure&gt;</span></code>.
-        </p>
-
-        <p>El elemento <code><span class="blue-text">&lt;img&gt;</span></code> define la actual imagen/ilustracion.</p>
-
-        <article class="ejemplo">
-            Ejemplo
-
-            <article style="background: transparent;">
-
-                <div style="background-color: white; color: black;">
-
-                    <h2>Places to Visit</h2>
-
-                    <p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
-
-                    <figure>
-                        <img src="imagenes/pic_trulli.jpg" alt="Trulli" style="width: 50%">
-                        <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy.</figcaption>
-                    </figure>
-
+                    </code>
+                </pre>
+                
+                Ejemplo 2: 
+    
+                <p>Utilice CSS para diseñar el elemento &lt;article&gt;</p>
+    
+                <div class="botonContenedor">
+                    <iframe src="ejemplo2.html" frameborder="0" height="320" width="770"></iframe>
                 </div>
-
+    
+                <pre class="codigo">
+                    <code>
+                        &lt;!<span class="blue-text">DOCTYPE</span> <span class="red-text">html</span>&gt;
+                        &lt;<span class="blue-text">html</span>&gt;
+                        &lt;<span class="blue-text">head</span>&gt;
+                        &lt;<span class="blue-text">style</span>&gt;
+    
+                        <span class="red-text">.all-browsers</span> {
+                            <span class="celeste">margin</span>: 0;
+                            <span class="celeste">padding</span>: 5<span class="blue-text">px</span>;
+                            <span class="celeste">background-color</span>: <span class="celeste">lightgray</span>;
+                        }
+    
+                        <span class="red-text">.all-browsers</span> <span class="blue-text">&gt; h1</span>, <span class="red-text">.browser</span> {
+                            <span class="celeste">margin</span>: 10<span class="blue-text">px</span>;
+                            <span class="celeste">padding</span>: 5<span class="blue-text">px</span>;
+                        }
+    
+                        <span class="red-text">.browser</span> {
+                            <span class="celeste">background</span>: <span class="celeste">white</span>;
+                        }
+    
+                        <span class="red-text">.browser</span> <span class="blue-text">&gt; h2</span>, <span class="blue-text">p</span> {
+                            <span class="celeste">margin</span>: 4<span class="blue-text">px</span>;
+                            <span class="celeste">font-size</span>: 90<span class="blue-text">%</span>;
+                        }
+    
+                        &lt;/<span class="blue-text">style</span>&gt;
+                        &lt;/<span class="blue-text">head</span>&gt;
+                        &lt;<span class="blue-text">body</span>&gt;
+    
+                        &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="all-browsers"</span>&gt;
+                            &lt;h1&gt;Most Popular Browsers&lt;/h1&gt;
+                            &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+                                &lt;<span class="blue-text">h2</span>&gt;Google Chrome&lt;/<span class="blue-text">h2</span>&gt;
+                                &lt;<span class="blue-text">p</span>&gt;
+                                    Google Chrome is a web browser developed by Google, released in
+                                    2008.Chrome is the world's most popular web browser today!
+                                &lt;/<span class="blue-text">p</span>&gt;
+                            &lt;/<span class="blue-text">article</span>&gt;
+    
+                            &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+                                &lt;<span class="blue-text">h2</span>&gt;Mozilla Firefox&lt;/<span class="blue-text">h2</span>&gt;
+                                &lt;<span class="blue-text">p</span>&gt;
+                                    Mozilla Firefox is an open-source web browser developed by
+                                    Mozilla. Firefox has been the second most popular web browser 
+                                    since January, 2018.
+                                &lt;/<span class="blue-text">p</span>&gt;
+                            &lt;/<span class="blue-text">article</span>&gt;
+    
+                            &lt;<span class="blue-text">article</span> <span class="red-text">class</span><span class="verde">="browser"</span>&gt;
+                                &lt;<span class="blue-text">h2</span>&gt;Microsoft Edge&lt;/<span class="blue-text">h2</span>&gt;
+                                &lt;<span class="blue-text">p</span>&gt;
+                                    Microsoft Edge is a web browser developed by Microsoft, released
+                                    in 2015. Microsoft Edge replaced Internet Explorer.
+                                &lt;/<span class="blue-text">p</span>&gt;
+                            &lt;/<span class="blue-text">article</span>&gt;
+                        &lt;/<span class="blue-text">article</span>&gt;
+    
+                        &lt;/<span class="blue-text">body</span>&gt;
+                        &lt;/<span class="blue-text">html</span>&gt;
+                    </code>
+                </pre>
+    
             </article>
+    
+            <h3 title="Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?">¿Anidar &lt;article&gt; en &lt;section&gt; o viceversa?</h3>
+    
+            <p>
+                El elemento <span class="blue-text">&lt;article&gt;</span> especifica contenido independiente y autónomo. <br>
+                El elemento <span class="blue-text">&lt;section&gt;</span> define la sección de un documento. <br> <br>
+                ¿Podemos usar las definiciones para decidir cómo anidar esos elementos?... ¡No podemos! <br> <br>
+                Entocnes encontrará páginas HTML com elementos <span class="blue-text">&lt;section&gt;</span> que contienen elementos <span class="blue-text">&lt;article&gt;</span> y <br>
+                elementos <span class="blue-text">&lt;article&gt;</span> que contienen elementos <span class="blue-text">&lt;section&gt;</span>. 
+            </p>
+    
+            <h2 id="p4">&lt;header&gt;</h2>
+    
+            <p>
+                El elemento <span class="blue-text">&lt;header&gt;</span> representa un contenedor para contenido introductorio <br>
+                o un conjunto de enlaces de navegación.
+            </p>
+    
+            <ul class="lista2">
+                <caption><code><span class="blue-text">&lt;header&gt;</span></code> normalmente contiene:</caption>
+                <li>Uno o más elementos de encabezado (&lt;h1&gt;-&lt;h6&gt;)</li>
+                <li>Icono o Logotipo</li>
+                <li>informacion de autoria</li>
+            </ul>
+    
+            <p class="advertencia">
+                <em><b><strong>Nota:</strong></b></em> Puede tener varios elementos <code><span class="blue-text">&lt;header&gt;</span></code> en un documento HTML. Sin embargo, <code><span class="blue-text">&lt;header&gt;</span></code> <br>
+                no se puede colocar dentro de un <code><span class="blue-text">&lt;footer&gt;</span></code>, <code><span class="blue-text">&lt;address&gt;</span></code> u otro elemento <code><span class="blue-text">&lt;header&gt;</span></code>.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <p style="text-align: left;">
+                    Un encabezado para un &lt;article&gt; :
+                </p>
+    
+                <article style="background: white; color: black;">
+                    <header>
+                      <h1 style="text-align: center;">What Does WWF Do?</h1>
+                      <p>WWF's mission:</p>
+                    </header>
+                    <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+                </article>
+                
+                <pre class="codigo">
+                    <code>
+                        &lt;<span class="blue-text">article</span>&gt;
+                            &lt;<span class="blue-text">header</span>&gt;
+                              &lt;<span class="blue-text">h1</span>&gt;What Does WWF Do?&lt;/<span class="blue-text">h1</span>&gt;
+                              &lt;<span class="blue-text">p</span>&gt;
+                                WWF's mission:
+                              &lt;/<span class="blue-text">p</span>&gt;
+                            &lt;/<span class="blue-text">header</span>&gt;
+                            &lt;<span class="blue-text">p</span>&gt;
+                                WWF's mission is to stop the degradation of our planet's natural
+                                environment, and build a future in which humans live in
+                                harmony with nature.
+                            &lt;/<span class="blue-text">p</span>&gt;
+                        &lt;/<span class="blue-text">article</span>&gt;
+                    </code>
+                </pre>
+    
+            </article>
+    
+            <h2 id="p5">&lt;footer&gt;</h2>
+    
+            <p>
+                El elemento <span class="blue-text">&lt;footer&gt;</span> define un pie de página para un docuemnto o sección. <br>
+            </p>
+    
+            <caption>Un <span class="blue-text">&lt;footer&gt;</span> tipicamente contiene:</caption>
+            <ul class="lista">
+                <li>Información del autor</li>
+                <li>Informacion del copyright</li>
+                <li>Informacion de contacto</li>
+                <li>Mapa del sitio</li>
+                <li>Enlaces para volver a la parte superior</li>
+                <li>Documentos relacionados</li>
+            </ul>
+    
+            <p>
+                <em>Puedes tener varios elementos <span class="blue-text">&lt;footer&gt;</span> en un solo documento.</em>
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <p>Una sección de pie de página en un documento:</p>
+    
+                <footer style="background: white; color: black;">
+                    <p>Autor: Lukita Pe</p>
+                    <p><a href="mailto:hege@example.com" style="color: red;">lukitape@example.com</a></p>
+                </footer>
+    
+                <div class="w3-code notranslate htmlHigh">
+      
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Autor: Lukita Pe<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="mailto:lukitape@example.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>lukitape@example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                
+                </div>
+    
+            </article>
+    
+            <h2 id="p6">&lt;nav&gt;</h2>
+    
+            <p>
+                El elemento <code><span class="blue-text">&lt;nav&gt;</span></code> define un conjunto de enlaces de navegación.
+            </p>
+    
+            <p>
+                Tenga en cuenta que <strong>NO</strong> todos los enlaces de un documento deben estar dentro de un elemento <code><span class="blue-text">&lt;nav&gt;</span></code>. <br>
+                Este elemento está destinado únicamente a bloques importantes de enlaces de navegación. <br><br>
+                Los navegadores, como los lectores de pantalla para usuarios discapacitados, pueden utilizar este elemento <br>
+                para determinar se se omite la representación inicial de este contenido.
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <p>Un conjunto de enlances de navegación:</p>
+    
+                <nav style="text-align: center; background-color: white;">
+                    <a href="/html/" style="color: blue;">HTML</a> |
+                    <a href="/css/" style="color: blue;">CSS</a> |
+                    <a href="/js/" style="color: blue;">JavaScript</a> |
+                    <a href="/jquery/" style="color: blue;">jQuery</a>
+                </nav>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+                    &nbsp;
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+    
+            </article>
+    
+            <h2 id="p7">&lt;aside&gt;</h2>
+    
+            <p>
+                El elemento <code><span class="blue-text">&lt;aside&gt;</span></code> define contenido aparte del contenido en el que se encuentre (como una barra lateral).<br>
+                Este contenido debe estar indirectamente relacionado con el contendido circundante. 
+            </p>
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <p>El <em>aside</em> muestra algún contenido además del contenido en el que se encuentra:</p>
+    
+                <div style="background: white; color: black;">
+                    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+    
+                    <aside>
+                        <h4>Epcot Center</h4>
+                        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </aside>
+                </div>
+            
+                Ejemplo 2
+    
+                <p>Utilice CSS para darle estilo al elemento &lt;aside&gt;</p>
+    
+                <iframe src="asideejemplo.html" frameborder="0" height="200" width="870"></iframe>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>aside <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+                    padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+                    font-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> italic<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgray<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot 
+                    center this summer. The weather was nice, and Epcot was amazing! I had a great 
+                    summer together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot center is a 
+                    theme park at Walt Disney World Resort featuring exciting attractions, 
+                    international pavilions, award-winning fireworks and seasonal special 
+                    events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
+                    this summer. The weather was nice, and Epcot was amazing! I had a great summer 
+                    together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
+                    this summer. The weather was nice, and Epcot was amazing! I had a great summer 
+                    together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+    
+            </article>
+    
+            <h2 id="p8">&lt;figure&gt; y &lt;figcaption&gt;</h2>
+    
+            <p>
+                La etiqueta <code><span class="blue-text">&lt;figure&gt;</span></code> específica concetenido autónomo, como ilustraciones, diagramas, fotografías, listados de códigos, etc.
+            </p>
+            
+            <p>
+                La etiqueta <code><span class="blue-text">&lt;figcaption&gt;</span></code> define un título para un elemento <code><span class="blue-text">&lt;figure&gt;</span></code>. <br>
+                El elemento <code><span class="blue-text">&lt;figcaption&gt;</span></code> se puede colocar como el primero o el último hijo de un <code><span class="blue-text">&lt;figure&gt;</span></code>.
+            </p>
+    
+            <p>El elemento <code><span class="blue-text">&lt;img&gt;</span></code> define la actual imagen/ilustracion.</p>
+    
+            <article class="ejemplo">
+                Ejemplo
+    
+                <article style="background: transparent;">
+    
+                    <div style="background-color: white; color: black;">
+    
+                        <h2>Places to Visit</h2>
+    
+                        <p>Puglia's most famous sight is the unique conical houses (Trulli) found in the area around Alberobello, a declared UNESCO World Heritage Site.</p>
+    
+                        <figure>
+                            <img src="imagenes/pic_trulli.jpg" alt="Trulli" style="width: 50%">
+                            <figcaption style="text-align: center;">Fig.1 - Trulli, Puglia, Italy.</figcaption>
+                        </figure>
+    
+                    </div>
+    
+                </article>
+    
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+    
+            </article>
+    
+            <h3>¿Por qué elementos semánticos?</h3>
+    
+            <p>
+                <em>Una web semántica permite compartir y reutilizar datos entre aplicaciones, empresas y comunidades"</em>
+            </p>
+    
+            <h3>Elementos semánticos en HTML</h3>
+    
+            <p>A continuación se muestra una lista de algunos de los elementos semánticos en HTML.</p>
+    
+            <table class="table10" style="background: white;">
+                <tbody>
+                    <tr>
+                        <th><strong>Tag</strong></th>
+                        <th><strong>Descripción</strong></th>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;article&gt;</span></code></td>
+                        <td>Define contenido independiente y autónomo</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;aside&gt;</span></code></td>
+                        <td>Define contenido aparte del contenido de la página</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;details&gt;</span></code></td>
+                        <td>Define detalles adicionales que el usuario puede ver u ocultar</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;figcation&gt;</span></code></td>
+                        <td>Define una leyenda para un elemento &lt;figure&gt;</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;figure&gt;</span></code></td>
+                        <td>Especifica contenido independiente, como ilustraciones, diagramas, fotos, listados de código, etc.</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;footer&gt;</span></code></td>
+                        <td>Define un pie de página para un documento o sección</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;header&gt;</span></code></td>
+                        <td>Especifica un encabezado para un documento o sección</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;main&gt;</span></code></td>
+                        <td>Especifica el contenido principal de un documento</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;mark&gt;</span></code></td>
+                        <td>Define texto marcado o resaltado</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;nav&gt;</span></code></td>
+                        <td>Define enlaces de navegación</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;section&gt;</span></code></td>
+                        <td>Define una sección en un documento</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;summary&gt;</span></code></td>
+                        <td>Define un encabezado visible para un elemento &lt;details&gt;</td>
+                    </tr>
+                    <tr>
+                        <td><code><span>&lt;time&gt;</span></code></td>
+                        <td>Define una fecha/hora</td>
+                    </tr>
+                </tbody>
+    
+            </table>
+    
+        </div>
 
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
+    </main>
 
-        </article>
-
-        <h3>¿Por qué elementos semánticos?</h3>
-
-        <p>
-            <em>Una web semántica permite compartir y reutilizar datos entre aplicaciones, empresas y comunidades"</em>
-        </p>
-
-        <h3>Elementos semánticos en HTML</h3>
-
-        <p>A continuación se muestra una lista de algunos de los elementos semánticos en HTML.</p>
-
-        <table class="table10" style="background: white;">
-            <tbody>
-                <tr>
-                    <th><strong>Tag</strong></th>
-                    <th><strong>Descripción</strong></th>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;article&gt;</span></code></td>
-                    <td>Define contenido independiente y autónomo</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;aside&gt;</span></code></td>
-                    <td>Define contenido aparte del contenido de la página</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;details&gt;</span></code></td>
-                    <td>Define detalles adicionales que el usuario puede ver u ocultar</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;figcation&gt;</span></code></td>
-                    <td>Define una leyenda para un elemento &lt;figure&gt;</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;figure&gt;</span></code></td>
-                    <td>Especifica contenido independiente, como ilustraciones, diagramas, fotos, listados de código, etc.</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;footer&gt;</span></code></td>
-                    <td>Define un pie de página para un documento o sección</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;header&gt;</span></code></td>
-                    <td>Especifica un encabezado para un documento o sección</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;main&gt;</span></code></td>
-                    <td>Especifica el contenido principal de un documento</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;mark&gt;</span></code></td>
-                    <td>Define texto marcado o resaltado</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;nav&gt;</span></code></td>
-                    <td>Define enlaces de navegación</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;section&gt;</span></code></td>
-                    <td>Define una sección en un documento</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;summary&gt;</span></code></td>
-                    <td>Define un encabezado visible para un elemento &lt;details&gt;</td>
-                </tr>
-                <tr>
-                    <td><code><span>&lt;time&gt;</span></code></td>
-                    <td>Define una fecha/hora</td>
-                </tr>
-            </tbody>
-
-        </table>
-
-    </div>
-</div>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

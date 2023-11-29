@@ -6,382 +6,488 @@
     <title>Class ID</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-<div class="container">
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button> 
-
-    <div class="Estilo_blanco2" id="g1">
-
-        <h2 title="HTML class Attribute">El atributo &lt;class&gt;</h2>
-        
-        <p>
-            El atributo HTML <span class="red-text">class</span> se utiliza para especificar una clase para un elemento. <br>
-            Varios elementos pueden compartir la misma clase.
-        </p>
-
-        <h3 title="Using The class Attribute">Usando el atributo <span class="red-text">&lt;class&gt;</span></h3>
-
-        <p>
-            El atributo <span class="red-text">&lt;class&gt;</span> se utiliza a menudo para señalar el nombre de una clase en una hoja de estilo. <br>
-            Tambien puede ser utilizado por javaScript para acceder a manipular elementos con el nombre de clase específico. <br><br>
-            En el siguiente ejemplo tenemos tres elementos <span class="blue-text">&lt;div&gt;</span> con un atributo <span class="red-text">&lt;class&gt;</span> con el valor de "city". <br>
-            Los tres <span class="blue-text">&lt;div&gt;</span> tendrán el mismo estilo acorde a la definicion del estilo <span class="verde">.city</span>.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-
-            <div class="city">
-                <h2>London</h2>
-                <p>London is the capital of England.</p>
-            </div> 
-                
-            <div class="city">
-                <h2>Paris</h2>
-                <p>Paris is the capital of France.</p>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="people-circle-outline"></ion-icon>
+                <span>Class ID!</span>
             </div>
-                
-            <div class="city">
-                <h2>Tokyo</h2>
-                <p>Tokyo is the capital of Japan.</p>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="people-circle-outline"></ion-icon>
+                        <span>Class ID</span>
+                </li>
+                <li>
+                    <a href="#g2"">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Múltiples Clases</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#g3"">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Class en JavaScript</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#g4"">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>ID</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#g5"">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>ID en JavaScript</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
             </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <p class="codigo">
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
-                &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
-                &lt;<span class="blue-text">html</span>&gt;
-                &lt;<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">style</span>&gt;
-                <span class="blue-text">.city</span> {
-                    <span class="red-text">background-color</span><span class="celeste">: tomato;</span>
-                    <span class="red-text">color</span><span class="celeste">: white;</span>
-                    <span class="red-text">border</span><span class="celeste">: 2px solid black;</span>
-                    <span class="red-text">margin</span><span class="celeste">: 20px;</span>
-                    <span class="red-text">padding</span><span class="celeste">: 20px;</span>
-                }
-                &lt;/<span class="blue-text">style</span>&gt;
-                &lt;/<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">body</span>&gt;
+    </div>
+    
+    <main>
 
-                &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
-                    &lt;<span class="blue-text">h2</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
-                    &lt;<span class="blue-text">p</span>&gt;London is the capital of England.&lt;/<span class="blue-text">p</span>&gt;
-                &lt;/<span class="blue-text">div</span>&gt;
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
 
-                &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
-                    &lt;<span class="blue-text">h2</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
-                    &lt;<span class="blue-text">p</span>&gt;Paris is the capital of France.&lt;/<span class="blue-text">p</span>&gt;
-                &lt;/<span class="blue-text">div</span>&gt;
+        <div class="Estilo_blanco2" id="g1">
 
-                &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
-                    &lt;<span class="blue-text">h2</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
-                    &lt;<span class="blue-text">p</span>&gt;Tokyo is the capital of Japan.&lt;/<span class="blue-text">p</span>&gt;
-                &lt;/<span class="blue-text">div</span>&gt;
-
-                &lt;/<span class="blue-text">body</span>&gt;
-                &lt;/<span class="blue-text">html</span>&gt;
-
-            </p>
-
-
-        </article>
-
-        <p>
-            En el siguiente ejemplo tenemos dos elementos <span class="blue-text">&lt;span&gt;</span> con un atributo <span class="red-text">class</span> con el valor de "note". <br>
-            Ambos elementos <span class="blue-text">&lt;span&gt;</span> tendrán el mismo estilo según la definición del estilo de <span class="red-text">.note</span>
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo: <br>
+            <h2 title="HTML class Attribute">El atributo &lt;class&gt;</h2>
             
-            <h2>My <span class="note">Important</span> Heading</h2>
-            <p>This is some <span class="note">important</span> text.</p>
-
-            <p class="codigo">
-
-                &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
-                &lt;<span class="blue-text">html</span>&gt;
-                &lt;<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">style</span>&gt;
-                <span class="blue-text">.note</span> {
-                    <span class="red-text">font-size</span><span class="celeste">: 120%;</span>
-                    <span class="red-text">color</span><span class="celeste">: Yellow;</span>
-                }
-                &lt;/<span class="blue-text">style</span>&gt;
-                &lt;/<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">body</span>&gt;
-
-                &lt;<span class="blue-text">h1</span>&gt;My &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; Heading.&lt;/<span class="blue-text">h1</span>&gt;
+            <p>
+                El atributo HTML <span class="red-text">class</span> se utiliza para especificar una clase para un elemento. <br>
+                Varios elementos pueden compartir la misma clase.
+            </p>
+    
+            <h3 title="Using The class Attribute">Usando el atributo <span class="red-text">&lt;class&gt;</span></h3>
+    
+            <p>
+                El atributo <span class="red-text">&lt;class&gt;</span> se utiliza a menudo para señalar el nombre de una clase en una hoja de estilo. <br>
+                Tambien puede ser utilizado por javaScript para acceder a manipular elementos con el nombre de clase específico. <br><br>
+                En el siguiente ejemplo tenemos tres elementos <span class="blue-text">&lt;div&gt;</span> con un atributo <span class="red-text">&lt;class&gt;</span> con el valor de "city". <br>
+                Los tres <span class="blue-text">&lt;div&gt;</span> tendrán el mismo estilo acorde a la definicion del estilo <span class="verde">.city</span>.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+    
+                <div class="city">
+                    <h2>London</h2>
+                    <p>London is the capital of England.</p>
+                </div> 
                     
-                &lt;<span class="blue-text">p</span>&gt;
-                This is some &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; text.&lt;/<span class="blue-text">h1</span>
-                &lt;/<span class="blue-text">p</span>&gt;
-
-                &lt;/<span class="blue-text">body</span>&gt;
-                &lt;/<span class="blue-text">html</span>&gt;
-
-            </p>
-
-        </article>
-
-        <p class="advertencia">
-            <b><em>Consejo:</em></b> El atributo <span class="red-text">class</span> se puede utilizar en <b>cualquier</b> elemento HTML. <br>
-            <b><em>Nota:</em></b> El nombre de la clase dintingue entre mayúsculas y minúsculas!
-        </p>
-
-        <h3 title="The Syntax For Class">La sintaxis de la clase</h3>
-
-        <p>
-            Para crear una clase escriba un carácter de punto (.), seguido del nombre de una clase . <br>
-            Luego defina las propiedades CSS entre llaves {} 
-        </p>
-
-        <h3 title="Multiple Classes" id="g2">Múltiples clases</h3>
-
-        <p>
-            <b><em>Los elementos HTML pueden pertenecer a más de una clase.</em></b> <br><br>
-            Para definir varias clases, separe los nombres de las clases con un espacio, por ejemplo, &lt;<span class="blue-text">div</span> <span class="red-text">class</span><span class="verde">="city main"</span>&gt;. <br>
-            El estilo del elemento se diseñará de acuerdo con todas las clases especificadas.
-        </p>
-
-        <article class="ejemplo">
-
-            <h2>Multiple Classes</h2>
-            <p>
-                Aca los tres elementos h2 pertenecen a la clase "city". Ademas London que tambien pertenece a la clase principal <br>
-                pero lo podemos ver alineado a la izquierda
-            </p>
-
-            <h2 class="city main">London</h2>
-            <h2 class="city">Paris</h2>
-            <h2 class="city">Tokyo</h2>
-
-            <p class="codigo">
-
-                &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city main"</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
-                &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
-                &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
-
-            </p>
-
-        </article>
-
-        <h3 title="Different Elements Can Share Same Class">Diferentes elementos pueden compartir la misma clase</h3>
-
-        <p>
-            <b><em>Diferentes elementos HTML pueden apuntar al mismo nombre de clase.</em></b> <br><br>
-            En el siguiente ejemplo ambos <span class="blue-text">&lt;h2&gt;</span> y <span class="blue-text">&lt;p&gt;</span> <br>
-            apuntan a la clase "city" y obtendran el mismo estilo:
-        </p>
-
-        <article class="ejemplo">
-
-            <h2>Diferentes elementos pueden compartir la misma clase</h2>
-
-            <p>
-                Incluso si los dos elementos no tienen el mismo nombre de <span title="tag">etiqueta</span>, <br>
-                ambos pueden apuntar a la misma clase y obtener el mismo estilo CSS.:
-            </p>
-
-            <h2 class="city">Paris</h2>
-            <p class="city">Paris is the capital of France.</p>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
-
-                &lt;<span class="blue-text">p</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris is the capital of France&lt;/<span class="blue-text">p</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Use of The class Attribute in JavaScript" id="g3">Uso del atributo class en javaScript</h3>
-
-        <p>
-            <b><em>JavaScript también puede utilizar el nombre de la clase para realizar determinadas tareas para elementos específicos</em></b>. <br><br>
-            javaScript puede acceder a elementos con un nombre de clase especifico con el metodo <span class="red-text">getElementByClassName()</span>.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo: <br><br>
-            Haga clic en el botón para ocultar todos los elementos con el nombre de clase "city":
-
-            <div class="botonContenedor">
-                <button id="hide" onclick="myFunction()">Hide elements</button>
-            </div>
-
-            <h2 class="city city2">London</h2>
-            <p>London is the capital of England.</p>
-
-            <h2 class="city city2">Paris</h2>
-            <p>Paris is the capital of France.</p>
-
-            <h2 class="city city2">Tokyo</h2>
-            <p>Tokyo is the capital of Japan.</p>
-
-            <p class="codigo">
-
-                &lt;<span class="blue-text">script</span>&gt;
-                    <span class="blue-text">function</span> <span class="verde">myFunction()</span> {
-                      <span class="blue-text">var</span> x <span class="red-text">=</span> document.<span class="verde">getElementsByClassName</span>(<span class="verde">"city"</span>);
-                      <span class="red-text">for</span> (<span class="blue-text">var</span> i <span class="red-text">=</span> <span class="celeste">0</span>; i <span class="red-text">&lt;</span> x.<span class="blue-text">length</span>; i<span class="red-text">++</span>) {
-                        x[i].style.display <span class="red-text">=</span> <span class="celeste">"none"</span>;
-                      }
+                <div class="city">
+                    <h2>Paris</h2>
+                    <p>Paris is the capital of France.</p>
+                </div>
+                    
+                <div class="city">
+                    <h2>Tokyo</h2>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="blue-text">.city</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: tomato;</span>
+                        <span class="red-text">color</span><span class="celeste">: white;</span>
+                        <span class="red-text">border</span><span class="celeste">: 2px solid black;</span>
+                        <span class="red-text">margin</span><span class="celeste">: 20px;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 20px;</span>
                     }
-                &lt;/<span class="blue-text">script</span>&gt;
-
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+    
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;London is the capital of England.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+    
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;Paris is the capital of France.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+    
+                    &lt;<span class="blue-text">div</span><span class="red-text"> class</span><span class="celeste">="city"</span>&gt;
+                        &lt;<span class="blue-text">h2</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
+                        &lt;<span class="blue-text">p</span>&gt;Tokyo is the capital of Japan.&lt;/<span class="blue-text">p</span>&gt;
+                    &lt;/<span class="blue-text">div</span>&gt;
+    
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+    
+                </p>
+    
+    
+            </article>
+    
+            <p>
+                En el siguiente ejemplo tenemos dos elementos <span class="blue-text">&lt;span&gt;</span> con un atributo <span class="red-text">class</span> con el valor de "note". <br>
+                Ambos elementos <span class="blue-text">&lt;span&gt;</span> tendrán el mismo estilo según la definición del estilo de <span class="red-text">.note</span>
             </p>
-
-        </article>
-
-        <h3 title="Chapter Summary">Resumen del capítulo</h3>
-
-        <ul class="lista">
-            <li>El atributo HTML <span class="red-text">class</span> especifica uno o más nombres de clase para un elemento.</li>
-            <li>CSS y JavaScript utilizan clases para seleccionar y acceder a elementos específicos.</li>
-            <li>El atributo <span class="red-text">class</span> se puede utilizar en cualquier elemento HTML.</li>
-            <li>El nombre de la clase distingue entre mayúsculas y minúsculas.</li>
-            <li>Diferentes elementos HTML puden apuntar al mismo nombre de clase</li>
-            <li>JavaScript puede acceder alementos con un nombre de clase específico con el método <span class="red-text">getElementByClassName</span></li>
-        </ul>
-
-    </div>
-
-    <div class="Estilo_blanco2" id="g4"> 
-
-        <h2 title="id Attribute">El atributo id</h2>
-
-        <p>
-            <b><em>El atributo <span class="red-text">id</span> se utiliza para especificar una identificación única para un elemento HTML.</em></b> <br>
-            <del>No puedes</del> <strong>no debes</strong> tener más de un elemento con el mismo id en un documento HTML.
-        </p>
-
-        <h3 title="Using the id Attribute">Usando el atributo id</h3>
-
-        <p>
-            El atributo <span class="red-text">id</span> especifica una identificación única para un elemento HTML. <br>
-            El valor del atributo <span class="red-text">id</span> debe ser único deontro del documento HTML. <br><br>
-            El atributo <span class="red-text">id</span> se utiliza para señalar una declaración de estilo específica en una hoja de estilo. <br>
-            javaScript también lo utiliza para acceder y manipular el elemento con la identificación especifica. <br><br>
-            La sintaxis de <span class="red-text">id</span> es: Un carácter (#), seguido de un nombre de id. <br>
-            Luego defina las propiedades CSS entre llaves {}. <br><br>
-            El el siguiente ejemplo tenemos un <span class="blue-text">&lt;h1&gt;</span> que apunta al nombre de identificación "myHeader". <br>
-            Este <span class="blue-text">&lt;h1&gt;</span> tendrá estilo de acuerdo con la definición <span class="red-text">#myHeader</span>.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo:
-
-            <h1 id="myHeader">My Header</h1>
-
-            <P class="codigo">
-
-                &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
-                &lt;<span class="blue-text">html</span>&gt;
-                &lt;<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">style</span>&gt;
-                <span class="verde">#myHeader</span> {
-                    <span class="red-text">background-color</span><span class="celeste">: lightblue;</span>
-                    <span class="red-text">color</span><span class="celeste">: black;</span>
-                    <span class="red-text">padding</span><span class="celeste">: 40px;</span>
-                    <span class="red-text">text-align</span><span class="celeste">: center;</span>
-
-                &lt;/<span class="blue-text">style</span>&gt;
-                &lt;/<span class="blue-text">head</span>&gt;
-                &lt;<span class="blue-text">body</span>&gt;
-
-                &lt;<span class="blue-text">h1</span> <span class="red-text">id</span><span class="celeste">="myHeader"</span>&gt;My Header&lt;/<span class="blue-text">h1</span>&gt;
-
-                &lt;/<span class="blue-text">body</span>&gt;
-                &lt;/<span class="blue-text">html</span>&gt;
-
-            </P>
-
-        </article>
-
-        <p class="advertencia">
-            <b><em>Nota:</em></b> El nombre de identificación distingue entre mayúsculas y minúsculas! <br>
-            <b><em>Nota:</em></b> El nombre de identificación debe contener al menos un carácter, no puede comenzar <br>
-            con un número y no debe contener espacios en blanco (espacios, tabulaciones, etc.).
-        </p>
-
-        <h3 title="Difference Between Class and ID" style="color: rgb(10, 143, 143);">Diferencia entre class e id</h3>
-
-        <p>
-            Un nombre de clase puede ser usado por múltiples elementos HTML, mientras que un nombre de id <br>
-            solo puede ser usado por un elemento HTML dentro de la página.
-        </p>
-
-        <h3 title="Bookmarks with ID and Links">Marcadores con ID y enlaces</h3>
-
-        <p>
-            Los marcadores se utilizan para permitir a los lectores saltar a partes específicas de una página. <br>
-            Los marcadores pueden resultar útiles si su páginaes muy larga. <br>
-            Para utilizar un marcador, primero debe crearlo y luego agregarle un enlace. <br>
-            Luego cuando se hace click en el enlace la página se desplazará hasta la ubicación con el marcador. 
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo: <br><br>
-            <strong>Primero crea un marcador con el atributo <span class="red-text">id</span>:</strong>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">h2</span> <span class="red-text">id</span><span class="celeste">="C4"</span>&gt;Chapter 4&lt;/<span class="blue-text">h2</span>&gt;
-            </p>
-
-            <strong>Luego agregue un enlace al marcador ("saltar al Capítulo 4") desde la misma página:</strong>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#C4"</span>&gt;jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
-            </p>
-
-            <strong>O agregue un enlace al marcador ("Saltar al Capítulo 4") desde otra página:</strong>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="html_demo.html#C4"</span>&gt;Jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Using The id Attribute in JavaScript" id="g5">Usando el atributo id en javaScript</h3>
-
-        <p>
-            El atributo <span class="red-text">id</span> puede ser usado también en javaScript para realizar algunas tareas para ese elemento en específico. <br>
-            javaScript púede acceder a un elemento con una <span class="red-text">id</span> en específico con el metodo <span class="red-text">getElementById()</span>.
-        </p>
-
-        <article class="ejemplo">
-
-            Ejemplo: <br><br>
-            <strong>Use el atributo <span class="red-text">id</span> para manipular texto con javaScript:</strong>
-
-            <h1 style="text-align: center;" id="myHeader2">Hello World!</h1>
-            <div class="botonContenedor">
-                <button class="css-button-retro--red" onclick="displayResult()">Cambiar texto</button>
-            </div>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">script</span>&gt;
-                    <span class="blue-text">function</span> <span class="celeste">displayResult()</span> {
-                      document.<span class="verde">getElementById</span>(<span class="verdeclaro">"myHeader"</span> ).innerHTML <span class="red-text">=</span> <span class="verdeclaro">"Have a nice day!"</span>;
+    
+            <article class="ejemplo">
+    
+                Ejemplo: <br>
+                
+                <h2>My <span class="note">Important</span> Heading</h2>
+                <p>This is some <span class="note">important</span> text.</p>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="blue-text">.note</span> {
+                        <span class="red-text">font-size</span><span class="celeste">: 120%;</span>
+                        <span class="red-text">color</span><span class="celeste">: Yellow;</span>
                     }
-                &lt;/<span class="blue-text">script</span>&gt;
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+    
+                    &lt;<span class="blue-text">h1</span>&gt;My &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; Heading.&lt;/<span class="blue-text">h1</span>&gt;
+                        
+                    &lt;<span class="blue-text">p</span>&gt;
+                    This is some &lt;<span class="blue-text">span</span> <span class="red-text">class</span><span class="celeste">="note"</span>&gt;Important&lt;/<span class="blue-text">span</span>&gt; text.&lt;/<span class="blue-text">h1</span>
+                    &lt;/<span class="blue-text">p</span>&gt;
+    
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+            <p class="advertencia">
+                <b><em>Consejo:</em></b> El atributo <span class="red-text">class</span> se puede utilizar en <b>cualquier</b> elemento HTML. <br>
+                <b><em>Nota:</em></b> El nombre de la clase dintingue entre mayúsculas y minúsculas!
             </p>
+    
+            <h3 title="The Syntax For Class">La sintaxis de la clase</h3>
+    
+            <p>
+                Para crear una clase escriba un carácter de punto (.), seguido del nombre de una clase . <br>
+                Luego defina las propiedades CSS entre llaves {} 
+            </p>
+    
+            <h3 title="Multiple Classes" id="g2">Múltiples clases</h3>
+    
+            <p>
+                <b><em>Los elementos HTML pueden pertenecer a más de una clase.</em></b> <br><br>
+                Para definir varias clases, separe los nombres de las clases con un espacio, por ejemplo, &lt;<span class="blue-text">div</span> <span class="red-text">class</span><span class="verde">="city main"</span>&gt;. <br>
+                El estilo del elemento se diseñará de acuerdo con todas las clases especificadas.
+            </p>
+    
+            <article class="ejemplo">
+    
+                <h2>Multiple Classes</h2>
+                <p>
+                    Aca los tres elementos h2 pertenecen a la clase "city". Ademas London que tambien pertenece a la clase principal <br>
+                    pero lo podemos ver alineado a la izquierda
+                </p>
+    
+                <h2 class="city main">London</h2>
+                <h2 class="city">Paris</h2>
+                <h2 class="city">Tokyo</h2>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city main"</span>&gt;London&lt;/<span class="blue-text">h2</span>&gt;
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Tokyo&lt;/<span class="blue-text">h2</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+            <h3 title="Different Elements Can Share Same Class">Diferentes elementos pueden compartir la misma clase</h3>
+    
+            <p>
+                <b><em>Diferentes elementos HTML pueden apuntar al mismo nombre de clase.</em></b> <br><br>
+                En el siguiente ejemplo ambos <span class="blue-text">&lt;h2&gt;</span> y <span class="blue-text">&lt;p&gt;</span> <br>
+                apuntan a la clase "city" y obtendran el mismo estilo:
+            </p>
+    
+            <article class="ejemplo">
+    
+                <h2>Diferentes elementos pueden compartir la misma clase</h2>
+    
+                <p>
+                    Incluso si los dos elementos no tienen el mismo nombre de <span title="tag">etiqueta</span>, <br>
+                    ambos pueden apuntar a la misma clase y obtener el mismo estilo CSS.:
+                </p>
+    
+                <h2 class="city">Paris</h2>
+                <p class="city">Paris is the capital of France.</p>
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris&lt;/<span class="blue-text">h2</span>&gt;
+    
+                    &lt;<span class="blue-text">p</span> <span class="red-text">class</span><span class="celeste">="city"</span>&gt;Paris is the capital of France&lt;/<span class="blue-text">p</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3 title="Use of The class Attribute in JavaScript" id="g3">Uso del atributo class en javaScript</h3>
+    
+            <p>
+                <b><em>JavaScript también puede utilizar el nombre de la clase para realizar determinadas tareas para elementos específicos</em></b>. <br><br>
+                javaScript puede acceder a elementos con un nombre de clase especifico con el metodo <span class="red-text">getElementByClassName()</span>.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo: <br><br>
+                Haga clic en el botón para ocultar todos los elementos con el nombre de clase "city":
+    
+                <div class="botonContenedor">
+                    <button id="hide" onclick="myFunction()">Hide elements</button>
+                </div>
+    
+                <h2 class="city city2">London</h2>
+                <p>London is the capital of England.</p>
+    
+                <h2 class="city city2">Paris</h2>
+                <p>Paris is the capital of France.</p>
+    
+                <h2 class="city city2">Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+    
+                <p class="codigo">
+    
+                    &lt;<span class="blue-text">script</span>&gt;
+                        <span class="blue-text">function</span> <span class="verde">myFunction()</span> {
+                          <span class="blue-text">var</span> x <span class="red-text">=</span> document.<span class="verde">getElementsByClassName</span>(<span class="verde">"city"</span>);
+                          <span class="red-text">for</span> (<span class="blue-text">var</span> i <span class="red-text">=</span> <span class="celeste">0</span>; i <span class="red-text">&lt;</span> x.<span class="blue-text">length</span>; i<span class="red-text">++</span>) {
+                            x[i].style.display <span class="red-text">=</span> <span class="celeste">"none"</span>;
+                          }
+                        }
+                    &lt;/<span class="blue-text">script</span>&gt;
+    
+                </p>
+    
+            </article>
+    
+            <h3 title="Chapter Summary">Resumen del capítulo</h3>
+    
+            <ul class="lista">
+                <li>El atributo HTML <span class="red-text">class</span> especifica uno o más nombres de clase para un elemento.</li>
+                <li>CSS y JavaScript utilizan clases para seleccionar y acceder a elementos específicos.</li>
+                <li>El atributo <span class="red-text">class</span> se puede utilizar en cualquier elemento HTML.</li>
+                <li>El nombre de la clase distingue entre mayúsculas y minúsculas.</li>
+                <li>Diferentes elementos HTML puden apuntar al mismo nombre de clase</li>
+                <li>JavaScript puede acceder alementos con un nombre de clase específico con el método <span class="red-text">getElementByClassName</span></li>
+            </ul>
+    
+        </div>
+    
+        <div class="Estilo_blanco2" id="g4"> 
+    
+            <h2 title="id Attribute">El atributo id</h2>
+    
+            <p>
+                <b><em>El atributo <span class="red-text">id</span> se utiliza para especificar una identificación única para un elemento HTML.</em></b> <br>
+                <del>No puedes</del> <strong>no debes</strong> tener más de un elemento con el mismo id en un documento HTML.
+            </p>
+    
+            <h3 title="Using the id Attribute">Usando el atributo id</h3>
+    
+            <p>
+                El atributo <span class="red-text">id</span> especifica una identificación única para un elemento HTML. <br>
+                El valor del atributo <span class="red-text">id</span> debe ser único deontro del documento HTML. <br><br>
+                El atributo <span class="red-text">id</span> se utiliza para señalar una declaración de estilo específica en una hoja de estilo. <br>
+                javaScript también lo utiliza para acceder y manipular el elemento con la identificación especifica. <br><br>
+                La sintaxis de <span class="red-text">id</span> es: Un carácter (#), seguido de un nombre de id. <br>
+                Luego defina las propiedades CSS entre llaves {}. <br><br>
+                El el siguiente ejemplo tenemos un <span class="blue-text">&lt;h1&gt;</span> que apunta al nombre de identificación "myHeader". <br>
+                Este <span class="blue-text">&lt;h1&gt;</span> tendrá estilo de acuerdo con la definición <span class="red-text">#myHeader</span>.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo:
+    
+                <h1 id="myHeader">My Header</h1>
+    
+                <P class="codigo">
+    
+                    &lt;<span class="blue-text">!DOCTYPE</span> <span class="red-text">html</span>&gt;
+                    &lt;<span class="blue-text">html</span>&gt;
+                    &lt;<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">style</span>&gt;
+                    <span class="verde">#myHeader</span> {
+                        <span class="red-text">background-color</span><span class="celeste">: lightblue;</span>
+                        <span class="red-text">color</span><span class="celeste">: black;</span>
+                        <span class="red-text">padding</span><span class="celeste">: 40px;</span>
+                        <span class="red-text">text-align</span><span class="celeste">: center;</span>
+    
+                    &lt;/<span class="blue-text">style</span>&gt;
+                    &lt;/<span class="blue-text">head</span>&gt;
+                    &lt;<span class="blue-text">body</span>&gt;
+    
+                    &lt;<span class="blue-text">h1</span> <span class="red-text">id</span><span class="celeste">="myHeader"</span>&gt;My Header&lt;/<span class="blue-text">h1</span>&gt;
+    
+                    &lt;/<span class="blue-text">body</span>&gt;
+                    &lt;/<span class="blue-text">html</span>&gt;
+    
+                </P>
+    
+            </article>
+    
+            <p class="advertencia">
+                <b><em>Nota:</em></b> El nombre de identificación distingue entre mayúsculas y minúsculas! <br>
+                <b><em>Nota:</em></b> El nombre de identificación debe contener al menos un carácter, no puede comenzar <br>
+                con un número y no debe contener espacios en blanco (espacios, tabulaciones, etc.).
+            </p>
+    
+            <h3 title="Difference Between Class and ID" style="color: rgb(10, 143, 143);">Diferencia entre class e id</h3>
+    
+            <p>
+                Un nombre de clase puede ser usado por múltiples elementos HTML, mientras que un nombre de id <br>
+                solo puede ser usado por un elemento HTML dentro de la página.
+            </p>
+    
+            <h3 title="Bookmarks with ID and Links">Marcadores con ID y enlaces</h3>
+    
+            <p>
+                Los marcadores se utilizan para permitir a los lectores saltar a partes específicas de una página. <br>
+                Los marcadores pueden resultar útiles si su páginaes muy larga. <br>
+                Para utilizar un marcador, primero debe crearlo y luego agregarle un enlace. <br>
+                Luego cuando se hace click en el enlace la página se desplazará hasta la ubicación con el marcador. 
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo: <br><br>
+                <strong>Primero crea un marcador con el atributo <span class="red-text">id</span>:</strong>
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">h2</span> <span class="red-text">id</span><span class="celeste">="C4"</span>&gt;Chapter 4&lt;/<span class="blue-text">h2</span>&gt;
+                </p>
+    
+                <strong>Luego agregue un enlace al marcador ("saltar al Capítulo 4") desde la misma página:</strong>
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="#C4"</span>&gt;jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
+                </p>
+    
+                <strong>O agregue un enlace al marcador ("Saltar al Capítulo 4") desde otra página:</strong>
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">a</span> <span class="red-text">href</span><span class="celeste">="html_demo.html#C4"</span>&gt;Jump to Chapter 4&lt;/<span class="blue-text">a</span>&gt;
+                </p>
+    
+            </article>
+    
+            <h3 title="Using The id Attribute in JavaScript" id="g5">Usando el atributo id en javaScript</h3>
+    
+            <p>
+                El atributo <span class="red-text">id</span> puede ser usado también en javaScript para realizar algunas tareas para ese elemento en específico. <br>
+                javaScript púede acceder a un elemento con una <span class="red-text">id</span> en específico con el metodo <span class="red-text">getElementById()</span>.
+            </p>
+    
+            <article class="ejemplo">
+    
+                Ejemplo: <br><br>
+                <strong>Use el atributo <span class="red-text">id</span> para manipular texto con javaScript:</strong>
+    
+                <h1 style="text-align: center;" id="myHeader2">Hello World!</h1>
+                <div class="botonContenedor">
+                    <button class="css-button-retro--red" onclick="displayResult()">Cambiar texto</button>
+                </div>
+    
+                <p class="codigo">
+                    &lt;<span class="blue-text">script</span>&gt;
+                        <span class="blue-text">function</span> <span class="celeste">displayResult()</span> {
+                          document.<span class="verde">getElementById</span>(<span class="verdeclaro">"myHeader"</span> ).innerHTML <span class="red-text">=</span> <span class="verdeclaro">"Have a nice day!"</span>;
+                        }
+                    &lt;/<span class="blue-text">script</span>&gt;
+                </p>
+    
+            </article>
+    
+        </div>
 
-        </article>
+    </main>
 
-    </div>
-</div>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

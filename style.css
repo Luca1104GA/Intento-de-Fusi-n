@@ -280,7 +280,7 @@ body{
 
 /* -----------------------> Titulos de links */
 .titulo{
-    padding-right: 200px;
+    padding-right: 215px;
     width: 100%;
     height: 45px;
     display: flex;
@@ -306,7 +306,7 @@ body{
 .barra-lateral .navegacion .home{
     width: 100%;
     height: 45px;
-    padding-right: 200px;
+    padding-right: 215px;
     display: flex;
     align-items: center;
     text-decoration: none;

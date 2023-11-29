@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Symbols</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -11,256 +11,349 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_blanco5" id="s1">
-    
-        <h1 title="HTML Symbols">Simbolos HTML</h1>
-
-        <p><i><b>Símbolos o letras que no están presentes en tu teclado pueden ser agragados a HTML usando entidades.</b></i></p>
-
-        <h3 title="HTML Symbol Entities">Simbolos de entidades HTML</h3>
-        <p>
-            Muchos símbolos matemáticos, técnicos y monetarios no están presentes en un teclado normal.<br>
-            Para agregar dichos símbolos a una página HTML, puede usar el nombre de la entidad o un número de la<br>
-            entidad (una referencia decimal o hexadecimal) para el símbolo.
-        </p>
-
-        <article class="ejemplo">
-            Mostrar el signo del Euro:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;euro;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;#8364;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;#x20AC;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-            Se verá como:
-            <div class="w3-white w3-padding">
-                Se mostrará €<br>
-                Se mostrará €<br>
-                Se mostrará €
-            </div>
-        </article>
-
-        <h3 title="Some Mathematical Symbols Supported by HTML">Algunos símbolos matemáticos soportados por HTML</h3>
-
-        <article class="ejemplo">
-            <table class="w3-table w3-bordered w3-striped cebranegra">
-                <tr class="w3-red">
-                    <th>Carácter</th>
-                    <th>Número</th>
-                    <th>Entidad</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&forall;</td>
-                    <td style="vertical-align: middle;">&amp;#8704;</td>
-                    <td style="vertical-align: middle;">&amp;forall;</td>
-                    <td style="vertical-align: middle;">Para todos</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&part;</td>
-                    <td style="vertical-align: middle;">&amp;#8706;</td>
-                    <td style="vertical-align: middle;">&amp;part;</td>
-                    <td style="vertical-align: middle;">Derivada parcial</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&exist;</td>
-                    <td style="vertical-align: middle;">&amp;#8707;</td>
-                    <td style="vertical-align: middle;">&amp;exist;</td>
-                    <td style="vertical-align: middle;">Existe</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&empty;</td>
-                    <td style="vertical-align: middle;">&amp;#8709;</td>
-                    <td style="vertical-align: middle;">&amp;empty;</td>
-                    <td style="vertical-align: middle;">Conjunto vacio</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&nabla;</td>
-                    <td style="vertical-align: middle;">&amp;#8711;</td>
-                    <td style="vertical-align: middle;">&amp;nabla;</td>
-                    <td style="vertical-align: middle;">Nabla</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&isin;</td>
-                    <td style="vertical-align: middle;">&amp;#8712;</td>
-                    <td style="vertical-align: middle;">&amp;isin;</td>
-                    <td style="vertical-align: middle;">Elemento de</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&notin;</td>
-                    <td style="vertical-align: middle;">&amp;#8713;</td>
-                    <td style="vertical-align: middle;">&amp;notin;</td>
-                    <td style="vertical-align: middle;">No es un elemento de</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&ni;</td>
-                    <td style="vertical-align: middle;">&amp;#8715;</td>
-                    <td style="vertical-align: middle;">&amp;ni;</td>
-                    <td style="vertical-align: middle;">Contiene como miembro</td>
-                </tr>                  
-                <tr>
-                    <td class="w3-xxlarge">&prod;</td>
-                    <td style="vertical-align: middle;">&amp;#8719;</td>
-                    <td style="vertical-align: middle;">&amp;prod;</td>
-                    <td style="vertical-align: middle;">Produco N-ario</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&sum;</td>
-                    <td style="vertical-align: middle;">&amp;#8721;</td>
-                    <td style="vertical-align: middle;">&amp;sum;</td>
-                    <td style="vertical-align: middle;">Suma N-aria</td>
-                </tr>
-            </table>
-        </article>
-
-        <h3>Algunas létras Griegos soportadas por HTML</h3>
-
-        <article class="ejemplo">
-            <table class="w3-table w3-bordered w3-striped cebranegra">
-                <tr class="w3-red">
-                    <th>Carácter</th>
-                    <th>Número</th>
-                    <th>Entidad</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Alpha;</td>
-                    <td style="vertical-align: middle;">&amp;#913;</td>
-                    <td style="vertical-align: middle;">&amp;Alpha;</td>
-                    <td style="vertical-align: middle;">Alfa</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Beta;</td>
-                    <td style="vertical-align: middle;">&amp;#914;</td>
-                    <td style="vertical-align: middle;">&amp;Beta;</td>
-                    <td style="vertical-align: middle;">Beta</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Gamma;</td>
-                    <td style="vertical-align: middle;">&amp;#915;</td>
-                    <td style="vertical-align: middle;">&amp;Gamma;</td>
-                    <td style="vertical-align: middle;">Gamma</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Delta;</td>
-                    <td style="vertical-align: middle;">&amp;#916;</td>
-                    <td style="vertical-align: middle;">&amp;Delta;</td>
-                    <td style="vertical-align: middle;">Delta</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Epsilon;</td>
-                    <td style="vertical-align: middle;">&amp;#917;</td>
-                    <td style="vertical-align: middle;">&amp;Epsilon;</td>
-                    <td style="vertical-align: middle;">Épsilon</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&Zeta;</td>
-                    <td style="vertical-align: middle;">&amp;#918;</td>
-                    <td style="vertical-align: middle;">&amp;Zeta;</td>
-                    <td style="vertical-align: middle;">Zeta</td>
-                </tr>
-            </table>    
-        </article>
-
-        <h3 title="Some Other Entities Supported by HTML">Algunas otras entidades soportadas por HTML</h3>
-
-        <article class="ejemplo">
-            <table class="w3-table w3-bordered w3-striped cebranegra">
-                <tr class="w3-red">
-                    <th>Carácter</th>
-                    <th>Número</th>
-                    <th>Entidad</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&copy;</td>
-                    <td style="vertical-align: middle;">&amp;#169;</td>
-                    <td style="vertical-align: middle;">&amp;copy;</td>
-                    <td style="vertical-align: middle;">COPYRIGHT</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&reg;</td>
-                    <td style="vertical-align: middle;">&amp;#174;</td>
-                    <td style="vertical-align: middle;">&amp;reg;</td>
-                    <td style="vertical-align: middle;">REGISTRADO</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&euro;</td>
-                    <td style="vertical-align: middle;">&amp;#8364;</td>
-                    <td style="vertical-align: middle;">&amp;euro;</td>
-                    <td style="vertical-align: middle;">EURO</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&trade;</td>
-                    <td style="vertical-align: middle;">&amp;#8482;</td>
-                    <td style="vertical-align: middle;">&amp;trade;;</td>
-                    <td style="vertical-align: middle;">MARCA REGISTRADA</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&larr;</td>
-                    <td style="vertical-align: middle;">&amp;#8592;</td>
-                    <td style="vertical-align: middle;">&amp;larr;</td>
-                    <td style="vertical-align: middle;">FLECHA IZQUIERDA</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&uarr;</td>
-                    <td style="vertical-align: middle;">&amp;#8593;</td>
-                    <td style="vertical-align: middle;">&amp;uarr;</td>
-                    <td style="vertical-align: middle;">FLECHA ARRIBA</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&rarr;</td>
-                    <td style="vertical-align: middle;">&amp;#8594;</td>
-                    <td style="vertical-align: middle;">&amp;rarr;</td>
-                    <td style="vertical-align: middle;">FLECHA DERECHA</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&darr;</td>
-                    <td style="vertical-align: middle;">&amp;#8595;</td>
-                    <td style="vertical-align: middle;">&amp;darr;</td>
-                    <td style="vertical-align: middle;">FLECHA ABAJO</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&spades;</td>
-                    <td style="vertical-align: middle;">&amp;#9824;</td>
-                    <td style="vertical-align: middle;">&amp;spades;</td>
-                    <td style="vertical-align: middle;">PICA NEGRA</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&clubs;</td>
-                    <td style="vertical-align: middle;">&amp;#9827;</td>
-                    <td style="vertical-align: middle;">&amp;clubs;</td>
-                    <td style="vertical-align: middle;">TREBOL NEGRO</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&hearts;</td>
-                    <td style="vertical-align: middle;">&amp;#9829;</td>
-                    <td style="vertical-align: middle;">&amp;hearts;</td>
-                    <td style="vertical-align: middle;">CORAZÓN NEGRO</td>
-                </tr>
-                <tr>
-                    <td class="w3-xxlarge">&diams;</td>
-                    <td style="vertical-align: middle;">&amp;#9830;</td>
-                    <td style="vertical-align: middle;">&amp;diams;</td>
-                    <td style="vertical-align: middle;">DIAMANTE NEGRO</td>
-                </tr>
-            </table>    
-        </article>
-        
-        <ul class="lista2" style="list-style-type: none;">
-            <li><a href="https://www.w3schools.com/charsets/ref_utf_currency.asp" target="_blank" style="color: red; text-decoration: underline;">Referencias completas de Monedas</a></li>
-            <li><a href="https://www.w3schools.com/charsets/ref_utf_arrows.asp" target="_blank" style="color: red; text-decoration: underline;">Referencia completa de flechas</a></li>
-            <li><a href="https://www.w3schools.com/charsets/ref_utf_symbols.asp" target="_blank" style="color: red; text-decoration: underline;">Referencia completa de símbolos</a></li>
-        </ul>
-
-        
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
     </div>
-</div>
 
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="happy-outline"></ion-icon>
+                <span>Symbols!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="happy-outline"></ion-icon>
+                        <span>Symbols</span>
+                </li>
+                <li>
+                    <a href="seccionentidades.html" target="_blank">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Entidades HTML</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="seccionemojis.html" target="_blank">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Emojis HTML</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco5" id="s1">
+    
+            <h1 title="HTML Symbols">Simbolos HTML</h1>
+    
+            <p><i><b>Símbolos o letras que no están presentes en tu teclado pueden ser agragados a HTML usando entidades.</b></i></p>
+    
+            <h3 title="HTML Symbol Entities">Simbolos de entidades HTML</h3>
+            <p>
+                Muchos símbolos matemáticos, técnicos y monetarios no están presentes en un teclado normal.<br>
+                Para agregar dichos símbolos a una página HTML, puede usar el nombre de la entidad o un número de la<br>
+                entidad (una referencia decimal o hexadecimal) para el símbolo.
+            </p>
+    
+            <article class="ejemplo">
+                Mostrar el signo del Euro:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;euro;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;#8364;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Se mostrará &amp;#x20AC;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+                Se verá como:
+                <div class="w3-white w3-padding">
+                    Se mostrará €<br>
+                    Se mostrará €<br>
+                    Se mostrará €
+                </div>
+            </article>
+    
+            <h3 title="Some Mathematical Symbols Supported by HTML">Algunos símbolos matemáticos soportados por HTML</h3>
+    
+            <article class="ejemplo">
+                <table class="w3-table w3-bordered w3-striped cebranegra">
+                    <tr class="w3-red">
+                        <th>Carácter</th>
+                        <th>Número</th>
+                        <th>Entidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&forall;</td>
+                        <td style="vertical-align: middle;">&amp;#8704;</td>
+                        <td style="vertical-align: middle;">&amp;forall;</td>
+                        <td style="vertical-align: middle;">Para todos</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&part;</td>
+                        <td style="vertical-align: middle;">&amp;#8706;</td>
+                        <td style="vertical-align: middle;">&amp;part;</td>
+                        <td style="vertical-align: middle;">Derivada parcial</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&exist;</td>
+                        <td style="vertical-align: middle;">&amp;#8707;</td>
+                        <td style="vertical-align: middle;">&amp;exist;</td>
+                        <td style="vertical-align: middle;">Existe</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&empty;</td>
+                        <td style="vertical-align: middle;">&amp;#8709;</td>
+                        <td style="vertical-align: middle;">&amp;empty;</td>
+                        <td style="vertical-align: middle;">Conjunto vacio</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&nabla;</td>
+                        <td style="vertical-align: middle;">&amp;#8711;</td>
+                        <td style="vertical-align: middle;">&amp;nabla;</td>
+                        <td style="vertical-align: middle;">Nabla</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&isin;</td>
+                        <td style="vertical-align: middle;">&amp;#8712;</td>
+                        <td style="vertical-align: middle;">&amp;isin;</td>
+                        <td style="vertical-align: middle;">Elemento de</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&notin;</td>
+                        <td style="vertical-align: middle;">&amp;#8713;</td>
+                        <td style="vertical-align: middle;">&amp;notin;</td>
+                        <td style="vertical-align: middle;">No es un elemento de</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&ni;</td>
+                        <td style="vertical-align: middle;">&amp;#8715;</td>
+                        <td style="vertical-align: middle;">&amp;ni;</td>
+                        <td style="vertical-align: middle;">Contiene como miembro</td>
+                    </tr>                  
+                    <tr>
+                        <td class="w3-xxlarge">&prod;</td>
+                        <td style="vertical-align: middle;">&amp;#8719;</td>
+                        <td style="vertical-align: middle;">&amp;prod;</td>
+                        <td style="vertical-align: middle;">Produco N-ario</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&sum;</td>
+                        <td style="vertical-align: middle;">&amp;#8721;</td>
+                        <td style="vertical-align: middle;">&amp;sum;</td>
+                        <td style="vertical-align: middle;">Suma N-aria</td>
+                    </tr>
+                </table>
+            </article>
+    
+            <h3>Algunas létras Griegos soportadas por HTML</h3>
+    
+            <article class="ejemplo">
+                <table class="w3-table w3-bordered w3-striped cebranegra">
+                    <tr class="w3-red">
+                        <th>Carácter</th>
+                        <th>Número</th>
+                        <th>Entidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Alpha;</td>
+                        <td style="vertical-align: middle;">&amp;#913;</td>
+                        <td style="vertical-align: middle;">&amp;Alpha;</td>
+                        <td style="vertical-align: middle;">Alfa</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Beta;</td>
+                        <td style="vertical-align: middle;">&amp;#914;</td>
+                        <td style="vertical-align: middle;">&amp;Beta;</td>
+                        <td style="vertical-align: middle;">Beta</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Gamma;</td>
+                        <td style="vertical-align: middle;">&amp;#915;</td>
+                        <td style="vertical-align: middle;">&amp;Gamma;</td>
+                        <td style="vertical-align: middle;">Gamma</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Delta;</td>
+                        <td style="vertical-align: middle;">&amp;#916;</td>
+                        <td style="vertical-align: middle;">&amp;Delta;</td>
+                        <td style="vertical-align: middle;">Delta</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Epsilon;</td>
+                        <td style="vertical-align: middle;">&amp;#917;</td>
+                        <td style="vertical-align: middle;">&amp;Epsilon;</td>
+                        <td style="vertical-align: middle;">Épsilon</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&Zeta;</td>
+                        <td style="vertical-align: middle;">&amp;#918;</td>
+                        <td style="vertical-align: middle;">&amp;Zeta;</td>
+                        <td style="vertical-align: middle;">Zeta</td>
+                    </tr>
+                </table>    
+            </article>
+    
+            <h3 title="Some Other Entities Supported by HTML">Algunas otras entidades soportadas por HTML</h3>
+    
+            <article class="ejemplo">
+                <table class="w3-table w3-bordered w3-striped cebranegra">
+                    <tr class="w3-red">
+                        <th>Carácter</th>
+                        <th>Número</th>
+                        <th>Entidad</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&copy;</td>
+                        <td style="vertical-align: middle;">&amp;#169;</td>
+                        <td style="vertical-align: middle;">&amp;copy;</td>
+                        <td style="vertical-align: middle;">COPYRIGHT</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&reg;</td>
+                        <td style="vertical-align: middle;">&amp;#174;</td>
+                        <td style="vertical-align: middle;">&amp;reg;</td>
+                        <td style="vertical-align: middle;">REGISTRADO</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&euro;</td>
+                        <td style="vertical-align: middle;">&amp;#8364;</td>
+                        <td style="vertical-align: middle;">&amp;euro;</td>
+                        <td style="vertical-align: middle;">EURO</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&trade;</td>
+                        <td style="vertical-align: middle;">&amp;#8482;</td>
+                        <td style="vertical-align: middle;">&amp;trade;;</td>
+                        <td style="vertical-align: middle;">MARCA REGISTRADA</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&larr;</td>
+                        <td style="vertical-align: middle;">&amp;#8592;</td>
+                        <td style="vertical-align: middle;">&amp;larr;</td>
+                        <td style="vertical-align: middle;">FLECHA IZQUIERDA</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&uarr;</td>
+                        <td style="vertical-align: middle;">&amp;#8593;</td>
+                        <td style="vertical-align: middle;">&amp;uarr;</td>
+                        <td style="vertical-align: middle;">FLECHA ARRIBA</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&rarr;</td>
+                        <td style="vertical-align: middle;">&amp;#8594;</td>
+                        <td style="vertical-align: middle;">&amp;rarr;</td>
+                        <td style="vertical-align: middle;">FLECHA DERECHA</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&darr;</td>
+                        <td style="vertical-align: middle;">&amp;#8595;</td>
+                        <td style="vertical-align: middle;">&amp;darr;</td>
+                        <td style="vertical-align: middle;">FLECHA ABAJO</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&spades;</td>
+                        <td style="vertical-align: middle;">&amp;#9824;</td>
+                        <td style="vertical-align: middle;">&amp;spades;</td>
+                        <td style="vertical-align: middle;">PICA NEGRA</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&clubs;</td>
+                        <td style="vertical-align: middle;">&amp;#9827;</td>
+                        <td style="vertical-align: middle;">&amp;clubs;</td>
+                        <td style="vertical-align: middle;">TREBOL NEGRO</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&hearts;</td>
+                        <td style="vertical-align: middle;">&amp;#9829;</td>
+                        <td style="vertical-align: middle;">&amp;hearts;</td>
+                        <td style="vertical-align: middle;">CORAZÓN NEGRO</td>
+                    </tr>
+                    <tr>
+                        <td class="w3-xxlarge">&diams;</td>
+                        <td style="vertical-align: middle;">&amp;#9830;</td>
+                        <td style="vertical-align: middle;">&amp;diams;</td>
+                        <td style="vertical-align: middle;">DIAMANTE NEGRO</td>
+                    </tr>
+                </table>    
+            </article>
+            
+            <ul class="lista2" style="list-style-type: none;">
+                <li><a href="https://www.w3schools.com/charsets/ref_utf_currency.asp" target="_blank" style="color: red; text-decoration: underline;">Referencias completas de Monedas</a></li>
+                <li><a href="https://www.w3schools.com/charsets/ref_utf_arrows.asp" target="_blank" style="color: red; text-decoration: underline;">Referencia completa de flechas</a></li>
+                <li><a href="https://www.w3schools.com/charsets/ref_utf_symbols.asp" target="_blank" style="color: red; text-decoration: underline;">Referencia completa de símbolos</a></li>
+            </ul>
+    
+            
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
