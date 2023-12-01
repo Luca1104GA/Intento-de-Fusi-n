@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="aperture-outline"></ion-icon>
+                <span>Canvas!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="aperture-outline"></ion-icon>
+                        <span>Canvas</span>
+                </li>
+                <li>
+                    <a href="#ae2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Ejemplos de canvas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Dibuja una línea</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Dibuja un circulo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Dibujar un texto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Texto con contorno</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Degradado líneal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Degradado circular</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ae9">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Dibujar una imagen</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco2" id="ae1">
+    
+            <h1>Gráficos de canvas HTML</h1>
+            <p>
+                <code class="blue-text">&lt;canvas&gt;</code> <i>se utiliza para dibujar gráficos en una página web</i>.
+            </p>
+
+            <h2>¿Qué es HTML Canvas?</h2>
+            <p>
+                Este elemento se utiliza para dubujar gráficos, sobre la marcha, mediante JavaScript. <br>
+                Este elemento es sólo un contenedor de gráficos. Debes usar JavaScript para dibujar los gráficos. <br>
+                <code>canvas</code> tiene varios métodos para dibujar trazados, cuadros, texto y agregar imágenes.
+            </p>
+
+            <h3>Soporte del navegador</h3>
+            <p>
+                El núemero en la tabla especifica la primera versión del navegador que soporta el elemento <code>&lt;canvas&gt;</code>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>Navegador</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>2.0</td>
+                        <td>3.1</td>
+                        <td>9.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="ae2">Ejemplos de <code>canvas</code></h2>
+            <p>
+                Un <code class="red-text">canvas</code> es un área rectangular en una página HTML. <br>
+                De forma predeterminada, un <code class="red-text">canvas</code> no tiene borde ni contenido. <br><br>
+                El marcado se ve así:
+            </p>
+                
+            <div class="w3-code w3-border notranslate htmlHigh" style="margin-left: 5%; margin-right: 5%;">
+                <div>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </div>
+
+            <p>
+                <b>Nota: Especifique siempre un atributo <code class="red-text">id</code></b> (al que se hará referencia en un script)
+                y un atritubo <br> <code class="red-text">width</code> y <code class="red-text">height</code> para definir el tamaño
+                del <code class="red-text">canvas</code>
+            </p>
+
+            <article class="ejemplo">
+                Ejemplo
+
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span
+                                class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span>
+                            style<span class="attributevaluecolor" style="color:mediumblue">="border:1px solid
+                                #000000;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+
+            <h3>Agregar un JavaScript</h3>
+            <p>
+                Después de crear el área del lienzo rectangular, debes agregar JavaScript para realizar el dibujo. <br><br>
+                Aquí hay unos ejemplos: 
+            </p>
+
+            <article class="ejemplo">
+                <h3 id="ae3">Dibuja una línea</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span>
+                        ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor"
+                            style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">moveTo</span>(<span class="jsnumbercolor"
+                            style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br>ctx.<span
+                            class="jspropertycolor" style="color:black">lineTo</span>(<span class="jsnumbercolor"
+                            style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">stroke</span>();<br>&lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById ("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Selecciona el elemento HTML con el atributo <b>'id'</b> igual a "myCanvas" y lo alamacena en la <br>
+                                    variable <b>'c'</b>. Este elemento debería se un elemento <b>'&lt;canvas&gt;</b> en tu HTML.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizadp 2D del <code>canvas</code>. El contexto 2D es esencial para <br>
+                                    dibujar en el <code>canvas</code>. Se almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.moveTo(0, 0);</b>
+                            <ul>
+                                <li>
+                                    Establece el punto de inicio para el trazado de la línea en las coordenadas (0,0) dentro del <code>canvas</code>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.LineTo(200, 100);</b>
+                            <ul>
+                                <li>
+                                    Crea una línea desde el punto de inicio (0,0) hasta las coordenadas (200,100).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.stroke();</b>
+                            <ul>
+                                <li>
+                                    Dibuja la línea en el <code>canvas</code> utilizando el estilo de trazo actual. En este caso, <br>
+                                    estás utilizando el método <b>'stroke'</b> para trazar la línea.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configura un <code>canvas</code>, obtiene el contexto 2D para ese <code>canvas</code>,<br>
+                    mueve el "lapiz" a un punto de inicio (0,0), traza una línea hasta un punto final (200,100), y finalmente <br>
+                    dibuja esa línea en el <code>canvas</code>. El resultado será una línea diagonal en el <code>canvas</code> desde <br>
+                    el punto (0,0) hasta el punto (200,100). <hr>
+                </p>
+
+                <h3 id="ae4">Dibuja un circulo</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span>
+                        ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor"
+                            style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">beginPath</span>();<br>ctx.<span
+                            class="jspropertycolor" style="color:black">arc</span>(<span class="jsnumbercolor"
+                            style="color:red">95</span>, <span class="jsnumbercolor" style="color:red">50</span>, <span
+                            class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">0</span>,
+                        <span class="jsnumbercolor" style="color:red">2</span> * Math.<span class="jspropertycolor"
+                            style="color:black">PI</span>);<br>ctx.<span class="jspropertycolor"
+                            style="color:black">stroke</span>();<br><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById ("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en el primer ejemplo, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext ("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.beginPath();</b>
+                            <ul>
+                                <li>
+                                    Inicia un nuevo trazado. Esto es importante antes de comenzar a dibujar formas como circulos, para <br>
+                                    que el trazado anterior (si lo hay) no afecte la nueva forma.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.arc(95, 50, 40, 0, 2 * Math.PI);</b>
+                            <ul>
+                                <li>
+                                    Dibuja un arco, los parámetros son :
+                                    <ul>
+                                        <li><b>'(95, 50)'</b>: Las coordenadas del centro del circulo.</li>
+                                        <li><b>'40'</b>: El radio del circulo.</li>
+                                        <li>
+                                            <b>'0'</b>: El ángulo inicila del arco en radianes (En este caso, comienza desde el lado <br>
+                                            derecho del círculo)
+                                        </li>
+                                        <li>
+                                            <b>'2 * Math.PI</b>: El ángulo final del arco en radianes (En este caso, se completa un <br> 
+                                            círculo completo de 360 grados)
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.stroke;</b>
+                            <ul>
+                                <li>
+                                    Dibuja el contorno del círculo en el <code>canvas</code> utilizando el estilo de trazo actual.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configura un <code>canvas</code>, obtiene el contexto 2D para ese <code>canvas</code>, <br>
+                    inicia un nuevo trazado, dibuja un círculo con centro en (95,50), radio de 40 unidades y luego dibuja el <br>
+                    contorno del círculo en el <code>canvas</code>. El resultado será un círculo en el <code>canvas</code>. <hr>
+                </p>
+
+                <h3 id="ae5">Dibujar un texto</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span>
+                        ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor"
+                            style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor"
+                            style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor"
+                            style="color:black">fillText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>,
+                        <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor"
+                            style="color:red">50</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.font = "30px Arial";</b>
+                            <ul>
+                                <li>
+                                    Establece elestilo de fuente para el texto que se va a dibujar. En este caso, la fuente es "Arial" <br>
+                                    y el tamaño es de 30 píxeles.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.fillText("Hello World", 10, 50);</b>
+                            <ul>
+                                <li>
+                                    Dibuja el texto "Hello World" en el <code>canvas</code>, los parámetros son :
+                                    <ul>
+                                        <li><b>"Hello World"</b>: El texto que se va a dibujar.</li>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzara el texto.</li>
+                                        <li><b>'50'</b>: La posición Y en el <code>canvas</code> donde comenzata el texto.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configura un <code>canvas</code>, obtiene el contexto 2D para ese <code>canvas</code>, <br>
+                    establece el estilo de fuente, y luego dibuja el texto "Hello World" en el <code>canvas</code> en la posición (10,50). <br>
+                    El resultado será que el texto "Hello World" se mostrará en el <code>canvas</code> con la fuente y el tamaño especificados. <hr>
+                </p>
+
+                <h3 id="ae6">Texto con contorno</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span>
+                        ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor"
+                            style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor"
+                            style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor"
+                            style="color:black">strokeText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>,
+                        <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor"
+                            style="color:red">50</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.font = "30px Arial";</b>
+                            <ul>
+                                <li>
+                                    Establece el estilo de fuente para el texto que se va a dibujar. En este caso, la fuente es "Arial" <br>
+                                    y el tamaño es de 30 píxeles.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.strokeText("Hello World", 10, 50),</b>
+                            <ul>
+                                <li>
+                                    Dibuja el contorno del texto "Hello World" en el <code>canvas</code>, los parámetros son:
+                                    <ul>
+                                        <li><b>"Hello World"</b>: El texto que se va a dibujar.</li>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzará el contorno del texto.</li>
+                                        <li><b>'50'</b>: La posición Y en el <code>canvas</code> donde comenzará el contorno del texto.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configura un <code>canvas</code>, obtiene el contexto 2D para ese <code>canvas</code>, <br>
+                    establece el estilo de fuente y luego dibuja el contorno del texto "Hello World" en el <code>canvas</code> en la 
+                    posición (10,50). <br> A diferencia de <code><b>'fillText'</b></code>, que rellena el texto con color,
+                    <code><b>'strokeText'</b></code> solo dibuja el contorno del texto. <br> El resultado será que verás el contorno
+                    del texto "Hello World" en el <code>canvas</code>. <hr>
+                </p>
+
+                <h3 id="ae7">Dibujar degradado líneal</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                            style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor"
+                            style="color:black">createLinearGradient</span>(<span class="jsnumbercolor" style="color:red">0</span>,
+                        <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor"
+                            style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor"
+                            style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor"
+                            style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor"
+                            style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span
+                            class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor"
+                            style="color:red">80</span>);<br>&lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var grd = ctx.createLinearGradient(0, 0, 200, 0);</b>
+                            <ul>
+                                <li>
+                                    Crea un degradado líneal para ser utilizado como estilo de relleno. <br>
+                                    El degradado va desde la posición (0,0) hasta la posición (200,0).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>grd.addColorStop(0, "red");</b>
+                            <ul>
+                                <li>
+                                    Establece un punto de color en el degradado. <br>
+                                    En este caso, en el inicio del degradado (posición 0), el color es "red" (rojo).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>grd.addColorStop (1, "white");</b>
+                            <ul>
+                                <li>
+                                    Establece otro punto de color en el degradado. <br>
+                                    En este caso, en el final del degradado (posición 1), el color es "white" (blanco).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.fillStyle = grd;</b>
+                            <ul>
+                                <li>
+                                    Establece el estilo de relleno del contexto con el degradado líneal creado anteriormente.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.fillRect(10, 10, 150, 80);</b>
+                            <ul>
+                                <li>
+                                    Dibuja un rectángulo relleno en el <code>canvas</code>, los parámetros son:
+                                    <ul>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzará el rectángulo.</li>
+                                        <li><b>'10'</b>: La posición Y en el <code>canvas</code> donde comenzará el rectángulo.</li>
+                                        <li><b>'150'</b>: El ancho del rectángulo.</li>
+                                        <li><b>'80'</b>: La altura del rectángulo.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configurara un <code>canvas</code>, obtiene el contexto 2D para ese <code>canvas</code>, <br>
+                    crea un degradado líneal como estilo de relleno que va desde rojo hasta blanco, y luego <br>
+                    dibuja un rectángulo relleno en el <code>canvas</code> usando ese degradado como color de fondo. <br>
+                    El resultado será un rectángulo con un degradado de color. <hr>
+                </p>
+
+                <h3 id="ae8">Dibujar degradado circular</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;"></canvas>
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                            style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor"
+                            style="color:black">createRadialGradient</span>(<span class="jsnumbercolor" style="color:red">75</span>,
+                        <span class="jsnumbercolor" style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">5</span>,
+                        <span class="jsnumbercolor" style="color:red">90</span>, <span class="jsnumbercolor"
+                            style="color:red">60</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor"
+                            style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor"
+                            style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br>ctx.<span
+                            class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor"
+                            style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span
+                            class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor"
+                            style="color:red">80</span>);<br>&lt;/script&gt; </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y los almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var grd = ctx.createRadialGradient(75, 50, 5, 90, 60. 100);</b>
+                            <ul>
+                                <li>
+                                    Crea un degradado radial para ser utilizado como estilo de relleno. <br>
+                                    El degradado tiene dos círculos, uno con centro en (75,50) y radio 5, <br>
+                                    y el otro con centro en (90,60) y radio 100.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>grd.addColorStop (0, "red");</b>
+                            <ul>
+                                <li>
+                                    Establece un punto de color en el degradado. <br>
+                                    En este caso, en el centro del círculo interior (posición 0), el color es "red" (rojo).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>grd.addColorStop(1, "white");</b>
+                            <ul>
+                                <li>
+                                    Establece otro punto de color en el degradado. <br>
+                                    En este caso, en el centro del círculo exterior (posición 1), el color es "white" (blanco).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.fillStyle = grd;</b>
+                            <ul>
+                                <li>
+                                    Establece el estilo de relleno del contexto con el degradado radial creado anteriormente.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.fillRect(10, 10, 150. 80);</b>
+                            <ul>
+                                <li>
+                                    Dibuja un rectángulo relleno en el <code>canvas</code>, los parámetros son:
+                                    <ul>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzara el rectángulo.</li>
+                                        <li><b>'10'</b>: La posición Y en el <code>canvas</code> donde comenzara el rectángulo.</li>
+                                        <li><b>'150'</b>: El ancho del rectángulo.</li>
+                                        <li><b>'80'</b>: La altura del rectángulo.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código configura un lienzo, obtiene el contexto 2D para ese lienzo, <br>
+                    crea un degradado radial como estilo de relleno que va desde rojo hasta blanco, y luego <br>
+                    dibuja un rectángulo relleno en el lienzo usando ese degradado como color de fondo. <br>
+                    El resultado será un rectángulo con un degradado radial de color. <hr>
+                </p>
+
+                <h3 id="ae9">Dibujar una imagen</h3>
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px; color: black;">
+                    <p>Imagen a usar:</p>
+                    <img id="scream" src="imagenes/img_the_scream.jpg" alt="scream">
+
+                    <p>Canvas a rellenar:</p>
+                    <canvas id="myCanvas8" width="250" height="300"style="border:1px solid #d3d3d3;"></canvas>
+                    <p><button onclick="myCanvas8()">Inténtalo</button></p>     
+                </div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor"
+                            style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> img = document.<span
+                            class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"scream"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> ctx.<span class="jspropertycolor" style="color:black">drawImage</span>(img, <span class="jsnumbercolor"
+                            style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>);<br>&lt;/script&gt;
+                    </span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    <ol>
+                        <li>
+                            <b>var c = document.getElementById("myCanvas");</b>
+                            <ul>
+                                <li>
+                                    Al igual que en los ejemplos anteriores, selecciona el elemento HTML con el atributo <b>'id'</b> <br>
+                                    igual a "myCanvas" y lo almacena en la variable <b>'c'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var ctx = c.getContext("2d");</b>
+                            <ul>
+                                <li>
+                                    Obtiene el contexto de renderizado 2D del <code>canvas</code> y lo almacena en la variable <b>'ctx'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>var img = document.getElementById("scream");</b>
+                            <ul>
+                                <li>
+                                    Selecciona un elemento de imagen del documento HTML con el atibuto <b>'id'</b> igual a <br>
+                                    "scream" y lo almacena en la variable <b>'img'</b>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>ctx.drawImage(img, 10, 10);</b>
+                            <ul>
+                                <li>
+                                    Dibuja la imagen en el <code>canvas</code>, los parámetros son:
+                                    <ul>
+                                        <li><b>'img'</b>: La imagen a dibujar, en este caso, la imagen con el id "scream".</li>
+                                        <li><b>'10'</b>: La posición X en el <code>canvas</code> donde comenzará la imagen.</li>
+                                        <li><b>'10'</b>: La posición Y en el <code>canvas</code> donde comenzará la imagen.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <p style="text-align: left;">
+                    En resumen, este código utiliza la función <code><b>'drawImage'</b></code> para dibujar la imagen en el lienzo en la posición especificada. <br>
+                    El resultado será que la imagen con el id "scream" se mostrará en el lienzo en la posición (10, 10). <hr>
+                </p>
+
+            </article>
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptcanvas.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
