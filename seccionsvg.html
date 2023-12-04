@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTMLSVG</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="aperture"></ion-icon>
+                <span>HTML SVG!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html" target="_blank">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="aperture"></ion-icon>
+                        <span>SVG</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="af1">
+
+            <h1>Gráficos HTML SVG</h1>
+            <p>
+                SVG define gráficos basados en vectores en formato XML.
+            </p>
+
+            <h3>¿Qué es SVG?</h3>
+            <ul class="lista">
+                <li>SVG significa gráficos vectoriales escalables</li>
+                <li>SVG se utiliza para definir gráficos para la web</li>
+                <li>SVG es una recomendación del W3C</li>
+            </ul>
+            <hr>
+
+            <h2>&lt;svg&gt;</h2>
+            El elemento <code class="red-text">&lt;svg&gt;</code> es un contenedor para gráficos SVG. <br><br>
+            SVG tiene varios métodos para dibujar trazados, cuadros, círculos, texto e imágenes gráficas.
+
+            <h3>Soporte del navegador</h3>
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que admite totalmente el elemento  
+                <code class="red-text">&lt;svg&gt;</code>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>Navegador</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>3.0</td>
+                        <td>3.2</td>
+                        <td>10.1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <article class="ejemplo">
+
+                <h3>Círculo SVG</h3>
+
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+
+                    <svg width="100" height="100">
+                        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    </svg>
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red">
+                            width<span class="attributevaluecolor" style="color:mediumblue">="100"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>circle<span class="attributecolor" style="color:red">
+                            cx<span class="attributevaluecolor" style="color:mediumblue">="50"</span> cy<span
+                                class="attributevaluecolor" style="color:mediumblue">="50"</span> r<span class="attributevaluecolor"
+                                style="color:mediumblue">="40"</span> stroke<span class="attributevaluecolor"
+                                style="color:mediumblue">="green"</span>
+                            stroke-width<span class="attributevaluecolor" style="color:mediumblue">="4"</span> fill<span
+                                class="attributevaluecolor" style="color:mediumblue">="yellow"</span> /</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+
+                    <ol>
+                        <li>
+                            <b>&lt;svg width="100" height="100"&gt;</b>
+                            <ul>
+                                <li>
+                                    Abre un elemento SVG con una anchura de 100 unidades y una altura de 100 unidades.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>&lt;circle cx="50" cy="50 r="40" stroke="green" stroke-width="4" fill="yellow" /&gt;</b>
+                            <ul>
+                                <li>
+                                    Dibuja un círculo en el lienzo SVG.
+                                    <ul>
+                                        <li><b>cx="50"</b>: La coordenada X del centro del círculo es 50 unidades.</li>
+                                        <li><b>cy="50"</b>: La coordenada Y del centro del círculo es 50 unidades.</li>
+                                        <li><b>r="40"</b>: El radio del círculo es de 40 unidades.</li>
+                                        <li><b>stroke="green"</b>: Establece el color del trazo (borde) del círculo a verde.</li>
+                                        <li><b>stroke-width="4"</b>: Establece el ancho del trazo del círculo a 4 unidades.</li>
+                                        <li><b>fill="yellow"</b>: Establece el color de relleno del círculo a amarillo.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>&lt;/svg&gt;</b>
+                            <ul>
+                                <li>
+                                    Cierra el elemento SVG.
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                </div>
+                <br>
+                <p style="text-align: left;">
+                    Este código SVG representa un círculo con un borde verde, un ancho de borde de 4 unidades y un relleno amarillo <br>
+                    en un lienzo de 100x100 unidades. <br><br>
+                    A diferencia de Canvas, SVG es una representación basada en XML de gráficos vectoriales <br>
+                    y permite una manipulación más fácil y flexible de los elementos gráficos.
+                </p>
+
+                <hr>
+
+                <h3>Rectángulo SVG</h3>
+
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+
+                    <svg width="400" height="100">
+                        <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+                    </svg>
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span
+                            class="attributecolor" style="color:red"> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="400"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="100"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red">
+                            width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span> style<span
+                                class="attributevaluecolor"
+                                style="color:mediumblue">="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"</span>
+                            /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                </div>
+
+                <div style="text-align: left; background-color: #2c3e50; padding: 5px 0px 10px 0px;">
+                    
+                    <ol>
+                        <li>
+                            <b>&lt;svg width="400" height="100"&gt;</b>
+                            <ul>
+                                <li>Abre un elemento SVG con una anchura de 400 unidades y una altura de 100 unidades.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>&lt;rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" /&gt;</b>
+                            <ul>
+                                <li>
+                                    Dibuja un rectángulo en el lienzo SVG.
+                                    <ul>
+                                        <li><b>width="400"</b>: El ancho del rectángulo es de 400 unidades.</li>
+                                        <li><b>height="100"</b>: La altura del rectángulo es de 100 unidades.</li>
+                                        <li>
+                                            <b>style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"</b> <br>
+                                            Establece el estilo del rectángulo.
+                                            <ul>
+                                                <li><b>fill:rgb(0,0,255)</b>: Establece el color de relleno del rectángulo a azúl
+                                                (rgb(0,0,255)).</li>
+                                                <li><b>stroke-width=10</b>: Establece el ancho del trazo (borde) del rectángulo a 
+                                                10 unidades.</li>
+                                                <li><b>stroke:rgb(0,0,0)</b>: Establece el color del trazo del rectángulo a negro
+                                                (rgb(0,0,0))</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>&lt;/svg&gt;</b>
+                            <ul>
+                                <li>Cierra el elemento SVG.</li>
+                            </ul>
+                        </li>
+                    </ol>
+
+                </div>
+                <br>
+                <p style="text-align: left;">
+                    Este código SVG representa un rectángulo azul con un borde negro de 10 unidades de ancho en un lienzo de 400x100 unidades.
+                    <br><br>Así como en el ejemplo anterior, el código SVG permite la creación y manipulación de gráficos vectoriales de una manera <br>
+                    más declarativa y estructurada que Canvas, que se basa en píxeles y requiere más trabajo manual para realizar modificaciones. 
+                </p>
+
+                <hr>
+
+                <h3>Rectángulo redondeado SVG</h3>
+
+                <div style="text-align: center; background-color: #fff; padding: 5px 0px 10px 0px;">
+                    <svg width="400" height="180">
+                        <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+                        style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+                    </svg>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span
+                            class="attributecolor" style="color:red"> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="400"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="180"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red">
+                            x<span class="attributevaluecolor" style="color:mediumblue">="50"</span> y<span class="attributevaluecolor"
+                                style="color:mediumblue">="20"</span> rx<span class="attributevaluecolor"
+                                style="color:mediumblue">="20"</span> ry<span class="attributevaluecolor"
+                                style="color:mediumblue">="20"</span>
+                            width<span class="attributevaluecolor" style="color:mediumblue">="150"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="150"</span><br>&nbsp;
+                            style<span class="attributevaluecolor"
+                                style="color:mediumblue">="fill:red;stroke:black;stroke-width:5;opacity:0.5"</span> /</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
