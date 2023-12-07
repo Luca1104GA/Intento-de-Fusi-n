@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="book-outline"></ion-icon>
+                <span>Multimedia!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="desktop-sharp"></ion-icon>
+                        <span>Media!</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3">
+
+            <h1>HTML Multimedia!</h1>
+            <p><i>Multimedia en la web es música, sonido, vídeos y animaciones. </i></p>
+
+            <h3>¿Qué es Multimedia?</h3>
+            <p>
+                Multimedia viene en muchos formatos diferentes. Puede ser casi cualquier cosa que puedas oír o ver, <br>
+                como imágenes, música, sonido, vídeos, discos, películas, animaciones y más. <br><br>
+                Las páginas web suelen contener elementos multimedia de diferentes tipos y formatos.
+            </p>
+
+            <h3>Soporte del navegador</h3>
+            <p>
+                Los primeros navegadores web admitían únicamente texto, limitado a una única fuente en un solo color. <br><br>
+                Más tarde llegaron los navegadores compatibles con colores, fuentes, imágenes y multimedia.
+            </p>
+
+            <h3>Formatos multimedia</h3>
+            <p>
+                Los elementos multimedia (como audio y video) se almacenan en archivos multimedia. <br><br>
+                La fomra más común de descubrir el tipo de archivo es mirar la extensión del mismo. <br><br>
+                Los archivos multimedia tienen formatos y diferentes extensiones como : .wav, .mp3, .mp4, .mpg, .wmv y .avi.
+            </p>
+
+            <h2>Formatos de video comunes</h2>
+            <div style="display: flex;">
+                <img src="imagenes/pic_video.jpg" alt="media-comunes" style="padding-left: 200px;">
+                <p style="text-align: left; margin-top: 20px; margin-left: 20px;">
+                    Existen muchos formatos de video. <br>
+                    Los formatos MP4, WebM y Ogg son compatibles con html. <br>
+                    Youtube recomienda el formato MP4.
+                </p>
+            </div>
+
+            <table class="tablecebra4blanco" style="margin-top: 20px;">
+                <tr class="w3-red">
+                    <th>Formato</th>
+                    <th>Archivo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>MPEG</td>
+                    <td>.mpg <br> .mpeg</td>
+                    <td>Desarrolado por el Grupo de Expertos en Imágenes en Movimiento. <br> El primer formato de video popular en la web.
+                    Ya no es compatible con HTML.</td>
+                </tr>
+                <tr>
+                    <td>AVI</td>
+                    <td>.avi</td>
+                    <td>AVI (Audio Video Interleave). Desarrolado por Microsoft. Comúnmente utilizado en cámaras de video y hardware de TV. <br>
+                        Funciona bien en computadoras con Windows, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>WMV</td>
+                    <td>.wmv</td>
+                    <td>WMV (Windows Media Video). Desarrollado por Microsoft. Comúnmente utilizado en cámaras de video y hardware de TV. <br>
+                        Funciona bien en computadoras con Windows, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>QuickTime</td>
+                    <td>.mov</td>
+                    <td>Desarrollado por Apple. Comúnmente utilizado en cámaras de video y hardware de TV. <br>
+                        Funciona bien en computadoras Apple, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>RealVideo</td>
+                    <td>.rm <br> .ram</td>
+                    <td>Desarrollado por Real Media para permitir la transmisión de video con bajos anchos de banda. <br>
+                        No se reproduce en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>Flash</td>
+                    <td>.swf <br> .flv</td>
+                    <td>Desarrollado por Macromedia. A menudo requiere un componente adicional (plug-in) para reproducirse en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>Ogg</td>
+                    <td>.ogg</td>
+                    <td>Theora Ogg. Desarrollado por la Fundació <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">
+                        <code>Xiph.Org.</code></span>  Compatible con HTML.</td>
+                </tr>
+                <tr>
+                    <td>WebM</td>
+                    <td>.webm</td>
+                    <td>Desarrollado por Mozilla, Opera, Adobe, y Google. Compatible con HTML.</td>
+                </tr>
+                <tr>
+                    <td>MPEG-4</td>
+                    <td>.mp4</td>
+                    <td>Desarrollado por el Grupo de Expertos en Imágenes en Movimiento.<br>
+                        Comúnmente utilizado en cámaras de video y hardware de TV. <br>
+                        Compatible con todos los navegadores y recomendado por YouTube.</td>
+                </tr>
+            </table>
+
+            <h2>Formatos de audio comunes</h2>
+            <p>
+                MP3 es el mejor formato para música grabada comprimida. El termino MP3 se ha convertido en sinónimo de música digital.<br>
+                <br> <i>Si su sitio web trata sobre música, MP3 es la opción.</i>
+            </p>
+
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
