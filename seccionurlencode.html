@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Url Encode</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -11,167 +11,279 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_negro3" id="w1">
-    
-        <h1 title="HTML Uniform Resource Locators">Localizadores uniformes de recursos HTML (URL)</h1>
-        <p>
-            Una URL es otra palabra para una dirección web. <br><br>
-            Una URL puede estar compuesta de palabras (por ejemplo, youtube.com) o una dirección de <br>
-            Protocolo de internet (IP) (por ejemplo: 192.68.20.50). <br><br>
-            La mayoria de las personas ingresan el nombre cuando navegan, porque los nombres son más<br>
-            fáciles de recordar que los números.
-        </p>
-
-        <h3>URL</h3>
-        <p>
-            Los navegadores web solicitan páginas de servidores web mediante una URL. <br><br>
-            Un localizador uniforme de recursos (URL) se utiliza para dirigirse a un documento (u otros datos) en la web.
-        </p>
-
-        <article class="ejemplo">
-            <div class="w3-code notranslate htmlHigh">
-                scheme://prefix.domain:port/path/filename
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="cloud-upload"></ion-icon>
+                <span>Url Encode!</span>
             </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
-            <ul class="lista2">
-                <li><b>scheme:</b> define el <b>tipo</b> de servicio de Internet (el más común es <b>http</b> o <b>https</b>)</li>
-                <li><b>prefix:</b> define un <b>prefijo</b> de dominio (el valor predeterminado para http es <b>WWW</b>)</li>
-                <li><b>domain:</b> define el <b>nombre de dominio</b> de Internet (como youtube.com)</li>
-                <li><b>port:</b> define el <b>número de puerto</b> en el host (el valor predeterminado para http es <b>80</b>)</li>
-                <li><b>path:</b> define una <b>ruta</b> en el servidor (si se omite: el directorio raíz del sitio)</li>
-                <li><b>filename:</b> define el <b>nombre de un documento</b> o recurso</li>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioncosasbasicas.html">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <span>Cosas Basicas</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="cloud-upload"></ion-icon>
+                        <span>Url Encode</span>
+                </li>
+                <li>
+                    <a href="#w2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>URL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#w3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>URL comunes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#w4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Codificación de URL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#w5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Ejemplos ASCII</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
             </ul>
-        </article>
+        </nav>
 
-        <h2>Esquemas de URL comunes</h2>
-        <p>La siguiente tabla enumera algunos esquemas comunes</p>
+        <div>
+            <div class="linea"></div>
 
-        <table class="tablecebra4">
-            <tr>
-                <th>Esquema</th>
-                <th>Abreviatura de</th>
-                <th>Utilizado para</th>
-            </tr>
-            <tr>
-                <td>http</td>
-                <td>Protocolo de Trasferencia de Hipertexto</td>
-                <td>Páginas web comunes. No encriptado</td>
-            </tr>
-            <tr>
-                <td>https</td>
-                <td>Protocolo de Transferencia de Hipertexto Seguro</td>
-                <td>Páginas web seguras. Encriptado</td>
-            </tr>
-            <tr>
-                <td>ftp</td>
-                <td>Protocolo de Transferencia de Archivos</td>
-                <td>Descarga o carga de archivos</td>
-            </tr>
-            <tr>
-                <td>file</td>
-                <td></td>
-                <td>Un archivo en tu computadora</td>
-            </tr>
-        </table>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h3 title="URL Encoding">Codificación de URL</h3> 
-        <p>
-            Las URL solo se pueden enviar a través de Internet utilizando el <i>character set</i> <b>ASCII</b>.<br>
-            Si una URL contiene caracteres fuera del conjunto ASCII, la URL debe convertirse. <br><br>
-            La codificación de URL convierte caracteres que no son ASCII a un formato que se puede transmitir a través de Internet.<br>
-            La codificación de URL reemplaza a los caracteres que no son ASCII con un "%" seguido de dígitos hexadecimales.<br><br>
-            Las URL no pueden contener espacios. La codificación de URL normalmente reemplaza un espacio con un signo más (+), o %20.
-        </p>
-
-        <h3>Inténtalo tú mismo</h3>
-        <form name="input" target="_blank" action="submit.html" method="get" data-gtm-form-interact-id="0">
-            <input type="text" value="Aguante River"text" size="30" data-gtm-form-interact-field-id="0">
-            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="Entregar"></font></font>
-        </form>
-
-        <p>
-            Si hace click en "Enviar". el navegador codificará la URL de la entrada antes de enviarla al servidor.<br>
-            Una página en el servidor mostrará la entrada recibida.
-        </p>
-
-        <h3 title="ASCII Encoding Examples">Ejemplos de codificación ASCII</h3>
-        <p>
-            Su navegador codificará la entrada de acuerdo con el conjunto de caracteres utilizado en su página. <br><br>
-            El juego de caracteres predeterminado en HTML5 es UTF-8.
-        </p>
-
-        <table class="ws-table-all notranslate tablecebra4">
-            <tbody>
-                <tr>
-                    <th style="width:20%">Character</th>
-                    <th style="width:40%">From Windows-1252</th>
-                    <th style="width:40%">From UTF-8</th>
-                </tr>
-                <tr>
-                    <td>€</td>
-                    <td>%80</td>
-                    <td>%E2%82%AC</td>
-                </tr>
-                <tr>
-                    <td>£</td>
-                    <td>%A3</td>
-                    <td>%C2%A3</td>
-                </tr>
-                <tr>
-                    <td>©</td>
-                    <td>%A9</td>
-                    <td>%C2%A9</td>
-                </tr>
-                <tr>
-                    <td>®</td>
-                    <td>%AE</td>
-                    <td>%C2%AE</td>
-                </tr>
-                <tr>
-                    <td>À</td>
-                    <td>%C0</td>
-                    <td>%C3%80</td>
-                </tr>
-                <tr>
-                    <td>Á</td>
-                    <td>%C1</td>
-                    <td>%C3%81</td>
-                </tr>
-                <tr>
-                    <td>Â</td>
-                    <td>%C2</td>
-                    <td>%C3%82</td>
-                </tr>
-                <tr>
-                    <td>Ã</td>
-                    <td>%C3</td>
-                    <td>%C3%83</td>
-                </tr>
-                <tr>
-                    <td>Ä</td>
-                    <td>%C4</td>
-                    <td>%C3%84</td>
-                </tr>
-                <tr>
-                    <td>Å</td>
-                    <td>%C5</td>
-                    <td>%C3%85</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p>
-            <i>Para obtener una referencia completa de todas las codificaciónes de URL, visite</i> <a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank" style="text-decoration: underline; color: cadetblue;"><i>Referencia de codificacnión de URL</i></a>
-        </p>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_negro3" id="w1">
+    
+            <h1 title="HTML Uniform Resource Locators">Localizadores uniformes de recursos HTML (URL)</h1>
+            <p>
+                Una URL es otra palabra para una dirección web. <br><br>
+                Una URL puede estar compuesta de palabras (por ejemplo, youtube.com) o una dirección de <br>
+                Protocolo de internet (IP) (por ejemplo: 192.68.20.50). <br><br>
+                La mayoria de las personas ingresan el nombre cuando navegan, porque los nombres son más<br>
+                fáciles de recordar que los números.
+            </p>
+        
+            <h3 id="w2">URL</h3>
+            <p>
+                Los navegadores web solicitan páginas de servidores web mediante una URL. <br><br>
+                Un localizador uniforme de recursos (URL) se utiliza para dirigirse a un documento (u otros datos) en la web.
+            </p>
+        
+            <article class="ejemplo">
+                <div class="w3-code notranslate htmlHigh">
+                    scheme://prefix.domain:port/path/filename
+                </div>
+        
+                <ul class="lista2">
+                    <li><b>scheme:</b> define el <b>tipo</b> de servicio de Internet (el más común es <b>http</b> o <b>https</b>)</li>
+                    <li><b>prefix:</b> define un <b>prefijo</b> de dominio (el valor predeterminado para http es <b>WWW</b>)</li>
+                    <li><b>domain:</b> define el <b>nombre de dominio</b> de Internet (como youtube.com)</li>
+                    <li><b>port:</b> define el <b>número de puerto</b> en el host (el valor predeterminado para http es <b>80</b>)</li>
+                    <li><b>path:</b> define una <b>ruta</b> en el servidor (si se omite: el directorio raíz del sitio)</li>
+                    <li><b>filename:</b> define el <b>nombre de un documento</b> o recurso</li>
+                </ul>
+            </article>
+        
+            <h2 id="w3">Esquemas de URL comunes</h2>
+            <p>La siguiente tabla enumera algunos esquemas comunes</p>
+        
+            <table class="tablecebra4">
+                <tr>
+                    <th>Esquema</th>
+                    <th>Abreviatura de</th>
+                    <th>Utilizado para</th>
+                </tr>
+                <tr>
+                    <td>http</td>
+                    <td>Protocolo de Trasferencia de Hipertexto</td>
+                    <td>Páginas web comunes. No encriptado</td>
+                </tr>
+                <tr>
+                    <td>https</td>
+                    <td>Protocolo de Transferencia de Hipertexto Seguro</td>
+                    <td>Páginas web seguras. Encriptado</td>
+                </tr>
+                <tr>
+                    <td>ftp</td>
+                    <td>Protocolo de Transferencia de Archivos</td>
+                    <td>Descarga o carga de archivos</td>
+                </tr>
+                <tr>
+                    <td>file</td>
+                    <td></td>
+                    <td>Un archivo en tu computadora</td>
+                </tr>
+            </table>
+        
+            <h3 title="URL Encoding" id="w4">Codificación de URL</h3> 
+            <p>
+                Las URL solo se pueden enviar a través de Internet utilizando el <i>character set</i> <b>ASCII</b>.<br>
+                Si una URL contiene caracteres fuera del conjunto ASCII, la URL debe convertirse. <br><br>
+                La codificación de URL convierte caracteres que no son ASCII a un formato que se puede transmitir a través de Internet.<br>
+                La codificación de URL reemplaza a los caracteres que no son ASCII con un "%" seguido de dígitos hexadecimales.<br><br>
+                Las URL no pueden contener espacios. La codificación de URL normalmente reemplaza un espacio con un signo más (+), o %20.
+            </p>
+        
+            <h3>Inténtalo tú mismo</h3>
+            <form name="input" target="_blank" action="submit.html" method="get" data-gtm-form-interact-id="0">
+                <input type="text" value="Aguante River"text" size="30" data-gtm-form-interact-field-id="0">
+                <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><input type="submit" value="Entregar"></font></font>
+            </form>
+        
+            <p>
+                Si hace click en "Enviar". el navegador codificará la URL de la entrada antes de enviarla al servidor.<br>
+                Una página en el servidor mostrará la entrada recibida.
+            </p>
+        
+            <h3 title="ASCII Encoding Examples" id="w5">Ejemplos de codificación ASCII</h3>
+            <p>
+                Su navegador codificará la entrada de acuerdo con el conjunto de caracteres utilizado en su página. <br><br>
+                El juego de caracteres predeterminado en HTML5 es UTF-8.
+            </p>
+        
+            <table class="ws-table-all notranslate tablecebra4">
+                <tbody>
+                    <tr>
+                        <th style="width:20%">Character</th>
+                        <th style="width:40%">From Windows-1252</th>
+                        <th style="width:40%">From UTF-8</th>
+                    </tr>
+                    <tr>
+                        <td>€</td>
+                        <td>%80</td>
+                        <td>%E2%82%AC</td>
+                    </tr>
+                    <tr>
+                        <td>£</td>
+                        <td>%A3</td>
+                        <td>%C2%A3</td>
+                    </tr>
+                    <tr>
+                        <td>©</td>
+                        <td>%A9</td>
+                        <td>%C2%A9</td>
+                    </tr>
+                    <tr>
+                        <td>®</td>
+                        <td>%AE</td>
+                        <td>%C2%AE</td>
+                    </tr>
+                    <tr>
+                        <td>À</td>
+                        <td>%C0</td>
+                        <td>%C3%80</td>
+                    </tr>
+                    <tr>
+                        <td>Á</td>
+                        <td>%C1</td>
+                        <td>%C3%81</td>
+                    </tr>
+                    <tr>
+                        <td>Â</td>
+                        <td>%C2</td>
+                        <td>%C3%82</td>
+                    </tr>
+                    <tr>
+                        <td>Ã</td>
+                        <td>%C3</td>
+                        <td>%C3%83</td>
+                    </tr>
+                    <tr>
+                        <td>Ä</td>
+                        <td>%C4</td>
+                        <td>%C3%84</td>
+                    </tr>
+                    <tr>
+                        <td>Å</td>
+                        <td>%C5</td>
+                        <td>%C3%85</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+            <p>
+                <i>Para obtener una referencia completa de todas las codificaciónes de URL, visite</i> <a href="https://www.w3schools.com/tags/ref_urlencode.asp" target="_blank" style="text-decoration: underline; color: cadetblue;"><i>Referencia de codificacnión de URL</i></a>
+            </p>
+        
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

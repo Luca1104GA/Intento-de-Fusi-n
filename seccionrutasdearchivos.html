@@ -3,138 +3,251 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rutas de Archivos</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-
-<div class="container">
-    <div class="Estilo_negro3" id="k1">
-    
-        <h2 title="File Paths">Rutas de archivos</h2>
-
-        <p>
-            Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.
-        </p>
-
-        <article class="ejemplo">
-
-            <table class="table10">
-                <caption><strong>Ejemplos de ruta de archivo</strong></caption>
-                <tr>
-                    <th>Ruta</th>
-                    <th>Descripción</th>
-                </tr>
-                <tr>
-                    <td>&lt;img src="picture.jpg"&gt;</td>
-                    <td>El archivo "picture.jpg" se encuentra en la misma carpeta que la página actual.</td>
-                </tr>
-                <tr>
-                    <td>&lt;img src="images/picture.jpg&gt;</td>
-                    <td>El archivo "picture.jpg" se encuentra en la carpeta de imágenes de la carpeta actual.</td>
-                </tr>
-                <tr>
-                    <td>&lt;img src="/images/picture.jpg&gt;</td>
-                    <td>El archivo "picture.jpg" se encuentra en la carpeta de imagenes en la raiz de la web actual.</td>
-                </tr>
-                <tr>
-                    <td>&lt;img src="../picture.jpg"&gt;</td>
-                    <td>El archivo "picture.jpg" esta ubicado en la carpeta superior de la carpeta actual</td>
-                </tr>
-            </table>
-
-        </article>
-        
-        <p>
-            <strong>Las rutas de archivos se utilizan al vincular archivos externos tales como</strong> :
-        </p>
-
-        <ul class="lista">
-            <li class="litable">Páginas web</li>
-            <li class="litable">Imágenes</li>
-            <li class="litable">Hojas de estilo</li>
-            <li class="litable">javaScripts</li>
-        </ul>
-        
-        <h3 title="Absolute File Paths">Rutas absolutas</h3>
-
-        <p>
-            Una ruta de archivo absoluta es la URL completa de un archivo.
-        </p>
-        
-        <article class="ejemplo">
-            Ejemplo:
-
-            <div class="botonContenedor">
-                <img src="https://www.w3schools.com/images/picture.jpg" alt="Montaña">
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="swap-horizontal-outline"></ion-icon>
+                <span>File Paths!</span>
             </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
-            <p class="codigo">
-                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="https://www.w3schools.com/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
-            </p>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioncosasbasicas.html">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <span>Cosas Basicas</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-        </article>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="swap-horizontal-outline"></ion-icon>
+                        <span>Rutas de Archivos!</span>
+                </li>
+                <li>
+                    <a href="#k2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Rutas de Archivos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#k3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Rutas Absolutas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#k4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Rutas Relativas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#k5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Mejores prácticas</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
 
-        <h3 title="Relative File Paths">Rutas relativas</h3>
+        <div>
+            <div class="linea"></div>
 
-        <p>
-            Una ruta de archivo relativa apunta a un archivo relativo a la página actual. <br><br>
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo:
-
-            <p>
-                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
-                en la raiz de la web actual:</strong>
-            </p>
-
-            <div class="botonContenedor">
-                <img src="imagenes/picture.jpg" alt="Montaña">
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
             </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <p class="codigo">
-                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
-            </p>
-
-            <p>
-                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
-                en la carpeta actual:</strong>
-            </p>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
-            </p>
-
-            <p>
-                <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpera de imágenes ubicada <br>
-                en la carpeta un nivel superior de la carpeta actual:</strong>
-            </p>
-
-            <p class="codigo">
-                &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="../images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
-            </p>
-
-        </article>
-
-        <h3 title="Best Practice">Mejores prácticas</h3>
-
-        <p>
-            Es una buena práctica utilizar rutas de archivo relativas (si es posible). <br>
-            Al utilizar rutas de archivos relativas, sus páginas web no estarán vinculadas a su URL base actual. <br>
-            Todos los enlaces funcionarán en su propia computadora (localhost), así como en su dominio público actual y <br>
-            sus dominios públicos futuros.
-        </p>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_negro3" id="k1">
+    
+            <h2 title="File Paths" id="k2">Rutas de archivos</h2>
+        
+            <p>
+                Una ruta de archivo describe la ubicación de un archivo en la estructura de carpetas de un sitio web.
+            </p>
+        
+            <article class="ejemplo">
+        
+                <table class="table10">
+                    <caption><strong>Ejemplos de ruta de archivo</strong></caption>
+                    <tr>
+                        <th>Ruta</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="picture.jpg"&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la misma carpeta que la página actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="images/picture.jpg&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la carpeta de imágenes de la carpeta actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="/images/picture.jpg&gt;</td>
+                        <td>El archivo "picture.jpg" se encuentra en la carpeta de imagenes en la raiz de la web actual.</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img src="../picture.jpg"&gt;</td>
+                        <td>El archivo "picture.jpg" esta ubicado en la carpeta superior de la carpeta actual</td>
+                    </tr>
+                </table>
+        
+            </article>
+            
+            <p>
+                <strong>Las rutas de archivos se utilizan al vincular archivos externos tales como</strong> :
+            </p>
+        
+            <ul class="lista">
+                <li class="litable">Páginas web</li>
+                <li class="litable">Imágenes</li>
+                <li class="litable">Hojas de estilo</li>
+                <li class="litable">javaScripts</li>
+            </ul>
+            
+            <h3 title="Absolute File Paths" id="k3">Rutas absolutas</h3>
+        
+            <p>
+                Una ruta de archivo absoluta es la URL completa de un archivo.
+            </p>
+            
+            <article class="ejemplo">
+                Ejemplo:
+        
+                <div class="botonContenedor">
+                    <img src="https://www.w3schools.com/images/picture.jpg" alt="Montaña">
+                </div>
+        
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="https://www.w3schools.com/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+        
+            </article>
+        
+            <h3 title="Relative File Paths" id="k4">Rutas relativas</h3>
+        
+            <p>
+                Una ruta de archivo relativa apunta a un archivo relativo a la página actual. <br><br>
+            </p>
+        
+            <article class="ejemplo">
+                Ejemplo:
+        
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                    en la raiz de la web actual:</strong>
+                </p>
+        
+                <div class="botonContenedor">
+                    <img src="imagenes/picture.jpg" alt="Montaña">
+                </div>
+        
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="/images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+        
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpeta de imágenes ubicada <br>
+                    en la carpeta actual:</strong>
+                </p>
+        
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+        
+                <p>
+                    <strong>En el siguiente ejemplo, la ruta del archivo apunta a un archivo en la carpera de imágenes ubicada <br>
+                    en la carpeta un nivel superior de la carpeta actual:</strong>
+                </p>
+        
+                <p class="codigo">
+                    &lt;<span class="blue-text">img</span> <span class="red-text">src</span><span class="celeste">="../images/picture.jpg"</span> <span class="red-text">alt</span><span class="celeste">="Montaña"</span>&gt;
+                </p>
+        
+            </article>
+        
+            <h3 title="Best Practice" id="k5">Mejores prácticas</h3>
+        
+            <p>
+                Es una buena práctica utilizar rutas de archivo relativas (si es posible). <br>
+                Al utilizar rutas de archivos relativas, sus páginas web no estarán vinculadas a su URL base actual. <br>
+                Todos los enlaces funcionarán en su propia computadora (localhost), así como en su dominio público actual y <br>
+                sus dominios públicos futuros.
+            </p>
+        
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

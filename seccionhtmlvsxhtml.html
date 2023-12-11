@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>HTML vs XHTML</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -11,192 +11,297 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_blanco3" id="x1">
-    
-        <h1>HTML vs XHTML</h1>
-        <p>XHTML es una versión de HTML más estricta y más basade en XML.</p>
-
-        <h3>¿Qué es XHTML?</h3>
-        <ul class="lista">
-            <li><b>XHTML</b> Siglas de <i>E<b>X</b>tensible <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</i> (lenguaje de marcado de hipertexto extensible)</li>
-            <li><b>XHTML</b> es una versión más estricta y más basada en XML</li>
-            <li><b>XHTML</b> es HTML definido como una aplicación XML</li>
-            <li><b>XHTML</b> es compatible con todos los principales navegadores</li>
-        </ul>
-
-        <h3>¿Por qué XHTML?</h3>
-        <p>
-            XML es un lenguaje de marcado en el que todos los documentos deben marcarse correctamente (estar "bien formados").<br><br>
-            XHTML se desarrolló para hacer que HTML sea más extensible y flexible para trabajar con otros formatos de datos  (como XML).<br>
-            Además, los navegadores ignoran los errores en las páginas HTML e intentan mostrar el sitio web incluso si tiene algunos<br>
-            errores en el marcado. Por lo tanto, XHTML viene con un manejo de errores mucho más estricto.    
-        </p>
-        <p style="text-align: left; margin-left: 20px;"><i>Si desea estudiar XML lea la <a href="https://www.w3schools.com/xml/default.asp" target="_blank" style="text-decoration: underline; color: cadetblue;">Guia tutorial de XML</a></i></p>
-
-        <h3>Las diferencias más importantes con respecto a HTML</h3>
-
-        <ul class="lista">
-            <li>&lt;!DOCTYPE&gt; es <b>obligatorio</b></li>
-            <li>El atributo xmlns en &lt;html&gt; es <b>obligatorio</b></li>
-            <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; y &lt;body&gt; son <b>obligatorios</b></li>
-            <li>Los elementos siempre deben estar <b>correctamente anidados</b></li>
-            <li>Los elementos siempre deben estar <b>cerrados</b></li>
-            <li>Los elementos siempre deben estar en <b>minúsculas</b></li>
-            <li>Los nombres de los atributos siempre deben estar en <b>minúsculas</b></li>
-            <li>Los valores de los atributos siempre deben <b>citarse</b></li>
-            <li>La minimización de atributos está <b>prohibida</b></li>  
-        </ul>
-
-        <h3>XHTML - &lt;!DOCTYPE...&gt; es obligatorio</h3>
-        <p>
-            Un documento XHTML debe tener una declaración XHTML <code>&lt;!DOCTYPE&gt;</code><br><br>
-            Los elementos <code>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; y &lt;body&gt;</code> también deben estar presentes,<br>
-            y el atributo <i>xmlns</i> en <code>&lt;html&gt;</code> debe especificar el espacio de nombres <i>xml</i> para el documento.
-        </p>
-
-        <article class="ejemplo">
-            Ejemplo
-            <p style="text-align: left;">Aquí hay un documento XHTML con un mínimo de etiquetas requeridas:</p>
-
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html PUBLIC "-//W3C//DTD XHTML 1.1//EN"<br>
-                "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> xmlns<span class="attributevaluecolor" style="color:mediumblue">="http://www.w3.org/1999/xhtml"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              &nbsp;
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><i>title</i> del documento<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <em>Algo de contenido aquí...</em> <br>
-                <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="contract-sharp"></ion-icon>
+                <span>HTMLvsXHTML</span>
             </div>
-        </article>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
-        <h3>Los elementos XHTML deben estar correctamente anidados</h3>
-        <p>En XHTML, los elementos siempre deben estar correctamente anidados entre sí, así:</p>
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioncosasbasicas.html">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <span>Cosas Basicas</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Algo de
-                texto<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="contract-sharp"></ion-icon>
+                        <span>HTML vs XHTML</span>
+                </li>
+                <li>
+                    <a href="#x2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>¿Qué es XHTML?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#x3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>¿Por qué XHTML?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#x4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Diferencias</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
             </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Algo de 
-                texto<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
             </div>
-        </article>
+        </div>
 
-        <h3>Los elementos XHTML siempre deben estar cerrados</h3>
-        <p>En XHTML, los elementos siempre deben estar cerrados, así:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es otro párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un párrafo<br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es otro párrafo
-            </div>
-        </article>
-
-        <h3>Los elementos vacíos XHTML siempre deben estar cerrados</h3>
-        <p>En XHTML, los elementos vacíos siempre deben estar cerrados, así:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                Un salto de línea: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                Una regla horizontal: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                Una imagen: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                Un salto de línea: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                Una regla horizontal: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                Una imagen: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h3>Los elementos XHTML deben estar en minúsculas</h3>
-        <p>En XHTML, los nombres de los elementos siempre deben estar en minúsculas, así:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>P<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/P<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h3>Los nombres de atributos XHTML deben estar en minúsculas</h3>
-        <p>En XHTML, los nombres de los atributos siempre deben estar en minúsculas, así:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> HREF<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h3>Los valores de atributos XHTML deben citarse</h3>
-        <p>En XHTML, los valores de los atributos siempre deben ir entre comillas, así:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">=https://www.w3schools.com/html/</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
-        <h3>La minimización de atributos XHTML está prohibida</h3>
-        <p>En XHTML, la minimización de atributos está prohibida:</p>
-
-        <article class="ejemplo">
-            Correcto:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked<span class="attributevaluecolor" style="color:mediumblue">="checked"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled<span class="attributevaluecolor" style="color:mediumblue">="disabled"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-
-            Equivocado:
-            <div class="w3-code notranslate htmlHigh">
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-        </article>
-
+        </div>
+        </div>
 
     </div>
-</div>
+    
+    <main>
 
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="x1">
+            
+            <h1>HTML vs XHTML</h1>
+            <p>XHTML es una versión de HTML más estricta y más basade en XML.</p>
+        
+            <h3 id="x2">¿Qué es XHTML?</h3>
+            <ul class="lista">
+                <li><b>XHTML</b> Siglas de <i>E<b>X</b>tensible <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage</i> (lenguaje de marcado de hipertexto extensible)</li>
+                <li><b>XHTML</b> es una versión más estricta y más basada en XML</li>
+                <li><b>XHTML</b> es HTML definido como una aplicación XML</li>
+                <li><b>XHTML</b> es compatible con todos los principales navegadores</li>
+            </ul>
+        
+            <h3 id="x3">¿Por qué XHTML?</h3>
+            <p>
+                XML es un lenguaje de marcado en el que todos los documentos deben marcarse correctamente (estar "bien formados").<br><br>
+                XHTML se desarrolló para hacer que HTML sea más extensible y flexible para trabajar con otros formatos de datos  (como XML).<br>
+                Además, los navegadores ignoran los errores en las páginas HTML e intentan mostrar el sitio web incluso si tiene algunos<br>
+                errores en el marcado. Por lo tanto, XHTML viene con un manejo de errores mucho más estricto.    
+            </p>
+            <p style="text-align: left; margin-left: 20px;"><i>Si desea estudiar XML lea la <a href="https://www.w3schools.com/xml/default.asp" target="_blank" style="text-decoration: underline; color: cadetblue;">Guia tutorial de XML</a></i></p>
+        
+            <h3 id="x4">Las diferencias más importantes con respecto a HTML</h3>
+        
+            <ul class="lista">
+                <li>&lt;!DOCTYPE&gt; es <b>obligatorio</b></li>
+                <li>El atributo xmlns en &lt;html&gt; es <b>obligatorio</b></li>
+                <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; y &lt;body&gt; son <b>obligatorios</b></li>
+                <li>Los elementos siempre deben estar <b>correctamente anidados</b></li>
+                <li>Los elementos siempre deben estar <b>cerrados</b></li>
+                <li>Los elementos siempre deben estar en <b>minúsculas</b></li>
+                <li>Los nombres de los atributos siempre deben estar en <b>minúsculas</b></li>
+                <li>Los valores de los atributos siempre deben <b>citarse</b></li>
+                <li>La minimización de atributos está <b>prohibida</b></li>  
+            </ul>
+        
+            <h3>XHTML - &lt;!DOCTYPE...&gt; es obligatorio</h3>
+            <p>
+                Un documento XHTML debe tener una declaración XHTML <code>&lt;!DOCTYPE&gt;</code><br><br>
+                Los elementos <code>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; y &lt;body&gt;</code> también deben estar presentes,<br>
+                y el atributo <i>xmlns</i> en <code>&lt;html&gt;</code> debe especificar el espacio de nombres <i>xml</i> para el documento.
+            </p>
+        
+            <article class="ejemplo">
+                Ejemplo
+                <p style="text-align: left;">Aquí hay un documento XHTML con un mínimo de etiquetas requeridas:</p>
+        
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html PUBLIC "-//W3C//DTD XHTML 1.1//EN"<br>
+                    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> xmlns<span class="attributevaluecolor" style="color:mediumblue">="http://www.w3.org/1999/xhtml"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                  &nbsp;
+                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><i>title</i> del documento<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <em>Algo de contenido aquí...</em> <br>
+                    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>Los elementos XHTML deben estar correctamente anidados</h3>
+            <p>En XHTML, los elementos siempre deben estar correctamente anidados entre sí, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Algo de
+                    texto<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Algo de 
+                    texto<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>Los elementos XHTML siempre deben estar cerrados</h3>
+            <p>En XHTML, los elementos siempre deben estar cerrados, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es otro párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un párrafo<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es otro párrafo
+                </div>
+            </article>
+        
+            <h3>Los elementos vacíos XHTML siempre deben estar cerrados</h3>
+            <p>En XHTML, los elementos vacíos siempre deben estar cerrados, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    Un salto de línea: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    Una regla horizontal: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    Una imagen: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    Un salto de línea: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    Una regla horizontal: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    Una imagen: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>Los elementos XHTML deben estar en minúsculas</h3>
+            <p>En XHTML, los nombres de los elementos siempre deben estar en minúsculas, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>P<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Esto es un Párrafo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/P<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>Los nombres de atributos XHTML deben estar en minúsculas</h3>
+            <p>En XHTML, los nombres de los atributos siempre deben estar en minúsculas, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> HREF<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>Los valores de atributos XHTML deben citarse</h3>
+            <p>En XHTML, los valores de los atributos siempre deben ir entre comillas, así:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">=https://www.w3schools.com/html/</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+            <h3>La minimización de atributos XHTML está prohibida</h3>
+            <p>En XHTML, la minimización de atributos está prohibida:</p>
+        
+            <article class="ejemplo">
+                Correcto:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked<span class="attributevaluecolor" style="color:mediumblue">="checked"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled<span class="attributevaluecolor" style="color:mediumblue">="disabled"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+        
+                Equivocado:
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+            </article>
+        
+        
+        </div>
+        
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

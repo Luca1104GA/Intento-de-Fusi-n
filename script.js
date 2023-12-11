@@ -63,7 +63,7 @@ if(btnMenu !== null && menu !== null){
     });
 } */
 
-const subMenuBtn = document.querySelectorAll(".submenu-btn");
+/* const subMenuBtn = document.querySelectorAll(".submenu-btn");
 for(let i=0; i<subMenuBtn.length; i++) {
     subMenuBtn[i].addEventListener("click", function(){
         if(window.innerWidth < 1024){
@@ -81,8 +81,9 @@ for(let i=0; i<subMenuBtn.length; i++) {
             
         }
     });
-}
+} */
 
+/* ------------------------------------------  Botones Volver Arriba e ir al final  -----------------------------------------------------*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const botonVolverArriba = document.getElementById("botonVolverArriba");
@@ -111,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
+/* ------------------------------------------  Comportamiento smooth  -------------------------------------------------------------------*/
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
@@ -122,6 +123,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+/* --------------------------------------------------  Boton Chat GPT  .......................-------------------------------------------*/
 
 const botonesChatGpt = document.getElementsByClassName("botonChatGpt");
 const contenidosChatGpt = document.getElementsByClassName("contenidoChatGpt");
@@ -137,25 +140,14 @@ for (let i = 0; i < botonesChatGpt.length; i++) {
     });
 }
 
+/* -----------------------------------------  Boton que ya ni importa y ni se donde esta  -----------------------------------------------*/
+
 const botonTop = document.getElementById("botonTop");
 botonTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-function light(sw) {
-    var pic;
-    if (sw == 0) {
-      pic = "imagenes/pic_bulboff.gif"
-    } else {
-      pic = "imagenes/pic_bulbon.gif"
-    }
-    document.getElementById('myImage').src = pic;
-}
-
-
-
-
-
+/* -------------------------------------  Funciones a mover a un js cuando toque esa seccion  -------------------------------------------*/
 
 function myFunction4() {
     document.getElementById("demo4").style.fontSize = "25px"; 

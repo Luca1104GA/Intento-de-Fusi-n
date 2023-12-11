@@ -45,9 +45,15 @@
                         <span>Media!</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#ag2">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>Formatos de video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ag3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Formatos de audio</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -99,7 +105,7 @@
         <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button>
 
-        <div class="Estilo_blanco3">
+        <div class="Estilo_blanco3" id="ag1">
 
             <h1>HTML Multimedia!</h1>
             <p><i>Multimedia en la web es música, sonido, vídeos y animaciones. </i></p>
@@ -124,7 +130,7 @@
                 Los archivos multimedia tienen formatos y diferentes extensiones como : .wav, .mp3, .mp4, .mpg, .wmv y .avi.
             </p>
 
-            <h2>Formatos de video comunes</h2>
+            <h2 id="ag2">Formatos de video comunes</h2>
             <div style="display: flex;">
                 <img src="imagenes/pic_video.jpg" alt="media-comunes" style="padding-left: 200px;">
                 <p style="text-align: left; margin-top: 20px; margin-left: 20px;">
@@ -144,7 +150,7 @@
                     <td>MPEG</td>
                     <td>.mpg <br> .mpeg</td>
                     <td>Desarrolado por el Grupo de Expertos en Imágenes en Movimiento. <br> El primer formato de video popular en la web.
-                    Ya no es compatible con HTML.</td>
+                        Ya no es compatible con HTML.</td>
                 </tr>
                 <tr>
                     <td>AVI</td>
@@ -179,7 +185,7 @@
                     <td>Ogg</td>
                     <td>.ogg</td>
                     <td>Theora Ogg. Desarrollado por la Fundació <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">
-                        <code>Xiph.Org.</code></span>  Compatible con HTML.</td>
+                        <code>Xiph.Org</code></span>. Compatible con HTML.</td>
                 </tr>
                 <tr>
                     <td>WebM</td>
@@ -195,14 +201,76 @@
                 </tr>
             </table>
 
-            <h2>Formatos de audio comunes</h2>
+            <h2 id="ag3">Formatos de audio comunes</h2>
             <p>
                 MP3 es el mejor formato para música grabada comprimida. El termino MP3 se ha convertido en sinónimo de música digital.<br>
                 <br> <i>Si su sitio web trata sobre música, MP3 es la opción.</i>
             </p>
 
+            <table class="tablecebra4blanco" style="margin-top: 20px;">
+                <tr class="w3-red">
+                    <th>Formato</th>
+                    <th>Archivo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>MIDI</td>
+                    <td>.mid <br> .midi</td>
+                    <td>MIDI (Interfaz Digital de Instrumentos Musicales). <br>
+                        Principal formato para todos los dispositivos de música electrónica como sintetizadores y tarjetas de sonido de PC. <br>
+                        Los archivos MIDI no contienen sonido, sino notas digitales que pueden ser reproducidas por dispositivos electrónicos.<br>
+                        Funciona bien en todas las computadoras y hardware musical, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>Real Audio</td>
+                    <td>.rm <br> .ram</td>
+                    <td>Desarrolado por Real Media para permitir la transmisión de audio con bajos anchos de banda. <br>
+                        No se reproduce en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>WMA</td>
+                    <td>.wma</td>
+                    <td>WMA (Windos Media Audio). Desarrolado por Microsoft. <br>
+                        Funciona bien en computadoras con windows, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>AAC</td>
+                    <td>.aac</td>
+                    <td>AAC (Advance Audio codification). Desarrolado por Apple como el formato predeterminado para iTunnes. <br>
+                        Funciona bien en computadoras Apple, pero no en navegadores web.</td>
+                </tr>
+                <tr>
+                    <td>WAV</td>
+                    <td>.wav</td>
+                    <td>Desarrollado por IBM y Microsoft. <br>
+                        Funciona bien en sistemas operativos Windows, Macintosh y Linux. <br>
+                        Compatible con HTML.</td>
+                </tr>
+                <tr>
+                    <td>Ogg</td>
+                    <td>.ogg</td>
+                    <td>Desarrollado por la Fundación <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">
+                        <code>Xiph.Org</code></span>. Compatible con HTML.</td>
+                </tr>
+                <tr>
+                    <td>MP3</td>
+                    <td>.mp3</td>
+                    <td>Los archivos MP3 son en realidad la parte de sonido de los archivos MPEG. <br>
+                        El MP3 es el formato más popular para reproductores de música. <br>
+                        Combina una buena compresión (archivos pequeños) con alta calidad. <br>
+                        Compatible con todos los navegadores.</td>
+                </tr>
+                <tr>
+                    <td>MP4</td>
+                    <td>.mp4</td>
+                    <td>MP4 es un formato de video, pero tambien se puede utilizar para audio. <br>
+                        Compatible con todos los navegadores.</td>
+                </tr>
+            </table>
 
-
+            <p class="advertencia" style="margin: 10px 50px 0px 50px; border-radius: 10px;">
+                <b>Nota:</b> El estándar HTML solo admite audio MP3, WAV Y Ogg.
+            </p>
 
         </div>
 

@@ -3,250 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Computer Code</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
 
-    <button id="botonIrAbajo">Ir al Final</button>
-    <button id="botonVolverArriba">Volver al inicio</button>
-    
-<div class="container">
-    <div class="Estilo_negro2" id="o1">
-    
-        <h2 title="Computer Code Elements">Elementos del código de programación</h2>
-
-            <p>
-                <em>HTML</em> contiene varios elementos para definir la entrada del susuario y el código de programación.
-            </p>
-
-            <h3 title="For Keyboard Input">&lt;kbd&gt; para entrada de teclado</h3>
-
-            <p>
-                El elemento <em>HTML</em> <span class="blue-text">&lt;kbd&gt;</span> se utiliza para mostrar la entrada del teclado. El contenido interior <br>
-                se muestra en la fuente monoespaciada predeterminada del navegador.
-            </p>
-
-            <article class="ejemplo">
-                Ejemplo
-                <p>
-                    Defina algo de texto como entrada de teclado en un documento:
-                </p>
-
-                <p class="codigo">
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">p</span>&gt; Guarde el documento presionando <span class="blue-text">&lt;kbd&gt;</span>Ctrl + S<span class="blue-text">&lt;kbd&gt;</span> &lt;<span class="blue-text">/p</span>&gt;</code>
-                </p>
-
-                <p>
-                    Resultado:
-                </p>
-
-                <p style="background-color: white; color: black;">
-                    Guarde el documento presionando <kbd>Ctrl + S</kbd>
-                </p>
-
-            </article>
-
-            <h3>&lt;samp&gt; Para el Output</h3>
-
-            <p>
-                El elemento <em>HTML</em> <span class="blue-text">&lt;samp&gt;</span> se utiliza para mostrar un ejemplo Output de un codigo de programación. <br>
-                El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
-            </p>
-
-            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
-            <div class="contenidoChatGpt">
-                <p>
-                    "La etiqueta HTML &lt;samp&gt; se utiliza para mostrar ejemplos de salida de programas o <br>
-                    fragmentos de código en una página web. Proporciona una forma de destacar y formatear <br>
-                    este texto de salida, lo que lo hace más fácil de identificar en el contexto de la página."
-                </p>
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="tv-sharp"></ion-icon>
+                <span>Computer Code</span>
             </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
 
-            <article class="ejemplo">
-                Ejemplo
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccioncosasbasicas.html">
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <span>Cosas Basicas</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
-                <p>
-                    Define algo de texto como una muestra Output de un codigo de programación.
-                </p>
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="tv-sharp"></ion-icon>
+                        <span>Códigos de Progr..!</span>
+                </li>
+                <li>
+                    <a href="#o2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;kbd&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#o3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;samp&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#o4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;code&gt;</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#o5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>&lt;var&gt;</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
 
-                <p class="codigo">
-                    <code>&lt;<span class="blue-text">p</span>&gt;Mensaje desde mi computadora:&lt;/<span class="blue-text">p</span>&gt;</code>
-                    <code>&lt;<span class="blue-text">p</span>&gt;&lt;<span class="blue-text">samp</span>&gt;File not found.&lt;<span class="blue-text">br</span>&gt;Press F1 to continue&lt;/<span class="blue-text">samp</span>&gt;&lt;/<span class="blue-text">p</span>&gt;</code>
-                </p>
+        <div>
+            <div class="linea"></div>
 
-                <p>
-                    Resultado:
-                </p>
-
-                <div style="background-color: white; color: black;">
-                    <p>Mensaje desde mi computadora:</p>
-                    <p><samp>File not found.<br>Press F1 to continue</samp></p>
-                </div>
-
-            </article>
-
-            <h3>&lt;code&gt; Para codigos de programación</h3>
-
-            <p>
-                El elemento <em>HTML</em> <span class="blue-text">&lt;code&gt;</span> se utiliza para definir una parte de un codigo de programación. <br>
-                El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
-            </p>
-
-            <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
-            <div class="contenidoChatGpt">
-                <p>
-                    "La etiqueta HTML <span class="blue-text">&lt;code&gt;</span> se utiliza para resaltar y formatear fragmentos de código en una página web.<br>
-                    Al utilizar esta etiqueta, el texto contenido dentro de <span class="blue-text">&lt;code&gt;</span> se muestra en una fuente de ancho fijo,<br>
-                    como una fuente de máquina de escribir, y suele estar rodeado por un borde o fondo distintivo para diferenciarlo del texto normal.<br>
-                    Esto es especialmente útil cuando deseas mostrar ejemplos de código fuente, comandos de programación<br>
-                    o cualquier otro contenido relacionado con la codificación en tu página web.<br>
-                    La etiqueta <span class="blue-text">&lt;code&gt;</span> ayuda a mantener la estructura y la legibilidad del código dentro del contexto de tu página."
-                </p>
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
             </div>
-
-            <article class="ejemplo">
-                
-                Ejemplo: <br><br>
-
-                <p>
-                    Define algo de codigo de programación como texto en un documento: 
-                </p>
-
-                <p class="codigo">
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
-                      x = 5;
-                      y = 6;
-                      z = x + y;
-                    &lt;/<span class="blue-text">code</span></code>
-                </p>
-
-                <p>
-                    Resultado:
-                </p>
-
-                <div style="background-color: white; text-align: center; color: black;">
-                    <code>
-                        x = 5;
-                        y = 6;
-                        z = x + y;
-                    </code>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
                 </div>
+            </div>
+        </div>
 
-                <p>
-                    Note como el elemento <span class="blue-text">&lt;code&gt;</span> no preserva espacios en blanco extra y saltos de linea.<br>
-                    Para arreglar esto, puedes poner el <span class="blue-text">&lt;code&gt;</span> adentro de un elemento <span class="blue-text">&lt;pre&gt;</span>
-                </p>
-
-                <p class="codigo">
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">pre</span>&gt;</code>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
-                      x = 5;
-                      y = 6;
-                      z = x + y;
-                    &lt;/<span class="blue-text">code</span></code>
-                    <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="blue-text">pre</span>&gt;</code>
-                </p>
-
-                <p>
-                    Resultado:
-                </p>
-
-                <!-- Esto es lo que usan en la pagina , hacen trampa !!!!! -->
-                <div class="w3-white w3-padding notranslate" style="text-align: center;">
-                    <code style="font-family: monospace !important;font-size:13px;color:black;background-color:#fff;padding:0;">
-                    x = 5;<br>
-                    y = 6;<br>
-                    z = x + y;
-                    </code>
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
                 </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
 
-                <!-- <div style="background-color: white;">
-                    <pre style="padding: 0px;">
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_negro2" id="o1">
+    
+            <h2 title="Computer Code Elements">Elementos del código de programación</h2>
+        
+                <p>
+                    <em>HTML</em> contiene varios elementos para definir la entrada del susuario y el código de programación.
+                </p>
+        
+                <h3 title="For Keyboard Input" id="o2">&lt;kbd&gt; para entrada de teclado</h3>
+        
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;kbd&gt;</span> se utiliza para mostrar la entrada del teclado. El contenido interior <br>
+                    se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+        
+                <article class="ejemplo">
+                    Ejemplo
+                    <p>
+                        Defina algo de texto como entrada de teclado en un documento:
+                    </p>
+        
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">p</span>&gt; Guarde el documento presionando <span class="blue-text">&lt;kbd&gt;</span>Ctrl + S<span class="blue-text">&lt;kbd&gt;</span> &lt;<span class="blue-text">/p</span>&gt;</code>
+                    </p>
+        
+                    <p>
+                        Resultado:
+                    </p>
+        
+                    <p style="background-color: white; color: black;">
+                        Guarde el documento presionando <kbd>Ctrl + S</kbd>
+                    </p>
+        
+                </article>
+        
+                <h3 id="o3">&lt;samp&gt; Para el Output</h3>
+        
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;samp&gt;</span> se utiliza para mostrar un ejemplo Output de un codigo de programación. <br>
+                    El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+        
+                <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                <div class="contenidoChatGpt">
+                    <p>
+                        "La etiqueta HTML &lt;samp&gt; se utiliza para mostrar ejemplos de salida de programas o <br>
+                        fragmentos de código en una página web. Proporciona una forma de destacar y formatear <br>
+                        este texto de salida, lo que lo hace más fácil de identificar en el contexto de la página."
+                    </p>
+                </div>
+        
+                <article class="ejemplo">
+                    Ejemplo
+        
+                    <p>
+                        Define algo de texto como una muestra Output de un codigo de programación.
+                    </p>
+        
+                    <p class="codigo">
+                        <code>&lt;<span class="blue-text">p</span>&gt;Mensaje desde mi computadora:&lt;/<span class="blue-text">p</span>&gt;</code>
+                        <code>&lt;<span class="blue-text">p</span>&gt;&lt;<span class="blue-text">samp</span>&gt;File not found.&lt;<span class="blue-text">br</span>&gt;Press F1 to continue&lt;/<span class="blue-text">samp</span>&gt;&lt;/<span class="blue-text">p</span>&gt;</code>
+                    </p>
+        
+                    <p>
+                        Resultado:
+                    </p>
+        
+                    <div style="background-color: white; color: black;">
+                        <p>Mensaje desde mi computadora:</p>
+                        <p><samp>File not found.<br>Press F1 to continue</samp></p>
+                    </div>
+        
+                </article>
+        
+                <h3 id="o4">&lt;code&gt; Para codigos de programación</h3>
+        
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;code&gt;</span> se utiliza para definir una parte de un codigo de programación. <br>
+                    El contenido interior se muestra en la fuente monoespaciada predeterminada del navegador.
+                </p>
+        
+                <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                <div class="contenidoChatGpt">
+                    <p>
+                        "La etiqueta HTML <span class="blue-text">&lt;code&gt;</span> se utiliza para resaltar y formatear fragmentos de código en una página web.<br>
+                        Al utilizar esta etiqueta, el texto contenido dentro de <span class="blue-text">&lt;code&gt;</span> se muestra en una fuente de ancho fijo,<br>
+                        como una fuente de máquina de escribir, y suele estar rodeado por un borde o fondo distintivo para diferenciarlo del texto normal.<br>
+                        Esto es especialmente útil cuando deseas mostrar ejemplos de código fuente, comandos de programación<br>
+                        o cualquier otro contenido relacionado con la codificación en tu página web.<br>
+                        La etiqueta <span class="blue-text">&lt;code&gt;</span> ayuda a mantener la estructura y la legibilidad del código dentro del contexto de tu página."
+                    </p>
+                </div>
+        
+                <article class="ejemplo">
+                    
+                    Ejemplo: <br><br>
+        
+                    <p>
+                        Define algo de codigo de programación como texto en un documento: 
+                    </p>
+        
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
+                          x = 5;
+                          y = 6;
+                          z = x + y;
+                        &lt;/<span class="blue-text">code</span></code>
+                    </p>
+        
+                    <p>
+                        Resultado:
+                    </p>
+        
+                    <div style="background-color: white; text-align: center; color: black;">
                         <code>
                             x = 5;
                             y = 6;
                             z = x + y;
                         </code>
-                    </pre>
-                </div> -->
-                
-                <div class="botonContenedor" style="margin-top: 15px;">
-                    <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
-                    <div class="contenidoChatGpt">
-                        <p>
-                            "La etiqueta <span class="blue-text">&lt;pre&gt;</span> en HTML se utiliza para definir texto preformateado,<br>
-                            Lo que significa que el texto dentro de esta etiqueta se muestra tal como está escrita en el código fuente, <br>
-                            incluyendo espacion en blanco y saltos de linea. Esta etiqueta es útil cuando deseas mostrar código fuete, <br>
-                            bloques de texto con un formato específico, o cualquier contenido donde la disposición exacta de los caracteres es importante. "
-                        </p>
                     </div>
-
-                </div>
-
-            </article>
-
-            <h3>&lt;var&gt; Para variables</h3>
-
-            <p>
-                El elemento <em>HTML</em> <span class="blue-text">&lt;var&gt;</span> se utiliza para definir una variable en programación o en una Expresión matemática. <br>
-                <em>Su contenido normalmente se muestra en cursiva.</em>
-            </p>
-
-            <article class="ejemplo">
-                Ejemplo
-
-                <p>
-                    Defina algo de texto como variables en un documento:
-                </p>
-
-                <p class="codigolargo">
-                    &lt;<span class="blue-text">p</span>&gt;<br>
-                    &nbsp;&nbsp;&nbsp;El area de un triangulo es : 1/2 x &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span> x &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>, donde &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span>&gt; es la base,<br>
-                    &nbsp;&nbsp;&nbsp;y &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>&gt; es la altura vertical.<br>
-                    &lt;<span class="blue-text">/p</span>&gt;
-                </p>
-
-                <p>
-                    Resultado:
-                </p>
-
-                <div class="w3-white w3-padding notranslate">
-                    El area de un triangulo es : 1/2 x <var>b</var> x <var>h</var>, donde <var>b</var> es la base, y <var>h</var> es la altura vertical.
-                </div>
-
-                <div class="botonContenedor" style="margin-top: 15px;">
-                    <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
-                    <div class="contenidoChatGpt">
-                        <p>
-                            "<span class="blue">&lt;var&gt;</span> se utiliza para representar una variable o una expresión matemática en un contexto de texto.<br> 
-                            Esta etiqueta se utiliza para indicar que un fragmento de texto dentro de una página web representa una variable o una expresión matemática.<br>
-                            Por lo general, el texto dentro de <span class="blue">&lt;var&gt;</span> se muestra en cursiva para distinguirlo del texto circundante.<br> <br>
-                            Es útil en situaciones donde deseas resaltar que ciertos elementos en tu texto son variables, como en explicaciones matemáticas o cientificas.
-                        </p>
+        
+                    <p>
+                        Note como el elemento <span class="blue-text">&lt;code&gt;</span> no preserva espacios en blanco extra y saltos de linea.<br>
+                        Para arreglar esto, puedes poner el <span class="blue-text">&lt;code&gt;</span> adentro de un elemento <span class="blue-text">&lt;pre&gt;</span>
+                    </p>
+        
+                    <p class="codigo">
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">pre</span>&gt;</code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span class="blue-text">code</span>&gt;
+                          x = 5;
+                          y = 6;
+                          z = x + y;
+                        &lt;/<span class="blue-text">code</span></code>
+                        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span class="blue-text">pre</span>&gt;</code>
+                    </p>
+        
+                    <p>
+                        Resultado:
+                    </p>
+        
+                    <!-- Esto es lo que usan en la pagina , hacen trampa !!!!! -->
+                    <div class="w3-white w3-padding notranslate" style="text-align: center;">
+                        <code style="font-family: monospace !important;font-size:13px;color:black;background-color:#fff;padding:0;">
+                        x = 5;<br>
+                        y = 6;<br>
+                        z = x + y;
+                        </code>
                     </div>
+        
+                    <!-- <div style="background-color: white;">
+                        <pre style="padding: 0px;">
+                            <code>
+                                x = 5;
+                                y = 6;
+                                z = x + y;
+                            </code>
+                        </pre>
+                    </div> -->
+                    
+                    <div class="botonContenedor" style="margin-top: 15px;">
+                        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                        <div class="contenidoChatGpt">
+                            <p>
+                                "La etiqueta <span class="blue-text">&lt;pre&gt;</span> en HTML se utiliza para definir texto preformateado,<br>
+                                Lo que significa que el texto dentro de esta etiqueta se muestra tal como está escrita en el código fuente, <br>
+                                incluyendo espacion en blanco y saltos de linea. Esta etiqueta es útil cuando deseas mostrar código fuete, <br>
+                                bloques de texto con un formato específico, o cualquier contenido donde la disposición exacta de los caracteres es importante. "
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                </article>
+        
+                <h3 id="o5">&lt;var&gt; Para variables</h3>
+        
+                <p>
+                    El elemento <em>HTML</em> <span class="blue-text">&lt;var&gt;</span> se utiliza para definir una variable en programación o en una Expresión matemática. <br>
+                    <em>Su contenido normalmente se muestra en cursiva.</em>
+                </p>
+        
+                <article class="ejemplo">
+                    Ejemplo
+        
+                    <p>
+                        Defina algo de texto como variables en un documento:
+                    </p>
+        
+                    <p class="codigolargo">
+                        &lt;<span class="blue-text">p</span>&gt;<br>
+                        &nbsp;&nbsp;&nbsp;El area de un triangulo es : 1/2 x &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span> x &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>, donde &lt;<span class="blue-text">var</span>&gt;b&lt;<span class="blue-text">/var</span>&gt; es la base,<br>
+                        &nbsp;&nbsp;&nbsp;y &lt;<span class="blue-text">var</span>&gt;h&lt;<span class="blue-text">/var</span>&gt; es la altura vertical.<br>
+                        &lt;<span class="blue-text">/p</span>&gt;
+                    </p>
+        
+                    <p>
+                        Resultado:
+                    </p>
+        
+                    <div class="w3-white w3-padding notranslate">
+                        El area de un triangulo es : 1/2 x <var>b</var> x <var>h</var>, donde <var>b</var> es la base, y <var>h</var> es la altura vertical.
+                    </div>
+        
+                    <div class="botonContenedor" style="margin-top: 15px;">
+                        <button class="botonChatGpt css-button-shadow-border-sliding--green">Chat GPT</button>
+                        <div class="contenidoChatGpt">
+                            <p>
+                                "<span class="blue">&lt;var&gt;</span> se utiliza para representar una variable o una expresión matemática en un contexto de texto.<br> 
+                                Esta etiqueta se utiliza para indicar que un fragmento de texto dentro de una página web representa una variable o una expresión matemática.<br>
+                                Por lo general, el texto dentro de <span class="blue">&lt;var&gt;</span> se muestra en cursiva para distinguirlo del texto circundante.<br> <br>
+                                Es útil en situaciones donde deseas resaltar que ciertos elementos en tu texto son variables, como en explicaciones matemáticas o cientificas.
+                            </p>
+                        </div>
+        
+                    </div>
+        
+                </article>
+        
+                <h3>Resumen del capítulo</h3>
+        
+                <ul class="lista">
+                    <li><span class="blue-text">&lt;kbd&gt;</span> define una entrada de teclado</li>
+                    <li><span class="blue-text">&lt;samp&gt;</span> define una salida de muestra de un programa de computadora </li>
+                    <li><span class="blue-text">&lt;code&gt;</span> define un fragmento de código de programación</li>
+                    <li><span class="blue-text">&lt;var&gt;</span> define una variable en programación o en una expresión matemática</li>
+                    <li><span class="blue-text">&lt;pre&gt;</span> define texto preformateado</li>
+                </ul>
+        
+        
+        </div>
 
-                </div>
+    </main>
 
-            </article>
-
-            <h3>Resumen del capítulo</h3>
-
-            <ul class="lista">
-                <li><span class="blue-text">&lt;kbd&gt;</span> define una entrada de teclado</li>
-                <li><span class="blue-text">&lt;samp&gt;</span> define una salida de muestra de un programa de computadora </li>
-                <li><span class="blue-text">&lt;code&gt;</span> define un fragmento de código de programación</li>
-                <li><span class="blue-text">&lt;var&gt;</span> define una variable en programación o en una expresión matemática</li>
-                <li><span class="blue-text">&lt;pre&gt;</span> define texto preformateado</li>
-            </ul>
-
-
-    </div>
-</div>
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
