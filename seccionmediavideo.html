@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video HTML</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="videocam-outline"></ion-icon>
+                <span>HTML Video!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="videocam-outline"></ion-icon>
+                        <span>HTML Video</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3">
+
+            <h1>HTML Video</h1>
+            <p><i>El elemento HTML <code class="blue-text">&lt;video&gt;</code> se utiliza para mostrar un video en una página web.</i></p>
+
+            <article class="ejemplo">
+
+                <p>Ejemplo:</h3>
+
+                <div class="botonContenedor">
+
+                    <video width="320" height="180" controls>
+                        <source src="videos/mov_bbb.mp4">
+                    </video>   
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span
+                            class="attributecolor" style="color:red"> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="320"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="240"</span> controls</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the video tag.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <h3>¿Cómo funciona?</h3>
+                <p>
+                    El atributo <code class="red-text">controls</code> agrega controles de video, como reproducción, pausa y volumen.<br>
+                    <br>Es una buena idea incluir siempre atributos <code class="red-text">width</code> y <code class="red-text">height</code>.
+                    <br>Si no se configuran el alto y el ancho la página puede parpadear mientras se carga el video. <br><br>
+                    El elemento <code class="blue-text">&lt;source&gt;</code> te permite especificar archivos de video alternativos entre
+                    los que el navegador puede elegir.<br> El navegador utilizará el primer formato reconocido. <br><br>
+                    El texto entre las etiquetas de <code class="blue-text">&lt;video&gt;</code> solo se mostrará en navegadores que no
+                    admitan el elemento <code class="blue-text">&lt;video&gt;</code>. <hr>
+                </p>
+
+                <h3>Autoplay</h3>
+                <p>Para iniciar un video automaticamente, use el atributo <code class="red-text">autoplay</code>.</p>
+
+                <div class="botonContenedor">
+
+                    <video width="320" height="180" autoplay controls>
+                        <source src="videos/movie.mp4">
+                    </video>   
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span
+                            class="attributecolor" style="color:red"> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="320"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="240"</span> autoplay</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the video tag.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Nota:</b> los navegadores Chromium no permiten la reproducción automática en la mayoria de los casos. <br>
+                    Sin embargo, siempre se permite la reproducción automática silenciada.
+                </p>
+
+                <h3>muted</h3>
+                <p>
+                    Agregue <code class="red-text">muted</code> despúes del <code class="red-text">autoplay</code>
+                    para permitir que su video comience a reproducirse automáticamente (pero silenciado):
+                </p>
+
+                <div class="botonContenedor">
+
+                    <video width="320" height="180" autoplay muted controls>
+                        <source src="videos/movie.mp4">
+                    </video>   
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span
+                            class="attributecolor" style="color:red"> width<span class="attributevaluecolor"
+                                style="color:mediumblue">="320"</span> height<span class="attributevaluecolor"
+                                style="color:mediumblue">="240"</span> autoplay muted</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the video tag.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h3>Soporte del navegador</h3>
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que admite totalmente el elemento 
+                <code class="blue-text">&lt;video&gt;</code>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>Navegador</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>3.5</td>
+                        <td>4.0</td>
+                        <td>10.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2>Formatos de video HTML</h2>
+            <p>
+                Hay tres formatos de video compatibles: MP4 WebM y Ogg. <br>
+                El soporte del navegador para los diferentes formatos es:
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Navegador</th>
+                    <th>MP4</th>
+                    <th>WebM</th>
+                    <th>Ogg</th>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+            </table>
+            <hr>
+
+            <h2 title="Media Types">Tipos de Medios</h2>
+            
+            <table class="tablecebra">
+                <tr class="w3-red">
+                    <th>Formato de Archivo</th>
+                    <th>Tipo de Medio</th>
+                </tr>
+                <tr>
+                    <td>MP4</td>
+                    <td>video/mp4</td>
+                </tr>
+                <tr>
+                    <td>Webm</td>
+                    <td>video/webm</td>
+                </tr>
+                <tr>
+                    <td>Ogg</td>
+                    <td>video/ogg</td>
+                </tr>
+            </table>
+            <hr>
+            
+            <h2 title="Methods, Properties, and Events">Metodos, Propiedades y eventos.</h2>
+            <p>
+                El <strong>DOM</strong> HTML define métodos, propiedades y eventos para el elemento <code class="blue-text">&lt;video&gt;</code>
+                <br><br>Esto le permite cargar, reproducir y pausar videor, así como configurar la duración y el volumen. <br><br>
+                También hay eventos <strong>DOM</strong> que pueden notificarle cuando un video comienza a reproducirse, se pausa, etc.
+            </p>
+            
+            <article class="ejemplo">
+
+                Ejemplo: usar javaScript
+
+                <div style="text-align:center"> 
+                    <button onclick="playPause()">Play/Pause</button> 
+                    <button onclick="makeBig()">Agrandar</button>
+                    <button onclick="makeSmall()">Achicar</button>
+                    <button onclick="makeNormal()">Normal</button>
+                    <br><br>
+                    <video id="video1" width="420">
+                      <source src="videos/mov_bbb.mp4" type="video/mp4">
+                      Your browser does not support HTML video.
+                    </video>
+                </div> 
+
+                <div class="w3-code">
+
+                    <span style="color: mediumblue;">&lt;</span><span style="color: brown;">div</span> <span style="color: red;">
+                        style</span>=<span style="color: mediumblue;">"text-align:center"&gt;</span><br>&nbsp;&nbsp;<span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">button</span> <span
+                        style="color: red;">onclick</span>=<span style="color: mediumblue;">"playpause( )"&gt;</span>Play/Pause<span
+                        style="color: mediumblue;">&lt;/</span><span style="color: brown;">button</span><span
+                        style="color: mediumblue;">&gt;</span><br>&nbsp;&nbsp;<span style="color: mediumblue;">&lt;</span><span
+                        style="color: brown;">button</span> <span style="color: red;">onclick</span>=<span
+                        style="color: mediumblue;">"makebig( )"&gt;</span>Agrandar<span style="color: mediumblue;">&lt;/</span><span
+                        style="color: brown;">button</span><span style="color: mediumblue;">&gt;</span><br>&nbsp;&nbsp;<span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">button</span> <span
+                        style="color: red;">onclick</span>=<span style="color: mediumblue;">"makeSmall( )"&gt;</span>Achicar<span
+                        style="color: mediumblue;">&lt;/</span><span style="color: brown;">button</span><span
+                        style="color: mediumblue;">&gt;</span><br>&nbsp;&nbsp;<span style="color: mediumblue;">&lt;</span><span
+                        style="color: brown;">button</span> <span style="color: red;">onclick</span>=<span
+                        style="color: mediumblue;">"makeNormal( )"&gt;</span>Normal<span style="color: mediumblue;">&lt;/</span><span
+                        style="color: brown;">button</span><span style="color: mediumblue;">&gt;</span><br>&nbsp;&nbsp;<span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">br</span><span
+                        style="color: mediumblue;">&gt;&lt;</span><span style="color: brown;">br</span><span
+                        style="color: mediumblue;">&gt;</span><br>&nbsp;&nbsp;<span style="color: mediumblue;">&lt;</span><span
+                        style="color: brown;">video</span> <span style="color: red;">id</span>=<span
+                        style="color: mediumblue;">"video1"</span> <span style="color: red;">width</span>=<span
+                        style="color: mediumblue;">"420"&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">source</span> <span
+                        style="color: red;">src</span>=<span style="color: mediumblue;">"mov_bbb.mp4"</span> <span
+                        style="color: red;">type</span>=<span
+                        style="color: mediumblue;">"video/mp4"&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">source</span> <span
+                        style="color: red;">src</span>=<span style="color: mediumblue;">"mov_bbb.ogg"</span> <span
+                        style="color: red;">type</span>=<span
+                        style="color: mediumblue;">"video/ogg"&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;Su navegador no soporta este formato de
+                    Video.<br>&nbsp;&nbsp;<span style="color: mediumblue;">&lt;/</span><span style="color: brown;">video</span><span
+                        style="color: mediumblue;">&gt;</span><br><span style="color: mediumblue;">&lt;/</span><span
+                        style="color: brown;">div</span><span style="color: mediumblue;">&gt;</span><br><br><span
+                        style="color: mediumblue;">&lt;</span><span style="color: brown;">script</span><span
+                        style="color: mediumblue;">&gt;</span><br><span style="color: blue;">var</span> myVideo =
+                    document.getElementById(<span style="color: brown;">"video1"</span>);<br><br><span style="color: blue;">function</span> playPause( ) {
+                        
+
+
+                </div>
+
+                <p>
+                    <i>Para obtener una referencia <strong>DOM</strong> completa, vaya a
+                        <a href="https://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"
+                            style="text-decoration: underline; color: aqua;">Referencia DOM de audio/video HTML.</a></i>
+                </p>
+
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptvideo.js"></script>
+</body>
+</html>
