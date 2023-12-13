@@ -345,6 +345,10 @@ blockquote h2#c2 {
     background-size: cover;
 }
 
+.tag {
+    color: brown;
+}
+
 .blue-text {
     color: mediumblue;
 }
@@ -491,11 +495,51 @@ blockquote h2#c2 {
 
 .Estilo_negro3 {
     color: white;
-    background-image: url("imagenes/3d-connections-polygonal-background-with-connecting-lines-dots.jpg");
+    background-image: url("imagenes/dark-black-abstract-background-with-wood-chips.jpg");
     background-size: contain;
     padding: 1px;
     border-radius: 5%;
     margin-bottom: 50px;
+}
+
+.Estilo_negro3 .tablecebra {
+    background-color: white;
+    color: black;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.Estilo_negro3 .tablecebra th, .tablecebra td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.Estilo_negro3 .tablecebra tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: #1E1E1E;
+}
+
+.Estilo_negro3 .tablecebra4blanco {
+    color: black;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.Estilo_negro3 .tablecebra4blanco th, .tablecebra4blanco td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    width: 1fr;
+}
+
+.Estilo_negro3 .tablecebra4blanco tr:nth-child(even) {
+    background-color: #D6EEEE;
+    color: black;
 }
 
 .Estilo_blanco4 {

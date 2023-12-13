@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video HTML</title>
+    <title>HTML Video </title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="style.css">
@@ -37,6 +37,18 @@
                         <span>Home</span>
                     </a>
                 </li>
+                <li class="home">
+                    <a href="seccionmedia.html">
+                        <ion-icon name="desktop-sharp"></ion-icon>
+                        <span>Media</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionmediaaudio.html">
+                        <ion-icon name="mic-outline"></ion-icon>
+                        <span>Audio</span>
+                    </a>
+                </li>
                 <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
@@ -45,9 +57,45 @@
                         <span>HTML Video</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#ah2">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>¿Cómo funciona?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Autoplay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Muted</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte Navegador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Formatos de video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Tipos de Medios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ah8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Usando JavaScript</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -99,7 +147,7 @@
         <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button>
 
-        <div class="Estilo_blanco3">
+        <div class="Estilo_blanco3" id="ah1">
 
             <h1>HTML Video</h1>
             <p><i>El elemento HTML <code class="blue-text">&lt;video&gt;</code> se utiliza para mostrar un video en una página web.</i></p>
@@ -137,7 +185,7 @@
                             style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
                 </div>
 
-                <h3>¿Cómo funciona?</h3>
+                <h3 id="ah2">¿Cómo funciona?</h3>
                 <p>
                     El atributo <code class="red-text">controls</code> agrega controles de video, como reproducción, pausa y volumen.<br>
                     <br>Es una buena idea incluir siempre atributos <code class="red-text">width</code> y <code class="red-text">height</code>.
@@ -148,7 +196,7 @@
                     admitan el elemento <code class="blue-text">&lt;video&gt;</code>. <hr>
                 </p>
 
-                <h3>Autoplay</h3>
+                <h3 id="ah3">Autoplay</h3>
                 <p>Para iniciar un video automaticamente, use el atributo <code class="red-text">autoplay</code>.</p>
 
                 <div class="botonContenedor">
@@ -185,7 +233,7 @@
                     Sin embargo, siempre se permite la reproducción automática silenciada.
                 </p>
 
-                <h3>muted</h3>
+                <h3 id="ah4">muted</h3>
                 <p>
                     Agregue <code class="red-text">muted</code> despúes del <code class="red-text">autoplay</code>
                     para permitir que su video comience a reproducirse automáticamente (pero silenciado):
@@ -223,7 +271,7 @@
             </article>
             <hr>
 
-            <h3>Soporte del navegador</h3>
+            <h3 id="ah5">Soporte del navegador</h3>
             <p>
                 Los números de la tabla especifican la primera versión del navegador que admite totalmente el elemento 
                 <code class="blue-text">&lt;video&gt;</code>
@@ -240,7 +288,7 @@
                         <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
                     </tr>
                     <tr class="w3-pale-green">
-                        <td><code>&lt;canvas&gt;</code></td>
+                        <td><code class="tag">&lt;video&gt;</code></td>
                         <td>4.0</td>
                         <td>9.0</td>
                         <td>3.5</td>
@@ -251,7 +299,7 @@
             </table>
             <hr>
 
-            <h2>Formatos de video HTML</h2>
+            <h2 id="ah6">Formatos de video HTML</h2>
             <p>
                 Hay tres formatos de video compatibles: MP4 WebM y Ogg. <br>
                 El soporte del navegador para los diferentes formatos es:
@@ -297,7 +345,7 @@
             </table>
             <hr>
 
-            <h2 title="Media Types">Tipos de Medios</h2>
+            <h2 title="Media Types" id="ah7">Tipos de Medios</h2>
             
             <table class="tablecebra">
                 <tr class="w3-red">
@@ -319,18 +367,20 @@
             </table>
             <hr>
             
-            <h2 title="Methods, Properties, and Events">Metodos, Propiedades y eventos.</h2>
+            <h2 title="Methods, Properties, and Events" id="ah8">Metodos, Propiedades y eventos.</h2>
             <p>
                 El <strong>DOM</strong> HTML define métodos, propiedades y eventos para el elemento <code class="blue-text">&lt;video&gt;</code>
-                <br><br>Esto le permite cargar, reproducir y pausar videor, así como configurar la duración y el volumen. <br><br>
+                <br><br>Esto le permite cargar, reproducir y pausar videos, así como configurar la duración y el volumen. <br><br>
                 También hay eventos <strong>DOM</strong> que pueden notificarle cuando un video comienza a reproducirse, se pausa, etc.
             </p>
             
             <article class="ejemplo">
 
-                Ejemplo: usar javaScript
+                Ejemplo:
 
-                <div style="text-align:center"> 
+                <p>Usando JavaScript</p>
+
+                <div style="text-align:center; margin-top: 10px;"> 
                     <button onclick="playPause()">Play/Pause</button> 
                     <button onclick="makeBig()">Agrandar</button>
                     <button onclick="makeSmall()">Achicar</button>
@@ -379,10 +429,17 @@
                         style="color: brown;">div</span><span style="color: mediumblue;">&gt;</span><br><br><span
                         style="color: mediumblue;">&lt;</span><span style="color: brown;">script</span><span
                         style="color: mediumblue;">&gt;</span><br><span style="color: blue;">var</span> myVideo =
-                    document.getElementById(<span style="color: brown;">"video1"</span>);<br><br><span style="color: blue;">function</span> playPause( ) {
+                    document.getElementById(<span style="color: brown;">"video1"</span>);<br><br><span style="color: blue;">function</span>
+                    playPause( ) { <br>&nbsp;&nbsp;<span style="color: blue;">if</span>
+                    (myVideo.paused)<br>&nbsp;&nbsp;&nbsp;&nbsp;myVideo.play(
+                    );<br>&nbsp;&nbsp;<span style="color: blue;">else</span><br>&nbsp;&nbsp;&nbsp;&nbsp;myVideo.pause( );<br>}<br><br><span
+                        style="color: blue;">function</span> makeBig( ) {<br>&nbsp;&nbsp;myVideo.width = <span
+                        style="color: red;">560</span>;<br>}<br><br><span style="color: blue;">function</span> makeSmall( )
+                    {<br>&nbsp;&nbsp;myVideo.width = <span style="color: red;">320</span>;<br>}<br><br><span
+                        style="color: blue;">function</span> makeNormal( ) {<br>&nbsp;&nbsp;myVideo.width = <span
+                        style="color: red;">420</span>;<br><span style="color: blue;">&lt;/</span><span
+                        style="color: brown;">script</span><span style="color: blue;">&gt;</span>
                         
-
-
                 </div>
 
                 <p>
@@ -391,8 +448,29 @@
                             style="text-decoration: underline; color: aqua;">Referencia DOM de audio/video HTML.</a></i>
                 </p>
 
-
             </article>
+            <hr>
+
+            <h3 title="Video Tags">Etiquetas</h3>
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><code style="color: brown;">&lt;video&gt;</code></td>
+                    <td>Define un video o película</td>
+                </tr>
+                <tr>
+                    <td><code style="color: brown;">&lt;source&gt;</code></td>
+                    <td>Define múltiple recursos multimedia, para elementos como <code style="color: brown;">&lt;audio&gt;</code>
+                         y <code style="color: brown;">&lt;video&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><code style="color: brown;">&lt;track&gt;</code></td>
+                    <td>Define pistas de texto en reproductores multimedia</td>
+                </tr>
+            </table>
 
         </div>
 

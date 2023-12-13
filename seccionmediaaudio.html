@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Audio</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="mic-outline"></ion-icon>
+                <span>HTML Audio!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="seccionmedia.html">
+                        <ion-icon name="desktop-sharp"></ion-icon>
+                        <span>Media</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionmediavideo.html">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                        <span>Video</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="mic-outline"></ion-icon>
+                        <span>HTML Audio</span>
+                </li>
+                <li>
+                    <a href="#ai2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>¿Cómo funciona?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Autoplay</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Muted</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte Navegador</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Formatos de audio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Tipos de Medios</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ai8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Usando JavaScript</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="ai1">
+
+            <h1>Audio HTML</h1>
+            <p><i>El elemento <code class="tag">&lt;audio&gt;</code></i> se utiliza para reproducir un archivo de audio en una página web.</p>
+            <hr>
+
+            <article class="ejemplo">
+
+                Ejemplo
+
+                <p>Para reproducir un archivo de audio en HTML, use el elemento <code style="background-color: white;" class="tag">&lt;audio&gt;</code></p>
+
+                <div style="text-align: center; margin-top: 10px;">
+                    <audio controls>
+                        <source src="audios/horse.ogv" type="audio/ogg">
+                      Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>audio<span
+                            class="attributecolor" style="color:red"> controls</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.mp3"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/mpeg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the audio element.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/audio<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <hr>
+    
+                <h3 id="ai2">¿Cómo funciona?</h3>
+                <p>
+                    El atributo <code class="red-text">controls</code> agrega controles de audio, como reproducción pausa y volumen. <br><br>
+                    El elemento <code class="tag">&lt;source&gt;</code> le permite especificar archivos de audio alternativos entre los que 
+                    el navegador puede elegir.<br> El navegador utilizará el primer formato reconocido. <br><br>
+                    El texto entre la etiqueta de <code class="tag">&lt;audio&gt;</code> solo se mostrará en navegadores que no admitan el 
+                    elemento <code class="tag">&lt;audio&gt;</code>.
+                </p>
+                <hr>
+    
+                <h3 id="ai3">Autoplay</h3>
+                <p>Para iniciar un archivo de audio automáticamante use el atributo <code class="red-text">autoplay</code>.</p>
+
+                <div style="text-align: center; margin-top: 10px;">
+                    <audio controls> <!-- autoplay  desactivado no pienso escuchar el caballo cada 2segundos salu2-->
+                        <source src="audios/horse.ogv" type="audio/ogg">
+                      Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>audio<span
+                            class="attributecolor" style="color:red"> controls autoplay</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.mp3"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/mpeg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the audio element.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/audio<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Nota:</b> Los navegadores Chromium no permiten la reproducción automática en la mayoría de los casos. <br>
+                    Sin embargo, siempre se permite la reproducción automática silenciada.
+                </p>
+
+                <h3 id="ai4">Muted</h3>
+                <p>
+                    Agreuge <code class="red-text">muted</code> despúes del <code class="red-text">autoplay</code> para permitir
+                    que su archivo de audio comience a reproducirse automáticamente (pero silenciado):
+                </p>
+
+                <div style="text-align: center; margin-top: 10px;">
+                    <audio controls autoplay muted>
+                        <source src="audios/horse.ogv" type="audio/ogg">
+                      Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>audio<span
+                            class="attributecolor" style="color:red"> controls autoplay muted</span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.ogg"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/ogg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span
+                                class="attributevaluecolor" style="color:mediumblue">="horse.mp3"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="audio/mpeg"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    Your browser does not support the audio element.<br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/audio<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h3 id="ai5">Soporte del navegador</h3>
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que admite totalmente el elemento 
+                <code class="tag">&lt;audio&gt;</code>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>Navegador</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code class="tag">&lt;audio&gt;</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>3.5</td>
+                        <td>4.0</td>
+                        <td>10.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2 id="ai6">Formatos de Audio</h2>
+            <p>
+                Hay tres formatos de audio compatibles: MP3, WAV y OGG. El soporte del navegador para los diferentes formatos es:
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Navegador</th>
+                    <th>MP3</th>
+                    <th>WAV</th>
+                    <th>OGG</th>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></td>
+                    <td>SI</td>
+                    <td>SI<span style="font-size: 20px;">*</span></td>
+                    <td>SI<span style="font-size: 20px;">*</span></td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>NO</td>
+                </tr>
+                <tr>
+                    <td><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></td>
+                    <td>SI</td>
+                    <td>SI</td>
+                    <td>SI</td>
+                </tr>
+            </table>
+            <p style="text-align: left; margin-left: 50px;"><span style="font-size: 20px;">*</span> Desde Edge 79</p>
+            <hr>
+
+            <h2 title="Audio - Media Types" id="ai7">Tipos de Audio</h2>
+
+            <table class="tablecebra">
+                <tr class="w3-red">
+                    <th>Formato de Archivo</th>
+                    <th>Tipo de Medio</th>
+                </tr>
+                <tr>
+                    <td>MP3</td>
+                    <td>audio/mpeg</td>
+                </tr>
+                <tr>
+                    <td>OGG</td>
+                    <td>audio/ogg</td>
+                </tr>
+                <tr>
+                    <td>WAV</td>
+                    <td>audio/wav</td>
+                </tr>
+            </table>
+            <hr>
+
+            <h2 id="ai8">Metodos, Propiedades y eventos.</h2>
+            <p>
+                El <strong>DOM</strong> HTML define métodos, propiedades y eventos para el elemento <code class="blue-text">&lt;audio&gt;</code>
+                <br><br>Esto le permite cargar, reproducir y pausar audios, así como configurar la duración y el volumen. <br><br>
+                También hay eventos <strong>DOM</strong> que pueden notificarle cuando un audio comienza a reproducirse, se pausa, etc. <br><br>
+            </p>
+            <p>
+                <i>Para obtener una referencia <strong>DOM</strong> completa, vaya a
+                    <a href="https://www.w3schools.com/tags/ref_av_dom.asp" target="_blank"
+                        style="text-decoration: underline; color: rgb(0, 60, 255);">Referencia DOM de audio/video HTML.</a></i>
+            </p>
+            <hr>
+
+            <h3 title="Video Tags">Etiquetas</h3>
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Etiqueta</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><code style="color: brown;">&lt;audio&gt;</code></td>
+                    <td>Define un contenido de sonido</td>
+                </tr>
+                <tr>
+                    <td><code style="color: brown;">&lt;source&gt;</code></td>
+                    <td>Define múltiple recursos multimedia, para elementos como <code style="color: brown;">&lt;audio&gt;</code>
+                         y <code style="color: brown;">&lt;video&gt;</code></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
