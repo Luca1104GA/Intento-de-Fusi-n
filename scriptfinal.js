@@ -27,13 +27,20 @@ menuf.addEventListener("click",()=>{
     }
 });
 
-let modoOscuro = false;
+/* --------------------------------------------------------- Modo Oscuro --------------------------------------------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+    const palanca = document.querySelector(".switch");
+    const elementosBlancos = document.querySelectorAll(".Estilo_blanco3");
 
-palanca.addEventListener("click",()=>{
-    let body = document.body;
-    body.classList.toggle("dark-mode");
-    circulo.classList.toggle("prendido");
-    modoOscuro = !modoOscuro;
+    // Obtén el estado actual del modo oscuro desde localStorage
+    let modoOscuro = localStorage.getItem("modoOscuro") === "true";
+
+    // Aplica las clases según el estado actual
+    if (modoOscuro) {
+        document.body.classList.add("dark-mode");
+        circulo.classList.add("prendido");
+    }
+
     elementosBlancos.forEach((elemento) => {
         if (modoOscuro) {
             elemento.classList.remove("Estilo_blanco3");
@@ -43,7 +50,32 @@ palanca.addEventListener("click",()=>{
             elemento.classList.add("Estilo_blanco3");
         }
     });
+
+    palanca.addEventListener("click", () => {
+        // Cambia la clase del body para activar o desactivar el modo oscuro
+        let body = document.body;
+        body.classList.toggle("dark-mode");
+        circulo.classList.toggle("prendido");
+
+        // Invierte y guarda el estado actual del modo oscuro en localStorage
+        modoOscuro = !modoOscuro;
+        localStorage.setItem("modoOscuro", modoOscuro.toString());
+
+        // Itera sobre los elementos con la clase "Estilo_blanco3"
+        elementosBlancos.forEach((elemento) => {
+            // Restablece las clases según el estado actual
+            if (modoOscuro) {
+                elemento.classList.remove("Estilo_blanco3");
+                elemento.classList.add("Estilo_negro3");
+            } else {
+                elemento.classList.remove("Estilo_negro3");
+                elemento.classList.add("Estilo_blanco3");
+            }
+        });
+    });
 });
+
+/* ------------------------------------------------------------------------------------------------------------------------------------ */
 
 cloud.addEventListener("click",()=>{
     barraLateral.classList.toggle("mini-barra-lateral");
@@ -52,3 +84,7 @@ cloud.addEventListener("click",()=>{
         span.classList.toggle("oculto");
     });
 });
+
+
+
+let modoOscuro = false;

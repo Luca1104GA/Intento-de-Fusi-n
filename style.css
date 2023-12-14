@@ -379,3 +379,12 @@ main.min-main{
         margin-left: 0;
     }
 }
+
+.centrado {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

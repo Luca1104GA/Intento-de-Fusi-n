@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML YouTube</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="logo-youtube"></ion-icon>
+                <span>YouTube!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="seccionmedia.html">
+                        <ion-icon name="desktop-sharp"></ion-icon>
+                        <span>Media</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionmediavideo.html">
+                        <ion-icon name="videocam-outline"></ion-icon>
+                        <span>Video</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionmediaaudio.html">
+                        <ion-icon name="mic-outline"></ion-icon>
+                        <span>Audio</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionmediaplugins.html">
+                        <ion-icon name="pin-outline"></ion-icon>
+                        <span>Plug-ins</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                        <span>HTML YouTube!</span>
+                </li>
+                <li>
+                    <a href="#ak2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Youtube video ID</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ak3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Autoplay + Mute</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ak4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>YouTube Loop</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#ak5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Controles de YouTube</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="ak1">
+
+            <h1>HTML YouTube Videos <ion-icon name="logo-youtube"></ion-icon></h1>
+            <p><i>La forma más sencilla de reproducir videos en HTML es utilizar</i> YouTube </p>
+            
+
+            <h3>¿Tiene problemas con los formatos de video?</h3>
+            <p>
+                Convertir videos a diferentes formatos puede resultar difícil y llevar mucho tiempo. <br>
+                Una solución más sencilla es dejar que Youtube reproduzca los videos de su página web.
+            </p>
+            <hr>
+
+            <h2 id="ak2">Youtube video ID</h2>
+            <p>
+                Youtube mostrará una ID (ejemplo: <i>tgbNymZ7vqY</i> ) cuando guardes o reproduzcas un video. <br>
+                Puedes utilizar esta identificación y hacer referencia a su video en el código HTML. 
+            </p>
+
+            <h3>Reproducir un vide de YouTube en HTML</h3>
+            <p>Para reproducir su video en una página web, haga los siguiente:</p>
+
+            <ul class="lista">
+                <li>Sube el video a YouTube.</li>
+                <li>Toma nota del ID del video.</li>
+                <li>Definir un elemento <code class="tag">&lt;iframe&gt;</code> en tu página web.</li>
+                <li>Deje que el atributo <code class="red-text">src</code> apunte a la URL del video</li>
+                <li>
+                    Utilice los atributos <code class="red-text">width</code> y <code class="red-text">height</code>
+                    para especificar la dimensión del reproductor.
+                </li>
+                <li>Agregue cualquier otro parámetro a la URL (ver más abajo).</li>
+            </ul>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="centrado">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span
+                                class="attributevaluecolor"
+                                style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <hr>
+
+                <h3 id="ak3">YouTube Autoplay + Mute</h3>
+                <p>
+                    Puede permitir que el video comience a reproducirse automaticamente cuando un usuario<br> visita la página, 
+                    agregándole <code class="red-text">autoplay=1</code> a la URL de YouTube. <br><br>
+                    Sin embargo, iniciar automáticamente un video es molesto para tus visitantes! <br>
+                    Agregue <code class="red-text">mute=1</code> después del <code class="red-text">autoplay=1</code> para permitir
+                    que su video comience a reproducirse automáticamente (pero silenciado).
+                </p>
+
+                <p class="advertencia">
+                    <b>Nota:</b> los navegadores Chromium no permiten la reproducción automática en la mayoría de los casos. <br>
+                    Sin embargo, siempre se permite la reproducción automática silenciada.
+                </p>
+
+                <div class="centrado" style="margin-top: 10px;">
+                    <iframe width="420" height="315" 
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span
+                                class="attributevaluecolor"
+                                style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&amp;mute=1"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <hr>
+
+                <h3>YouTube Playlist</h3>
+                <p>Una lista de vídeos separados por comas para reproducir (además de la URL original).</p>
+                <hr>
+
+                <h3 id="ak4">YouTube Loop</h3>
+                <p>
+                    Agregue <code class="red-text">loop=1</code> para que su video se reproduzca para siempre. <br><br>
+                    <code class="celeste">Value 0</code>: (predeterminado) el video se reproducirá solo una vez. <br>
+                    <code class="celeste">Value 1</code>: el video se repetirá (por siempre).
+                </p>
+
+                <div class="centrado">
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+                    </iframe>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span
+                                class="attributevaluecolor"
+                                style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+                <hr>
+
+                <h3 id="ak5">Controles de YouTube</h3>
+                <p>
+                    Agregue <code class="red-text">controls=0</code> para ocultar los controles en el reproductor de video. <br><br>
+                    <code class="celeste">value 0</code>: Los controles de reproducción no se muestran. <br>
+                    <code class="celeste">value 1</code>: (predeterminado) Se muestran los controles de reproducción.
+                </p>
+
+                <div class="centrado">
+                    <iframe width="420" height="315"
+                    src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+                    </iframe>
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span
+                                class="attributevaluecolor"
+                                style="color:mediumblue">="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
