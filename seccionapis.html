@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Geolocation API</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="location-outline"></ion-icon>
+                <span>Geolocation!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="location-outline"></ion-icon>
+                        <span>Geolocation API</span>
+                </li>
+                <li>
+                    <a href="#al2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Localizar la posición</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#al3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte del nav</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#al4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Geolocalización</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#al5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Errores y Rechazos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#al6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>getCurrentPosition()</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#al7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Otros métodos</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="al1">
+
+            <h1>HTML Geolocation API</h1>
+            <hr>
+            <p><i>La API de geolocalización HTML se utiliza para localizar la posición de un usuario.</i></p>
+            <hr>
+
+            <h2 title="Locate the User's Position" id="al2">Localizar la posición del usuario</h2>
+            <p>
+                La API de geolocalización HTML se utiliza para obtener la posición geografica de un usuario. <br>
+                Dado que esto puede comprometer la privacidad, el puesto no está disponible a menos que el usuario lo apruebe.
+            </p>
+
+            <div class="centrado" style="margin-top: 10px;">
+                <button class="w3-btn w3-blue w3-round" onclick="getLocation()">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Intentalo</font>
+                    </font>
+                </button>
+            </div>
+
+            <p class="advertencia" style="margin-top: 10px;">
+                <b>Nota:</b> La geolocalización es más precisa para dispositivos con GPS, como teléfonos inteligentes.
+            </p>
+            <hr>
+
+            <h3 id="al3">Soporte del navegador</h3>
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que admite totalmente la geolocalización
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>API</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code class="tag">Geolocation</code></td>
+                        <td>5.0 - 49.0 (http)<br>50.0 (https)</td>
+                        <td>9.0</td>
+                        <td>3.5</td>
+                        <td>5.0</td>
+                        <td>16.0</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="advertencia">
+                <b>Nota:</b> A partir de Chome 50, la API de geolocalización solo funcionará en contextos seguros como HTTPS. <br>
+                Si su sitio está alojado en un origen no seguro (cono HTTP), las solicitudes para obtener la ubicación de los usuarios
+                ya no funcionarán.
+            </p>
+            <hr>
+
+            <h2 id="al4">Usando la geolocalización HTML</h2>
+            <p>
+                El método <code class="red-text">getCurrentPosition( )</code> se utiliza para devolver la posición del usuario. <br>
+                El siguiente ejemplo devuelve la latitud y longitud de la posición del usuario:
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <p>Haz Click en el botón para obtener tus coordenadas.</p>
+                
+                <div class="centrado" style="margin-top: 10px;">
+                    <button onclick="getLocation('demo1')">Try It</button>
+                </div>
+                
+                <p id="demo1" class="demogeo"></p>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                            class="jskeywordcolor" style="color:mediumblue">const</span> x = document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"demo"</span>);<br><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> getLocation() {<br>&nbsp;&nbsp;<span
+                            class="jskeywordcolor" style="color:mediumblue">if</span> (navigator.<span class="jspropertycolor"
+                            style="color:black">geolocation</span>) {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp; navigator.<span class="jspropertycolor" style="color:black">geolocation</span>.<span
+                            class="jspropertycolor" style="color:black">getCurrentPosition</span>(showPosition);<br>&nbsp;&nbsp;} <span
+                            class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp; x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span
+                            class="jsstringcolor" style="color:brown">"Geolocation is not supported by this browser."</span>;<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;}<br>}<br><br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> showPosition(position) {<br>&nbsp;
+                        x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                            style="color:brown">"Latitude: "</span> + position.<span class="jspropertycolor"
+                            style="color:black">coords</span>.<span class="jspropertycolor" style="color:black">latitude</span> +
+                        <br>&nbsp;&nbsp;<span class="jsstringcolor" style="color:brown">"&lt;br&gt;Longitude: "</span> + position.<span
+                            class="jspropertycolor" style="color:black">coords</span>.<span class="jspropertycolor"
+                            style="color:black">longitude</span>; <br><span class="jsnumbercolor" style="color:red">
+                        </span> }<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <h5>Ejemplo explicado:</h5>
+
+                <ul class="lista2">
+                    <li>Compureba se se admite la geolocalización.</li>
+                    <li>Si es compatible, ejecute el método <code>getCurrentPosition( )</code>. Si no, muestra un mensaje al usuario.</li>
+                    <li>
+                        Si el método <code>getCurrentPosition( )</code> tiene éxito, devuelve un objeto de coordenadas a la función <br>
+                        especificada en el parámetro (<code>showPosition</code>).
+                    </li>
+                    <li>La función <code>showPosition</code> genera la latitud y la longitud.</li>
+                </ul>
+
+                <p>
+                    <i>El ejemplo anterios es un script de geolocalización muy básico, sin manejo de errores.</i>
+                </p>
+                
+            </article>
+
+            <h2 title="Handling Errors and Rejections" id="al5">Manejo de errores y rechazos</h2>
+            <p>
+                El segundo parámetro del método <code>getCurrentPosition( )</code> se utiliza para manejar errores. <br>
+                Especifica una función que se ejecutará si no se puede obtener la ubicaión del usuario:
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <p>Haz Click en el botón para obtener tus coordenadas.</p>
+                    
+                    <div class="centrado" style="margin-top: 10px;">
+                        <button onclick="getLocation('demo2')">Try It</button>
+                    </div>
+                    
+                <p id="demo2" class="demogeo"></p>
+    
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> showError(error)
+                        {<br>&nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">switch</span>(error.<span
+                            class="jspropertycolor" style="color:black">code</span>) {<br>&nbsp;&nbsp;&nbsp; <span
+                            class="jskeywordcolor" style="color:mediumblue">case</span> error.<span class="jspropertycolor"
+                            style="color:black">PERMISSION_DENIED</span>:<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x.<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jsstringcolor" style="color:brown">"El usuario ha negado el permiso de
+                            Geolocalización."</span><br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor"
+                            style="color:mediumblue">break</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor"
+                            style="color:mediumblue">case</span> error.<span class="jspropertycolor"
+                            style="color:black">POSITION_UNAVAILABLE</span>:<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x.<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jsstringcolor" style="color:brown">"La información de ubicación no está
+                            disponible."</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor"
+                            style="color:mediumblue">break</span>;<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="jskeywordcolor"
+                            style="color:mediumblue">case</span> error.<span class="jspropertycolor"
+                            style="color:black">TIMEOUT</span>:<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x.<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jsstringcolor" style="color:brown">"Se agotó el tiempo de espera."</span><br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor"
+                            style="color:mediumblue">break</span>;<br>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor"
+                            style="color:mediumblue">case</span> error.<span class="jspropertycolor"
+                            style="color:black">UNKNOWN_ERROR</span>:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;x.<span
+                            class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                            style="color:brown">"Un error desconocido ha ocurrido."</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                            class="jskeywordcolor" style="color:mediumblue">break</span>;<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> &nbsp;&nbsp;}<br><span class="jsnumbercolor" style="color:red">
+                        </span> } </span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2>Información específica de la ubicación</h2>
+            <p>
+                Esta sección ha demostrado cómo mostrar la posición de un usuario en un mapa. <br><br>
+                La geolocalización también es muy útil para obtener información específica de la ubicación, como:
+            </p>
+
+            <ul class="lista">
+                <li>Información local actualizada.</li>
+                <li>Mostrando puntos de interés cerca del usuario.</li>
+                <li>Navegación paso a paso (GPS).</li>
+            </ul>
+            <hr>
+
+            <h2 title="The getCurrentPosition() Method - Return Data" id="al6">El método <code>getCurrentPosition()</code>- Devolver datos</h2>
+
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Propiedad</th>
+                    <th>Devuelve</th>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.latitude</span></td>
+                    <td>La latitud como un número decimal (siempre se devuelve)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.longitude</span></td>
+                    <td>La longitud como un número decimal (siempre se devuelve)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.accuracy</span></td>
+                    <td>La precisión de la posición (siempre se devuelve)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.altitude</span></td>
+                    <td>La altitud en metros sobre el nivel del mar (se devuelve si está disponible)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.altitudeAccuracy</span></td>
+                    <td>La precisión de la altitud de la posición (se devuelve si está disponible)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.heading</span></td>
+                    <td>La dirección en grados en sentido horario desde el norte (se devuelve si está disponible)</td>
+                </tr>
+                <tr>
+                    <td>coords<span class="red-text">.speed</span></td>
+                    <td>La velocidad en metros por segundo (se devuelve si está disponible)</td>
+                </tr>
+                <tr>
+                    <td>timestamp</td>
+                    <td>La fecha/hora de la respuesta (se devuelve si está disponible)</td>
+                </tr>
+            </table>
+            <hr>
+
+            <h2 title="Geolocation Object - Other interesting Methods" id="al7">Objeto de geolocalización: Otros métodos interesantes</h2>
+            <p><i>El objeto Geolocalización también tiene otros métodos interesantes:</i></p>
+
+            <ul class="lista">
+                <li>
+                    <code class="tag">watchPosition()</code>- Devuelve la posición actual del usuario y continúa enviando <br>
+                    la posición actualizada mientras el usuario se mueve (Como el GPS de un automóvil).
+                </li>
+                <li>
+                    <code class="tag">clearWatch()</code>- Detiene el método <code class="tag">watchPosition()</code>.
+                </li>
+            </ul>
+            
+            <p style="margin-top: 30px;">
+                El siguiente ejemplo muestra el método <code class="tag">watchPosition()</code>. <br>
+                Necesita un dispositivo GPS preciso para probar esto (Como un teléfono inteligente):
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="centrado" style="margin-top: 10px;">
+                    <button onclick="getLocation('demo3')">Try It</button>
+                </div>
+                
+                <p id="demo3" class="demogeo"></p>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                            class="jskeywordcolor" style="color:mediumblue">const</span> x = document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"demo"</span>);<br><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> getLocation() {<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span> (navigator.<span
+                            class="jspropertycolor" style="color:black">geolocation</span>) {<br>&nbsp;&nbsp;&nbsp; navigator.<span
+                            class="jspropertycolor" style="color:black">geolocation</span>.<span class="jspropertycolor"
+                            style="color:black">watchPosition</span>(showPosition);<br>&nbsp;&nbsp;} <span class="jskeywordcolor"
+                            style="color:mediumblue">else</span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp; x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span
+                            class="jsstringcolor" style="color:brown">"Geolocation is not supported by this browser."</span>;<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;}<br>}<br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> showPosition(position) {<br>&nbsp;
+                        x.<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                            style="color:brown">"Latitude: "</span> + position.<span class="jspropertycolor"
+                            style="color:black">coords</span>.<span class="jspropertycolor" style="color:black">latitude</span> +
+                        <br>&nbsp;&nbsp;<span class="jsstringcolor" style="color:brown">"&lt;br&gt;Longitude: "</span> + position.<span
+                            class="jspropertycolor" style="color:black">coords</span>.<span class="jspropertycolor"
+                            style="color:black">longitude</span>; <br><span class="jsnumbercolor" style="color:red">
+                        </span> }<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+            </article>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptgeolocation.js"></script>
+</body>
+</html>
