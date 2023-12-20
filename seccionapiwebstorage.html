@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Storage API</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="cloud-upload-outline"></ion-icon>
+                <span>Web Storage!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="seccionapis.html">
+                        <ion-icon name="location"></ion-icon>
+                        <span>Geolocation</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionapiarrastrarysoltar.html">
+                        <ion-icon name="download"></ion-icon>
+                        <span>Arrastrar/Soltar</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="cloud-upload"></ion-icon>
+                        <span>Web Storage</span>
+                </li>
+                <li>
+                    <a href="#am2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>¿Qué es?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#am3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte del nav...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#am4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Objets</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#am5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>localStorage</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#am6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>sessionStorage</code></span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="am1">
+
+            <h1 title="HTML Web Storage API">API de almacenamiento web HTML</h1>
+            <p><i>HTML Web storage, es mejor que las cookies!</i></p>
+            <hr>
+
+            <h2 title="HTML Web Storage" id="am2">¿Qué es el almacenamiento web ?</h2>
+            <p>
+                Con el almacenamiento web, las aplicaciones web pueden almacenar datos localmente dentro del navegador del usuario.<br><br>
+                Antes de HTML5, los datos de las aplicaciones debían almacenarse en cookies, incluidas en cada solicitud del servidor.<br>
+                El almacenamiento web es más seguro y se pueden almacenar grandes cantidades de datos localmente, sin afectar el rendimiento
+                del sitio web. <br><br>
+                A diferencia de las cookies, el límite de almacenamiento es mucho mayor (al menos 5 MB) <br>
+                y la información nunca se transfiere al servidor. <br><br>
+                El almacenamiento web es por origen (por dominio y protocolo). <br>
+                Todas las páginas, desde un mismo origen, pueden almacenar y acceder a los mismos datos.
+            </p>
+            <hr>
+
+            <h3 id="am3">Soporte del navegador</h3>
+
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que es totalmente compatible con el Web Storage.
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>API</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code class="tag">Web Storage</code></td>
+                        <td>4.0</td>
+                        <td>8.0</td>
+                        <td>3.5</td>
+                        <td>4.0</td>
+                        <td>11.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2 title="HTML Web Storage Objects" id="am4">Objetos de almacenamiento web HTML</h2>
+            <p><i>El almacenamiento web HTML proporciona dos objetos para almacenar datos en el cliente:</i></p>
+
+            <ul class="lista"> 
+                <li><code class="w3-codespan">window.locaStorage</code>- almacena datos sin fecha de vencimiento.</li>
+                <li>
+                    <code class="w3-codespan">window.sessionStorage</code>- almacena datos para una sesión
+                    (los datos se pierden cuando se cierra la pestaña del navegador)
+                </li>
+            </ul>
+
+            <p>
+                Antes de usar el almacenamiento web, verifique la compatibilidad del navegador con <code>localStorage</code> y 
+                <code>sessionStorage</code>:
+            </p>
+
+            <div class="w3-code w3-border notranslate jsHigh" style="text-align: left; border-radius: 20px; margin: 10px;">
+                <span class="jscolor" style="color:black">
+                    <div>
+                        <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor"
+                            style="color:mediumblue">typeof</span>(Storage) !== <span class="jsstringcolor"
+                            style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp; <span class="commentcolor" style="color:green">// <i>Code for
+                                localStorage/sessionStorage.</i><br></span><span class="jsnumbercolor" style="color:red">
+                        </span> }<span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> &nbsp; <span class="commentcolor" style="color:green">// Sorry! No Web Storage
+                            support..<br></span><span class="jsnumbercolor" style="color:red">
+                        </span> }
+                    </div>
+                </span>
+            </div>
+            <hr>
+
+            <h2 title="The localStorage Object" id="am5"><code>localStorage</code></h2>
+            <p>
+                El objeto <code class="w3-codespan">localStorage</code> almacena los datos sin fecha de vencimiento. <br>
+                Los datos no se eliminarán al cerrar el navegador y estarán disponibles al día, semana o año siguiente.
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="centrado w3-red" id="result"></div>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="commentcolor" style="color:green">// Store<br></span>localStorage.<span
+                            class="jspropertycolor" style="color:black">setItem</span>(<span class="jsstringcolor"
+                            style="color:brown">"lastname"</span>, <span class="jsstringcolor"
+                            style="color:brown">"Prodan"</span>);<br><br><span class="commentcolor" style="color:green">//
+                            Retrieve<br></span><span class="jsnumbercolor" style="color:red">
+                        </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                            class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor"
+                            style="color:black">innerHTML</span> = localStorage.<span class="jspropertycolor"
+                            style="color:black">getItem</span>(<span class="jsstringcolor" style="color:brown">"lastname"</span>);<span
+                            class="jsnumbercolor" style="color:red">
+                        </span> </span>
+                </div>
+
+                <p><i>Ejemplo explicado:</i></p>
+                <ul class="lista">
+                    <li>
+                        Cree un par de <code class="w3-codespan">localStorage</code> con nombre= "lastname" y valor= "Prodan" 
+                    </li>
+                    <li>
+                        Recupere el valor de "lastname" e insértelo en el elemento con id= "result"
+                    </li>
+                </ul>
+                <p>El ejemplo anterios también podría escribirse así:</p>
+
+                <div class="w3-code  notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <div>
+                            <span class="commentcolor" style="color:green">// Store<br></span>localStorage.<span class="jspropertycolor"
+                                style="color:black">lastname</span> = <span class="jsstringcolor"
+                                style="color:brown">"Smith"</span>;<br><span class="commentcolor" style="color:green">//
+                                Retrieve<br></span><span class="jsnumbercolor" style="color:red">
+                            </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                                class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor"
+                                style="color:black">innerHTML</span> = localStorage.<span class="jspropertycolor"
+                                style="color:black">lastname</span>;
+                        </div>
+                    </span>
+                </div>
+
+                <p>La sintaxis para eliminar el elemento <code class="w3-codespan">localStorage</code> "lastname" es la siguiente:</p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <div>
+                            localStorage.<span class="jspropertycolor" style="color:black">removeItem</span>(<span class="jsstringcolor"
+                                style="color:brown">"lastname"</span>);</div>
+                    </span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Nota:</b> Los pares de nombre/valor (name/value) siempre se almacenan como cadenas. <br>
+                    ¡Recuerda convertirlos a otro formato cuando sea necesario!
+                </p>
+
+                <p style="margin-top: 20px;">
+                    El siguiente ejemplo cuenta la cantidad de veces que un usuario ha hecho click en un botón. <br>
+                    En este código la cadena de valor se convierte a un número para poder aumentar el contador:
+                </p>
+                <p style="margin-top: 20px;">Clickea el bóton para ver el contador aumentar.</p>
+                <p style="margin: 10px;"><button onclick="clickCounter()" type="button">Click me!</button></p>
+                <div class="centrado celeste" id="resultn"></div>
+
+                <p>
+                    Cierre la pestaña (o ventana) del navegador y vuelva a intentarlo, y el contador seguirá contando (no se restablecerá).
+                </p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">if</span> (localStorage.<span
+                            class="jspropertycolor" style="color:black">clickcount</span>) {<br>&nbsp; localStorage.<span
+                            class="jspropertycolor" style="color:black">clickcount</span> = Number(localStorage.<span
+                            class="jspropertycolor" style="color:black">clickcount</span>) + <span class="jsnumbercolor"
+                            style="color:red">1</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span> } <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; localStorage.<span
+                            class="jspropertycolor" style="color:black">clickcount</span> = <span class="jsnumbercolor"
+                            style="color:red">1</span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+                        </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                            class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor"
+                            style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Haz clickeado el
+                            bóton"</span> +<br>
+                        localStorage.<span class="jspropertycolor" style="color:black">clickcount</span> + <span class="jsstringcolor"
+                            style="color:brown">"vez(veces)."</span>; </span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 title="The sessionStorage Object" id="am6"><code>sessionStorage</code></h2>
+            <p>
+                El objeto <code class="w3-codespan">sessionStorage</code> es igual al objeto <code>localStorage</code>, <b>excepto</b>
+                que almacena los datos para una sola sesión.<br> Los datos se eliminan cuando el usuario cierra la pestaña especifica
+                del navegador. <br><br> El siguiente ejemplo cuenta la cantidad de veces que un usuario ha hecho click en un botón 
+                en la sesión actual:
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <p style="margin-top: 20px;">Clickea el bóton para ver el contador aumentar.</p>
+                <p style="margin: 10px;"><button onclick="clickCountersession()" type="button">Click me!</button></p>
+                <div class="centrado celeste" style="margin-top: 10px;" id="resultns"></div>
+
+                <p>
+                    Cierre la pestaña (o ventana) del navegador, vuelva a intentarlo y el contador se restablecerá.
+                </p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <span class="jskeywordcolor" style="color:mediumblue">if</span> (sessionStorage.<span class="jspropertycolor"
+                            style="color:black">clickcount</span>) {<br>&nbsp; sessionStorage.<span class="jspropertycolor"
+                            style="color:black">clickcount</span> = Number(sessionStorage.<span class="jspropertycolor"
+                            style="color:black">clickcount</span>) + <span class="jsnumbercolor" style="color:red">1</span>;<br>}
+                        <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br>&nbsp; sessionStorage.<span
+                            class="jspropertycolor" style="color:black">clickcount</span> = <span class="jsnumbercolor"
+                            style="color:red">1</span>;<br>}<br>
+                        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jsstringcolor" style="color:brown">"Haz clickeado el bóton "</span> +<br>
+                        sessionStorage.<span class="jspropertycolor" style="color:black">clickcount</span> + <span class="jsstringcolor"
+                            style="color:brown">" vez(veces) en esta sesión."</span>;<span class="jsnumbercolor" style="color:red">
+                        </span> </span>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptwebstorage.js"></script>
+</body>
+</html>
