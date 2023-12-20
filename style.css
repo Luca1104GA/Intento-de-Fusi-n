@@ -339,6 +339,22 @@ main.min-main{
     margin-left: 80px;
 }
 
+/* ---------------------------------------> DragDrop marco */
+
+.div1 {
+    width: 140px;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.div2 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
 
 /* -------------------------------> Estilo de tabla cebra letra oscura */
 .cebranegra tr:nth-child(even) {

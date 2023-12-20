@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Drag and Drop API</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="download-outline"></ion-icon>
+                <span>Drag and Drop!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="seccionapis.html">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>Geolocation!</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="download"></ion-icon>
+                        <span>Arrastrar/Soltar</span>
+                </li>
+                <li>
+                    <a href="#all2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Arrastar y soltar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte del nav...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Ejemplo Drag/Drop </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>draggable</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>ondragstart</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>ondragover</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#all8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>ondrop</code></span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="all1">
+
+            <h1 title="HTML Drag and Drop API">HTML API de arrastrar y soltar</h1>
+            <p><i>En HTML, cualquier elemento se puede arrastrar y soltar.</i></p>
+
+            <h4>Ejemplo</h4>
+
+            <div class="centrado" style="display: flex;">
+                <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-right: 20px;">
+                    <img src="imagenes/img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="drag1" alt="W3Escuelas">
+                </div>
+                    
+                <div class="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+            <hr>
+
+            <h2 title="Drag and Drop" id="all2">Arrastar y soltar</h2>
+            <p>
+                Arrastrar y soltar es una característica muy común. <br>
+                Es cuando "agarras" un objeto y lo arrástras a una ubicación diferente.
+            </p>
+            <hr>
+
+            <h3 id="all3">Soporte del navegador</h3>
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que admite totalmente la función de <i>Drag/Drop</i>
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>API</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code class="tag">Drag and Drop</code></td>
+                        <td>4.0</td>
+                        <td>9.0</td>
+                        <td>3.5</td>
+                        <td>6.0</td>
+                        <td>12.0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2 id="all4">Ejemplo de Drag/Drop en HTML</h2>
+            <p><i>El siguiente ejemplo es un ejemplo simple de Drag/Drop</i></p>
+
+            <article class="ejemplo" style="background-color: aliceblue; color: black;">
+                <h4>Ejemplo</h4>
+
+                <div class="centrado">
+
+                    <div class="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <br>
+                    <img  id="drag2" src="imagenes/img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+                </div>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> HTML</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> allowDrop(ev)<span
+                            class="jsnumbercolor" style="color:red">
+                        </span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;ev.<span class="jspropertycolor" style="color:black">preventDefault</span>();<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> }<br><span class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> drag(ev)<span
+                            class="jsnumbercolor" style="color:red">
+                        </span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span> ev.<span class="jspropertycolor" style="color:black">dataTransfer</span>.<span class="jspropertycolor"
+                            style="color:black">setData</span>(<span class="jsstringcolor" style="color:brown">"text"</span>, ev.<span
+                            class="jspropertycolor" style="color:black">target</span>.<span class="jspropertycolor"
+                            style="color:black">id</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> }<br><span class="jsnumbercolor" style="color:red">
+                        </span> <br><span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">function</span> drop(ev)<span
+                            class="jsnumbercolor" style="color:red">
+                        </span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span> ev.<span class="jspropertycolor" style="color:black">preventDefault</span>();<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;<span class="jskeywordcolor" style="color:mediumblue">var</span> data = ev.<span
+                            class="jspropertycolor" style="color:black">dataTransfer</span>.<span class="jspropertycolor"
+                            style="color:black">getData</span>(<span class="jsstringcolor" style="color:brown">"text"</span>);<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;ev.<span class="jspropertycolor" style="color:black">target</span>.<span
+                            class="jspropertycolor" style="color:black">appendChild</span>(document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(data));<br><span class="jsnumbercolor" style="color:red">
+                        </span> }<br><span class="jsnumbercolor" style="color:red">
+                        </span> </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
+                            class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="div1"</span> ondrop<span class="attributevaluecolor"
+                                style="color:mediumblue">="drop(event)"</span>
+                            ondragover<span class="attributevaluecolor" style="color:mediumblue">="allowDrop(event)"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
+                            class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="drag1"</span> src<span class="attributevaluecolor"
+                                style="color:mediumblue">="img_logo.gif"</span> draggable<span class="attributevaluecolor"
+                                style="color:mediumblue">="true"</span>
+                            ondragstart<span class="attributevaluecolor" style="color:mediumblue">="drag(event)"</span> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="336"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="69"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <p><i>Puede paracer complicado, pero repasaremos las diferentes partes de un evento de arrastrar y soltar.</i></p>
+            </article>
+            <hr>
+
+            <h2 id="all5">Hacer que un elemento se pueda arrastrar</h2>
+            <p>
+                En primer lugar, para hacer que un elemento se pueda arrastrar, establezca el atributo 
+                <code class="red-text">draggable</code> en "true" :
+            </p>
+
+            <div class="w3-code w3-border notranslate jsHigh"
+                style="margin: 10px 50px 10px 50px; border-radius: 20px; text-align: left;">
+                <span class="jscolor" style="color:black">
+                    <div>
+                        &lt;img draggable=<span class="jsstringcolor" style="color:brown">"true"</span>&gt;</div>
+                </span>
+            </div>
+
+            <h3 id="all6">Qué arrastrar: ondragstart y setData()</h3>
+            <p>
+                Luego, especifique qué deberia suceder cuando se arrastra el elemento. <br><br>
+                En el ejemplo anterios, el atributo <code class="w3-codespan">ondragstart</code> llama a una función, arrastrar(evento), <br>
+                que especifica qué datos se arrastrarán. <br><br>
+                El método <code class="w3-codespan">dataTransfer.setData()</code>
+            </p>
+
+            <div class="w3-code w3-border notranslate jsHigh"
+                style="margin: 10px 50px 10px 50px; border-radius: 20px; text-align: left;">
+                <span class="jscolor" style="color:black">
+                    <div>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> drag(ev) {<br>&nbsp; ev.<span
+                            class="jspropertycolor" style="color:black">dataTransfer</span>.<span class="jspropertycolor"
+                            style="color:black">setData</span>(<span class="jsstringcolor" style="color:brown">"text"</span>,
+                        ev.<span class="jspropertycolor" style="color:black">target</span>.<span class="jspropertycolor"
+                            style="color:black">id</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span>}
+                    </div>
+                </span>
+            </div>
+
+            <p>
+                En este caso, el tipo de datos es "text" y el valor es la identificación del elemento que se puede arrastrar ("drag1"). 
+            </p>
+            <hr>
+
+            <h3 id="all7">Dónde soltar - ondragover</h3>
+            <p>
+                El evento <code class="w3-codespan">ondragover</code> especifica dónde se pueden soltar los datos arrastrados. <br><br>
+                De forma predeterminada, los datos/elementos no se pueden colocar en otros elementos. <br>
+                Para permitir un <i><b>drop</b></i>, debemos evitar el manejo predeterminado del elemento. <br><br>
+                Esto se hace llamando al método <code class="w3-codespan">event.preventDefault()</code> para el evento ondragover:
+            </p>
+
+            <div class="w3-code w3-border notranslate jsHigh" style="margin: 10px 50px 10px 50px; border-radius: 20px; text-align: left;">
+                <span class="jscolor" style="color:black">
+                    <span class="jsnumbercolor" style="color:red">
+                    </span>
+                    <div>
+                        <i><span class="jskeywordcolor" style="color:mediumblue">event</span></i>.<span class="jspropertycolor"
+                            style="color:black">preventDefault</span>()
+                    </div>
+                </span>
+            </div>
+            <hr>
+
+            <h3 id="all8">Haz el <i><b>drop</b></i> - ondrop</h3>
+            <p>
+                Cuando se sueltan los datos arrastrados, se produce un evento de colocación. <br><br>
+                En el ejemplo anterior, el atributo ondrop llama a una función, drop(event):
+            </p>
+
+            <div class="w3-code w3-border notranslate jsHigh" style="margin: 10px 50px 10px 50px; border-radius: 20px; text-align: left;">
+                <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                    </span>
+                    <div>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> drop(ev)<span class="jsnumbercolor"
+                            style="color:red">
+                        </span> {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span> ev.<span class="jspropertycolor" style="color:black">preventDefault</span>();<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> data = ev.<span
+                            class="jspropertycolor" style="color:black">dataTransfer</span>.<span class="jspropertycolor"
+                            style="color:black">getData</span>(<span class="jsstringcolor"
+                            style="color:brown">"text"</span>);<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;<span class="jsnumbercolor" style="color:red">
+                        </span> ev.<span class="jspropertycolor" style="color:black">target</span>.<span class="jspropertycolor"
+                            style="color:black">appendChild</span>(document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(data));<br><span class="jsnumbercolor" style="color:red">
+                        </span> }
+                    </div>
+                </span>
+            </div>
+
+            <p>Código explicado:</p>
+
+            <ul class="lista">
+                <li>
+                    Llame a <code class="w3-codespan">preventDefault()</code> para evitar que el navegador maneje los datos de forma
+                    predeterminada <br> (el valor predeterminado es abrir como enlace al soltar)
+                </li>
+                <li>
+                    Obtenga los datos arrastrados con el método <code class="w3-codespan">dataTransfer.getData()</code>. <br>
+                    Este método devolverá cualquier dato que se haya configurado en el mismo tipo en el método <code>setData()</code>
+                </li>
+                <li>
+                    Los datos arrastrados son la identificación del elemento arrastrado ("drag1")
+                </li>
+                <li>
+                    Agregue el elemento arrastrado al elemento de colocación
+                </li>
+            </ul>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptdragdrop.js"></script>
+</body>
+</html>
