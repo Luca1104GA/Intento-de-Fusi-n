@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Workers API</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="timer-outline"></ion-icon>
+                <span>Web Workers!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="indexfinal.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="seccionapis.html">
+                        <ion-icon name="location"></ion-icon>
+                        <span>Geolocation</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionapiarrastrarysoltar.html">
+                        <ion-icon name="download"></ion-icon>
+                        <span>Arrastrar/Soltar</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="seccionapiwebstorage.html">
+                        <ion-icon name="cloud-upload"></ion-icon>
+                        <span>Web Storage</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="timer"></ion-icon>
+                        <span>Trabajadores Web!</span>
+                </li>
+                <li>
+                    <a href="#an2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>¿Qué es?</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Soporte del nav...</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Ejemplo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Consultar soporte</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Crear un archivo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Crear un <i>object</i></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an8">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Terminar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an9">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Reutilizar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an10">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Código completo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#an11">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Worker y el DOM</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
+
+        <div class="Estilo_blanco3" id="an1">
+
+            <h1 title="HTML Web Workers API">API de trabajadores web HTML</h1>
+            <p><i>Un trabajador web es un JavaScript que se ejecuta en segundo plano, sin afectar el rendimiento de la página.</i></p>
+            <hr>
+
+            <h2 id="an2">¿Qué es un trabajador web?</h2>
+            <p>
+                Al ejecutar secuencias de comandos en una página HTML, la página deja de responder hasta que finaliza la secuencia de 
+                comandos. <br><br> Un trabajador web (web worker) es un JavaScript que se ejecuta en segundo plano, independiente de 
+                otros scripts, sin afectar el rendimiento de la página.<br> Puedes continuar haciendo lo que quiertas : hacer click,
+                seleccionar cosas, etc., mientras el trabajador web se ejecuta en segundo plano.
+            </p>
+            <hr>
+
+            <h3 id="an3">Soporte del navegador</h3>
+
+            <p>
+                Los números de la tabla especifican la primera versión del navegador que es totalmente compatible con Web Workers.
+            </p>
+
+            <table class="tablecebra4blanco">
+                <tbody>
+                    <tr class="w3-blue-grey">
+                        <th>API</th>
+                        <th><img src="imagenes/chrome.png" alt="Chrome" title="Chrome"></th>
+                        <th><img src="imagenes/compatible_edge.png" alt="Internet Explorer / Edge" title="Edge"></th>
+                        <th><img src="imagenes/compatible_firefox.png" alt="Firefox" title="Firefox"></th>
+                        <th><img src="imagenes/compatible_safari.png" alt="Safari" title="Safari"></th>
+                        <th><img src="imagenes/compatible_opera.png" alt="Opera" title="Opera"></th>
+                    </tr>
+                    <tr class="w3-pale-green">
+                        <td><code class="tag">Web Workers</code></td>
+                        <td>4.0</td>
+                        <td>10.0</td>
+                        <td>3.5</td>
+                        <td>4.0</td>
+                        <td>11.5</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2 id="an4">Ejemplo de Web Workers</h2>
+            <p><i>El siguiente ejemplo crea un Web Workers simple que cuenta números en segundo plano:</i></p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div style="background-color: rgb(3, 41, 51); padding: 10px;">
+                    <p>Contador de Numeros: <output id="result"></output></p>
+                    <div class="centrado" style="margin: 10px;">
+                        <button onclick="startWorker()">Start Worker</button> 
+                        <button onclick="stopWorker()">Stop Worker</button>
+                    </div>
+                    <p class="note"><strong>Nota:</strong> Internet Explorer 9 y versiones anteriores no dan soporte a Web Workers.</p>
+                </div>
+                <hr>
+
+                <h3 id="an5">Consultar soporte para Web Workers</h3>
+                <p>Antes de crear un Web Worker, verifique si el navegador del usuario lo admite:</p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <div>
+                            <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor"
+                                style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor"
+                                style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+                            </span>&nbsp;&nbsp;<span class="commentcolor" style="color:green">// Si! Web worker
+                                support!<br></span><span class="jsnumbercolor" style="color:red">
+                            </span> &nbsp; <span class="commentcolor" style="color:green">// <i>Algo de Código.....</i><br></span><span
+                                class="jsnumbercolor" style="color:red">
+                            </span> }<span class="jsnumbercolor" style="color:red">
+                            </span> <span class="jskeywordcolor" style="color:mediumblue">else</span> {<br><span class="jsnumbercolor"
+                                style="color:red">
+                            </span> &nbsp; <span class="commentcolor" style="color:green">// Sorry! No Web Worker
+                                support..<br></span><span class="jsnumbercolor" style="color:red">
+                            </span> }
+                        </div>
+                    </span>
+                </div>
+                <hr>
+
+                <h3 id="an6">Crear un archivo Web Worker</h3>
+                <p>
+                    Ahora, creemos nuestro Web Worker en un JavaScript externo.<br>
+                    Aquí, creamos un script que cuenta. El script se almacena en el archivo "demo_workers.js":
+                </p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+                        </span>
+                        <div>
+                            <span class="jskeywordcolor" style="color:mediumblue">var</span> i = <span class="jsnumbercolor"
+                                style="color:red">0</span>;<br><span class="jsnumbercolor" style="color:red">
+                            </span><br>
+                            <span class="jskeywordcolor" style="color:mediumblue">function</span> timedCount()<span
+                                class="jsnumbercolor" style="color:red">
+                            </span>{<br><span class="jsnumbercolor" style="color:red">
+                            </span> &nbsp;
+                            i = i + <span class="jsnumbercolor" style="color:red">1</span>;<br><span class="jsnumbercolor"
+                                style="color:red">
+                            </span> &nbsp;
+                            postMessage(i);<br><span class="jsnumbercolor" style="color:red">
+                            </span>&nbsp;&nbsp;setTimeout(<span class="jsstringcolor" style="color:brown">"timedCount()"</span>,<span
+                                class="jsnumbercolor" style="color:red">500</span>);<br><span class="jsnumbercolor" style="color:red">
+                            </span>}<br><span class="jsnumbercolor" style="color:red">
+                            </span><br>
+                            timedCount();
+                        </div>
+                    </span>
+                </div>
+
+                <p>
+                    La parte importante del código anterior en el método <code class="w3-codespan">postMessage()</code>, que se utiliza
+                    para publicar un mensaje en la página HTML. <br><br>
+                </p>
+                <p class="advertencia">
+                    <strong>Nota:</strong> Normalmente, los Web Workers no se utilizan para scripts tan simples, sino para tareas que 
+                    requieran más uso de CPU.
+                </p>
+                <hr>
+
+                <h3 id="an7">Crear un <i>Web Worker Object</i></h3>
+                <p>
+                    Ahora que tenemos el archivo Web Worker, debemos llamarlo desde una página HTML. <br><br>
+                    Las siguientes líneas verifican si el Worker ya existe; de lo contrario, crea un nuevo <i>Web Worker Object</i>
+                    y ejecuta el código en "demo_workers.js":
+                </p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <div>
+                            <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor"
+                                style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor"
+                                style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+                            </span> &nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span> Worker(<span
+                                class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor"
+                                style="color:red">
+                            </span> }
+                        </div>
+                    </span>
+                </div>
+
+                <p>
+                    Luego podremos enviar y recibir mensajes del Web Worker. <br><br>
+                    Agregue un detector de eventos "<code>onmessage</code>" al Web Worker.
+                </p>
+
+                <div class="w3-code notranslate jsHigh">
+                    <span class="jscolor" style="color:black">
+                        <div>
+                            w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span class="jskeywordcolor"
+                                style="color:mediumblue">function</span>(<span class="jskeywordcolor"
+                                style="color:mediumblue">event</span>){<br><span class="jsnumbercolor" style="color:red">
+                            </span>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
+                                class="jsstringcolor" style="color:brown">"result"</span>).<span class="jspropertycolor"
+                                style="color:black">innerHTML</span> = <span class="jskeywordcolor"
+                                style="color:mediumblue">event</span>.<span class="jspropertycolor"
+                                style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
+                            </span> };
+                        </div>
+                    </span>
+                </div>
+
+                <p>
+                    Cuando el Web Worker publica un mensaje, se ejecuta el código dentro del detector de eventos. <br>
+                    Los datos del Web Worker se almacenan en
+                    <code><span style="color: mediumblue;">event</span><span style="color: black;">.data;</span></code>
+                </p>
+                <hr>
+
+                <h3 id="an8">Terminar un Web Worker</h3>
+                <p>
+                    Cuando se crea un <i>Web Worker Object</i>, continuará escuchando mensajes (incluso después de que finalice el
+                    script externo ) hasta que finalice. <br><br> Para finalizar un Web Worker y liberar recursos del
+                    navegador/computadora, utilice el método <code class="w3-codespan">terminate()</code> :
+                </p>
+
+                <div class="w3-code notranslate">
+                    <div>w.terminate();</div>
+                </div>
+                <hr>
+
+                <h3 id="an9">Reutilizar el Web Worker</h3>
+
+                <p>Si configura la variable de trabajo como indefinida, una vez terminada, puede reutilizar el código:</p>
+
+                <div class="w3-code notranslate">
+                    <div>w = undefined;</div>
+                </div>
+                <hr>
+
+                <h3 id="an10">Código de ejemplo Web Worker completo</h3>
+                <p>
+                    Ya hemos visto el código del Worker en el archivo .js. <br>
+                    Acontinuación se muestra el código de la página HTML:
+                </p>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Count numbers: <span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>output<span
+                            class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+                                style="color:mediumblue">="result"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/output<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span
+                                class="attributevaluecolor" style="color:mediumblue">="startWorker()"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Start Worker<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span> <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> onclick<span
+                                class="attributevaluecolor" style="color:mediumblue">="stopWorker()"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Stop Worker<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">var</span> w;<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> startWorker()<span class="jsnumbercolor"
+                            style="color:red">
+                        </span>{<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;
+                        <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span class="jskeywordcolor"
+                            style="color:mediumblue">typeof</span>(Worker) !== <span class="jsstringcolor"
+                            style="color:brown">"undefined"</span>)<span class="jsnumbercolor" style="color:red">
+                        </span>{<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;&nbsp; <span class="jskeywordcolor" style="color:mediumblue">if</span> (<span
+                            class="jskeywordcolor" style="color:mediumblue">typeof</span>(w) == <span class="jsstringcolor"
+                            style="color:brown">"undefined"</span>) {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; w = <span class="jskeywordcolor" style="color:mediumblue">new</span>
+                        Worker(<span class="jsstringcolor" style="color:brown">"demo_workers.js"</span>);<br><span class="jsnumbercolor"
+                            style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp; }<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">onmessage</span> = <span
+                            class="jskeywordcolor" style="color:mediumblue">function</span>(<span class="jskeywordcolor"
+                            style="color:mediumblue">event</span>) {<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; document.<span class="jspropertycolor"
+                            style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jskeywordcolor" style="color:mediumblue">event</span>.<span class="jspropertycolor"
+                            style="color:black">data</span>;<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;&nbsp;&nbsp;};<br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;}
+                        <span class="jskeywordcolor" style="color:mediumblue">else</span><span class="jsnumbercolor" style="color:red">
+                        </span>{<br><span class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;&nbsp;
+                        document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor"
+                            style="color:brown">"result"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =
+                        <span class="jsstringcolor" style="color:brown">"Sorry! No Web Worker support."</span>;<br><span
+                            class="jsnumbercolor" style="color:red">
+                        </span> &nbsp;&nbsp;}<br><span class="jsnumbercolor" style="color:red">
+                        </span>}<br><span class="jsnumbercolor" style="color:red">
+                        </span><br>
+                        <span class="jskeywordcolor" style="color:mediumblue">function</span> stopWorker()<span class="jsnumbercolor"
+                            style="color:red">
+                        </span>{ <br><span class="jsnumbercolor" style="color:red">
+                        </span>&nbsp;&nbsp;w.<span class="jspropertycolor" style="color:black">terminate</span>();<br>&nbsp;&nbsp;w =
+                        undefined;<br><span class="jsnumbercolor" style="color:red">
+                        </span>}<br>
+                    </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="an11">Web Worker y el DOM</h2>
+
+            <p>
+                Dado que los Web Workers están en archivos externos, no tienen acceso a los siguientes <i>Objects</i> JavaScript:
+            </p>
+
+            <ul class="listacentrada" style="padding-top: 10px;"> 
+                <li>El <i>window object</i></li>
+                <li>El <i>document object</i></li>
+                <li>El <i>parent object</i></li>
+            </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="scriptfinal.js"></script>
+    <script src="script.js"></script>
+    <script src="scriptwebworkers.js"></script>
+</body>
+</html>
