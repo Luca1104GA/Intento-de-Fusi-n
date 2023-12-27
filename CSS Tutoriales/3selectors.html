@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/style.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="logo-css3"></ion-icon>
+                <span>Selectores CSS!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="maincsstutorial.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="remove-outline"></ion-icon>
+                        <span>Selectores</span>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="/usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <!-- <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button> -->
+
+        <div class="Estilo_blanco3" id="">
+            <h1 title="CSS Selectors">Selectores CSS</h1>
+            <hr>
+            <p><i>Un selector de CSS selecciona los elementos HTML a los que desea aplicar estilo.</i></p>
+            <hr>
+            <p>
+                Los selectores CSS se utilizan para "buscar" (o seleccionar) los elementos HTML a los que desea aplicar estilo.
+                <br><br> Podemos dividir los selectores CSS en cinco categorías:
+            </p>
+            <ul class="lista" style="margin: 20px;">
+                <li>Selectores simples - seleccione elementos según el <i>name, ID, class</i>(nombre, identificación, clase).</li>
+                <li>
+                    <a href="28combinators.html" style="text-decoration: underline;">Selectores combinados</a> - Selecciona elementos
+                    en función de una relación especifica entre ellos.
+                </li>
+                <li>
+                    <a href="29pseudo-class.html" style="text-decoration: underline;">Selectores de pseudoclase</a> - Seleccionan 
+                    elementos según un determinado estado.
+                </li>
+                <li>
+                    <a href="30pseudo-element.html" style="text-decoration: underline;">Selectores de pseudoelementos</a> - Seleccionan 
+                    y aplican estilo a una parte de un elemento.
+                </li>
+                <li>
+                    <a href="36attr-selectors.html" style="text-decoration: underline;">Selectores de atributos</a> - Seleccione 
+                    elementos según un atributo o valor de atributo.
+                </li>
+            </ul>
+
+            <p><i>Esta página explicará los selectores CSS más básicos.</i></p>
+            <hr>
+
+            <h2 title="The CSS element Selector">El selector de elementos CSS</h2>
+            <p>El selector de elementos selecciona elementos HTML según el nombre del elemento.</p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>Aquí todos los elementos <code>&lt;p&gt;</code> de la página estarán alineados al centro, con un color de texto rojo:</p>
+                
+                <div style="margin: 20px; background-color: white; color: red; padding: 10px;">
+                    <p>Cada párrafo se verá afectado por el estilo.</p>
+                    <p>¡Yo también!</p>
+                    <p>¡Y yo!</p>
+                </div>
+                
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                    </span>
+                </div>
+            </article>
+            <hr>
+
+            <h2>El selector de ID</h2>
+            <p>
+                El selector de ID utiliza el atributo de identificación de un elemento HTML para seleccionar un elemento específico.
+                <br><br>
+                La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se usa para
+                seleccionar un elemento único.<br><br> Para seleccionar un elemento con una ID específica, escriba un carácter
+                <i>almohadilla</i> (#), seguido de la identificación del elemento.
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>La siguiente regla CSS se aplicará al elemento HTML con id="para1":</p>
+
+                <div style="margin: 20px; background-color: white; color: red; padding: 10px;">
+                    <p>¡Hola Mundo!</p>
+                    <p style="color: black; text-align: left;">Este párrafo no se ve afectado por el estilo.</p>
+                </div>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        #para1
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                    </span>
+                </div>
+
+
+
+            </article>
+
+
+
+
+
+
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
+                <a href="2syntax.html" class="botonanterior">Anterior</a><a href="4howtocss.html" class="botonsiguiente">Siguiente</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptfinal.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
