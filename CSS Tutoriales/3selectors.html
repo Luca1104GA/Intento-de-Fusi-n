@@ -138,12 +138,6 @@
                 <h4>Ejemplo</h4>
                 <p>Aquí todos los elementos <code>&lt;p&gt;</code> de la página estarán alineados al centro, con un color de texto rojo:</p>
                 
-                <div style="margin: 20px; background-color: white; color: red; padding: 10px;">
-                    <p>Cada párrafo se verá afectado por el estilo.</p>
-                    <p>¡Yo también!</p>
-                    <p>¡Y yo!</p>
-                </div>
-                
                 <div class="w3-code notranslate cssHigh">
                     <span class="cssselectorcolor" style="color:brown">
                         p
@@ -158,6 +152,9 @@
                         </span><span class="cssdelimitercolor" style="color:black">}</span>
                     </span>
                 </div>
+
+                <img src="/imagenes/rojoyalineado2.png" alt="rojo2" style="width: 100%; height: auto; margin: 20px 0px;">
+                
             </article>
             <hr>
 
@@ -174,11 +171,6 @@
                 <h4>Ejemplo</h4>
                 <p>La siguiente regla CSS se aplicará al elemento HTML con id="para1":</p>
 
-                <div style="margin: 20px; background-color: white; color: red; padding: 10px;">
-                    <p>¡Hola Mundo!</p>
-                    <p style="color: black; text-align: left;">Este párrafo no se ve afectado por el estilo.</p>
-                </div>
-
                 <div class="w3-code notranslate cssHigh">
                     <span class="cssselectorcolor" style="color:brown">
                         #para1
@@ -194,13 +186,85 @@
                     </span>
                 </div>
 
+                <img src="/imagenes/rojoylaineado1.png" alt="rojoyalineado" style="width: 100%; height: auto; margin: 20px 0px;">
 
+                <p class="advertencia"><i><b>Nota:</b>¡El nombre del ID no puede comenzar con un número!</i></p>
 
             </article>
+            <hr>
+            
+            <h2 title="The CSS class Selector">El selector de clases CSS</h2>
 
+            <p>
+                El selector de clases selecciona elementos HTML con un atributo de clase (<i>class</i>) específico. <br><br>
+                Para seleccionar elementos con una clase específica, escriba un carácter de punto (.), seguido del nombre de clase.
+            </p>
 
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>
+                    En este ejemplo, todos los elementos HTML con <code>class="center"</code> serán rojos y estarán alineados en el
+                    centro:
+                </p>
 
+                <div class="w3-code notranslate cssHigh">
+                        <span class="cssselectorcolor" style="color:brown">
+                            .center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                                style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                        class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                        style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                    style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                        class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                                class="cssdelimitercolor" style="color:black">}</span>
+                        </span>
+                </div>
 
+                <img src="/imagenes/rojoyalineadoalcentro.png" alt="rojo" style="width: 100%; height: auto; margin: 20px 0px;">
+
+                <p><i>Tambíen puede específicar que una clase solo deba afectar a elementos HTML específicos.</i></p>
+
+                <h4>Ejemplo</h4>
+                <p>
+                    En este ejemplo, solo los elementos <code>&lt;p&gt;</code> con <code>class="center"</code> serán rojos y estarán
+                    alineados al centro:
+                </p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p.center <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span>
+                    </span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado3.png" alt="rojo3" style="width: 100%; height: auto; margin: 20px 0px;">
+
+                <p><i>Los elementos HTML también puenden hacer referencia a más de una clase.</i></p>
+
+                <h4>Ejemplo</h4>
+                <p>
+                    En este ejemplo, el estilo del elemento <code>&lt;p&gt;</code> se ajustará a <code>class="center</code> y
+                    <code>class="large"</code>:
+                </p>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                            class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
+                                style="color:mediumblue">="center large"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Este párrafo hace referencia a dos clases.<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado4.png" alt="rojo4" style="width: 100%; height: auto; margin: 20px 0px;">
+
+                <p class="advertencia"><i><b>Nota:</b> ¡El nombre de una clase no puede comenzar con un número!</i></p>
+
+            </article>
 
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
