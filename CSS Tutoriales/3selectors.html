@@ -45,9 +45,45 @@
                         <span>Selectores</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#c1">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Selector</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>ID</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>class</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Selector Universal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c6">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Selector agrupación</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#c7">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Selectores Simples</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -96,11 +132,11 @@
     
     <main>
 
-        <!-- <button id="botonIrAbajo">Ir al Final</button>
-        <button id="botonVolverArriba">Volver al inicio</button> -->
+        <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button>
 
-        <div class="Estilo_blanco3" id="">
-            <h1 title="CSS Selectors">Selectores CSS</h1>
+        <div class="Estilo_blanco3" id="c">
+            <h1 title="CSS Selectors" id="c1">Selectores CSS</h1>
             <hr>
             <p><i>Un selector de CSS selecciona los elementos HTML a los que desea aplicar estilo.</i></p>
             <hr>
@@ -131,7 +167,7 @@
             <p><i>Esta página explicará los selectores CSS más básicos.</i></p>
             <hr>
 
-            <h2 title="The CSS element Selector">El selector de elementos CSS</h2>
+            <h2 title="The CSS element Selector" id="c2">El selector de elementos CSS</h2>
             <p>El selector de elementos selecciona elementos HTML según el nombre del elemento.</p>
 
             <article class="ejemplo">
@@ -158,7 +194,7 @@
             </article>
             <hr>
 
-            <h2>El selector de ID</h2>
+            <h2 id="c3">El selector de ID</h2>
             <p>
                 El selector de ID utiliza el atributo de identificación de un elemento HTML para seleccionar un elemento específico.
                 <br><br>
@@ -193,7 +229,7 @@
             </article>
             <hr>
             
-            <h2 title="The CSS class Selector">El selector de clases CSS</h2>
+            <h2 title="The CSS class Selector" id="c4">El selector de clases CSS</h2>
 
             <p>
                 El selector de clases selecciona elementos HTML con un atributo de clase (<i>class</i>) específico. <br><br>
@@ -265,6 +301,144 @@
                 <p class="advertencia"><i><b>Nota:</b> ¡El nombre de una clase no puede comenzar con un número!</i></p>
 
             </article>
+            <hr>
+
+            <h2 title="The CSS Universal Selector" id="c5">El selector universal de CSS</h2>
+            <p><i>El selector universal (*) selecciona todos los elementos HTML de la página.</i></p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>La siguiente regla CSS afectará a todos los elementos HTML de la página:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        *
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> blue<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                    </span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado5.png" alt="rojo4" style="width: 100%; height: auto; margin: 20px 0px;">
+
+            </article>
+            <hr>
+
+            <h2 title="The CSS Grouping Selector" id="c6">El selector de agrupación CSS</h2>
+            <p>El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo.</p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>Mire el siguiente código CSS (los elementos h1, h2 y p tienen las mismas definiciones de estilo):</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        h1
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                        <br>h2
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span><br>
+                        <br>p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+            </article>
+
+            <p>
+                Será mejor agrupar los selectores para minimizar el código. <br><br>
+                Para agrupar selectores, separe cada selector con una coma.
+            </p>
+
+            <article class="ejemplo">
+
+                <h4>Ejemplo</h4>
+                <p>En este ejemplo hemos agrupado los selectores del código anterior:</p>
+    
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        h1, h2, p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> center<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado6.png" alt="rojo4" style="width: 100%; height: auto; margin: 20px 0px;">
+
+            </article>
+            <hr>
+
+            <h2 title="All CSS Simple Selectors" id="c7">Todos los selectores simples de CSS</h2>
+            <table class="tablecebra4blanco">
+                <tr class="w3-red">
+                    <th>Selector</th>
+                    <th>Ejemplo</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>#nombre</td>
+                    <td>Selecciona el elemento con <code>ID="nombre"</code></td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>.intro</td>
+                    <td>Selecciona TODOS los elementos con la <code>class="intro"</code></td>
+                </tr>
+                <tr>
+                    <td>element</td>
+                    <td>p</td>
+                    <td>Selecciona TODOS los elementos <code>&lt;p&gt;</code></td>
+                </tr>
+                <tr>
+                    <td>element.class</td>
+                    <td>p.intro</td>
+                    <td>Selecciona SOLO los elementos <code>&lt;p&gt;</code> con la <code>class="intro"</code></td>
+                </tr>
+                <tr>
+                    <td>element,element,..</td>
+                    <td>div, p</td>
+                    <td>Selecciona todos los elementos <code>&lt;p&gt;</code> y <code>&lt;div&gt;</code></td>
+                </tr>
+                <tr>
+                    <td><span style="text-decoration: underline;">*</span></td>
+                    <td>*</td>
+                    <td>Selecciona TODOS los elementos</td>
+                </tr>
+                
+            </table>
 
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
