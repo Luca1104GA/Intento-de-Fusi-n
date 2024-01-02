@@ -332,19 +332,113 @@
             <hr>
             
             <h2>Múltiples hojas de estilo</h2>
-            <p class="">
+            <p>
                 Si se han definido algunas propiedades para el mismo selector (elemento) en diferentes hojas de estilo,<br>
                 se utilizará el valor de la última hoja de estilo leída.
             </p>
 
             <article class="ejemplo">
-                <p>Supongamos que una <i class="red-text"><b>hoja de estilo</b></i></p>
+                <p>
+                    Supongamos que una <i class="red-text"><b>hoja de estilo externa</b></i> tiene el siguiente estilo para el elemento
+                    <code class="w3-codespan">&lt;h1&gt;</code>:
+                </p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        h1
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> navy<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <p>
+                    Luego, supongamos que una <i class="red-text"><b>hoja de estilo interna</b></i> también tiene el siguiente estilo
+                    para el elemento <code class="w3-codespan">&lt;h1&gt;</code>:
+                </p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        h1
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> orange<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span>&nbsp;&nbsp;&nbsp;
+                            <br></span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <h4>Ejemplo</h4>
+                <p>
+                    Si el estilo interno se define <i class="w3-text-black">después</i> del enlace a la hoja de estilo externa, los
+                    elementos <code class="w3-codespan">&lt;h1&gt;</code> serán "naranja":
+                </p>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor"
+                            style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
+                            type<span class="attributevaluecolor" style="color:mediumblue">="text/css"</span> href<span
+                                class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
+                        style="color:brown"><br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> orange<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado7.png" alt="rojo7" style="width: 100%; height: auto; margin: 20px 0px;">
+
+                <h4>Ejemplo</h4>
+                <p>
+                    Sin embargo, si el estilo interno se define <i class="w3-text-black">antes</i> del enlace a la hoja de estilo
+                    externa, los elementos <code class="w3-codespan">&lt;h1&gt;</code> serán "azul marino":
+                </p>
+
+                <div class="w3-code notranslate htmlHigh htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>h1 <span
+                            class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> orange<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
+                            rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> type<span
+                                class="attributevaluecolor" style="color:mediumblue">="text/css"</span> href<span
+                                class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <img src="/imagenes/rojoyalineado8.png" alt="rojo8" style="width: 100%; height: auto; margin: 20px 0px;">
 
             </article>
+            <hr></hr>
+
+            <h2 title="Cascading Order">Orden en cascada</h2>
 
 
 
 
+
+
+            
 
 
 
