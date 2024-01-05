@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Comments</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="logo-css3"></ion-icon>
+                <span>CSS Comments!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="maincsstutorial.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                        <span>Comentarios CSS!</span>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="/usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <!-- <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button> -->
+
+        <div class="Estilo_blanco3" id="">
+            <h1>Comentarios CSS</h1>
+            <hr>
+            <p>
+                <i>Los comentarios CSS no se muestran en el navegador, pero pueden ayudar a documentar su código fuente.</i>
+            </p>
+            <hr>
+
+            <p>
+                Los comentarios se utilizan para explicar el código y pueden ayudar cuando edite el código fuente en una fecha
+                posterior. <br><br>
+                <i>Los navegadores ignoran los comentarios.</i> <br><br>
+                Un comentario CSS se coloca dentro del elemento <code class="w3-codespan">&lt;style&gt;</code>, comienza <code
+                    class="w3-codespan">/*</code> y termina con <code class="w3-codespan">*/</code>
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        <span class="commentcolor" style="color:green">/* Este es un comentario de una sola línea */</span><br>p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <p>Puedes agregar comentarios donde quieras en el código:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span>&nbsp;
+                            <span class="commentcolor" style="color:green">/* Establece el color del texto en rojo */</span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <p>Incluso en medio de una línea de código:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> <span class="commentcolor" style="color:green">/*Rojo*/</span>red<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span>&nbsp;<br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <p>Los comentarios también pueden abarcar varias líneas:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        <span class="commentcolor" style="color:green">/* Esto es<br>un comentario<br>con multiples lineas */</span>
+                        <br><br>p
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+                    </span>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 title="HTML and CSS Comments">Comentarios HTML Y CSS</h2>
+            <p>
+                En el tutorial de HTML, aprendiste que puedes agregar comentarios a tu fuente HTML usando la sintaxis <code
+                    class="w3-codespan">&lt;!--...--&gt;</code> <br><br> En el siguiente ejemplo, utilizaremos una combinación de
+                comentarios HTML y CSS:
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>p <span
+                            class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* Establece el
+                                color del texto en rojo */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+                        <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Mi título<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!--
+                        Estos párrafos estarán en rojo --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>¡Hola Mundo!<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Este párrafo está diseñado con CSS.<span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Los comentarios HTML y CSS no se muestran en el resultado.<span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br>
+                </div>
+                 
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
+                <a href="04-howtocss.html" class="botonanterior">Anterior</a><a href="06-colors.html" class="botonsiguiente">Siguiente</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptfinal.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
