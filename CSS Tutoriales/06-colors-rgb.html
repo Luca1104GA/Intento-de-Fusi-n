@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS RGB y RGBA</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="color-palette-outline"></ion-icon>
+                <span>RGB y RGBA!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="maincsstutorial.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="06-colors.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>Colors!</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-hex.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>HEX</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-hsl.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>HSL</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                        <span>RGB y RGBA!</span>
+                </li>
+                <li>
+                    <a href="#f1">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Valores RGB</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#f2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Valores RGBA</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="/usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <!-- <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button> -->
+
+        <div class="Estilo_blanco3" id="f">
+            <h1>Colores CSS RGB</h1>
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px 0px 0px 0px;">
+                <a href="06-colors.html" class="botonanterior">Anterior</a><a href="06-colors-hex.html" class="botonsiguiente">Siguiente</a>
+            </div>
+            <hr>
+            <p>
+                <i>Un valor de color RGB representa fuentes de luz <span class="w3-text-red">ROJA</span>, <span
+                    class="w3-text-green">VERDE</span> Y <span class="w3-text-blue">AZUL</span>.</i>
+            </p>
+            <hr>
+
+            <h2 id="f1">Valor RGB</h2>
+            <p style="margin-bottom: 20px;">
+                En CSS, un color se puede especificar como un valor RGB mediante esta fórmula: <br><br>
+                <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">rgb (<span
+                        class="w3-text-red">ROJO</span>, <span class="w3-text-green">VERDE</span>, <span
+                        class="w3-text-blue">AZUL</span>)</span> <br><br>
+                Cada parámetro, rgb(255,0,0) se muestra en rojo, porque el rojo está configurado en su valor más alto (255) y los
+                demás están configurados en 0. <br><br> Para mostrar negro, establezca todos los parámetros de color en 0, así:
+                rgb(0,0,0). <br><br> Para mostrar blanco, configure todos los parámetros de color en 255, así: rgb(255,255,255).
+                <br><br> Experimente mezclano los valores RGB a continuación:
+            </p>
+
+            <div class="w3-container xw3-light-grey">
+                <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                        <div id="rgbresult" style="line-height: 80px; background-color: rgb(255, 255, 120);">
+                            <p id="rgbresulttext"
+                                style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New , Courier, monospace; color: rgb(31, 45, 61);">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">RGB(255, 255, 120)</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                </div>
+                <div class="w3-row w3-container">
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">ROJO</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed" value="255"
+                            min="0" max="255">
+                        <div id="valRed2" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">255</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">VERDE</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideGreen" name="slideGreen"
+                            value="99" min="0" max="255">
+                        <div id="valGreen2" xstyle="background-color:#00ff00;border-radius:5px;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">255</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">AZUL</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideBlue" name="slideBlue" value="71"
+                            min="0" max="255">
+                        <div id="valBlue2" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">120</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-row w3-center"
+                    style="line-height:80px;color:white;background-color: black;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</div>
+                    </div>
+                </div>
+
+                <p style="margin: 20px;">Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuentes de luz:</p>
+
+                <div class="w3-row w3-center"
+                    style="line-height:80px;color:white;background-color: black;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(90, 90, 90);">rgb(90, 90, 90)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(120, 120, 120);">rgb(120, 120, 120)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(210, 210, 210);color:#555555">rgb(210, 210, 210)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:rgb(240, 240, 240);color:#555555">rgb(240, 240, 240)</div>
+                    </div>
+                </div>
+            </article>
+            <hr>
+
+            <h2 id="f2">Valor RGBA</h2>
+            <p style="margin-bottom: 20px;">
+                Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa, que especifica la opacidad del color. <br>
+                <br>Un valor de color RGBA se especifica con: <br><br>
+                <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">rgb (<span
+                    class="w3-text-red">ROJO</span>, <span class="w3-text-green">VERDE</span>, <span
+                    class="w3-text-blue">AZUL</span>, ALFA)</span> <br><br>
+                El parámetro alfa es un número entre 0,0 (completamente transparente) y 1,0 (nada transparente): <br><br>
+                Experimente mezclando los valores RGBA a continuación:
+            </p>
+
+            <div class="w3-container xw3-light-grey">
+                <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                        <div id="rgbaresult" style="line-height: 80px; background-color: rgba(255, 99, 71, 0.5);">
+                            <p id="rgbaresulttext"
+                                style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New, Courier, monospace; color: rgb(255, 255, 255);">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">rgba(255, 99, 71, 0,5)</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                </div>
+                <div class="w3-row w3-container">
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">ROJO</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA"
+                            value="255" min="0" max="255">
+                        <div id="valRed2A" xstyle="background-color:red;border-radius:5px;color:white;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">255</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">VERDE</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA"
+                            value="99" min="0" max="255">
+                        <div id="valGreen2A" xstyle="background-color:#00ff00;border-radius:5px;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">99</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">AZUL</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA"
+                            value="71" min="0" max="255">
+                        <div id="valBlue2A" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">71</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">ALFA</font>
+                            </font>
+                        </p>
+                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlphaA" name="slideAlphaA"
+                            value="5" min="0" max="10">
+                        <div id="valAlpha2A" xstyle="background-color:blue;border-radius:5px;color:white;opacity:0.8">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">0,5</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="notranslate w3-white">
+                    <div class="w3-row w3-center" style="
+                                                        line-height:80px;
+                                                        color:white;
+                                                        font-size:20px;
+                                                        font-weight:bold;
+                                                        font-family:Consolas, 'Courier New', Courier, monospace;
+                                                        background-image:url(https://www.w3schools.com/css/img_bg_eyeicon.png), url(https://www.w3schools.com/css/img_bg_transparent.gif);
+                                                        background-repeat:no-repeat, repeat;
+                                                        background-position:center, top left;
+                                                        background-color:#ffffff;
+                                                        ">
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 0);color:#555555;">rgba(255, 99, 71, 0)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 0.2);color:#555555;">rgba(255, 99, 71, 0.2)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+
+
+
+
+
+
+
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
+                <a href="06-colors.html" class="botonanterior">Anterior</a><a href="06-colors-hex.html" class="botonsiguiente">Siguiente</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptfinal.js"></script>
+    <script src="/script.js"></script>
+    <script src="rgbresult.js"></script>
+</body>
+</html>

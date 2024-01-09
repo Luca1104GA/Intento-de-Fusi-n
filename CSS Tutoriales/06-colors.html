@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingrese Title</title>
+    <title>CSS Colors</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -19,8 +19,8 @@
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon name="book-outline"></ion-icon>
-                <span>Inserte Titulo!</span>
+                <ion-icon name="logo-css3"></ion-icon>
+                <span>CSS Colors!</span>
             </div>
             <button class="boton">
                 <ion-icon id="cloud" name="add-outline"></ion-icon>
@@ -38,16 +38,59 @@
                     </a>
                 </li>
                 <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="06-colors-rgb.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>RGB</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-hex.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>HEX</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-hsl.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>HSL</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
                     <ion-icon name="logo-reddit"></ion-icon>
-                        <span>Inserte Titulo!</span>
+                        <span>Colores en CSS!</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#e1">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>Nombres de colores</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Color de fondo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Color del texto</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Color del borde</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#e5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Valores de color</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -99,9 +142,287 @@
         <!-- <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
-        <div class="Estilo_blanco3" id="">
-            <h1></h1>
-            <p></p>
+        <div class="Estilo_blanco3" id="e">
+            <h1>Colores CSS</h1>
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px 0px 0px 0px;">
+                <a href="05-comments.html" class="botonanterior">Anterior</a><a href="06-colors-rgb.html" class="botonsiguiente">Siguiente</a>
+            </div>
+            <hr>
+            <p><i>Los colores se específican utilizando nombres de colores predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.</i></p>
+            <hr>
+
+            <h2 id="e1">Nombres de colores CSS</h2>
+            <p>En CSS, se puede especificar un color utilizando un nombre de color predefinido:</p>
+
+            <div class="w3-row w3-center" style="margin: 10px; ;line-height:80px;color:white;">
+                <div class="w3-col l3 m6">
+                    <div style="background-color:tomato;">Tomato</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:orange;">Orange</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:dodgerblue;">DodgerBlue</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:mediumseagreen;">MediumSeaGreen</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:gray;">Gray</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:slateblue;">SlateBlue</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:violet;">Violet</div>
+                </div>
+                <div class="w3-col l3 m6">
+                    <div style="background-color:lightgray;color:#444444">LightGray</div>
+                </div>
+            </div>
+
+            <p>
+                CSS/HTML admite <a href="https://www.w3schools.com/colors/colors_names.asp" target="_blank"
+                    style="text-decoration: underline; color: red;">140 nombres de colores estándar</a>.
+            </p>
+            <hr>
+
+            <h2 id="e2">Color de fondo (Background Color)</h2>
+            <p>Puede establecer el color de fondo para los elementos HTML:</p>
+
+            
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                            class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                                style="color:mediumblue">="background-color:DodgerBlue;"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Hola Mundo<span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red">
+                            style<span class="attributevaluecolor"
+                                style="color:mediumblue">="background-color:Tomato;"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Lorem
+                    ipsum...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <div style="background-color:dodgerblue;  text-align:center;color:white;font-size:34px;">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">Hola Mundo</font>
+                    </font>
+                </div>
+    
+                <div class="w3-container" style="background-color:tomato;color:white;"><br>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+                            dolore magna aliquam erat volutpat. </font>
+                        <font style="vertical-align: inherit;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                            suscipit lobortis nisl ut aliquip ex ea commodo consequat.</font>
+                    </font><br><br>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="e3">Color del texto (Text Color)</h2>
+            <p>Puede configurar el color del texto:</p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                            class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                                style="color:mediumblue">="color:Tomato;"</span></span><span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span>Hola
+                    Mundo<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red">
+                            style<span class="attributevaluecolor" style="color:mediumblue">="color:DodgerBlue;"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Lorem
+                    ipsum...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red">
+                            style<span class="attributevaluecolor" style="color:mediumblue">="color:MediumSeaGreen;"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>Ut wisi
+                    enim...<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <div style="background-color: white;">
+                    <h3 style="color:tomato">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Hola Mundo</font>
+                        </font>
+                    </h3>
+    
+                    <p style="color:dodgerblue">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</font>
+                        </font>
+                    </p>
+    
+                    <p style="color:mediumseagreen">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+                                suscipit lobortis nisl ut aliquip ex ea commodo consequat.</font>
+                        </font>
+                    </p>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="e4">Color del borde (Border Color)</h2>
+            <p>Puedes establecer el color de los bordes:</p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-code notranslate htmlHigh">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                            class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                                style="color:mediumblue">="border:2px
+                                solid Tomato;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Hola
+                    Mundo<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                            style<span class="attributevaluecolor" style="color:mediumblue">="border:2px
+                                solid DodgerBlue;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Hola
+                    Mundo<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                            class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                            style<span class="attributevaluecolor" style="color:mediumblue">="border:2px
+                                solid Violet;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Hola
+                    Mundo<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+
+                <div style="background-color: white; padding: 10px;">
+                    <h2 style="border: 2px solid Tomato;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Hola Mundo</font>
+                        </font>
+                    </h2>
+
+                    <h2 style="border: 2px solid DodgerBlue;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Hola Mundo</font>
+                        </font>
+                    </h2>
+
+                    <h2 style="border: 2px solid Violet;">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Hola Mundo</font>
+                        </font>
+                    </h2>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="e5">Valores de color (Color Values)</h2>
+            <p>
+                En CSS, los colores también se pueden especificar usando valores RGB, HEX, HSL, RGBA y HSLA: <br><br>
+                Resultados que derivan en el mismo nombre del color "Tomato" :
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div style="background-color: white; padding: 10px;">
+    
+                    <div class="w3-center"
+                        style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                        <div style="background-color:rgb(255, 99, 71);margin:10px 0;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">RGB(255, 99, 71)</font>
+                            </font>
+                        </div>
+                        <div style="background-color:#ff6347;margin:10px 0;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">#ff6347</font>
+                            </font>
+                        </div>
+                        <div style="background-color:hsl(9, 100%, 64%);margin:10px 0;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">hsl(9, 100%, 64%)</font>
+                            </font>
+                        </div>
+                    </div>
+
+                    <p style="color: black;">Igual que el nombre del color "Tomato", pero 50% transparente:</p>
+
+                    <div class="w3-center"
+                        style="line-height:60px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                        <div style="background-color:rgba(255, 99, 71, 0.5);margin:10px 0;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">rgba(255, 99, 71, 0,5)</font>
+                            </font>
+                        </div>
+                        <div style="background-color:hsla(9, 100%, 64%, 0.5);margin:10px 0;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">hsla(9, 100%, 64%, 0,5)</font>
+                            </font>
+                        </div>
+                    </div>
+    
+                    <div class="w3-code notranslate htmlHigh">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span
+                                class="attributecolor" style="color:red"> style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="background-color:rgb(255,
+                                    99, 71);"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>...<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor"
+                                style="color:red"> style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="background-color:#ff6347;"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>...<span class="tagnamecolor" style="color:brown"><span
+                                class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red">
+                                style<span class="attributevaluecolor" style="color:mediumblue">="background-color:hsl(9,
+                                    100%, 64%);"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>...<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor"
+                                style="color:red"> style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="background-color:rgba(255,
+                                    99, 71, 0.5);"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>...<span
+                            class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
+                                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                            style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor"
+                                style="color:red"> style<span class="attributevaluecolor"
+                                    style="color:mediumblue">="background-color:hsla(9,
+                                    100%, 64%, 0.5);"</span></span><span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>...<span class="tagnamecolor" style="color:brown"><span
+                                class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                                style="color:mediumblue">&gt;</span></span>
+                    </div>
+
+                </div>
+
+            </article>
+            <hr>
+
+            <div class="advertencia" style="padding-top: 1px; margin: 10px;">
+                <h4 style="text-align: left; padding-left: 10px;">Más información sobre los valores de color</h4>
+                <p style="text-align: left; padding-left: 10px;">
+                    Aprenderá más sobre <a href="06-colors-rgb.html" target="_blank"
+                        style="text-decoration: underline; color: red;">RGB</a>, <a href="06-colors-hex.html" target="_blank"
+                        style="text-decoration: underline; color: red;">HEX</a> y <a href="06-colors-hsl.html" target="_blank"
+                        style="text-decoration: underline; color: red;">HSL</a> en los próximos capítulos.
+                </p>
+            </div>
 
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">

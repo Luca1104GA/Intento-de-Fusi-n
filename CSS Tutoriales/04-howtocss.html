@@ -45,9 +45,33 @@
                         <span>How to add CSS</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#d1">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>CSS externo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#d2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>CSS interno</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#d3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Css en línea</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#d4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Múltiples hojas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#d5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Orden en cascada</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -101,6 +125,9 @@
 
         <div class="Estilo_blanco3" id="d">
             <h1 title="How To Add CSS">Cómo agregar CSS</h1>
+            <div class="centrado" style="display: flex; justify-content: space-around;">
+                <a href="03-selectors.html" class="botonanterior">Anterior</a><a href="05-comments.html" class="botonsiguiente">Siguiente</a>
+            </div>
             <hr>
             <p>
                 <i>Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la información de la hoja
@@ -118,7 +145,7 @@
             </ul>
             <hr>
 
-            <h2 title="External CSS">CSS externo</h2>
+            <h2 title="External CSS" id="d1">CSS externo</h2>
             <p>
                 Con una hoja de estilo externia, puedes cambiar el aspecto de un sitio web completo cambiando solo un
                 archivo.<br><br>
@@ -211,7 +238,7 @@
             </article>
             <hr>
 
-            <h2 title="Internal CSS">CSS interno</h2>
+            <h2 title="Internal CSS" id="d2">CSS interno</h2>
             <p>
                 Se puede utilizar una hoja de estilo interna si una sola página HTML tiene un estilo único. <br><br>
                 El estilo interno se define dentro del elemento <code class="w3-codespan">&lt;style&gt;</code>, dentro de la sección
@@ -283,7 +310,7 @@
             </article>
             <hr>
 
-            <h2 title="Inline CSS">Css en línea</h2>
+            <h2 title="Inline CSS" id="d3">Css en línea</h2>
             <p>
                 Se puede utilizar un estilo en línea para aplicar un estilo único a un solo elemento. <br><br>
                 Para isar estilos en línea, agregue el atributo de estilo al elemento relevante. <br>
@@ -331,7 +358,7 @@
             </article>
             <hr>
             
-            <h2>Múltiples hojas de estilo</h2>
+            <h2 id="d4">Múltiples hojas de estilo</h2>
             <p>
                 Si se han definido algunas propiedades para el mismo selector (elemento) en diferentes hojas de estilo,<br>
                 se utilizará el valor de la última hoja de estilo leída.
@@ -431,7 +458,7 @@
             </article>
             <hr></hr>
 
-            <h2 title="Cascading Order">Orden en cascada</h2>
+            <h2 title="Cascading Order" id="d5">Orden en cascada</h2>
             <p>
                 ¿Qué estilo se utilizará cuando se especifique más de un estilo para un elemento HTML? <br><br>
                 Todos los estilos de una página "<i>en cascada</i>" en una nueva hoja de estilos "virtual" según las siguientes reglas, <br>
@@ -448,11 +475,6 @@
                 Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los estilos externos e internos y los valores <br>
                 predeterminados del navegador.
             </p>
-
-
-
-
-            
 
 
 
