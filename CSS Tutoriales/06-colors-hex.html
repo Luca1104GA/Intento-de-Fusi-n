@@ -119,7 +119,7 @@
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
         <div class="Estilo_blanco3" id="">
-            <h1></h1>
+            <h1>Colores CSS HEX</h1>
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
                 <a href="06-colors-rgb.html" class="botonanterior">Anterior</a><a href="06-colors-hsl.html" class="botonsiguiente">Siguiente</a>
@@ -127,9 +127,120 @@
 
             <hr>
             <p>
-                
+                Un color hexadecimal (HEX) se especifíca con: <code>#RRGGBB</code>, donde los enteros hexadecimales RR (rojo), GG (verde) y <br>
+                BB (azul) especifícan los componentes del color.
             </p>
             <hr>
+
+            <h2 title="HEX Value">Valor HEX</h2>
+            <p>
+                En CSS, se puede especifícar un color utilizando un valor HEX en la forma: <br><br>
+                <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">#rrggbb _</span> <br><br>
+                Donde rr (rojo), gg (verde), y bb (azul) son valores HEX entre 00 y ff (igual que el decimal 0-255). <br><br>
+                Por ejemplo, #ff0000 se muestra en rojo, porque el rojo está configurado en su valor mas alto (ff) y los <br>
+                demás están configurados en el valor más bajo (00). <br><br>
+                Para mostrar negro, establezca todos los valores en 00, así: #000000. <br><br>
+                Para mostrar el blanco, establezca todos los valores en ff, así: #ffffff. <br><br>
+                Experimente mezclando los valores HEX a continuación:
+            </p>
+
+            <div class="w3-container xw3-light-grey">
+                <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                        <div id="hexresult" style="line-height: 80px; background-color: rgb(255, 99, 71);">
+                            <p id="hexresulttext"
+                                style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New, Courier, monospace; color: rgb(255, 255, 255);">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">#ff6347</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                </div>
+                <div class="w3-row w3-container">
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">ROJO</font>
+                            </font>
+                        </p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex"
+                            value="255" min="0" max="255">
+                        <div id="valRed2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">f</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">VERDE</font>
+                            </font>
+                        </p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex"
+                            value="99" min="0" max="255">
+                        <div id="valGreen2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">63</font>
+                            </font>
+                        </div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">AZUL</font>
+                            </font>
+                        </p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex"
+                            value="71" min="0" max="255">
+                        <div id="valBlue2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">47</font>
+                            </font>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-row w3-center"
+                    style="line-height:80px;color:white;background-color: black; font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ff0000;">#ff0000</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#0000ff;">#0000ff</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#3cb371;">#3cb371</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ee82ee;">#ee82ee</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#ffa500;">#ffa500</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#6a5acd;">#6a5acd</div>
+                    </div>
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
                 <a href="06-colors-rgb.html" class="botonanterior">Anterior</a><a href="06-colors-hsl.html" class="botonsiguiente">Siguiente</a>
@@ -143,5 +254,6 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="/scriptfinal.js"></script>
     <script src="/script.js"></script>
+    <script src="/CSS Tutoriales/archivos JS/hexresult.js"></script>
 </body>
 </html>
