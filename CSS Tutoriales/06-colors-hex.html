@@ -64,9 +64,15 @@
                         <span>Colores HEX</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#g1">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span>Valor HEX</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#g2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>3 Dígitos</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -118,7 +124,7 @@
         <!-- <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
-        <div class="Estilo_blanco3" id="">
+        <div class="Estilo_blanco3" id="g">
             <h1>Colores CSS HEX</h1>
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
@@ -132,7 +138,7 @@
             </p>
             <hr>
 
-            <h2 title="HEX Value">Valor HEX</h2>
+            <h2 title="HEX Value" id="g1">Valor HEX</h2>
             <p>
                 En CSS, se puede especifícar un color utilizando un valor HEX en la forma: <br><br>
                 <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">#rrggbb _</span> <br><br>
@@ -149,13 +155,10 @@
                     <div class="w3-col m2 w3-container w3-center">
                     </div>
                     <div class="w3-col m8 w3-container w3-center">
-                        <div id="hexresult" style="line-height: 80px; background-color: rgb(255, 99, 71);">
+                        <div id="hexresult" style="line-height: 80px; background-color: rgb(255, 101, 71);">
                             <p id="hexresulttext"
                                 style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New, Courier, monospace; color: rgb(255, 255, 255);">
-                                <font style="vertical-align: inherit;">
-                                    <font style="vertical-align: inherit;">#ff6347</font>
-                                </font>
-                            </p>
+                                #ff6547</p>
                         </div>
                     </div>
                     <div class="w3-col m2 w3-container w3-center">
@@ -163,45 +166,24 @@
                 </div>
                 <div class="w3-row w3-container">
                     <div class="w3-col m4 w3-container w3-center">
-                        <p>
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">ROJO</font>
-                            </font>
-                        </p>
+                        <p>RED</p>
                         <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex"
                             value="255" min="0" max="255">
-                        <div id="valRed2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">f</font>
-                            </font>
+                        <div id="valRed2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">ff
                         </div>
                     </div>
                     <div class="w3-col m4 w3-container w3-center">
-                        <p>
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">VERDE</font>
-                            </font>
-                        </p>
+                        <p>GREEN</p>
                         <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex"
                             value="99" min="0" max="255">
-                        <div id="valGreen2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">63</font>
-                            </font>
+                        <div id="valGreen2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">65
                         </div>
                     </div>
                     <div class="w3-col m4 w3-container w3-center">
-                        <p>
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">AZUL</font>
-                            </font>
-                        </p>
+                        <p>BLUE</p>
                         <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex"
                             value="71" min="0" max="255">
-                        <div id="valBlue2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">
-                            <font style="vertical-align: inherit;">
-                                <font style="vertical-align: inherit;">47</font>
-                            </font>
+                        <div id="valBlue2Hex" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">47
                         </div>
                     </div>
                 </div>
@@ -232,14 +214,69 @@
                     </div>
                 </div>
 
+                <p style="padding: 20px;">Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuentes de luz:</p>
+
+                <div class="w3-row w3-center"
+                    style="line-height:80px;color:white;background-color: black;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#3c3c3c;">#3c3c3c</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#616161;">#616161</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#787878;">#787878</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#b4b4b4;">#b4b4b4</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#f0f0f0;color:#555555">#f0f0f0</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:#f9f9f9;color:#555555">#f9f9f9</div>
+                    </div>
+                </div>
+
             </article>
+            <hr>
 
+            <h2 id="g2">Valor HEX de 3 dígitos</h2>
+            <p>
+                A veces verás un código hexadecimalde 3 dígitos en la fuente CSS. <br><br>
+                El código hexadecimal de 3 dígitos es una abreviatura de algunos códigos HEX de 6 dígitos. <br><br>
+                El código hexadecimal de 3 dígitos tiene la siguiente forma: <br><br>
+                <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">#rgb _</span> <br><br>
+                Donde r, g y b representan los componentes rojo, verde y azul con valores dentre 0 y f. <br><br>
+                El código hexadecimal de 3 dígitos solo se puede utilizar cuando ambos valores (RR, GG y BB) son iguales para cada componente.<br>
+                Entonces, si tenemos <code>#ff00cc</code>, se puede escribir así: <code>#f0c</code>. <br><br>
+                Aquí hay un ejemplo:
+            </p>
 
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
 
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #fc9<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                                style="color:green">/* Lo mismo que #ffcc99 */</span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br><br>h1 <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red"><br>&nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> #f0f<span class="cssdelimitercolor" style="color:black">;</span></span>
+                            <span class="commentcolor" style="color:green">/* Lo mismo que #ff00ff */</span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span><br><br>p <span class="cssdelimitercolor"
+                            style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+                            color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> #b58<span class="cssdelimitercolor" style="color:black">;</span></span>
+                            <span class="commentcolor" style="color:green">/* Lo mismo que #bb5588 */</span><br></span><span
+                            class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
 
-
-
-
+            </article>
 
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">

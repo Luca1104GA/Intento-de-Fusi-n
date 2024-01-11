@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HSL</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/estilos.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="menuf">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon name="color-palette-outline"></ion-icon>
+                <span>CSS HSL!</span>
+            </div>
+            <button class="boton">
+                <ion-icon id="cloud" name="add-outline"></ion-icon>
+                <span>Indice</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <!-- -------------------------------------------  Back to Home  --------------------------------------------------------->
+                <li class="home">
+                    <a href="maincsstutorial.html">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="06-colors.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>Colors!</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-rgb.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>RGB</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="06-colors-hex.html">
+                        <<ion-icon name="color-palette-outline"></ion-icon>
+                        <span>HEX</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
+
+                <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
+                <li class="titulo">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                        <span>Colores HSL</span>
+                </li>
+                <li>
+                    <a href="#h1">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Valor HSL</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#h2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Saturation</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#h3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Lightness</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#h4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Sombras de Gris</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#h5">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Valor HSLA</span>
+                    </a>
+                </li>
+                <!-- <li class="titulo">
+                    <ion-icon name="school-outline"></ion-icon>
+                        <span>Nombre del Titulo</span>
+                </li> -->
+                <!-- <li>
+                    <a href="#">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Link</span>
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+        <div class="modo-oscuro">
+            <div class="info">
+                <ion-icon name="moon-outline"></ion-icon>
+                <span>Dark Mode</span>
+            </div>
+            <div class="switch">
+                <div class="base">
+                    <div class="circulo">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="usuario">
+            <img src="/usuario.png" alt="usuario">
+            <div class="info-usuario">
+                <div class="nombre-email">
+                    <span class="nombre">Luca</span>
+                    <span class="email">almadaluca1104@gmail.com</span>
+                </div>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    
+    <main>
+
+        <!-- <button id="botonIrAbajo">Ir al Final</button>
+        <button id="botonVolverArriba">Volver al inicio</button> -->
+
+        <div class="Estilo_blanco3" id="h">
+            <h1>Colores HSL</h1>
+
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
+                <a href="06-colors-hex.html" class="botonanterior">Anterior</a><a href="07-backgrounds.html"
+                    class="botonsiguiente">Siguiente</a>
+            </div>
+
+            <hr>
+            <p>
+                HSL acrónimo de <i>hue</i> (tono), <i>saturation</i> (saturación), y <i>lightness</i> (luminosidad).
+            </p>
+            <hr>
+
+            <h2 id="h1">Valor HSL</h2>
+            <p>
+                En CSS, un color se puede especificar usando tono, saturación y luminosidad (HSL) en la forma: <br><br>
+                <span style="font-family: 'Courier New', Courier, monospace; font-size: large;">hsl(hue, saturation, lightness)</span> <br><br>
+                El tono (hue) es un grado en la rueda de colores de 0 a 360. 0 es rojo, 120 es verde y 240 es azul. <br><br>
+                La saturación (saturation) es un valor porcentual. 0% significa un tono de gris y 100% es el color completo. <br><br>
+                La luminosidad (lightness) también es un porcentaje. 0% es negro, 50% no es ni claro ni oscuro y 100% es blanco. <br><br>
+                Experimente mezclando los valores de HSL a continuación:
+            </p>
+
+            <div class="w3-container xw3-light-grey">
+                <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                        <div id="hslresult" style="line-height: 80px; background-color: rgb(255, 0, 0);">
+                            <p id="hslresulttext"
+                                style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New, Courier, monospace; color: rgb(255, 255, 255);">
+                                hsl(0, 100%, 50%)</p>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                </div>
+                <div class="w3-row w3-container">
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>HUE</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0"
+                            min="0" max="360">
+                        <div id="valHue" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>SATURATION</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100"
+                            min="0" max="100">
+                        <div id="valSat" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+                    </div>
+                    <div class="w3-col m4 w3-container w3-center">
+                        <p>LIGHTNESS</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight"
+                            value="50" min="0" max="100">
+                        <div id="valLight" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="w3-row w3-center"
+                    style="line-height:80px;color:white;background-color: black; padding: 20px; font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</div>
+                    </div>
+                    <div class="w3-col m6 w3-padding">
+                        <div style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</div>
+                    </div>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="h2">Saturación (saturation)</h2>
+            <p>
+                La saturación se puede describir como la intensidad de un color. <br><br>
+                100% es color puro, sin matices de grices. <br><br>
+                El 50% es 50% de gris, pero aún puedes ver el color. <br><br>
+                0% es completamente gris; ya no puedes ver el color.
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="notranslate  w3-container" style="background-color: black; padding: 20px;">
+                
+                    <div class="w3-row w3-center"
+                        style="line-height:80px;color:white; background-color: black; font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="h3">Luminosidad (lightness)</h2>
+            <p>
+                La luminosidad de un color se puede describir como cuánta luz quieres darle al color, donde 0% signifíca <br>
+                sin luz (negro), 50% signifíca 50% de luz (no oscuro ni claro) y 100% signifíca luminosidad total (blanco).
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="notranslate w3-container" style="background-color: rgb(54, 50, 50); padding: 20px;">
+                    <div class="w3-row w3-center"
+                        style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 90%);color:#555555">hsl(0, 100%, 90%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 100%, 100%);color:#555555;">hsl(0, 100%, 100%)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 title="Shades of Gray" id="h4">Sombras de Gris</h2>
+            <p>
+                Los tonos de gris a menudo se definen estableciendo el tono y la saturación en 0, y ajustando la <br>
+                luminosidad del 0% al 100% para obtener tonos más oscuros/claros:
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="notranslate w3-container" style="background-color: rgb(54, 50, 50); padding: 20px;">
+                    <div class="w3-row w3-center"
+                        style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 0%);">hsl(0, 0%, 0%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 24%)">hsl(0, 0%, 24%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 47%);">hsl(0, 0%, 47%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 71%);">hsl(0, 0%, 71%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 94%);color:#555555">hsl(0, 0%, 94%)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsl(0, 0%, 100%);color:#555555;">hsl(0, 0%, 100%)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <hr>
+
+            <h2 id="h5">Valor HSLA</h2>
+            <p>
+                Los valores de color HSLA son una extensión de los valores de color HSL con un canal alfa, que especifica la
+                opacidad de un color.<br><br> Un valor de color HSLA se especifica con: <br><br> <span
+                    style="font-family: 'Courier New', Courier, monospace; font-size: large;">hsla (hue, saturation, lightness,
+                    alpha)</span> <br><br> El parámetro alfa es un número entre 0,0 (completamente transparente) y 1,0 (nada
+                transparente): <br><br> Experimente mezclando los valores de HSLA a continuación:
+            </p>
+
+            <div class="w3-container xw3-light-grey">
+                <div class="w3-row w3-container">
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                    <div class="w3-col m8 w3-container w3-center">
+                        <div id="hslaresult" style="line-height: 80px; background-color: rgba(255, 0, 0, 0.5);">
+                            <p id="hslaresulttext"
+                                style="font-size: 120%; font-weight: bold; font-family: Consolas, Courier New, Courier, monospace; color: rgb(255, 255, 255);">
+                                hsla(0, 100%, 50%, 0.5)</p>
+                        </div>
+                    </div>
+                    <div class="w3-col m2 w3-container w3-center">
+                    </div>
+                </div>
+                <div class="w3-row w3-container">
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>HUE</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0"
+                            min="0" max="360">
+                        <div id="valHueA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>SATURATION</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA"
+                            value="100" min="0" max="100">
+                        <div id="valSatA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>LIGHTNESS</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA"
+                            value="50" min="0" max="100">
+                        <div id="valLightA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%
+                        </div>
+                    </div>
+                    <div class="w3-col m3 w3-container w3-center">
+                        <p>ALPHA</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha"
+                            value="5" min="0" max="10">
+                        <div id="valHslAlpha" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0.5
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+
+                <div class="notranslate w3-white">
+                    <div class="w3-row w3-center" style="
+                                        line-height:80px;
+                                        color:white;
+                                        font-size:20px;
+                                        font-weight:bold;
+                                        font-family:Consolas, 'Courier New', Courier, monospace;
+                                        background-image:url(https://www.w3schools.com/css/img_bg_eyeicon.png), url(https://www.w3schools.com/css/img_bg_transparent.gif);
+                                        background-repeat:no-repeat, repeat;
+                                        background-position:center, top left;
+                                        background-color:#ffffff;">
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 0);color:#555555;">hsla(9, 100%, 64%, 0)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 0.2);color:#555555;">hsla(9, 100%, 64%, 0.2)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</div>
+                        </div>
+                        <div class="w3-col m6 w3-padding">
+                            <div style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            
+
+            <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
+                <a href="06-colors-hex.html" class="botonanterior">Anterior</a><a href="07-backgrounds.html"
+                    class="botonsiguiente">Siguiente</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/scriptfinal.js"></script>
+    <script src="/script.js"></script>
+    <script src="/CSS Tutoriales/archivos JS/hslresult.js"></script>
+</body>
+</html>
