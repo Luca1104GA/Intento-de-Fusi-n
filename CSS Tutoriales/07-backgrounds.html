@@ -38,6 +38,13 @@
                     </a>
                 </li>
                 <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="07-backgrounds-image.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Background Image</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
@@ -45,9 +52,27 @@
                         <span>Background Color</span>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#i1">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
+                        <span><code>background-color</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#i2">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span>Otros elementos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#i3">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>opacity</code></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#i4">
+                        <ion-icon name="chevron-forward-circle"></ion-icon>
+                        <span><code>opacity</code> RGBA</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -135,7 +160,7 @@
             </div>
             <hr>
 
-            <h2 title="CSS background-color">Color de fondo CSS</h2>
+            <h2 title="CSS background-color" id="i1">Color de fondo CSS</h2>
             <p>La propiedad <code class="w3-codespan">background-color</code> especifica el color de fondo de un elemento.</p>
 
             <article class="ejemplo">
@@ -171,7 +196,7 @@
             </p>
             <hr>
 
-            <h2>Otros elementos</h2>
+            <h2 id="i2">Otros elementos</h2>
             <p>Puede establecer el color de fondo para cualquier elemento HTML:</p>
 
             <article class="ejemplo">
@@ -203,9 +228,151 @@
                 <img src="/imagenes/rojoyalineado9.png" alt="rojo7" style="width: 100%; height: auto; margin: 20px 0px;">
 
             </article>
+            <hr>
 
+            <h2 id="i3">Opacidad / Transparencia</h2>
+            <p>
+                La propiedad <code class="w3-codespan">opacity</code> especifica la opacidad/transparencia de un elemento. <br>
+                Puede tomar un valor de 0,0 a 1,0. Cuanto menor sea el valor, más transparente:
+            </p>
 
+            <article class="ejemplo">
+                
+                <div class="w3-cell-row">
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background-color:#04AA6D;opacity:1;padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">opacidad 1</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background-color:#04AA6D;opacity:0.6;padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">opacidad 0.6</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background-color:#04AA6D;opacity:0.3;padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">opacidad 0.3</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background-color:#04AA6D;opacity:0.1;padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">opacidad 0.1</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
 
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> green<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;opacity<span
+                                class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> 0.3<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span> </span>
+                </div>
+
+                <p class="advertencia">
+                    <b>Nota:</b> Cuando se utiliza la propiedad <code class="w3-codespan">opacity</code> para agregar transparencia al
+                    fondo de un elemento, <br> todos ses elementos secundarios heredan la misma transparencia. <br> Esto puede hacer que
+                    el texto dentro de un elemento totalmente transparente sea difícil de leer.
+                </p>
+
+            </article>
+            <hr>
+            
+            <h2 id="i4">Transparencia usando RGBA</h2>
+            <p>
+                Si no desea aplicar opacidad a elementos secundarios, como en nuestro ejemplo anterior, utilice valores de color <b>RGBA</b>. <br>
+                El siguiente ejemplo establece la opacidad del color de fondo y no del texto:
+            </p>
+
+            <article class="ejemplo">
+
+                <div class="w3-cell-row">
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background:rgb(4, 170, 109);padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">100% opacidad</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background:rgba(4, 170, 109,0.6);padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">60% de opacidad</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background:rgba(4, 170, 109,0.3);padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">30% de opacidad</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="w3-cell w3-mobile w3-center">
+                        <div style="background:rgba(4, 170, 109,0.1);padding:50px;color:black">
+                            <p>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">10% de opacidad</font>
+                                </font>
+                            </p>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        div <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> rgba(0, 128, 0, 0.3) <span
+                                    class="commentcolor" style="color:green">/* Fondo verde con 30% de opacidad
+                                    */</span><br></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+            </article>
+
+            <p>
+                Aprendiste en nuestro <a href="06-colors.html" style="text-decoration: underline;" target="_blank">Capítulo de
+                    colores CSS</a> que puedes usar <b>RGB</b> como valor de color. <br> Además de <b>RGB</b>, puedes utilizar un
+                valor de color <b>RGB</b> con un canal <b>ALFA (RGB A)</b>, que especifica la opacidad de un color. <br><br> Un
+                valor de color <b>RGBA</b> se especifica con: <i>rgba(red, green, blue, alfha). <br> El parámetro <i>alfa</i></i> es
+                un número entre 0,0 (completamente transparente) y 1,0 (completamente opaco). <br><br> <b>Consejo:</b> aprenderá más
+                sobre los colores <b>RGBA</b> en nuestro <a href="/CSS Advanced/04-colors.html" target="_blank"
+                    style="text-decoration: underline;">capítulo sobre colores CSS</a>.
+            </p>
 
 
 
