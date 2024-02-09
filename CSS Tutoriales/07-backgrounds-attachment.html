@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Background Image Repeat</title>
+    <title>CSS Background Attachment</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -19,8 +19,8 @@
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon name="logo-css3"></ion-icon>
-                <span style="font-size: 19px;">Repetición de fondo!</span>
+                <ion-icon name="book-outline"></ion-icon>
+                <span style="font-size: 15px;">Background Attachment!</span>
             </div>
             <button class="boton">
                 <ion-icon id="cloud" name="add-outline"></ion-icon>
@@ -51,9 +51,15 @@
                     </a>
                 </li>
                 <li class="home">
-                    <a href="07-backgrounds-attachment.html">
+                    <a href="07-backgrounds-repeat.html">
                         <ion-icon name="logo-css3"></ion-icon>
-                        <span>Attachment</span>
+                        <span style="font-size: 16px;">Background Repeat</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="07-background-shorthand.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span style="font-size: 15px;">Background Shorhand</span>
                     </a>
                 </li>
                 <hr style="margin-left: -40px;">
@@ -61,24 +67,12 @@
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
                     <ion-icon name="logo-reddit"></ion-icon>
-                        <span style="font-size: 16px;">Background Repeat</span>
+                        <span>Attachment</span>
                 </li>
                 <li>
-                    <a href="#j1">
+                    <a href="#">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>background-repeat</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#j2">
-                        <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>no-repeat</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#j3">
-                        <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span style="font-size: 17px;">background-position</span>
+                        <span>Link</span>
                     </a>
                 </li>
                 <!-- <li class="titulo">
@@ -130,54 +124,22 @@
         <!-- <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
-        <div class="Estilo_blanco3" id="j">
-            <h1 title="CSS Background Image Repeat">Repetición de imagen de fondo CSS</h1>
+        <div class="Estilo_blanco3" id="k">
+            <h1>CSS Background Attachment</h1>
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
-                <a href="07-backgrounds-image.html" class="botonanterior">Anterior</a><a href="07-backgrounds-attachment.html"
-                    class="botonsiguiente">Siguiente</a>
+                <a href="07-backgrounds-repeat.html" class="botonanterior">Anterior</a><a href="07-background-shorthand.html" class="botonsiguiente">Siguiente</a>
             </div>
 
             <hr>
-
-            <h2 id="j1"><code>background-repeat</code></h2>
             <p>
-                De forma predeterminada la propiedad <code class="w3-codespan">background-image</code> repite una imagen tanto
-                horizontal como verticalmente. <br><br> Algunas imágenes deben repetirse sólo horizontal o verticalmente, o se verán
-                extrañas, como esta:
+                La propiedad <code class="w3-codespan">background-attachment</code> especifíca si la imagen de fonde debe
+                desplazarse o ser fija (no se desplazara con el resto de la página):
             </p>
 
             <article class="ejemplo">
                 <h4>Ejemplo</h4>
-
-                <img src="/imagenes/rojoyalineado13.png" alt="rojo7" style="width: 100%; height: auto; margin: 20px 0px;">
-
-                <p>
-                    Si la imagen de arriba se repite solo horizontalmente ( <code
-                        class="w3-codespan">background-repeat: repeat-x;</code> ), el fondo se verá mejor:
-                </p>
-
-                <img src="/imagenes/rojoyalineado14.png" alt="rojo7" style="width: 100%; height: auto; margin: 20px 0px;">
-
-                <p class="advertencia">
-                    <b>Consejo:</b> Para repetir una imagen verticalmente, establezca <code
-                        class="w3-codespan">background-repeat: repeat-y;</code>
-                </p>
-
-            </article>
-            <hr>
-
-            <h2 id="j2"><code>background-repeat: no-repeat</code></h2>
-            <p>
-                Mostrar la imagen de fondo solo una vez también está especificado por la propiedad <code
-                    class="w3-codespan">bacground-repeat</code>:
-            </p>
-
-            <article class="ejemplo">
-
-                <h4>Ejemplo</h4>
-
-                <p>Muestra la imagen de fondo solo una vez:</p>
+                <p>Especifique que la imagen de fondo debe arreglarse:</p>
 
                 <div class="w3-code notranslate cssHigh">
                     <span class="cssselectorcolor" style="color:brown">
@@ -190,59 +152,26 @@
                             &nbsp;&nbsp;background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
                                     class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor"
                                     style="color:black">;</span></span><br>
-                        </span><span class="cssdelimitercolor" style="color:black">}</span>
-                    </span>
-                </div>
-
-                <img src="/imagenes/rojoyalineado15.png" alt="rojo15" style="width: 100%; height: auto; margin: 20px 0px;">
-
-            </article>
-            
-            <p>
-                En el ejemplo anterior, la imagen de fondo se coloca en el mismo lugar que el texto. <br>
-                Queremos cambiar la posición de la imagen, para que no perturbe demasiado el texto.
-            </p>
-            <hr>
-
-            <h2 id="j3"><code>background-position</code></h2>
-            <p>
-                La propiedad <code class="w3-codespan">background-position</code> se utiliza para espiecificar la posición de la
-                imagen de fondo.
-            </p>
-
-            <article class="ejemplo">
-                <h4>Ejemplo</h4>
-                <p>Coloque la imagen de fondo en la esquina superior derecha:</p>
-
-                <div class="w3-code notranslate cssHigh">
-                    <span class="cssselectorcolor" style="color:brown">
-                        body
-                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-                            style="color:red"><br>
-                            &nbsp;
-                            background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                                    style="color:black">:</span> url("img_tree.png")<span class="cssdelimitercolor"
-                                    style="color:black">;</span></span><br>
-                            &nbsp;
-                            background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                                    class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor"
-                                    style="color:black">;</span></span><br>
-                            &nbsp;
-                            background-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                            &nbsp;&nbsp;background-position<span class="csspropertyvaluecolor" style="color:mediumblue"><span
                                     class="cssdelimitercolor" style="color:black">:</span> right top<span class="cssdelimitercolor"
                                     style="color:black">;</span></span><br>
-                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                            &nbsp; background-attachment<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span>
                     </span>
                 </div>
 
-                <img src="/imagenes/rojoyalineado16.png" alt="rojo16" style="width: 100%; height: auto; margin: 20px 0px;">
+                <iframe src="07-backgrounds-attachexample.html" height="400" width="850" frameborder="0"></iframe>
 
             </article>
 
 
+
+            <hr>
+
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
-                <a href="07-backgrounds-image.html" class="botonanterior">Anterior</a><a href="07-backgrounds-attachment.html"
-                    class="botonsiguiente">Siguiente</a>
+                <a href="07-backgrounds-repeat.html" class="botonanterior">Anterior</a><a href="07-background-shorthand.html" class="botonsiguiente">Siguiente</a>
             </div>
 
         </div>
