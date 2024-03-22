@@ -38,18 +38,50 @@
                     </a>
                 </li>
                 <hr style="margin-left: -40px;">
+                <li class="home w3-green">
+                    <a href="#">
+                        <ion-icon class="w3-green" name="logo-css3"></ion-icon>
+                        <span style="color: white;">Borders</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-width.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Border Width</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-color.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Border Color</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-sides.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Border Sides</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-shorthand.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Shorthand</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-rounded.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Rounded Borders</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
                     <ion-icon name="logo-reddit"></ion-icon>
-                        <span>Inserte Titulo!</span>
+                        <span>Borders</span>
                 </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
-                    </a>
-                </li>
+                
                 <!-- <li class="titulo">
                     <ion-icon name="school-outline"></ion-icon>
                         <span>Nombre del Titulo</span>
@@ -99,8 +131,8 @@
         <!-- <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
-        <div class="Estilo_blanco3" id="">
-            <h1></h1>
+        <div class="Estilo_blanco3" id="m">
+            <h1>Bordes CSS</h1>
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
                 <a href="07-background-shorthand.html" class="botonanterior">Anterior</a><a href="08-border-width.html" class="botonsiguiente">Siguiente</a>
@@ -108,9 +140,159 @@
 
             <hr>
             <p>
-                
+                Las propiedades del <span class="w3-codespan">border</span> le permiten especificar el estilo, ancho y color
+                del borde de un elemento.
             </p>
             <hr>
+
+            <article class="ejemplo">
+                <p style="border: 2px solid white; padding: 10px;">
+                    Esto tiene <span class="w3-codespan">borders</span> por todos los lados!
+                </p>
+                <p style="border-bottom: 2px solid red; padding: 10px; margin: 10px;">
+                    Esto tiene un <span class="w3-codespan">border</span> rojo por debajo!
+                </p>
+                <p style="border: 2px solid white; border-radius: 20px; padding: 10px;">
+                    Esto tiene <span class="w3-codespan">borders</span> por todos los lados redondeados!
+                </p>
+                <div class="w3-container w3-pale-blue w3-leftbar w3-border-blue" style="margin: 10px; padding: 10px;">
+                    <p>Esto tiene un <span class="w3-codespan">border</span> izquierdo azul</p>
+                </div>
+            </article>
+
+            <hr>
+
+            <h2>Estilos de borde CSS</h2>
+            <p>
+                La propiedad <span class="w3-codespan">border-style</span> especifica qué tipo de borde mostrar. <br><br>
+                Se permiten los siguientes valores:
+            </p>
+
+            <ul class="lista" style="margin-top: 20px;">
+                <li>
+                    <span class="w3-codespan">dotted</span> - Define un borde punteado.
+                </li>
+                <li>
+                    <span class="w3-codespan">dashed</span> - Define un borde discontinuo.
+                </li>
+                <li>
+                    <span class="w3-codespan">solid</span> - Define un borde sólido.
+                </li>
+                <li>
+                    <span class="w3-codespan">double</span> - Define un borde doble.
+                </li>
+                <li>
+                    <span class="w3-codespan">groove</span> - Define un borde groove en relieve 3D. El efecto depende del valor de border-color.
+                </li>
+                <li>
+                    <span class="w3-codespan">ridge</span> - Define un borde ridge en relieve 3D. El efecto depende del valor de border-color. 
+                </li>
+                <li>
+                    <span class="w3-codespan">inset</span> - Define un borde inset en relieve 3D. El efecto depende del valor de border-color.
+                </li>
+                <li>
+                    <span class="w3-codespan">outset</span> - Define un borde outset en relieve 3D. El efecto depende del valor de border-color.
+                </li>
+                <li>
+                    <span class="w3-codespan">none</span> - Define que no hay borde.
+                </li>
+                <li>
+                    <span class="w3-codespan">hidden</span> - Define un borde oculto.
+                </li>
+            </ul>
+
+            <p style="margin-top: 20px;">
+                La propiedad <span class="w3-codespan">border-style</span> puede tener de uno a cuatro valores <br> (para el borde
+                superior, el borde derecho, el borede inferior y el borde izquierdo).
+            </p>
+
+            <article class="ejemplo">
+                <h4>Ejemplo</h4>
+                <p>Demostración de los diferentes estilos de borde:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p.dotted <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.dashed
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> dashed<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.solid <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> solid<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.double
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> double<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.groove <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> groove<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.ridge
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> ridge<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.inset <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inset<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.outset
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> outset<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.none <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>p.hidden <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red">border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> hidden<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>
+                        p.mix <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red">border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> dotted dashed solid double<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                            style="color:black">}</span> </span>
+                </div>
+
+                <p>Resultado:</p>
+
+                <div class="w3-white w3-padding notranslate">
+                    <p style="border-style: dotted;padding:10px 4px; margin: 10px;">Borde punteado.</p>
+                    <p style="border-style: dashed;padding:10px 4px; margin: 10px">Borde discontinuo.</p>
+                    <p style="border-style: solid;padding:10px 4px; margin: 10px">Borde sólido</p>
+                    <p style="border-style: double;padding:10px 4px; margin: 10px">Borde doble.</p>
+                    <p style="border-style: groove;padding:10px 4px; margin: 10px">Groove en relieve 3D. El efecto depende del valor de border-color.</p>
+                    <p style="border-style: ridge;padding:10px 4px; margin: 10px">Ridge en relieve 3D. El efecto depende del valor de border-color.</p>
+                    <p style="border-style: inset;padding:10px 4px; margin: 10px">Inset en relieve 3D. El efecto depende del valor de border-color.</p>
+                    <p style="border-style: outset;padding:10px 4px; margin: 10px">Outset en relieve 3D. El efecto depende del valor de border-color.</p>
+                    <p style="border-style: none;padding:10px 4px; margin: 10px">Ningun Borde.</p>
+                    <p style="border-style: hidden;padding:10px 4px; margin: 10px">Un Borde oculto.</p>
+                    <p style="border-style: dotted dashed solid double;padding:10px 4px; margin: 10px">Un Borde mixto.</p>
+                </div>
+
+                <p class="advertencia" style="margin-top: 20px;">
+                    <b>Nota:</b> Ninguna de las OTRAS propiedades de borde CSS (sobre las cuales aprenderá más en los próximos
+                    capítulos) tendrá NINGÚN efecto a menos que la propiedad <span class="w3-codespan">boreder-style</span> esté
+                    configurada.
+                </p>
+
+            </article>
+
+
+
+
+
+
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
                 <a href="07-background-shorthand.html" class="botonanterior">Anterior</a><a href="08-border-width.html" class="botonsiguiente">Siguiente</a>
