@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingrese Title</title>
+    <title>CSS Border Width</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAD29vYAMWv4ACAfIwD///8A87UAAADDkQAAw/8A/Pz8APX19QAsaPgAJiUpAP7+/gAhHyQAAMKQADw8PgBGRkkA8bQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwMDAwMDAwMDAwMDAwMDAwMDAwMDCwMDAwMDAwMDAwMDAwMDAwMCAgsDAwMDAwMDAwMDDgICAgICDwMDAwMCAwMDAgMQEBACBAICAgICAgMDAwMQEBAQAhAQEAIGBgIDAwMQBwMQEAIQEBACBgYCAwsDAwICAgICEBAQAgYGAgMLAwIDAQEBAgICAgICAgIDCwMDAQEBAQIJCQkCBQUCAwsDAQMDAQkCCQkJAgUFAgMLAwMCAgICCgkJCQIFBQIDCwMCAwMDDAICAgICDQUCAwsLAwMDAwMIAwICAgICAwsLCwMDAwMDAwMDCwAHAwMDAwMDAwMDAwMDAwMDAwMDAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="rel="icon" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -19,8 +19,8 @@
     <div class="barra-lateral">
         <div>
             <div class="nombre-pagina">
-                <ion-icon name="book-outline"></ion-icon>
-                <span>Inserte Titulo!</span>
+                <ion-icon name="logo-css3"></ion-icon>
+                <span>Border Width!</span>
             </div>
             <button class="boton">
                 <ion-icon id="cloud" name="add-outline"></ion-icon>
@@ -38,18 +38,50 @@
                     </a>
                 </li>
                 <hr style="margin-left: -40px;">
+                <li class="home">
+                    <a href="08-borders.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Borders</span>
+                    </a>
+                </li>
+                <li class="home w3-green">
+                    <a href="#">
+                        <ion-icon class="w3-green" name="logo-css3"></ion-icon>
+                        <span style="color: white;">Border Width</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-color.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Border Color</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-sides.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Border Sides</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-shorthand.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Shorthand</span>
+                    </a>
+                </li>
+                <li class="home">
+                    <a href="08-border-rounded.html">
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span>Rounded Borders</span>
+                    </a>
+                </li>
+                <hr style="margin-left: -40px;">
 
                 <!-- -------------------------------------------  Inicio  ---------------------------------------------------------------->
                 <li class="titulo">
                     <ion-icon name="logo-reddit"></ion-icon>
-                        <span>Inserte Titulo!</span>
+                        <span>Border Width</span>
                 </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="chevron-forward-circle"></ion-icon>
-                        <span>Link</span>
-                    </a>
-                </li>
+                
                 <!-- <li class="titulo">
                     <ion-icon name="school-outline"></ion-icon>
                         <span>Nombre del Titulo</span>
@@ -99,21 +131,157 @@
         <!-- <button id="botonIrAbajo">Ir al Final</button>
         <button id="botonVolverArriba">Volver al inicio</button> -->
 
-        <div class="Estilo_blanco3" id="">
-            <h1></h1>
+        <div class="Estilo_blanco3" id="n">
+            <h1>Ancho del Borde</h1>
 
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 0px;">
-                <a href="#" class="botonanterior">Anterior</a><a href="#" class="botonsiguiente">Siguiente</a>
+                <a href="08-borders.html" class="botonanterior">Anterior</a><a href="08-border-color.html" class="botonsiguiente">Siguiente</a>
             </div>
 
             <hr>
             <p>
-                
+                La propiedad <span class="w3-codespan">border-width</span> especifica el ancho de los cuatro bordes. <br><br>
+                El ancho se puede establecer como un tamaño específico (in px, pt, cm, em, etc) <br> o utilizando uno de los tres vamores
+                predefinidos: thin, medium, o thick:
             </p>
             <hr>
 
+            <article class="ejemplo">
+                <h4>ejemplo</h4>
+                <p>Demostracion de los diferentes <code class="w3-codespan">border-width</code>:</p>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p.one
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> solid<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;
+                            border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> 5px<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+                        p.two
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> solid<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> medium<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span><br><br>p.three
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> dotted<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> 2px<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                        <br><br>p.four
+                        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>
+                            &nbsp;
+                            border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> dotted<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                            &nbsp;&nbsp;border-width<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> thick<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>
+                        </span><span class="cssdelimitercolor" style="color:black">}</span>
+                    </span>
+                </div>
+
+                <p style="text-align: left; margin: 20px;">Resultado:</p>
+
+                <div class="w3-white w3-padding notranslate">
+                    <div style="border:5px solid;padding:8px;margin-top:8px;margin-bottom:16px">5px border-width</div>
+                    
+                    <div style="border:medium solid;padding:8px;margin-top:8px;margin-bottom:16px">medium border-width</div>
+                    
+                    
+                    <div style="border:2px dotted;padding:8px;margin-top:8px;margin-bottom:16px">2px border-width</div>
+                    
+                    <div style="border:thick dotted;padding:8px;margin-top:8px;margin-bottom:8px">thick border-width</div>
+                    
+                </div>
+
+            </article>
+
+            <hr>
+
+            <h2>Anchuras Específicas de los Lados</h2>
+
+            <p>
+                La propiedad <span class="w3-codespan">border-width</span> puede tener de uno a cuatro valores <br> (para el borde
+                superior, el borde derecho, el borde inferior y el borde izquierdo):
+            </p>
+
+            <article class="ejemplo">
+                <h4>ejemplo</h4>
+
+                <div class="w3-code notranslate cssHigh">
+                    <span class="cssselectorcolor" style="color:brown">
+                        p.one <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp; border-width<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px 20px<span
+                                    class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                                style="color:green">/*
+                                5px arriba y abajo, 20 px en los lados. */</span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br><br>p.two <span class="cssdelimitercolor" style="color:black">{</span><span
+                            class="csspropertycolor" style="color:red"><br>&nbsp; border-style<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                                solid<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; border-width<span
+                                class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                                    style="color:black">:</span> 20px 5px<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span> <span class="commentcolor" style="color:green">/* 20px arriba y
+                                abajo, 5px en los lados. */</span><br></span><span class="cssdelimitercolor"
+                            style="color:black">}</span><br>
+                        <br>p.three <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                            style="color:red"><br>&nbsp; border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                                    class="cssdelimitercolor" style="color:black">:</span> solid<span class="cssdelimitercolor"
+                                    style="color:black">;</span></span><br>&nbsp; border-width<span class="csspropertyvaluecolor"
+                                style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 25px 10px
+                                4px 35px<span class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
+                                style="color:green">/* 25px arriba, 10px a la derecha, 4px abajo y 35px a la izquierda.
+                                */</span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span>
+                </div>
+
+                <div class="w3-white w3-padding notranslate">
+                    <div style="border-width:5px 20px; border-style: solid; margin: 10px;">5px arriba y abajo, 20 px en los lados.</div>
+                    
+                    <div style="border-style: solid; border-width: 20px 5px; margin: 10px;">20px arriba y abajo, 5px en los lados.</div>
+                    
+                    
+                    <div style="border-style: solid; border-width: 25px 10px 4px 35px; margin: 10px;">25px arriba, 10px a la derecha, 4px
+                        abajo y 35px a la izquierda.</div>
+                    
+                </div>
+
+            </article>
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="centrado" style="display: flex; justify-content: space-around; padding: 20px 0px 40px 0px;">
-                <a href="#" class="botonanterior">Anterior</a><a href="#" class="botonsiguiente">Siguiente</a>
+                <a href="08-borders.html" class="botonanterior">Anterior</a><a href="08-border-color.html" class="botonsiguiente">Siguiente</a>
             </div>
 
         </div>
